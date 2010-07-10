@@ -403,7 +403,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Back Matter Elements v2.1 20050630//EN" 
                uri="backmatter.ent"/>
 
-  <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.1 20050630//EN" 
+  <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v2.1 20050630//EN" 
                uri="display.ent"/>
     
   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Formatting Element Classes v2.0 20040830//EN" 

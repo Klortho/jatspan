@@ -144,7 +144,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!--                    DISPLAY (GRAPHICAL) ELEMENTS INVOCATION    -->
 <!ENTITY % display.ent
                         PUBLIC
-"-//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v1.0 20021201//EN"
+"-//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v1.0 20021201//EN"
 "display.ent"                                                        >
 
 

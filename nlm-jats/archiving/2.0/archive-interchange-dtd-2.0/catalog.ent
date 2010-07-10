@@ -60,7 +60,7 @@ PUBLIC  "-//NLM//DTD Archiving and Interchange DTD Suite Custom Special Characte
 PUBLIC  "-//NLM//DTD Archiving and Interchange DTD Suite Journal Article Metadata Elements v2.0 20040830//EN" "articlemeta.ent"  
 PUBLIC  "-//NLM//DTD Archiving and Interchange DTD Suite Back Matter Elements v2.0 20040830//EN" "backmatter.ent"
 PUBLIC  "-//NLM//DTD Archiving and Interchange DTD Suite Bibliographic Reference (Citation) Class Elements v2.0 20040830//EN" "references.ent"
-PUBLIC  "-//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.0 20040830//EN" "display.ent"    
+PUBLIC  "-//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v2.0 20040830//EN" "display.ent"    
 PUBLIC  "-//NLM//DTD Archiving and Interchange DTD Suite Formatting Element Classes v2.0 20040830//EN" "format.ent"
 PUBLIC  "-//NLM//DTD Archiving and Interchange DTD Suite Journal Metadata Elements v2.0 20040830//EN" "journalmeta.ent"
 PUBLIC  "-//NLM//DTD Archiving and Interchange DTD Suite Link Class Elements v2.0 20040830//EN" "link.ent"  

@@ -9,7 +9,7 @@
 <!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
 <!--                        TYPICAL INVOCATION                     -->
 <!--
-"-//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v1.0 20021201//EN"
+"-//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v1.0 20021201//EN"
      Delivered as file "display.ent"                               -->
 <!-- ============================================================= -->
 
@@ -455,7 +455,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                                       Online the item should 
                                       remain closely associated 
                                       with the text.               -->
-<!ATTLIST  chem-struct-wrapper 
+<!ATTLIST  chem-struct-wrapper
              %chem-struct-wrapper-atts;                              >
 
 
