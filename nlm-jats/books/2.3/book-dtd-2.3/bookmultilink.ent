@@ -1,0 +1,102 @@
+<!-- ============================================================= -->
+<!--  MODULE:    Book Multi-link Elements                          -->
+<!--  VERSION:   2.3                                               -->
+<!--  DATE:      February 2007                                     -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
+<!--                        TYPICAL INVOCATION                     -->
+<!--
+"-//NLM//DTD NCBI Book Multi-link Elements v2.3 20070202//EN"
+    Delivered as file "bookmultilink.ent"                          -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!-- SYSTEM:     NCBI BOOK DTD of the                              -->
+<!--             Archiving and Interchange DTD Suite               -->
+<!--                                                               -->
+<!-- PURPOSE:    Define links to external resources                -->
+<!--             Note: The external and multiple external links    -->
+<!--             defined in this module are used in the current    -->
+<!--             NCBI Book DTD instead of the XLink mechanism.     -->
+<!--             Since this system is working nicely, these links  -->
+<!--             have been added to this new Archival-Suite-based  -->
+<!--             DTD and will be used for external links.          -->
+<!--             Note: The XLink mechanism is still specified in   -->
+<!--             all of the DTD Suite modules                      -->
+<!--                                                               -->
+<!--                                                               -->
+<!--                                                               -->
+<!-- CONTAINS:   1) Declare multi-link elements                    -->
+<!--                                                               -->
+<!-- CREATED FOR:                                                  -->
+<!--             NLM Bookshelf                                     -->
+<!--             National Center for Biotechnology Information     -->
+<!--                (NCBI)                                         -->
+<!--             National Library of Medicine (NLM)                -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             October 2004                                      -->
+<!--                                                               -->
+<!-- CREATED BY: Bart Trawick    (NCBI)                            -->
+<!--             Jeff Beck       (NCBI)                            -->
+<!--             Deborah Lapeyre (Mulberry Technologies, Inc.)     -->
+<!--             B. Tommie Usdin (Mulberry Technologies, Inc.)     -->
+<!--                                                               -->
+<!--             Suggestions for refinements and enhancements to   -->
+<!--             this DTD should be sent in email to:              -->
+<!--                 archive-dtd@ncbi.nlm.nih.gov                  -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!--                    DTD VERSION\CHANGE HISTORY                 -->
+<!-- ============================================================= -->
+<!--
+     =============================================================
+
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+
+     =============================================================
+     Version 2.3                       (DAL/BTU) v2.3 (2007-02-02)
+     
+     Enhancement Release (2.3) following the Working Group meetings 
+     of Oct-Nov/2006-Jan/2007. No backward-incompatible changes.
+     Archiving loosened even more. New structures for all the DTDs. 
+     
+  3. Updated public identifier to "v2.3 20070202//EN"          
+
+     =============================================================
+     Version 2.2                       (DAL/BTU) v2.2 (2006-10-13)
+     
+     Updated base Suite to latest version (2.2) Other minor
+     modifications for processing.
+     
+  2. MULTI-LINK - allowed <xref> and <ext-link> to be used
+     interchangeably within <multi-link>
+               
+  1. Updated public identifier to "v2.3 20070202".
+                                                                   -->
+
+
+<!-- ============================================================= -->
+<!--                    EXTERNAL MULTI-LINKING ELEMENTS            -->
+<!-- ============================================================= -->
+
+
+<!--                    MULTI-LINK                                 -->
+<!--                    A wrapper element to contain several
+                        hyperlinks, each with its own label, inside
+                        of a linked term.                          -->
+<!ELEMENT  multi-link   (term, (ext-link | xref)*)                   >
+
+
+<!--ELEM   term         defined in %list.ent;                      -->
+<!--ELEM   ext-link     defined in %common.ent;                    -->
+<!--ELEM   xref         defined in %link.ent;                      -->
+
+
+<!-- ================== End Book Multi-link Elements  ============ -->

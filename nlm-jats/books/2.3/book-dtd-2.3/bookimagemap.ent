@@ -1,0 +1,149 @@
+<!-- ============================================================= -->
+<!--  MODULE:    Book Image Map Elements                           -->
+<!--  VERSION:   2.3                                               -->
+<!--  DATE:      February 2007                                     -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
+<!--                        TYPICAL INVOCATION                     -->
+<!--
+"-//NLM//DTD NCBI Book Image Map Elements v2.3 20070202//EN"
+    Delivered as file "bookimagemap.ent"                           -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!-- SYSTEM:     NCBI BOOK DTD of the                              -->
+<!--             Archiving and Interchange DTD Suite               -->
+<!--                                                               -->
+<!-- PURPOSE:    Define the elements used in Image Maps            -->
+<!--                                                               -->
+<!-- CONTAINS:   1) Declare the map elements                       -->
+<!--                                                               -->
+<!-- CREATED FOR:                                                  -->
+<!--             NLM Bookshelf                                     -->
+<!--             National Center for Biotechnology Information     -->
+<!--                (NCBI)                                         -->
+<!--             National Library of Medicine (NLM)                -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             October 2004                                      -->
+<!--                                                               -->
+<!-- CREATED BY: Bart Trawick    (NCBI)                            -->
+<!--             Jeff Beck       (NCBI)                            -->
+<!--             Deborah Lapeyre (Mulberry Technologies, Inc.)     -->
+<!--             B. Tommie Usdin (Mulberry Technologies, Inc.)     -->
+<!--                                                               -->
+<!--             Suggestions for refinements and enhancements to   -->
+<!--             this DTD should be sent in email to:              -->
+<!--                 archive-dtd@ncbi.nlm.nih.gov                  -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!--                    DTD VERSION\CHANGE HISTORY                 -->
+<!-- ============================================================= -->
+<!--
+     =============================================================
+
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+
+     =============================================================
+     Version 2.3                       (DAL/BTU) v2.3 (2007-02-02)
+     
+     Enhancement Release (2.3) following the Working Group meetings 
+     of Oct-Nov/2006-Jan/2007. No backward-incompatible changes.
+     Archiving loosened even more. New structures for all the DTDs. 
+     
+  3. Updated public identifier to "v2.3 20070202//EN"          
+
+     =============================================================
+     Version 2.2                       (DAL/BTU) v2.2 (2006-10-13)
+     
+     Updated base Suite to latest version (2.2) Other minor
+     modifications for processing.
+               
+  2. Updated public identifier to "v2.3 20070202".
+
+     =============================================================
+     Version 2.0                    (DAL/BTU/TRG) v2.0 (2005-01-25)
+     
+  1. Comments for this module were cleaned up as part of the delivery 
+     of the NCBI Historical DTD. Since only comments were changed,
+     this was not even considered to be a dot release and the
+     formal public identifier remained unchanged.                  -->
+
+
+<!-- ============================================================= -->
+<!--                    IMAGE MAP ELEMENTS                         -->
+<!-- ============================================================= -->
+
+
+<!--                    IMAGE MAP                                  -->
+<!--                    Container element for the information 
+                        necessary to work a client-side imagemap.
+                        The grouping contains an image and 
+                        client-side imagemap mapping data to overlay
+                        hot spots on the image.                    -->
+<!ELEMENT  map-group    (graphic, map)                               >
+<!--         id         Unique identifier so the Map Group can be
+                        referenced                                 -->
+<!ATTLIST  map-group
+             id         ID                                 #IMPLIED  >  
+
+
+<!--                    MAP                                        -->
+<!--                    Element consisting solely of client-side
+                        mapping data, which is comprised of one or
+                        more <area>s                               -->
+<!ELEMENT  map          (area+)                                      >
+<!--        map-name    Overall name for the map in which the areas
+                        are located                                -->
+<!ATTLIST  map        
+             map-name   NMTOKEN                            #REQUIRED >
+
+
+<!--                    AREA                                       -->
+<!--                    An EMPTY element that holds the attributes
+                        which describe one region within a linked 
+                        image to be made into a hot link, by its 
+                        shape and coordinates, and an 
+                        associated URI ("xlink:href") for the link.
+                        Remarks: The "map-alt" attribute can name an
+                        alternative to the given map.              -->
+<!ELEMENT area          EMPTY                                        >
+<!--        map-shape   Map Shape - Overall shape of the image area
+                        being mapped. Values are:
+                           rect    rectangle
+                           circle  circle
+                           poly    any other polygon
+            map-coords  Map Coordinate - Point coordinates that define
+                        the hot spots being mapped. For a rectangle,
+                        this is the (x,y) coordinates for the top left
+                        and bottom right of the rectangle. For the
+                        circle, this is the (x,y) coordinates of the
+                        circle center and the radius value, for any 
+                        other regular polygon, this is the (x,y) 
+                        coordinates of each corner. 
+                          All coordinates are relative to 0,0, which 
+                        is the upper left corner of the graphic.
+                        Coordinates are listed in the order just
+                        described, without parentheses, with commas
+                        between each value, for example, here are
+                        the x1,y1,x2,y2 for one rectangle:
+                            67,178,132,205 
+            map-alt     Map Alternate - the URI of an alternative
+                        link for the map 
+            xlink:href  Provides an address or identifier for the
+                        URL to which the hot spot links, frequently
+                        a script or secondary image. (Required)    -->
+<!ATTLIST area
+            map-shape   (rect | circle | poly)             #REQUIRED
+            map-coords  CDATA                              #REQUIRED
+            map-alt     CDATA                              #IMPLIED
+            %link-atts;                                              >
+
+
+<!-- ================== End Book Image Map Elements ============== -->

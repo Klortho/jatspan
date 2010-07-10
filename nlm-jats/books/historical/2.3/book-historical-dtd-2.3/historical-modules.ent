@@ -1,0 +1,141 @@
+<!-- ============================================================= -->
+<!--  MODULE:    NCBI Historical Book DTD-Specific Modules         -->
+<!--  VERSION:   2.3                                               -->
+<!--  DATE:      February 2007                                     -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
+<!--                        TYPICAL INVOCATION                     -->
+<!--
+"-//NLM//DTD NCBI Historical Book DTD Module of Modules v2.3 20070202//EN"
+Delivered as file "historical-modules.ent"                         -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!-- SYSTEM:     NCBI Historical Book DTD                          -->
+<!--             Archiving and Interchange DTD Suite               -->
+<!--                                                               -->
+<!-- PURPOSE:    To name any modules created explicitly for this   -->
+<!--             DTD, that is, not present in the Archiving and    -->
+<!--             Interchange DTD Suite                             -->
+<!--                                                               -->
+<!-- CONTAINS:   1)  Full external Parameter Entity declarations   -->
+<!--                 for all DTD-specific modules (Note: the       -->
+<!--                 modules are declared here but referenced in   -->
+<!--                 the DTD.)                                     -->
+<!--                                                               -->
+<!-- CREATED FOR:                                                  -->
+<!--             NLM Bookshelf                                     -->
+<!--             National Center for Biotechnology Information     -->
+<!--                (NCBI)                                         -->
+<!--             National Library of Medicine (NLM)                -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             December 2004                                     -->
+<!--                                                               -->
+<!-- CREATED BY: Bart Trawick    (NCBI)                            -->
+<!--             Jeff Beck       (NCBI)                            -->
+<!--             Michael North   (NLM)                             -->
+<!--             Deborah Lapeyre (Mulberry Technologies, Inc.)     -->
+<!--             B. Tommie Usdin (Mulberry Technologies, Inc.)     -->
+<!--                                                               -->
+<!--             Suggestions for refinements and enhancements to   -->
+<!--             this DTD should be sent in email to:              -->
+<!--                 archive-dtd@ncbi.nlm.nih.gov                  -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!--                    DTD VERSION/CHANGE HISTORY                 -->
+<!-- ============================================================= -->
+<!--
+
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+
+     =============================================================
+     Version 2.3                       (DAL/BTU) v2.3 (2007-02-02)
+     
+     Enhancement Release (2.3) following the Working Group meetings 
+     of Oct-Nov/2006-Jan/2007. No backward-incompatible changes.
+     Archiving loosened even more. New structures for all the DTDs. 
+     
+  2. Updated public identifier to "v2.3 20070202//EN"          
+
+     =============================================================
+     Version 2.1                       (DAL/BTU) v2.1 (2005-06-30)
+          
+     Changed to MathML 2.0 and MathML 2.0 Character Sets
+     Added new material requested by NLM/NCBI   
+                         
+  1. Updated public identifier to "v2.3 20070202" on this module and
+     the changed modules: historical classes, historical models,
+     and historical metadata                                       -->
+
+
+<!-- ============================================================= -->
+<!--                    CUSTOMIZATION MODULES DECLARED             -->
+<!-- ============================================================= -->
+
+
+<!--                    DTD-SPECIFIC CLASS CUSTOMIZATIONS MODULE   -->
+<!--                    Set up the Historical-DTD-specific Parameter 
+                        Entities to define classes of elements that
+                        over-ride some element classes in the full
+                        DTD Suite as well as in the Book DTD.      -->
+<!ENTITY % historical-classes.ent 
+                        PUBLIC  
+"-//NLM//DTD NCBI Historical Book DTD Over-ride Classes Module v2.3 20070202//EN"
+"historical-classes.ent"                                             >
+
+
+<!--                    DTD-SPECIFIC MIX CUSTOMIZATIONS MODULE     -->
+<!--                    Set up the Book-DTD-specific Parameter 
+                        Entities to define mixes of classes that
+                        over-ride some element mixes in the full DTD
+                        Suite.                                     -->
+<!ENTITY % historical-mixes.ent 
+                        PUBLIC  
+"-//NLM//DTD NCBI Historical Book DTD Over-ride Mixes Module v2.3 20070202//EN"
+"historical-mixes.ent"                                               >
+
+
+<!--                    DTD-SPECIFIC MODELS/ATTRIBUTES CUSTOMIZATIONS 
+                        MODULE                                     -->
+<!--                    Set up the Parameter Entities for Book-DTD-
+                        specific content models, attribute lists, and 
+                        attribute value over-rides. These PEs will 
+                        over-ride selected content models and 
+                        attribute lists in the full DTD Suite      -->
+<!ENTITY % historical-models.ent 
+                        PUBLIC  
+"-//NLM//DTD NCBI Historical Book DTD Content and Attribute Over-ride Module v2.3 20070202//EN"
+"historical-models.ent"                                              >
+
+
+<!-- ============================================================= -->
+<!--                    HISTORICAL-SPECIFIC ELEMENTS DECLARED      -->
+<!-- ============================================================= -->
+
+
+<!--                    HISTORICAL ANNOTATIONS                     -->
+<!--                    Defines elements for editors' or library
+                        emendments and additions to a work         -->
+<!ENTITY % annotation.ent PUBLIC  
+"-//NLM//DTD NCBI Historical Book DTD Annotation Elements v2.3 20070202//EN" 
+"annotation.ent"                                                     >
+
+
+<!--                    HISTORICAL INSTANCE METADATA               -->
+<!--                    Defines elements for the historical metadata
+                        concerning this particular copy of the work,
+                        for example, transcription metadata and donor
+                        provenance metadata                        -->
+<!ENTITY % historicalmeta.ent PUBLIC  
+"-//NLM//DTD NCBI Historical Book DTD Metadata Elements v2.3 20070202//EN"
+"historicalmeta.ent"                                                  >
+
+
+<!-- =================== NCBI Historical-Specific Modules ======== -->

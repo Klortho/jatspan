@@ -1,0 +1,292 @@
+<!-- ============================================================= -->
+<!--  MODULE:    NCBI Historical Book Content & Attribute Module   -->
+<!--  VERSION:   2.0                                               -->
+<!--  DATE:      December 2004                                     -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
+<!--                        TYPICAL INVOCATION                     -->
+<!--
+"-//NLM//DTD NCBI Historical Book DTD Content and Attribute Over-ride Module v2.0 20041225//EN"
+     Delivered as file ""historical-models.ent"                    -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!-- SYSTEM:     NCBI Historical Book DTD                          -->
+<!--             Archiving and Interchange DTD Suite               -->
+<!--                                                               -->
+<!-- PURPOSE:    To declare the Parameter Entities (PEs) used to   -->
+<!--             over-ride content models or parts of content      -->
+<!--             models when making a new DTD from the modules of  -->
+<!--             the Archiving and Interchange DTD Suite.          -->
+<!--                                                               -->
+<!--             Or-groups within models should use mixes or       -->
+<!--             classes rather than name elements directly.       -->
+<!--                                                               -->
+<!--             Note: Since PEs must be declared before they      -->
+<!--             are used, this module must be called before the   -->
+<!--             content modules that declare elements.            -->
+<!--                                                               -->
+<!-- CONTAINS:   1) PEs that define OR lists of elements to be     -->
+<!--                mixed with #PCDATA in element content models   -->
+<!--                (all PEs are named "yyy-elements", where "yyy" -->
+<!--                is the name of the primary element whose       -->
+<!--                content model will use the declared PE.)       -->
+<!--             2) PEs that define complete content models.       -->
+<!--                (names ending in the suffix "-model")          -->
+<!--             3) PEs that define attribute list or attribute    -->
+<!--                value over-rides                               -->
+<!--                                                               -->
+<!-- CREATED FOR:                                                  -->
+<!--             Digital Archive of Journal Articles               -->
+<!--             National Center for Biotechnology Information     -->
+<!--                (NCBI)                                         -->
+<!--             National Library of Medicine (NLM)                -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             December 2004                                     -->
+<!--                                                               -->
+<!-- CREATED BY: Bart Trawick    (NCBI)                            -->
+<!--             Jeff Beck       (NCBI)                            -->
+<!--             Michael North   (NLM)                             -->
+<!--             Deborah Lapeyre (Mulberry Technologies, Inc.)     -->
+<!--             B. Tommie Usdin (Mulberry Technologies, Inc.)     -->
+<!--                                                               -->
+<!--             Suggestions for refinements and enhancements to   -->
+<!--             this DTD should be sent in email to:              -->
+<!--                 archive-dtd@ncbi.nlm.nih.gov                  -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!--                    DTD VERSION/CHANGE HISTORY                 -->
+<!-- ============================================================= -->
+<!--
+
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+                                                                   -->
+              
+
+<!-- ============================================================= -->
+<!--                    DUPLICATE ATT-LISTS USED IN THE OVER-RIDES -->
+<!--                    BELOW, THUS REPEATED HERE                  -->
+<!-- ============================================================= -->
+
+
+<!--                    MIGHT LINK XLINK ATTRIBUTES                -->
+<!--                    Attributes for any element that may be a link
+                        but need not be one                        -->
+<!ENTITY % might-link-atts
+            "xmlns:xlink CDATA                            #FIXED
+                                     'http://www.w3.org/1999/xlink'
+             xlink:type  (simple)                   #FIXED 'simple'
+             xlink:href  CDATA                            #IMPLIED 
+             xlink:role  CDATA                            #IMPLIED
+             xlink:title CDATA                            #IMPLIED
+             xlink:show  (embed | new | none | other | replace)
+                                                          #IMPLIED
+             xlink:actuate   
+                         (none | onLoad | onRequest | other)          
+                                                          #IMPLIED"  >
+                                                                   
+
+<!-- ============================================================= -->
+<!--                    COMPLETE CONTENT MODEL OVER-RIDES          -->
+<!-- ============================================================= -->
+
+
+<!--                    BOOK METADATA                              -->
+<!--                    Content model for the Book Metadata 
+                        <book-meta> element                        
+                        Added printer
+                        Conversion Note: The <history> element is
+                        slightly over-loaded as it describes both
+                        the history of the work and the history
+                        of the electronic transcription           -->
+<!ENTITY % book-meta-model
+                        "(book-id+, book-title-group,  
+                         volume?, volume-id*, edition?, series*,  
+                         (contrib-group | aff | author-notes)*, 
+                         publisher*, printer*, isbn*, 
+                         pub-date*, history?, copyright-statement?, 
+                         copyright-year?, self-uri*, alternate-form*, 
+                         abstract*, trans-abstract*, kwd-group*, 
+                         counts?,
+                         (%address-link.class; | %custom-meta.class; |
+                          %front-back.class;)*)"                     >                      
+                                                                                                                                      
+
+<!-- ============================================================= -->
+<!--                    ATTRIBUTE VALUE OVER-RIDES                 -->
+<!-- ============================================================= -->
+
+
+<!--                    HISTORY DATE TYPES                         -->
+<!--                    The <history> element contains one or more 
+                        <date> elements that record events in the 
+                        life of a publication.          
+          date-type     Attribute should only be used if the date
+                        is one of the known types; otherwise omit
+                        the attribute. 
+                        Values are:
+                          accepted    - Date manuscript was 
+                                        accepted
+                          created     - date work created
+                          edited      - date work was edited for
+                                        inclusion in an online
+                                        archive
+                          first-published
+                                      - Date of original publication
+                                        of the work (this may not be
+                                        the same as any publication
+                                        date <pub-date> in the
+                                        metadata, since that date
+                                        refers to this physical
+                                        copy)
+                          received    - Date manuscript received
+                          rev-request - Date revisions were 
+                                        requested or manuscript 
+                                        was returned
+                          rev-recd    - Date revised manuscript 
+                                        was received
+                          scanned     - Date material was scanned
+                                        into electronic format 
+                          transcribed - Date print manuscript was 
+                                        was transcribed into
+                                        electronic
+                          translated  - Date manuscript was 
+                                        translated into a language
+                                        other than that in which it
+                                        was published
+                          updated     - work modified              -->
+<!ENTITY % date-types   "accepted | created | edited | 
+                         first-published | received | rev-request | 
+                         rev-recd | scanned | transcribed |
+                         translated | updated"                       >
+
+
+<!--                    DEFAULT TYPE OF CROSS(X)-REFERENCE         -->
+<!--                    Used to say to what the reference is pointing.
+                        May be used for type-specific processing or
+                        validation. Values are, for example:
+                        Affiliation "aff", Figure "fig", and
+                        Bibliographic ref (to a Citation <citation> or
+                        to a Reference Item <ref>) "bibr"
+                        Added "glossary" and "bookpart"            -->
+<!ENTITY % ref-types    "aff | app | author-notes | bibr | 
+                         book-part | boxed-text | chem | contrib | 
+                         corresp |  disp-formula | fig | fn | 
+                         glossary | kwd | list | plate | scheme | 
+                         sec | statement | supplementary-material | 
+                         table | table-fn | 
+                         other"                                      >
+                        
+
+<!-- ============================================================= -->
+<!--                    ATTRIBUTE LIST OVER-RIDES                  -->
+<!-- ============================================================= -->
+
+
+<!--                    ANNOTATION ATTRIBUTES                      -->
+<!--                    Attribute list for the <annotation> element
+              content-type   
+                        Identification of the subject or type of
+                        content contained in the annotation.
+                           As an example, this attribute could be 
+                        used to indicate that additional material,
+                        not in the original document, has been 
+                        added using this annotation to indicate the
+                        modern form of a disease name or technical
+                        term. Similarly, this attribute could be 
+                        used to mark that an annotation provided 
+                        commentary on the material, or to say that 
+                        this was penciled marginalia in the printed 
+                        work.
+             time-frame Was the annotation added as part of the
+                        current editorial process or is this a
+                        historical annotation.
+                        Values are:
+                        current   Annotation is added as part of
+                                  making this work accessible 
+                                  through the NCBI Bookshelf or
+                                  other current archiving project
+                        historical
+                                  The work, as examined, was
+                                  annotated in this fashion. No
+                                  attempt is made at dating the
+                                  annotation, penciled notes from 
+                                  1863 or 1963 are both historical.
+             agent      The person or role of the person who made 
+                        the annotation. The agent may not be known
+                        and if it is not, this attribute should
+                        not be used. While this attribute may
+                        take any values; suggested values include:
+                          author  - Original content creator 
+                          editor  - Content editor 
+                          compiler  
+                                  - Put together a composite work
+                                    from multiple sources
+                          librarian 
+                                  - Annotation was added as part
+                                    of cataloging or other library
+                                    processing
+                          owner   - Book came from a known collection
+                                    and the owner annotated his/her
+                                    property
+                          translator 
+                                  - Translated the cited work from 
+                                    one language into another
+            xlink:href Provides an address or identifier of the
+                        object to which the link points, for
+                        example a URI or a filename                --> 
+<!ENTITY % annotation-atts
+            "content-type   
+                        CDATA                            #IMPLIED 
+             time-frame (current | historical)           #IMPLIED
+             agent      CDATA                            #IMPLIED
+             %might-link-atts;"                                      >
+
+
+
+<!--                    ANNOTATION                                 -->
+<!--                    Attribute list for the <annotation> element,
+                        which is defined in %references.ent;
+                        For the purposes of this DTD, annotations of 
+                        historical material are considered to be of
+                        two types: those with content, that is those 
+                        add words to the text (for example, a
+                        penciled marginal note) and those that merely
+                        decorate words already in the text, for 
+                        example, a phrase underlined in pencil.
+                          Text-bearing annotations, whether inline
+                        or block-level, use the <annotation> or the
+                        <alt-text> elements. Decorations use the
+                        <named-content> element with the attribute
+                        "content-type" taking values like "underline"
+                        and "yellow highlighter".
+                           The <annotation> and <named-content>
+                        elements are not defined in this module, since
+                        they were already part of the NLM Archiving 
+                        and Interchange DTD Suite when this DTD was
+                        was written. No changes were needed to the
+                        <named-content> element except that it is
+                        allowed in a few more places through the
+                        modification of the %phrase.class; and
+                        %emphasis.class; elements.
+                           In the Suite, however, the <annotation>
+                        element is only used within citations. In 
+                        this DTD, it is a block-level element at the 
+                        same level as a paragraph (%para-level;) as 
+                        well as an inline-element inside textual 
+                        passages (%emphasis.class;). New attributes 
+                        were  added to <annotation> to describe some 
+                        of these new roles/purposes.               -->
+<!ATTLIST  annotation
+             %annotation-atts;                                       >
+             
+              
+
+<!-- ================== End NCBI Historical Content/Attr Over-ride -->

@@ -1,0 +1,179 @@
+<!-- ============================================================= -->
+<!--  MODULE:    NCBI Historical Book DTD Over-ride Classes Module -->
+<!--  VERSION:   2.1                                               -->
+<!--  DATE:      June 2005                                         -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
+<!--                        TYPICAL INVOCATION                     -->
+<!--
+"-//NLM//DTD NCBI Historical Book DTD Over-ride Classes Module v2.1 20050630//EN"
+Delivered as file "historical-classes.ent"                         -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!-- SYSTEM:     NCBI Book DTD of the                              -->
+<!--             Archiving and Interchange DTD Suite               -->
+<!--                                                               -->
+<!-- PURPOSE:    To declare the Parameter Entities (PEs) used to   -->
+<!--             over-ride the named element classes               -->
+<!--                                                               -->
+<!--             Note: Since PEs must be declared before they      -->
+<!--             are used, this module must be called before the   -->
+<!--             content modules that declare elements, and before -->
+<!--             the default classes module.                       -->
+<!--                                                               -->
+<!-- CONTAINS:   1) PEs for changing the contents of the default   -->
+<!--                element classes                                -->
+<!--                                                               -->
+<!-- CREATED FOR:                                                  -->
+<!--             Digital Archive of Journal Articles               -->
+<!--             National Center for Biotechnology Information     -->
+<!--                (NCBI)                                         -->
+<!--             National Library of Medicine (NLM)                -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             December 2004                                     -->
+<!--                                                               -->
+<!-- CREATED BY: Bart Trawick    (NCBI)                            -->
+<!--             Jeff Beck       (NCBI)                            -->
+<!--             Deborah Lapeyre (Mulberry Technologies, Inc.)     -->
+<!--             B. Tommie Usdin (Mulberry Technologies, Inc.)     -->
+<!--                                                               -->
+<!--             Suggestions for refinements and enhancements to   -->
+<!--             this DTD should be sent in email to:              -->
+<!--                 archive-dtd@ncbi.nlm.nih.gov                  -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!--                    DTD VERSION/CHANGE HISTORY                 -->
+<!-- ============================================================= -->
+<!--
+
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+
+     =============================================================
+     Version 2.1                       (DAL/BTU) v2.1 (2005-06-30)
+          
+     Changed to MathML 2.0 and MathML 2.0 Character Sets
+     Added new material requested by the online list     
+               
+  1. Updated public identifier to "v2.1 20050630"                  -->
+
+
+<!-- ============================================================= -->
+<!--                    NEW CLASSES FOR HISTORICAL DTD FOR MODELS  -->
+<!-- ============================================================= -->
+
+
+<!--                    ANNOTATION CLASS ELEMENTS                  -->
+<!--                    Container element for emendments and
+                        additions by librarians, translators, 
+                        transcribers, etc.                        .
+                        New class for content models. The <annotation>
+                        element is also used in -emphasis.class 
+                        below.                                     -->
+<!ENTITY % annotation.class 
+                        "annotation"                                 >
+
+
+<!--                    BIBLIOGRAPHIC REFERENCE (CITATION) CLASS   -->
+<!--                    The elements that may be included inside a
+                        Citation (bibliographic reference)
+                          Removed <annotation> as it has been named
+                        in the more permissive -%emphasis.class;,
+                        which is allowed everywhere this class
+                        is used.
+                          After some internal debate, no other
+                        changes were made in this entity, although
+                        an enforcing DTD could remove many of these
+                        elements.                                  -->
+<!ENTITY % references.class
+                        "access-date | article-title | 
+                         collab | comment | 
+                         conf-date | conf-loc | conf-name | 
+                         day | edition | email | elocation-id | 
+                         etal | ext-link | fpage |  gov | isbn | 
+                         issn | issue | issue-id | issue-title | 
+                         lpage | month | name | object-id |  
+                         page-count | page-range | 
+                         patent | person-group | pub-id | 
+                         publisher-loc | publisher-name | 
+                         role | season |
+                         series | source | std | string-name |
+                         supplement | time-stamp | trans-source | 
+                         trans-title | uri |
+                         volume | volume-id | year"                  >
+
+
+<!-- ============================================================= -->
+<!--                    PARAMETER ENTITIES FOR CLASS OVER-RIDES    -->
+<!-- ============================================================= -->
+
+
+<!--                    CONTRIBUTOR INFORMATION                    -->
+<!--                    Metadata about a contributor               
+                        Added contributor date                     -->
+<!ENTITY % contrib-info.class
+                        "address | aff | author-comment | bio |
+                         contrib-date | 
+                         email |  etal | ext-link | on-behalf-of |
+                         role | uri | xref"                          >
+              
+
+
+<!--                    EMPHASIS/RENDITION ELEMENTS                -->
+<!--                    Elements concerning with marking the location
+                        of typographical emphasis (highlighting)
+                        DTD Design Note: There are no emphasis
+                        elements for <fractur>, <openface> (black
+                        board), <script>, etc. because this DTD
+                        recommends the use of the STIX extensions
+                        to accomplish this, as soon as they are 
+                        available.
+                           Added <page-start>, this milestone element
+                        marks the start of a physical page in the 
+                        printed edition of a historical work. It
+                        is a type of typographic effect, as are the
+                        emphasis elements and should be allowed
+                        anywhere text is allowed, as they are, thus
+                        being excluded from very few elements: all the
+                        identifiers, some elements only used inside
+                        inside references, and metadata elements.  
+                            Added <named-content> (and removed it
+                        from %phrase.class;) because it will be
+                        used to mark historical emphasis, such as
+                        pencil underlining, ink circled words, or 
+                        highlighting using a yellow highlighter.
+                          Added <annotation>, which is only slightly
+                        over-loading this element. An inline
+                        <annotation> element is used for inline 
+                        commentary, which may not typographical
+                        emphasis, but which may be rhetorical 
+                        emphasis and, in any case, needs to be
+                        used anywhere real emphasis is allowed.    -->
+<!ENTITY % emphasis.class
+                        "annotation | bold | italic | monospace |
+                         named-content |
+                         overline | overline-start | overline-end | 
+                         page-start | sc | strike | 
+                         underline | underline-start | underline-end">
+
+
+<!--                    PHRASE CLASS ELEMENTS                      -->
+<!--                    Small inline elements, that surround a word
+                        or phrase in the text because the subject
+                        (content) should be identified as something
+                        special or different
+                        Added <alt-term>. 
+                        Removed <named-content> because it was 
+                        promoted to the even more ubiquitous mix,
+                        %emphasis.class;                           -->
+<!ENTITY % phrase.class "abbrev | alt-term "                         >
+
+              
+<!-- ================== End NCBI Historical Book Over-ride Classes  -->

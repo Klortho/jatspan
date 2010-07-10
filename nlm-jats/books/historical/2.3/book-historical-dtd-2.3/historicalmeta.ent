@@ -1,0 +1,229 @@
+<!-- ============================================================= -->
+<!--  MODULE:    NCBI Historical Book DTD Metadata Elements        -->
+<!--  VERSION:   2.3                                               -->
+<!--  DATE:      February 2007                                     -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
+<!--                        TYPICAL INVOCATION                     -->
+<!--
+"-//NLM//DTD NCBI Historical Book DTD Metadata Elements v2.3 20070202//EN"
+     Delivered as file "historicalmeta.ent"                        -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!-- SYSTEM:     NCBI Historical Book DTD                          -->
+<!--             Archiving and Interchange DTD Suite               -->
+<!--                                                               -->
+<!-- PURPOSE:    Describe historical-specific metadata elements    -->
+<!--                                                               -->
+<!-- CONTAINS:   1) Metadata elements new to book metadata (the    -->
+<!--                rest of the metadata are defined in the Suite  -->
+<!--                modules %bookmeta.ent; or the base Suite       --> 
+<!--                metadata module %articlemeta.ent;)             -->
+<!--                                                               -->
+<!-- CREATED FOR:                                                  -->
+<!--             NLM Bookshelf                                     -->
+<!--             National Center for Biotechnology Information     -->
+<!--                (NCBI)                                         -->
+<!--             National Library of Medicine (NLM)                -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             October 2004                                      -->
+<!--                                                               -->
+<!-- CREATED BY: Bart Trawick    (NCBI)                            -->
+<!--             Jeff Beck       (NCBI)                            -->
+<!--             Michael North   (NLM)                             -->
+<!--             Deborah Lapeyre (Mulberry Technologies, Inc.)     -->
+<!--             B. Tommie Usdin (Mulberry Technologies, Inc.)     -->
+<!--                                                               -->
+<!--             Suggestions for refinements and enhancements to   -->
+<!--             this DTD should be sent in email to:              -->
+<!--                 archive-dtd@ncbi.nlm.nih.gov                  -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!--                    DTD VERSION\CHANGE HISTORY                 -->
+<!-- ============================================================= -->
+<!--
+     =============================================================
+
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+
+     =============================================================
+     Version 2.3                       (DAL/BTU) v2.3 (2007-02-02)
+     
+     Enhancement Release (2.3) following the Working Group meetings 
+     of Oct-Nov/2006-Jan/2007. No backward-incompatible changes.
+     Archiving loosened even more. New structures for all the DTDs. 
+     
+  4. NEW PARAMETER ENTITIES
+     a. Added parameter entity for the content model of:
+        - printer
+     
+  3. Updated public identifier to "v2.3 20070202//EN"          
+
+     =============================================================
+     Version 2.1                       (DAL/BTU) v2.1 (2005-06-30)
+          
+     Changed to MathML 2.0 and MathML 2.0 Character Sets
+     Added new material requested by NLM/NCBI   
+          
+  2. PERMISSIONS - Added a new <permissions> wrapper element to
+     consolidate copyright and licensing information. For backwards
+     compatibility, the new element will be added alongside the
+     existing copyright elements. Best practice will be to use the
+     new container, but <copyright-statement>, <copyright-year>,
+     and <license> will be accepted in their old positions inside
+     <digital-edition-meta>
+      - Added <permissions> to <digital-edition-meta> model
+      - Added <copyright-holder> to <permissions>
+               
+  1. Updated public identifier to "v2.3 20070202" 
+
+     ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!--                    HISTORICAL METADATA ATTRIBUTES             -->
+<!-- ============================================================= -->
+
+
+<!--                    DATE TYPES FOR CONTRIBUTOR DATES           -->
+<!ENTITY % contrib-dates  
+             "birth | death | flourished"                            >
+
+
+<!--                    CONTRIBUTOR DATE ATTRIBUTES                -->
+<!--                    The <contrib-date> records events concerning 
+                        a <contributor> 
+          date-type     Value are:
+                          birth       - Date person was born
+                          death       - Date person died
+                          flourished  - Date or date range person
+                                        was most active or famous
+                                        Date ranges will probably be
+                                        expressed as string dates
+          uncertain     Is this date in doubt, disputed, or for
+                        any other reason uncertain. Values are
+                          certain     - Date is valid
+                          unsure      - Date is in doubt or
+                                        questionable
+                                                                   -->
+<!ENTITY % contrib-date-atts  
+             "date-type  (%contrib-dates;)                #IMPLIED 
+              uncertain  (certain | unsure)               'certain'" >
+
+
+<!-- ============================================================= -->
+<!--                    HISTORICAL METADATA ELEMENTS               -->
+<!-- ============================================================= -->
+
+
+<!--                    CONTRIBUTOR DATE                           -->
+<!--                    Used for birth dates, death dates, and
+                        flourished dates for a contributor         -->
+<!ELEMENT  contrib-date %date-model;                                 > 
+<!--                    The <contrib-date> records events concerning 
+                        a <contributor> 
+          date-type     Values are:
+                          birth       - Date person was born
+                          death       - Date person died
+                          flourished  - Date or date range person
+                                        was most active or famous
+                                        Date ranges will probably be
+                                        expressed as string dates
+          uncertain     Is this date in doubt, disputed, or for
+                        any other reason uncertain. Values are
+                          certain     - Date is valid
+                          unsure      - Date is in doubt or
+                                        questionable
+                                                                   -->
+<!ATTLIST  contrib-date
+             %contrib-date-atts;                                     > 
+
+
+<!--                    DIGITAL EDITION METADATA MODEL             -->
+<!--                    Content model for the element 
+                        <digital-edition-meta>, which contains
+                        historical-specific metadata about the
+                        electronic transcription.                  -->
+<!ENTITY % digital-edition-meta-model
+                        "(book-id+, edition?,  
+                         (contrib-group | aff | author-notes)*, 
+                         publisher*, isbn*, 
+                         pub-date*, history?, copyright-statement?, 
+                         copyright-year?, permissions?, 
+                         self-uri*, alternate-form*,
+                         (%address-link.class; | 
+                          %custom-meta.class; |
+                          %front-back.class;)* )"                    >                      
+
+
+<!--                    DIGITAL EDITION METADATA                   -->
+<!--                    Container element to hold the metadata that
+                        pertains to the electronic transcription
+                        (digital edition) not to the work itself.
+                        Many of the elements in the digital edition
+                        metadata are identical to elements in the 
+                        book metadata, but their content will refer
+                        to the electronic XML copy of the book,
+                        not to the work as a whole or to the specific
+                        printed volume.
+                            For example, the <contributor> element in
+                        the book metadata will name the book's author,
+                        editor, illustrator, or other person in a 
+                        primary creative role. The contributor in the
+                        digital edition metadata began his or her
+                        effort with a particular print volume
+                        and has played a role in the transcription,
+                        annotation, emendment, translation, etc. of
+                        that printed book for the electronic archives.
+                          Remarks: This element should only be used to
+                        record information that is different
+                        in the print and electronic editions, for
+                        example the publication date, which might be
+                        1653 for the printed work and 2005 for the
+                        electronic and the name of the editor of the
+                        1936 Gray's Manual of Anatomy as opposed to 
+                        the NLM library editor/annotator who
+                        added the modern spellings and updated
+                        the outmoded names.                        -->
+<!ELEMENT  digital-edition-meta
+                        %digital-edition-meta-model;                 > 
+
+
+<!-- ============================================================= -->
+<!--                    PRINTER ELEMENTS                           -->
+<!-- ============================================================= -->
+
+
+<!--                    PRINTER MODEL                              -->
+<!--                    Content model for the element <printer>    -->
+<!ENTITY % printer-model
+                        "(printer-name, printer-loc?)"               >
+
+
+<!--                    PRINTER                                    -->
+<!--                    Organization who printed this copy of the 
+                        work                                       -->
+<!ELEMENT  printer      %printer-model;                              >
+
+
+<!--                    PRINTER'S NAME                             -->
+<!--                    Name of the printer of this copy of the work
+                                                                   -->
+<!ELEMENT  printer-name (#PCDATA %publisher-name-elements;)*         >  
+
+
+<!--                    PUBLISHER'S LOCATION                       -->
+<!--                    Place of printing, usually a city such
+                        as New York or London                      -->
+<!ELEMENT  printer-loc  (#PCDATA %publisher-loc-elements;)*          >
+
+
+<!-- ================== End Historical Metadata Elements ========= -->

@@ -1,0 +1,141 @@
+<!-- ============================================================= -->
+<!--  MODULE:    NCBI Book DTD Over-ride Mixes Module              -->
+<!--  VERSION:   2.0                                               -->
+<!--  DATE:      October 2004                                      -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
+<!--                        TYPICAL INVOCATION                     -->
+<!--
+"-//NLM//DTD NCBI Book DTD Over-ride Mixes Module v2.0 20041031//EN"
+Delivered as file "bookcustom-mixes.ent"                           -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!-- SYSTEM:     NCBI Book DTD of the                              -->
+<!--             Archiving and Interchange DTD Suite               -->
+<!--                                                               -->
+<!-- PURPOSE:    Declares over-ride values for the default element -->
+<!--             mixes in the Suite. These over-rides are specific -->
+<!--             to the NCBI Book DTD.                             -->
+<!--                                                               -->
+<!--             Note: Since PEs must be declared before they      -->
+<!--             are used, this module must be called before the   -->
+<!--             default mixes modules (%default-mixes;)           -->
+<!--                                                               -->
+<!-- CONTAINS:   1) PEs that define the element mixes to be        -->
+<!--                over-ridden                                    -->
+<!--                                                               -->
+<!-- CREATED FOR:                                                  -->
+<!--             Digital Archive of Journal Articles               -->
+<!--             National Center for Biotechnology Information     -->
+<!--                (NCBI)                                         -->
+<!--             National Library of Medicine (NLM)                -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             October 2004                                      -->
+<!--                                                               -->
+<!-- CREATED BY: Bart Trawick    (NCBI)                            -->
+<!--             Jeff Beck       (NCBI)                            -->
+<!--             Deborah Lapeyre (Mulberry Technologies, Inc.)     -->
+<!--             B. Tommie Usdin (Mulberry Technologies, Inc.)     -->
+<!--                                                               -->
+<!--             Suggestions for refinements and enhancements to   -->
+<!--             this DTD should be sent in email to:              -->
+<!--                 archive-dtd@ncbi.nlm.nih.gov                  -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!--                    DTD VERSION/CHANGE HISTORY                 -->
+<!-- ============================================================= -->
+<!--
+
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+
+     =============================================================
+     Version 2.0                    (DAL/BTU/TRG) v2.0 (2005-01-25)
+     
+1.  Comments for this module were cleaned up as part of the delivery 
+    of the NCBI Historical DTD. Since only comments were changed,
+    this was not even considered to be a dot release and the
+    formal public identifier remained unchanged.                   -->
+
+                        
+<!-- ============================================================= -->
+<!--                    BLOCK-LEVEL ELEMENT MIXES                  -->
+<!--                    (MIXES ARE COMPOSED USING CLASSES)         -->
+<!-- ============================================================= -->
+
+
+<!--                    BOOK PART LEVEL                            -->
+<!--                    Those elements that are may be used at the
+                        same hierarchical level as a <book-part>,
+                        where book-part is defined as the major unit
+                        of a book such as a chapter, part, module, 
+                        unit, etc.                                 -->
+<!ENTITY % book-part-level  
+                        "%book-part.class;"                          >
+                          
+
+
+<!--                    DOCUMENT FRONT MATTER ELEMENTS             -->
+<!--                    Front Matter Elements used by a book       -->
+<!ENTITY % doc-front-matter-mix
+                        "%front.class; | %front-back.class; |
+                         %just-table.class; |  %sec.class;"          >
+
+                        
+<!-- ============================================================= -->
+<!--                    INLINE ELEMENT MIXES                       -->
+<!--                    (MIXES ARE COMPOSED USING CLASSES)         -->
+<!-- ============================================================= -->
+
+
+<!--                    EMPHASIS MIX ELEMENTS                      -->
+<!--                    Elements that may be used inside most of the
+                        emphasis class elements                    
+                        DESIGN NOTE: Inline mixes begin with an
+                        OR bar                                     -->
+<!ENTITY % emphasized-text  
+                        "| %appearance.class; | %address-link.class; | 
+                         %article-link.class; |  %emphasis.class;  | 
+                         %inline-display.class; | 
+                         %inline-math.class; |  
+                         %math.class; |  %phrase.class; | 
+                         %simple-link.class; | %subsup.class;"       >
+
+                        
+<!-- ============================================================= -->
+<!--                    #PCDATA CONTENT MODEL MIXES                -->
+<!-- ============================================================= -->
+
+
+<!--                    EXTERNAL LINK ELEMENTS                     -->
+<!--                    The elements that can be included along with
+                        data characters inside the content model of
+                        a <ext-link>. This was modified to allow
+                        graphical elements inside <ext-link>, for
+                        those cases where, for example, an onscreen
+                        arrow is a link to a picture or a database.-->
+<!ENTITY % ext-link-elements
+                        "| %emphasis.class;| %inline-display.class; |
+                         %just-base-display.class; | %subsup.class;" > 
+
+
+<!--                    X(CROSS) REFERENCE ELEMENTS                -->
+<!--                    The elements that can be included along with
+                        data characters inside the content model of
+                        a <xref>. This was modified to allow
+                        graphical elements inside <xref>, for
+                        those cases where, for example, an onscreen
+                        arrow is a link to a picture or a database.-->
+<!ENTITY % xref-elements
+                        "| %emphasis.class;| %inline-display.class; |
+                         %just-base-display.class; | %subsup.class;" > 
+                          
+
+<!-- ================== End NCBI Book DTD Over-ride Mixes  ======= -->

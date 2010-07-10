@@ -1,0 +1,27 @@
+      --                                                              --
+--              NCBI BOOK DTD                                   --
+PUBLIC  "-//NLM//DTD Book DTD v2.0 20041031//EN" "book.dtd" 
+PUBLIC  "-//NLM//DTD NCBI Book Collection DTD v2.0 20041031//EN" "bookcollection.dtd" 
+PUBLIC  "-//NLM//DTD NCBI Historical Book DTD v2.0 20041225//EN" "historical.dtd" 
+
+PUBLIC  "-//NLM//DTD Book DTD Module of Modules v2.0 20041031//EN" "bookcustom-modules.ent"        
+PUBLIC  "-//NLM//DTD NCBI Book DTD Over-ride Classes Module v2.0 20041031//EN" "bookcustom-classes.ent"
+PUBLIC  "-//NLM//DTD NCBI Book DTD Over-ride Mixes Module v2.0 20041031//EN" "bookcustom-mixes.ent"
+PUBLIC  "-//NLM//DTD NCBI Book DTD Content and Attribute Over-ride Module v2.0 20041031//EN" "bookcustom-models.ent"
+
+PUBLIC  "-//NLM//DTD NCBI Book DTD Book Metadata Elements v2.0 20041031//EN" "bookmeta.ent"
+PUBLIC  "-//NLM//DTD NCBI Book DTD Book Component Metadata Elements v2.0 20041031//EN" "bookpart.ent"
+PUBLIC  "-//NLM//DTD NCBI Book Multi-link Elements v2.0 20041031//EN" "bookmultilink.ent"
+PUBLIC  "-//NLM//DTD NCBI Book Image Map Elements v2.0 20041031//EN" "bookimagemap.ent"
+
+
+PUBLIC  "-//NLM//DTD NCBI Historical Book DTD Module of Modules v2.0 20041225//EN" "historical-modules.ent"        
+PUBLIC  "-//NLM//DTD NCBI Historical Book DTD Over-ride Classes Module v2.0 20041225//EN" "historical-classes.ent"
+PUBLIC  "-//NLM//DTD NCBI Historical Book DTD Over-ride Mixes Module v2.0 20041225//EN" "historical-mixes.ent"
+PUBLIC  "-//NLM//DTD NCBI Historical Book DTD Content and Attribute Over-ride Module v2.0 20041225//EN" "historical-models.ent"
+
+PUBLIC  "-//NLM//DTD NCBI Historical Book DTD Annotation Elements v2.0 20041225//EN" "annotation.ent"
+PUBLIC  "-//NLM//DTD NCBI Historical Book DTD Metadata Elements v2.0 20041225//EN" "historicalmeta.ent"
+--                                                              --
+
+             

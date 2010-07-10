@@ -1,0 +1,227 @@
+<!-- ============================================================= -->
+<!--  MODULE:    Book Metadata Elements                            -->
+<!--  VERSION:   2.1                                               -->
+<!--  DATE:      June 2005                                         -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
+<!--                        TYPICAL INVOCATION                     -->
+<!--
+"-//NLM//DTD NCBI Book DTD Book Metadata Elements v2.1 20050630//EN"
+     Delivered as file "bookmeta.ent"                              -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!-- SYSTEM:     NCBI BOOK DTD of the                              -->
+<!--             Archiving and Interchange DTD Suite               -->
+<!--                                                               -->
+<!-- PURPOSE:    Describe book-specific metadata elements that     -->
+<!--             are not defined in the DTD-Suite metadata module  -->
+<!--             %articlemeta.ent;                                 -->
+<!--                                                               -->
+<!-- CONTAINS:   1) book-metadata Parameter Entity                 -->
+<!--             2) Metadata elements new to book metadata (the    -->
+<!--                rest of the metadata are defined in the Suite  -->
+<!--                modules %articlemeta.ent;                      -->
+<!--                                                               -->
+<!-- CREATED FOR:                                                  -->
+<!--             NLM Bookshelf                                     -->
+<!--             National Center for Biotechnology Information     -->
+<!--                (NCBI)                                         -->
+<!--             National Library of Medicine (NLM)                -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             October 2004                                      -->
+<!--                                                               -->
+<!-- CREATED BY: Bart Trawick    (NCBI)                            -->
+<!--             Jeff Beck       (NCBI)                            -->
+<!--             Deborah Lapeyre (Mulberry Technologies, Inc.)     -->
+<!--             B. Tommie Usdin (Mulberry Technologies, Inc.)     -->
+<!--                                                               -->
+<!--             Suggestions for refinements and enhancements to   -->
+<!--             this DTD should be sent in email to:              -->
+<!--                 archive-dtd@ncbi.nlm.nih.gov                  -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!--                    DTD VERSION\CHANGE HISTORY                 -->
+<!-- ============================================================= -->
+<!--
+     =============================================================
+
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+
+     =============================================================
+     Version 2.1                       (DAL/BTU) v2.1 (2005-06-30)
+          
+     Changed to MathML 2.0 and MathML 2.0 Character Sets
+     Added new material requested by the online list     
+
+          
+  3. TRANS-SUBTITLE - Added optional <trans-subtitle> element to
+     to <book-meta> model through -%book-title-group-model;
+               
+  2. Updated public identifier to "v2.1 20050630" 
+
+     =============================================================
+     Version 2.0                    (DAL/BTU/TRG) v2.0 (2005-01-25)
+     
+  1. Comments for this module were cleaned up as part of the delivery 
+     of the NCBI Historical DTD. Since only comments were changed,
+     this was not even considered to be a dot release and the
+     formal public identifier remained unchanged.                  -->
+
+
+<!-- ============================================================= -->
+<!--                    BOOK METADATA ATTRIBUTES                   -->
+<!-- ============================================================= -->
+
+
+<!--                    BOOK IDENTIFIER ATTRIBUTES                 -->
+<!--                    Attribute list for the <book-id> element   -->
+<!ENTITY % book-id-atts  
+            "pub-id-type
+                        (%pub-id-types;)                   #IMPLIED" >
+
+
+<!--                    ALTERNATIVE FORM ATTRIBUTES                -->
+<!--                    Attribute list for the <alternate-form> 
+                        element                                    -->
+<!ENTITY % alternate-form-atts  
+            "alternate-form-type
+                        CDATA                             #IMPLIED  
+             %link-atts;"                                            >
+
+
+<!-- ============================================================= -->
+<!--                    BOOK METADATA ELEMENTS                     -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!--                    BOOK FRONT MATTER ELEMENTS                 -->
+<!-- ============================================================= -->
+
+
+<!--                    BOOK IDENTIFIER                            -->
+<!--                    An identifier, such as a DOI or archive
+                        control number, for the work. There is a
+                        separate element for the ISBNs <isbn>.     
+                        Remarks: The "pub-id-type" attribute is the
+                        same attribute used with citations to note
+                        publication type.                          -->
+<!ELEMENT  book-id      (#PCDATA)                                    >
+<!--         pub-id-type    
+                        Indicates what type of identifier this is or
+                        who assigned the identifier, for example,
+                        "pub-id" for a publisher's non-DOI
+                        identifier or "DOI" for a Digital Object
+                        Identifier.
+                        Valid Types include:
+                          art-access-id
+                                 - Generic article accession id for
+                                   interchange and retrieval between
+                                   archives
+                          coden  - Obsolete PDB/CCDC identifier (may
+                                   be present on older articles)
+                                   be present on older articles)
+                          doaj   - Directory of Open Access Journals
+                          doi    - Digital Object Identifier for
+                                   the article
+                          medline- NLM Medline identifier
+                          other  - None of the named identifiers
+                          pii    - Publisher Item Identifier, see
+                                    /epub/piius.htm
+                          pmcid  - PubMed Central identifier        
+                          pmid   - PubMed ID (see
+                                   www.ncbi.nlm.nih.gov/entrez/
+                                   query.fcgi?db=PubMed)         
+                          publisher-id - 
+                                   Publisher's identifying number 
+                                   such as an 'article-id', 'artnum',
+                                   'identifier', 'article- number', 
+                                   etc.
+                          sici   - Serial Item and Contribution 
+                                   Identifier (SICI). A journal 
+                                   article may have more than one 
+                                   SICI, one for a print version and
+                                   one for an electronic version.  -->
+<!ATTLIST  book-id  
+             %book-id-atts;                                          >
+
+
+<!-- ============================================================= -->
+<!--                    BOOK FRONT MATTER TITLE GROUP ELEMENTS     -->
+<!-- ============================================================= -->
+
+
+<!--                    ALTERNATE FORM OF                          -->
+<!--                    Used to point to an alternative form of the
+                        material, for example, a PDF file (in which
+                        case the element may be EMPTY) or to describe
+                        (in the content) an alternative format,
+                        such as an audio edition.                  -->
+<!ELEMENT  alternate-form 
+                        (#PCDATA)                                    >
+<!--         alternate-form-type    
+                        The media or other distinguishing 
+                        characteristic of the alternative form, 
+                        for example "PDF".
+             xlink:href  Provides an address or identifier of the
+                        object to which the link points, for
+                        example a URI or a filename. This is the
+                        same function produced in the previous
+                        book DTD by the "source" attribute, and it
+                        will take values of the form:
+                          <alternate-form xlink:href="ch1d1"/>
+                          <alternate-form xlink:href="ch18d1"/>
+                        This attribute is required.                -->
+<!ATTLIST  alternate-form
+             %alternate-form-atts;                                   >
+
+
+<!--                    BOOK TITLE GROUP MODEL                     -->
+<!--                    Content model for the <BOOK-title-group> 
+                        element                                    -->
+<!ENTITY % book-title-group-model   
+                        "(book-title, subtitle*, 
+                          (trans-title, trans-subtitle?)*, 
+                          alt-title*)"                               > 
+
+
+<!--                    BOOK TITLE GROUP                           -->
+<!--                    A container element for the various title
+                        elements that might be used for the work   -->
+<!ELEMENT  book-title-group 
+                        %book-title-group-model;                     > 
+
+
+<!--                    BOOK TITLE                                 -->
+<!--                    The title of the book in the language
+                        in which the article was originally
+                        published          
+                        Remarks: The related element Translated Title
+                        <trans-title> should be used for a
+                        translation of the book into another
+                        language, for example, to hold the English
+                        version of a Japanese title.               -->
+<!ELEMENT  book-title   (#PCDATA %title-elements;)*                  >
+<!--         xml:lang   The language in which the value of the
+                        element is expressed.  Recommended best 
+                        practice is to use values as defined in
+                        RFC 1766, typically 2-letter language
+                        codes such as "FR" (French), "EN" (English),
+                        and "DE" (German). These values are NOT
+                        case sensitive, so "EN" = "en". The values
+                        may include hyphenated differentiators such 
+                        as "EN-AU" (Australian English) and "EN-US"
+                        (United States English).                   -->
+<!ATTLIST  book-title
+             xml:lang   NMTOKEN                            #IMPLIED  > 
+
+
+<!-- ================== End Book Metadata Elements =============== -->

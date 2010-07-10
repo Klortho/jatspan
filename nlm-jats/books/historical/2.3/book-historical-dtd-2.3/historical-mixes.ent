@@ -1,0 +1,90 @@
+<!-- ============================================================= -->
+<!--  MODULE:    NCBI Historical Book DTD Over-ride Mixes Module   -->
+<!--  VERSION:   2.3                                               -->
+<!--  DATE:      February 2007                                     -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
+<!--                        TYPICAL INVOCATION                     -->
+<!--
+"-//NLM//DTD NCBI Historical Book DTD Over-ride Mixes Module v2.3 20070202//EN"
+Delivered as file "historical-mixes.ent"                           -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!-- SYSTEM:     NCBI Book DTD of the                              -->
+<!--             Archiving and Interchange DTD Suite               -->
+<!--                                                               -->
+<!-- PURPOSE:    Declares over-ride values for the default element -->
+<!--             mixes in the Suite. These over-rides are specific -->
+<!--             to the NCBI Book DTD.                             -->
+<!--                                                               -->
+<!--             Note: Since PEs must be declared before they      -->
+<!--             are used, this module must be called before the   -->
+<!--             default mixes modules (%default-mixes;)           -->
+<!--                                                               -->
+<!-- CONTAINS:   1) PEs that define the element mixes to be        -->
+<!--                over-ridden                                    -->
+<!--                                                               -->
+<!-- CREATED FOR:                                                  -->
+<!--             Digital Archive of Journal Articles               -->
+<!--             National Center for Biotechnology Information     -->
+<!--                (NCBI)                                         -->
+<!--             National Library of Medicine (NLM)                -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             December 2004                                     -->
+<!--                                                               -->
+<!-- CREATED BY: Bart Trawick    (NCBI)                            -->
+<!--             Jeff Beck       (NCBI)                            -->
+<!--             Michael North   (NLM)                             -->
+<!--             Deborah Lapeyre (Mulberry Technologies, Inc.)     -->
+<!--             B. Tommie Usdin (Mulberry Technologies, Inc.)     -->
+<!--                                                               -->
+<!--             Suggestions for refinements and enhancements to   -->
+<!--             this DTD should be sent in email to:              -->
+<!--                 archive-dtd@ncbi.nlm.nih.gov                  -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!--                    DTD VERSION/CHANGE HISTORY                 -->
+<!-- ============================================================= -->
+<!--
+
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+
+     =============================================================
+     Version 2.3                       (DAL/BTU) v2.3 (2007-02-02)
+     
+     Enhancement Release (2.3) following the Working Group meetings 
+     of Oct-Nov/2006-Jan/2007. No backward-incompatible changes.
+     Archiving loosened even more. New structures for all the DTDs. 
+     
+  1. Updated public identifier to "v2.3 20070202//EN"          
+                                                                   -->
+                          
+                        
+<!-- ============================================================= -->
+<!--                    INLINE ELEMENT MIXES                       -->
+<!--                    (MIXES ARE COMPOSED USING CLASSES)         -->
+<!-- ============================================================= -->
+
+
+
+<!--                    PARAGRAPH-LEVEL ELEMENTS                   -->
+<!--                    Elements that may be used at the same
+                        structural level as a paragraph, for 
+                        example inside a Section
+                        Added annotation                           -->
+<!ENTITY % para-level   "%annotation.class; | %block-display.class; | 
+                         %block-math.class; | 
+                         %just-para.class; | %list.class; | 
+                         %math.class; |  %related-article.class; |
+                         %rest-of-para.class;"                       >
+                          
+
+<!-- ================== End NCBI Historical Book Over-ride Mixes = -->

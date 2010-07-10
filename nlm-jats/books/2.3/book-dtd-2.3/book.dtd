@@ -1,0 +1,552 @@
+<!-- ============================================================= -->
+<!--  MODULE:    NCBI Book DTD                                     -->
+<!--  VERSION:   2.3                                               -->
+<!--  DATE:      February 2007                                     -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
+<!--                        TYPICAL INVOCATION                     -->
+<!--
+"-//NLM//DTD Book DTD v2.3 20070202//EN"
+     Delivered as file "book.dtd"                                  -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!-- SYSTEM:     NCBI BOOK DTD of the                              -->
+<!--             Archiving and Interchange DTD Suite               -->
+<!--                                                               -->
+<!-- PURPOSE:    DTD to describe a book or monograph               -->
+<!--                                                               -->
+<!-- CONTAINS:   1) Declare and invoke the Book-DTD-specific       -->
+<!--                module of modules, that names any modules      -->
+<!--                created expressly for this Book DTD.           -->
+<!--                             (%bookcustom-modules.ent;)        -->
+<!--             2) Declare and invoke the DTD Suite module of     -->
+<!--                   modules (%modules.ent;), the Archiving and  -->
+<!--                   Interchange Suite module that names all the -->
+<!--                   Suite modules this DTD might invoke         -->
+<!--             3) Invoke DTD-specific over-ride classes module   -->
+<!--                   (%journalpub-classes.ent;)                  -->
+<!--             4) Invoke Suite default classes                   -->
+<!--                   (%default-classes.ent;)                     -->
+<!--             5) Invoke DTD-specific over-ride mixes module     -->
+<!--                   (%bookcustom-mixes.ent;)                    -->
+<!--             6) Invoke Suite default mixes                     -->
+<!--                   (%default-mixes.ent;)                       -->
+<!--             7) Invoke DTD-specific content model and attribute-->
+<!--                   over-rides module (%bookcustom-models.ent;) -->
+<!--             8) Invoke the Common Element Module (from Suite)  -->
+<!--             9) Invoke all the Class Modules (from Suite) as   -->
+<!--                   well as any DTD-specific element modules    -->
+<!--            10) Parameter Entities for attribute values used   -->
+<!--                 in this module (DTD-specific definitions)     -->
+<!--            11) Define document element (Book <book>)          -->
+<!--            12) Define Front Matter <book-front>               -->
+<!--            13) Define book components such as chapter and part-->
+<!--                                                               -->
+<!-- CREATED FOR:                                                  -->
+<!--             NLM Bookshelf                                     -->
+<!--             National Center for Biotechnology Information     -->
+<!--                (NCBI)                                         -->
+<!--             National Library of Medicine (NLM)                -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             October 2004                                      -->
+<!--                                                               -->
+<!-- CREATED BY: Bart Trawick    (NCBI)                            -->
+<!--             Jeff Beck       (NCBI)                            -->
+<!--             Deborah Lapeyre (Mulberry Technologies, Inc.)     -->
+<!--             B. Tommie Usdin (Mulberry Technologies, Inc.)     -->
+<!--                                                               -->
+<!--             Suggestions for refinements and enhancements to   -->
+<!--             this DTD should be sent in email to:              -->
+<!--                 archive-dtd@ncbi.nlm.nih.gov                  -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!--                    DTD VERSION\CHANGE HISTORY                 -->
+<!-- ============================================================= -->
+<!--
+
+     =============================================================
+
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+
+     =============================================================
+     Version 2.3                       (DAL/BTU) v2.3 (2007-02-02)
+     
+     Enhancement Release (2.3) following the Working Group meetings 
+     of Oct-Nov/2006-Jan/2007. No backward-incompatible changes.
+     Archiving loosened even more. New structures for all the DTDs. 
+     
+ 11. BOOK META MODEL -  Moved from this module to the book custom
+     models module because the Collection DTD also needed to use it.
+     
+ 10. BOOK RELATED OBJECT - Added invocation for the module
+     bookrelated-object.ent
+     
+  9. NLM CITATION - Added <nlm-citation> as an alternative to
+     unstructured <citation>s by adding <nlm-citation>
+     to -%citation.class;. This changed the models for:
+     
+  8. NLM CITATION - Added <nlm-citation> as an alternative to
+     unstructured <citation>s by adding <nlm-citation>
+     to -%citation.class;. This changed the models for:
+      - <ref>, which uses %citation.class; inside %ref-model;
+      - <p> through -%p-elements;
+      - to inside cell mix (for <td>, <th>, and <entry>)
+      - added <nlm-citation> module declaration to 
+          -%bookcustom-modules.ent;
+      - invoked -%nlm-citation.ent; in this DTD
+          
+  7. DTD VERSION ATTRIBUTE - Fixed attribute value changed from "2.2" 
+     to "2.3" to reflect latest version of DTD
+     
+  6. Updated public identifier to "v2.3 20070202//EN"          
+
+     =============================================================
+     Version 2.2                       (DAL/BTU) v2.2 (2006-10-13)
+     
+     Updated base Suite to latest version (2.2) Other minor
+     modifications for processing.
+
+  5. Changed the "dtd-version" fixed attribute to reference "2.2".
+  
+  4. Updated public identifiers in declarations for modules called 
+     by the DTD
+              
+  3. Updated public identifier to "v2.3 20070202" for DTD.
+     
+
+     =============================================================
+     Version 2.1                       (DAL/BTU) v2.1 (2005-06-30)
+     
+     
+     Changed to MathML 2.0 and MathML 2.0 Character Sets
+     Added new material requested by NLM/NCBI    
+
+  2. Modified Module of Modules to include new MathML 2.0 DTD
+     and modified xmlspecchars.ent that includes new MathML Character
+     sets which match Unicode 4.0. 
+
+     Implementor Alert: New directory structure for the character
+     sets was also adopted, to match the new MathML directories.
+
+     Implementor Alert: New directory structure for the character
+     sets was also adopted, to match the new MathML directories.
+     There are now 3 character set directories:
+            - iso8879 (from SGML used in MathML)
+            - iso9573-13 (from ISO Tech Rpt used in MathML)
+            - xmlchars (from SGML not used in MathML)
+
+               
+  1. Updated public identifier to "v2.3 20070202", the fpis of
+     the two modules called (book custom modules, and the Suite 
+     module of modules) since both had changed, and changed the 
+     "dtd-version" fixed attribute to reference latest version of 
+     DTD (version "2.1").                                          -->      
+
+
+<!-- ============================================================= -->
+<!--                    MODULES OF MODULES INVOKED                 -->
+<!-- ============================================================= -->
+
+
+<!--                    MODULE TO NAME DTD-SPECIFIC MODULES        -->
+<!--                    Names all DTD-specific external modules    -->
+<!ENTITY % bookcustom-modules.ent PUBLIC  
+"-//NLM//DTD Book DTD Module of Modules v2.3 20070202//EN"
+"bookcustom-modules.ent"                                             >
+%bookcustom-modules.ent;
+
+
+<!--                    MODULE TO NAME THE MODULES                 -->
+<!--                    Declares all the external modules that are  
+                        part of the modular Journal Archiving and 
+                        Interchange DTD Suite library.             -->
+<!ENTITY % modules.ent PUBLIC  
+"-//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v2.3 20070202//EN"
+"modules.ent"                                                        >
+%modules.ent;
+
+
+<!-- ============================================================= -->
+<!--                    CUSTOMIZATION MODULES INVOKED              -->
+<!--                    Note: These modules must be called after   -->
+<!--                    all Module of Modules but before any other -->
+<!--                    modules. Unlike any other grouping, order  -->
+<!--                    of these modules matters.                  -->
+<!-- ============================================================= -->
+
+
+<!--                    DTD-SPECIFIC CLASS CUSTOMIZATIONS MODULE   -->
+<!--                    Names the module that holds the DTD-specific
+                        class definitions for the Book DTD. 
+                        (Defined in %bookcustom-modules.ent;)      -->
+%bookcustom-classes.ent;
+
+
+<!--                    DEFAULT ELEMENT CLASSES MODULE             -->
+<!--                    Names the module that holds the standard
+                        class definitions for the Journal Archiving
+                        and Interchange DTD Suite.                 -->
+%default-classes.ent;
+
+
+<!--                    DTD-SPECIFIC MIX CUSTOMIZATIONS MODULE     -->
+<!--                    Set up the Parameter Entities and element
+                        class definitions for the Book DTD that will 
+                        be used to over-ride mixes in full DTD Suite.
+                        (Defined in %bookcustom-modules.ent;)      -->
+%bookcustom-mixes.ent;
+
+
+<!--                    DEFAULT MIX CUSTOMIZATIONS MODULE          -->
+<!--                    Names the module that holds the standard
+                        mix definitions for the Journal Archiving
+                        and Interchange DTD Suite.                 -->
+%default-mixes.ent;
+
+
+<!--                    DTD-SPECIFIC MODELS/ATTRIBUTES CUSTOMIZATIONS 
+                        MODULE                                     -->
+<!--                    Names the module that holds the over-rides
+                        of content models, attribute lists, elements
+                        lists to be used in content models, and
+                        attribute values. These are Book DTD-specific.
+                        (Defined in %bookcustom-modules.ent;)      -->
+%bookcustom-models.ent; 
+
+
+<!-- ============================================================= -->
+<!--                    COMMON (SHARED) ELEMENTS MODULE INVOKED    -->
+<!-- ============================================================= -->
+
+
+<!--                    COMMON (SHARED) DECLARATIONS               -->
+<!--                    Declarations for elements, attributes, 
+                        entities, and Notations that are shared by
+                        more than one class module. Note: Must be 
+                        called before any of the class modules.    -->
+
+%common.ent;
+
+ 
+<!-- ============================================================= -->
+<!--                    DTD SUITE CLASS ELEMENTS (alpha)           -->
+<!-- ============================================================= -->
+
+
+<!--                    ARTICLE METADATA ELEMENTS                  -->
+<!--                    These, while written for journal articles,
+                        include many useful metadata elements for
+                        books as well. Supplemented by the metadata
+                        elements defined in -%bookmeta.ent and
+                        -%bookpart.ent;.                           -->
+%articlemeta.ent;
+
+
+<!--                    BACK MATTER ELEMENTS                       -->
+<!--                    Book textual back matter elements          -->
+%backmatter.ent;
+
+
+<!--                    DISPLAY (GRAPHICAL) ELEMENTS               -->
+<!--                    Display elements such as <graphic> and
+                        <figure>                                   -->
+%display.ent;
+
+
+<!--                    FORMATTING ELEMENT CLASSES                 -->
+<!--                    Elements that change rendition/display.    -->
+%format.ent;
+
+
+<!--                    LINK CLASS ELEMENTS                        -->
+<!--                    Elements for internal cross references
+                        and external links                         -->
+%link.ent;
+
+
+<!--                    LIST CLASS ELEMENTS                        -->
+<!--                    Elements for list of items                 -->
+%list.ent;
+
+
+<!--                    MATH ELEMENTS                              -->
+<!--                    Elements for mathematical formulae and 
+                        equations                                  -->
+%math.ent;
+
+
+<!--                    NLM CITATION ELEMENT                       -->
+%nlmcitation.ent;
+
+
+<!--                    PARAGRAPH-LEVEL ELEMENTS                   -->
+<!--                    Elements for paragraphs and named paragraphs, 
+                        such as Statements.                        -->
+%para.ent;
+
+
+<!--                    PHRASE-LEVEL ELEMENTS                      -->
+<!--                    Inline elements                            -->
+%phrase.ent;
+
+
+<!--                    BIBLIOGRAPHIC REFERENCE (CITATION) 
+                        CLASS ELEMENTS                             -->
+<!--                    Elements for reference lists (citations)   -->
+%references.ent;
+
+
+<!--                    SECTION ELEMENTS                           -->
+<!--                    Elements for headed groups of paragraph-like
+                        objects                                    -->
+%section.ent;
+
+
+<!-- ============================================================= -->
+<!--                    REST OF THE DTD SUITE                      -->
+<!-- ============================================================= -->
+
+
+<!--                    CUSTOM SPECIAL CHARACTERS DECLARATIONS     -->
+<!--                    Custom special character entities created 
+                        specifically for use in this DTD Suite     -->
+%chars.ent;
+
+
+<!--                    MATHML SETUP MODULE                        -->
+<!--                    Invoke the MathML modules                  -->
+%mathmlsetup.ent;                                            
+
+
+<!--                    NOTATION DECLARATIONS MODULE               -->
+<!--                    Declare notations for graphics, math, etc. -->
+%notat.ent;
+
+
+<!--                    XHTML TABLE SETUP MODULE                   -->
+<!--                    Set up the necessary Parameter Entity values
+                        and then invoke XHTML (HTML 4.0) table 
+                        module                                     -->
+%XHTMLtablesetup.ent;
+
+
+<!--                    SPECIAL CHARACTERS DECLARATIONS            -->
+<!--                    Standard XML special character entities 
+                        used in this DTD                           -->
+%xmlspecchars.ent;                                                                
+ 
+ 
+<!-- ============================================================= -->
+<!--                    PARAMETER ENTITIES FOR ATTRIBUTE LISTS     -->
+<!-- ============================================================= -->
+
+
+<!--                    DTD VERSION                                -->
+<!--                    What version of this DTD was used to make
+                        the document instance under consideration.
+                        Note that this is a fixed value that should
+                        change every time the DTD changes versions or
+                        revisions.                                 -->
+<!ENTITY % dtd-version   
+            "dtd-version        
+                        CDATA                          #FIXED '2.3'" >
+
+
+
+<!--                    BOOK IDENTIFIER ATTRIBUTES                 -->
+<!--                    Book identifiers, such as one of type ID, so
+                        internal references can be made            -->
+<!ENTITY % book-identifier-atts   
+            "book-id    ID                                 #IMPLIED" >
+
+
+<!--                    BOOK ATTRIBUTES                            -->
+<!--                    Attributes for the top-level element
+                        <book> as well as for <book-part>s         -->
+<!ENTITY % book-atts
+            "%book-identifier-atts;
+             %dtd-version;                              
+             xml:lang   NMTOKEN                                'EN'     
+             %XLINK.xmlns.attrib;
+             %MATHML.xmlns.attrib;
+             %Schema.xmlns.attrib;"                                  >
+
+ 
+<!-- ============================================================= -->
+<!--                    BOOK-SPECIFIC ELEMENTS                     -->
+<!-- ============================================================= -->
+
+
+<!--                    BOOK-SPECIFIC METADATA                     -->
+<!--                    Metadata elements that were not in the
+                        original DTD Suite as they were not used
+                        in journal articles. These elements and some
+                        elements already present in the Suite in
+                        the article metadata are needed to describe
+                        the metadata for monographs and books.     -->
+%bookmeta.ent;
+
+
+<!--                    BOOK COMPONENT METADATA AND ELEMENTS       -->
+<!--                    Elements that name components of books such
+                        as chapters, which are modeled as
+                        <book-part>s.                              -->
+%bookpart.ent;
+
+
+<!--                    BOOK IMAGE MAP ELEMENTS                    -->
+<!--                    Elements used in Image Maps                -->
+%bookimagemap.ent;
+
+
+<!--                    BOOK MULTI-LINK ELEMENTS                   -->
+<!--                    Elements used for book-DTD-specific 
+                        links to external resources                -->
+%bookmultilink.ent;
+
+
+<!--                    BOOK RELATED-OBJECT ELEMENT                -->
+<!--                    Elements to allow linking between parts
+                        of books                                   -->
+%bookrelated-object.ent;                                          
+  
+
+<!-- ============================================================= -->
+<!--                    BOOK ELEMENTS                              -->
+<!-- ============================================================= -->
+
+
+<!--                    BOOK MODEL                                 -->
+<!--                    Content model for the <book> element       -->
+<!ENTITY % book-model   "(book-meta, book-front?, body?, back?)"     >
+
+
+<!--                    BOOK                                       -->
+<!--                    Top-level document for this DTD. A "book" as
+                        defined in this DTD covers a variety of STM
+                        monographs and reference books, largely 
+                        biomedical in subject, that may include
+                        previously published works, historical works,
+                        new works written for NCBI, compilations, and
+                        internal regulations and procedure of NLM. 
+                                                                   -->
+<!ELEMENT book          %book-model;                                 >                
+<!--         id         Unique identifier, so the contributor can be
+                        referenced from inside the document
+             dtd-version 
+                        Which version of the DTD does this article
+                        use? The value is a #FIXED attribute, so
+                        the entire attribute definition is defined
+                        in a Parameter Entity, so the next version
+                        of the DTD can use a different #FIXED value.
+             xml:lang   The language in which the value of the
+                        element is expressed.  Recommended best 
+                        practice is to use values as defined in
+                        RFC 1766, typically 2-letter language
+                        codes such as "FR" (French), "EN" (English),
+                        and "DE" (German).  These values are NOT
+                        case sensitive, so "EN" = "en". The values
+                        may include hyphenated differentiators such 
+                        as "EN-AU" (Australian English) and "EN-US"
+                        (United States English).
+                        Processing and Conversion Note: All other
+                        xml:lang attributes within the article
+                        inherit the value set on <article> unless
+                        explicitly set themselves with their own
+                        "xml:lang" attribute.                      
+             xmlns      Set up the pseudo-attributes for the
+                        namespaces for any namespaces used in this
+                        DTD.  XLink and MathML are set up in the
+                        MathML modules. These xmlns are called
+                        here because certain older tools will not
+                        work properly with namespaces unless they
+                        are declared on the top level element.
+                        The PEs are defined in the MathML modules. -->
+<!ATTLIST book
+            %book-atts;                                              >
+            
+
+<!-- ============================================================= -->
+<!--                    BOOK METADATA                              -->
+<!-- ============================================================= -->
+
+
+<!--                    BOOK METADATA                              -->
+<!--                    Whole-book-level metadata elements, for
+                        example, book title, volume, and ISBN for a 
+                        work such as a monograph, encyclopedia, 
+                        reference volume, etc.                     -->
+<!ELEMENT  book-meta    %book-meta-model;                            >
+
+
+<!-- ============================================================= -->
+<!--                    BOOK TEXTUAL FRONT MATTER                  -->
+<!-- ============================================================= -->
+
+
+
+<!--                    BOOK TEXTUAL FRONT MATTER MODEL            -->
+<!--                    Content model for the <book-front>. This is
+                        the textual front matter of a book as 
+                        distinguished from its metadata, which is
+                        contained in the element <book-meta>.      -->
+<!ENTITY % book-front-model 
+                        "(title*, (%doc-front-matter-mix;)* )"       >
+
+
+<!--                    BOOK FRONT MATTER                          -->
+<!--                    A wrapper element for the textual front 
+                        matter (such as introductions and prefaces)
+                        of a book. Not a metadata wrapper, that
+                        function is preformed by <book-meta>.      -->
+<!ELEMENT  book-front   %book-front-model;                           >
+
+
+<!-- ============================================================= -->
+<!--                    BODY ELEMENTS                              -->
+<!-- ============================================================= -->
+
+
+<!--                    BODY                                       -->
+<!--                    The main textual portion of the book; this
+                        contains the content of the work           -->
+<!ELEMENT  body         %body-model;                                 >
+
+
+<!-- ============================================================= -->
+<!--                    BACK MATTER ELEMENTS                       -->
+<!-- ============================================================= -->
+
+
+<!--                    BACK MATTER MODEL                          -->
+<!--                    Content model for the Back Matter of a book.
+                        This is typically ancillary material such as 
+                        glossaries, appendices, bibliographies,
+                        reference tables, etc. 
+                        Remarks: Lists of materials, contributors, 
+                        etc. may also occur in Back Matter, but the 
+                        decision was made that any such lists can be 
+                        enclosed in a Section <sec> wrapper.       -->
+<!ENTITY % back-model   "(title*,
+                          (%doc-back-matter-mix; | 
+                           %just-table.class;)* )"                   >
+
+
+<!--                    BACK MATTER                                -->
+<!--                    Ancillary or supporting material not included
+                        as part of the main textual content of a 
+                        journal article, for example appendices and
+                        acknowledgments.                           -->
+<!ELEMENT  back         %back-model;                                 >
+
+
+
+<!-- ================== End NCBI Book DTD =========================-->

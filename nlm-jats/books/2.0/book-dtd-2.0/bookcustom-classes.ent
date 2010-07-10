@@ -1,0 +1,114 @@
+<!-- ============================================================= -->
+<!--  MODULE:    NCBI Book DTD Over-ride Classes Module            -->
+<!--  VERSION:   2.0                                               -->
+<!--  DATE:      October 2004                                      -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
+<!--                        TYPICAL INVOCATION                     -->
+<!--
+"-//NLM//DTD NCBI Book DTD Over-ride Classes Module v2.0 20041031//EN"
+Delivered as file "bookcustom-classes.ent"                         -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!-- SYSTEM:     NCBI Book DTD of the                              -->
+<!--             Archiving and Interchange DTD Suite               -->
+<!--                                                               -->
+<!-- PURPOSE:    To declare the Parameter Entities (PEs) used to   -->
+<!--             over-ride the named element classes               -->
+<!--                                                               -->
+<!--             Note: Since PEs must be declared before they      -->
+<!--             are used, this module must be called before the   -->
+<!--             content modules that declare elements, and before -->
+<!--             the default classes module.                       -->
+<!--                                                               -->
+<!-- CONTAINS:   1) PEs for changing the contents of the default   -->
+<!--                element classes                                -->
+<!--                                                               -->
+<!-- CREATED FOR:                                                  -->
+<!--             Digital Archive of Journal Articles               -->
+<!--             National Center for Biotechnology Information     -->
+<!--                (NCBI)                                         -->
+<!--             National Library of Medicine (NLM)                -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             October 2004                                      -->
+<!--                                                               -->
+<!-- CREATED BY: Bart Trawick    (NCBI)                            -->
+<!--             Jeff Beck       (NCBI)                            -->
+<!--             Deborah Lapeyre (Mulberry Technologies, Inc.)     -->
+<!--             B. Tommie Usdin (Mulberry Technologies, Inc.)     -->
+<!--                                                               -->
+<!--             Suggestions for refinements and enhancements to   -->
+<!--             this DTD should be sent in email to:              -->
+<!--                 archive-dtd@ncbi.nlm.nih.gov                  -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!--                    DTD VERSION/CHANGE HISTORY                 -->
+<!-- ============================================================= -->
+<!--
+
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+
+     =============================================================
+     Version 2.0                    (DAL/BTU/TRG) v2.0 (2005-01-25)
+     
+1.  Comments for this module were cleaned up as part of the delivery 
+    of the NCBI Historical DTD. Since only comments were changed,
+    this was not even considered to be a dot release and the
+    formal public identifier remained unchanged.                   -->
+
+
+<!-- ============================================================= -->
+<!--                    PARAMETER ENTITIES FOR CLASS OVER-RIDES    -->
+<!-- ============================================================= -->
+
+
+<!--                    ADDRESS LINK CLASS ELEMENTS                -->
+<!--                    Link elements that can be used inside 
+                        addresses. This is essentially the three
+                        generic external links.
+                        (Note: in earlier releases, this Parameter
+                        Entity was named %address-elements;,
+                        although it functioned as a class.)        -->
+<!ENTITY % address-link.class   
+                        "email | ext-link | multi-link | uri"        >
+
+
+<!--                    DISPLAY CLASS ELEMENTS                     -->
+<!--                    Graphical or other image-related elements.
+                        The display elements may occur within 
+                        the text of a table cell or paragraph
+                        although they are typically at the same 
+                        hierarchical level as a paragraph.         
+                        Added <map-group>                          -->
+<!ENTITY % block-display.class
+                        "array | boxed-text | chem-struct |
+                         chem-struct-wrapper | fig | fig-group | 
+                         graphic | map-group | media | preformat | 
+                         supplementary-material | table-wrap |
+                         table-wrap-group"                           >
+
+
+<!--                    BOOK PART CLASS                            -->
+<!--                    Those elements that are very like a book 
+                        part, where a book part is defined as a
+                        chapter, part, module, unit, etc.          -->
+<!ENTITY % book-part.class   
+                        "book-part"                                  >
+
+
+<!--                    CUSTOM METADATA WRAPPER CLASS              -->
+<!--                    Hold the <custom-meta-wrap> element for use
+                        in book-specific models                    -->
+<!ENTITY % custom-meta.class   
+                        "custom-meta-wrap"                           >
+              
+              
+<!-- ================== End NCBI Book DTD Over-ride Classes ====== -->

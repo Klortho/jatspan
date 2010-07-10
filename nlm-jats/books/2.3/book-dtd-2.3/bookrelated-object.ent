@@ -1,0 +1,240 @@
+<!-- ============================================================= -->
+<!--  MODULE:    Book Related Object Element                       -->
+<!--  VERSION:   2.3                                               -->
+<!--  DATE:      February 2007                                     -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
+<!--                        TYPICAL INVOCATION                     -->
+<!--
+"-//NLM//DTD NCBI Book DTD Book Related Object Element v2.3 20070202//EN"
+     Delivered as file "bookrelated-object.ent"                    -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!-- SYSTEM:     NCBI BOOK DTD of the                              -->
+<!--             Archiving and Interchange DTD Suite               -->
+<!--                                                               -->
+<!-- PURPOSE:    Define the element <related-object>. This is a    -->
+<!--             temporary module until the full Suite can add this-->
+<!--             element (expected to be added to common.ent)      -->
+<!--                                                               -->
+<!-- CONTAINS:   1) The declaration for the element                -->
+<!--                                                               -->
+<!-- CREATED FOR:                                                  -->
+<!--             NLM Bookshelf                                     -->
+<!--             National Center for Biotechnology Information     -->
+<!--                (NCBI)                                         -->
+<!--             National Library of Medicine (NLM)                -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             October 2006                                      -->
+<!--                                                               -->
+<!-- CREATED BY: Deborah Lapeyre (Mulberry Technologies, Inc.)     -->
+<!--             B. Tommie Usdin (Mulberry Technologies, Inc.)     -->
+<!--                                                               -->
+<!--             Suggestions for refinements and enhancements to   -->
+<!--             this DTD should be sent in email to:              -->
+<!--                 archive-dtd@ncbi.nlm.nih.gov                  -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!--                    DTD VERSION\CHANGE HISTORY                 -->
+<!-- ============================================================= -->
+<!--
+     =============================================================
+
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+
+     =============================================================
+     Version 2.3                       (DAL/BTU) v2.3 (2007-02-02)
+     
+     Enhancement Release (2.3) following the Working Group meetings 
+     of Oct-Nov/2006-Jan/2007. No backward-incompatible changes.
+     Archiving loosened even more. New structures for all the DTDs. 
+     
+  4. NEW ATTRIBUTES 
+     
+     - Added "content-type" attribute to <related-object>
+         (through the PE related-object-atts)
+         
+     - Added "link-type" attribute to <related-object>
+         (through the PE related-object-atts)
+     
+  3. RELATED OBJECTS - The element <size> was added to the element
+     <related-object> though -%related-object-elements; incorporating
+     -%size.class;.
+     
+  2. Updated public identifier to "v2.3 20070202//EN"          
+
+     =============================================================
+     Version 2.2                       (DAL/BTU) v2.2 (2006-10-13)
+     
+     Updated this module only with release number and date NOT
+     changed
+               
+  1. Completely replaced all attributes for <related object>, to
+     provide none-XLink connections to related objects.            -->
+
+
+<!-- ============================================================= -->
+<!--                    RELATED OBJECT ATTRIBUTES                  -->
+<!-- ============================================================= -->
+
+                                                                
+<!--                    RELATED OBJECT ATTRIBUTES                  -->
+<!--                    Attributes for <related-object>         
+             id         Unique identifier so the element may be
+                        referenced
+             link-type  Describes how the related object is related to
+                        the current document, for example, to describe
+                        the relationship between the current book part
+                        and related book parts
+             source-id  The identifier of a journal, book, conference 
+                        proceedings, or other object that is the
+                        source of the related material (for
+                        example, "PNAS")
+             source-id-type
+                        The type of source identifier, such as DOI, 
+                        ISSN, ISBN, publisher's identifier, etc.
+             source-type
+                        What kind of object is this? A book, a 
+                        journal? A database? 
+             document-id 
+                        The identifier of the document, for example,
+                        a journal article that contains the related 
+                        object
+             document-id-type
+                        The type of document identifier, such as DOI, 
+                        publisher's identifier, etc.
+             document-type
+                        What kind of object is this, for example a
+                        journal article.
+             object-id  The identifier of the object such as a table,
+                        figure, boxed text sidebar, etc.
+             object-id-type
+                        The type of object identifier, such as an
+                        XML ID, a string, the label of the object,
+                        etc.
+             object-type
+                        What kind of object is this, a table, a
+                        figure, a sidebar, etc.?
+             content-type   
+                        "content-type" attribute provides a way to 
+                        preserve or add semantic distinctions, for 
+                        multiple conference dates                  -->
+<!ENTITY % related-object-atts
+             "id        ID                                #IMPLIED
+              link-type CDATA                             #IMPLIED        
+              source-id CDATA                             #IMPLIED
+              source-id-type
+                        CDATA                             #IMPLIED
+              source-type
+                        CDATA                             #IMPLIED
+              document-id 
+                        CDATA                             #IMPLIED
+              document-id-type
+                        CDATA                             #IMPLIED
+              document-type
+                        CDATA                             #IMPLIED
+              object-id CDATA                             #IMPLIED
+              object-id-type
+                        CDATA                             #IMPLIED
+              object-type
+                        CDATA                             #IMPLIED
+              content-type
+                        CDATA                             #IMPLIED"  >
+
+
+<!-- ============================================================= -->
+<!--                    RELATED OBJECT ELEMENT                     -->
+<!-- ============================================================= -->
+
+
+<!--                    RELATED OBJECT ELEMENTS                    -->
+<!--                    Elements allowed inside <related-object>   -->
+<!ENTITY % related-object-elements 
+                        "| %emphasis.class; | %references.class; | 
+                         %subsup.class; | %size.class;"              >
+
+
+<!--                    RELATED OBJECT INFORMATION                 -->
+<!--                    Wrapper element, used as a container for 
+                        text links to a related object, possibly 
+                        accompanied by a very brief description of
+                        the object, typically a related book.
+                        Remarks: At this time, this element is used 
+                        only within <collection-member>. That usage
+                        may well be expanded in a later version of
+                        the DTD Suite.                             -->
+<!ELEMENT  related-object
+                        (#PCDATA %related-object-elements;)*         >
+<!--         id         Unique identifier so the element may be
+                        referenced
+             alt-form-of
+                        Exactly like the "alt-form-of" attribute
+                        used with <graphic>, this is an IDREF
+                        attribute which points to the ID of another
+                        <related-article> in the same document
+                         rather than to an external file.
+             related-object-type
+                        This attribute can take any text value,
+                        suggested values include:
+                          addendum      Additional material for an
+                                        article, generated too late
+                                        to be added to the main text
+                          commentary-article   
+                                        Used in an commentary or
+                                        editorial to link to the 
+                                        article on which it is
+                                        commenting
+                          companion     Used in an article to link 
+                                        to a companion (related
+                                        or sibling article) 
+                          corrected-article
+                                        Used in a correction to link 
+                                        to the article being 
+                                        corrected. Sometimes called
+                                        erratum.
+                          in-this-issue Related article in the same
+                                        journal issue
+                          letter        A letter to the publication
+                                        or a reply to such a
+                                        letter
+                          commentary    Used in an article to link 
+                                        to its associated commentary
+                                        or editorial 
+                          correction-forward
+                                        Used in an article to link
+                                        forward to its associated 
+                                        correction (rarely used)
+                          partial-retraction  Partial retraction of 
+                                      previously published material
+                          retracted-article
+                                        Used in a retraction to link 
+                                        to the article being retracted
+                          retraction-forward   
+                                        Used in an article to link
+                                        forward to its associated 
+                                        retraction (rare)
+             vol        Volume of the journal in which the related
+                        article exists.  The scope is limited to
+                        the journal; in which the current article
+                        resides.
+             page       Page number of the related article. Scope
+                        is limited to the volume of the journal in 
+                        which the current article resides. The 
+                        values should be a first page or a page 
+                        range.
+             xlink:href Provides an address or identifier of the
+                        object to which the link points, for
+                        example a URI or a filename.               -->
+<!ATTLIST  related-object
+             %related-object-atts;                                   >
+                                                              
+
+<!-- ================== End Related Object Element Module ======== -->

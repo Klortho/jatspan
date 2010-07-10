@@ -1,0 +1,353 @@
+<!-- ============================================================= -->
+<!--  MODULE:    NCBI Book Content and Attribute Module            -->
+<!--  VERSION:   3.0                                               -->
+<!--  DATE:      Feb 2008                                          -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
+<!--                        TYPICAL INVOCATION                     -->
+<!--
+"-//NLM//DTD NCBI Book DTD Content and Attribute Over-ride Module v3.0 20080202//EN"
+Delivered as file "bookcustom-models3.ent"                         -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!-- SYSTEM:     NCBI Book DTD of the                              -->
+<!--             Archiving and Interchange DTD Suite               -->
+<!--                                                               -->
+<!-- PURPOSE:    To declare the Parameter Entities (PEs) used to   -->
+<!--             over-ride content models or parts of content      -->
+<!--             models when making a new DTD from the modules of  -->
+<!--             the Archiving and Interchange DTD Suite.          -->
+<!--                                                               -->
+<!--             Or-groups within models should use mixes or       -->
+<!--             classes rather than name elements directly.       -->
+<!--                                                               -->
+<!--             Note: Since PEs must be declared before they      -->
+<!--             are used, this module must be called before the   -->
+<!--             content modules that declare elements.            -->
+<!--                                                               -->
+<!-- CONTAINS:   1) PEs that define OR lists of elements to be     -->
+<!--                mixed with #PCDATA in element content models   -->
+<!--                (all PEs are named "yyy-elements", where "yyy" -->
+<!--                is the name of the primary element whose       -->
+<!--                content model will use the declared PE.)       -->
+<!--             2) PEs that define complete content models.       -->
+<!--                (names ending in the suffix "-model")          -->
+<!--             3) PEs that define attribute list or attribute    -->
+<!--                value over-rides                               -->
+<!--                                                               -->
+<!-- CREATED FOR:                                                  -->
+<!--             Digital Archive of Journal Articles               -->
+<!--             National Center for Biotechnology Information     -->
+<!--                (NCBI)                                         -->
+<!--             National Library of Medicine (NLM)                -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             October 2004                                      -->
+<!--                                                               -->
+<!-- CREATED BY: Bart Trawick    (NCBI)                            -->
+<!--             Jeff Beck       (NCBI)                            -->
+<!--             Deborah Lapeyre (Mulberry Technologies, Inc.)     -->
+<!--             B. Tommie Usdin (Mulberry Technologies, Inc.)     -->
+<!--                                                               -->
+<!--             Suggestions for refinements and enhancements to   -->
+<!--             this DTD should be sent in email to:              -->
+<!--                 archive-dtd@ncbi.nlm.nih.gov                  -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!--                    DTD VERSION/CHANGE HISTORY                 -->
+<!-- ============================================================= -->
+<!--
+
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+
+     =============================================================
+     Version 3.0                       (DAL/BTU) v3.0 (2007-10-31)
+     
+     Version 3.0 is the first non-backward-compatible release.
+     In addition to the usual incremental changes, some
+     elements and attributes have been renamed and/or remodeled
+     to better meet user needs and to increase tag set consistency.
+     All module change histories are available through the Tag Suite 
+     web site at http://dtd.nlm.nih.gov. 
+
+     Details on version 3.0 are available at 
+           http://dtd.nlm.nih.gov/3.0.
+  
+  1. Updated public identifier to "v3.0 20080202//EN"              -->
+
+<!-- ============================================================= -->
+<!--                    INLINE MIXES TO OVER-RIDE CONTENT MODELS   -->
+<!--                    (ELEMENTS TO BE ADDED TO #PCDATA IN MODELS)-->
+<!-- ============================================================= -->
+
+
+<!--                    INSTITUTION NAME ELEMENTS                  -->
+<!--                    Elements for use in the <institution> 
+                        element                                    -->
+<!ENTITY % institution-elements 
+                        "| %break.class; | %emphasis.class; |
+                         %phrase-content.class; | 
+                         %subsup.class;"                             > 
+      
+      
+<!--                    KEYWORD CONTENT ELEMENTS                   -->
+<!--                    The elements that can be included along with
+                        data characters inside the content model of
+                        a keyword.                                 -->
+<!ENTITY % kwd-elements
+                        "| %emphasis.class; | %inline-display.class; | 
+                         %inline-math.class; | 
+                         %phrase-content.class; | 
+                         %related-article.class; | 
+                         %simple-link.class; | %subsup.class;"       >
+
+
+<!--                    LABEL ELEMENTS                             -->
+<!--                    The elements that can be included along with
+                        data characters inside the content model of
+                        the <label> element                        -->
+<!ENTITY % label-elements 
+                        "| %emphasis.class; | %inline-display.class; | 
+                         %inline-math.class; | 
+                         %phrase-content.class; | 
+                         %subsup.class;"                             >
+
+
+<!--                    PUBLISHER'S LOCATION ELEMENTS              -->
+<!--                    Elements for use in the Publisher Location
+                        <publisher-loc> element                    -->
+<!ENTITY % publisher-loc-elements 
+                        "| %address.class; | %address-link.class; |
+                         %emphasis.class; | 
+                         %phrase-content.class; | 
+                         %subsup.class;"          > 
+
+
+<!--                    SPEAKER ELEMENTS                           -->
+<!--                    The elements that can be included along with
+                        data characters inside the content model of
+                        a speaker.                                 -->
+<!ENTITY % speaker-elements
+                        "| %person-name.class; | 
+                         %related-article.class; | 
+                         %simple-link.class;"                        >
+
+
+<!--                    SOURCE ELEMENTS                            -->
+<!--                    The elements that can be included along with
+                        data characters inside the content model of
+                        a <source>.                                -->
+<!ENTITY % source-elements
+                        "| %emphasis.class; | %address-link.class; |
+                         %phrase-content.class; | 
+                         %subsup.class;"                             >
+
+
+<!-- ============================================================= -->
+<!--                    COMPLETE CONTENT MODEL OVER-RIDES          -->
+<!-- ============================================================= -->
+
+
+<!--                    ALTERNATIVES MODEL                         -->
+<!--                    Model for the <alternatives> processing
+                        alternatives element 
+                        Added <map-group>.                         --> 
+<!ENTITY % alternatives-model
+                        "(%alternatives-display.class; | map-group |
+                          %math.class;)+"                            >
+
+
+<!--                    BOOK METADATA OVER-RIDE                    -->
+<!--                    Content model for the Book Metadata 
+                        <book-meta> element                        -->
+<!ENTITY % book-meta-model
+                        "(book-id+, book-title-group,  
+                         volume?, volume-id*, edition?, series*,  
+                         (contrib-group | aff | author-notes)*, 
+                         publisher*, isbn*, 
+                         pub-date*, history?, permissions?, 
+                         self-uri*, alternate-form*, 
+                         abstract*, trans-abstract*, kwd-group*, 
+                         funding-group*, counts?,
+                         (%address-link.class; | %custom-meta.class; |
+                          %front-back.class;)* )"                    >                      
+
+
+<!--                    BODY MODEL OVER-RIDE                       -->
+<!--                    Defines the body of both a <book> and a
+                        <book-part> such as a chapter              -->
+<!ENTITY % body-model   "( (%para-level;)*, (%sec-level;)*, 
+                          (%book-part-level;)*, back? )"             >
+
+
+<!--                    REFERENCE ITEM MODEL OVER-RIDE             -->
+<!--                    Content model for the <ref> element        -->
+<!ENTITY % ref-model    "(label?, 
+                         (%citation.class; | %note.class;)+ )"       > 
+
+
+<!--                    TITLE GROUP MODEL OVER-RIDE                -->
+<!--                    Content model for the <title-group> element.
+                        In the DTD suite, this contains the element
+                        <article-title> and is used to hold all
+                        the titles. In this DTD, it is used for
+                        document parts, which contain titles, just
+                        not <article-title>.                       -->
+<!ENTITY % title-group-model   
+                        "(title, subtitle*, trans-title-group*,
+                          alt-title*, fn-group?)"                    > 
+              
+
+<!-- ============================================================= -->
+<!--                    DUPLICATE ATTRIBUTE DECLARATIONS           -->
+<!--                    (These are unchanged from the base Suite,  -->
+<!--                    but are used in attribute over-rides below)-->
+<!-- ============================================================= -->
+
+
+<!--                    DATE ATTRIBUTES FOR HISTORY                -->
+<!--                    The <history> element contains one or more 
+                        <date> elements that record events in the 
+                        life of a publication. These are the 
+                        attributes for the <date> elements.        -->
+<!ENTITY % date-atts
+            "date-type   CDATA                            #IMPLIED"  >
+                         
+                         
+<!--                    DISPLAY ATTRIBUTES OPTIONAL ID             -->
+<!ENTITY % display-atts
+             "position  (anchor | float | margin)        'float' 
+              orientation
+                        (portrait | landscape)           'portrait'" >
+
+
+<!--                    XLINK LINK ATTRIBUTES                      -->
+<!--                    Attributes for any element that must be a
+                        link                                       -->
+<!ENTITY % link-atts
+            "xmlns:xlink CDATA                            #FIXED
+                                     'http://www.w3.org/1999/xlink'
+             xlink:type  (simple)                   #FIXED 'simple'
+             xlink:href  CDATA                            #REQUIRED 
+             xlink:role  CDATA                            #IMPLIED
+             xlink:title CDATA                            #IMPLIED
+             xlink:show  (embed | new | none | other | replace)
+                                                          #IMPLIED
+             xlink:actuate   
+                         (none | onLoad | onRequest | other)          
+                                                          #IMPLIED"  >
+
+
+<!--                    MIGHT LINK XLINK ATTRIBUTES                -->
+<!--                    Attributes for any element that may be a link
+                        but need not be one                        -->
+<!ENTITY % might-link-atts
+            "xmlns:xlink CDATA                            #FIXED
+                                     'http://www.w3.org/1999/xlink'
+             xlink:type  (simple)                   #FIXED 'simple'
+             xlink:href  CDATA                            #IMPLIED 
+             xlink:role  CDATA                            #IMPLIED
+             xlink:title CDATA                            #IMPLIED
+             xlink:show  (embed | new | none | other | replace)
+                                                          #IMPLIED
+             xlink:actuate   
+                         (none | onLoad | onRequest | other)          
+                                                          #IMPLIED"  >
+
+
+<!-- ============================================================= -->
+<!--                    ATTRIBUTE LIST OVER-RIDES                  -->
+<!-- ============================================================= -->
+
+
+<!--                    EXTERNAL LINK ATTRIBUTE LIST               -->
+<!--                    Replacing the attribute list for the element
+                        <ext-link>.                                -->
+<!ENTITY % ext-link-atts
+            "id         ID                                 #IMPLIED
+             ext-link-type 
+                        CDATA                              #REQUIRED
+             taxonomic-id 
+                        CDATA                              #IMPLIED
+             qualifier  CDATA                              #IMPLIED
+             specific-use
+                        CDATA                              #IMPLIED
+             %might-link-atts;"                                      >
+
+
+<!--                    GRAPHIC ATTRIBUTES                         -->
+<!--                    Attributes for the element <graphic>.      -->
+<!ENTITY % graphic-atts
+            "id         ID                                 #IMPLIED
+             %display-atts;                                       
+             graphic-type        
+                        CDATA                              #IMPLIED
+             content-type  
+                        CDATA                              #IMPLIED 
+             specific-use
+                        CDATA                              #IMPLIED
+             mime-subtype  
+                        CDATA                              #IMPLIED 
+             mimetype   CDATA                              #IMPLIED 
+             %link-atts;"                                            >
+
+
+<!--                    ISSN ATTRIBUTES                            -->
+<!--                    Attribute list for <issn>                  -->
+<!ENTITY % issn-atts
+            "pub-type   CDATA                            #IMPLIED
+             primary    (yes | no)                       #IMPLIED
+             content-type  
+                        CDATA                            #IMPLIED"   > 
+
+
+<!--                    ISBN ATTRIBUTE LIST                        -->
+<!ENTITY % isbn-atts
+             "%issn-atts;"                                           >                        
+
+
+<!--                    DEFAULT TYPE OF CROSS(X)-REFERENCE         -->
+<!--                    Used to say to what the reference is pointing.
+                        May be used for type-specific processing or
+                        validation. Values are, for example:
+                        Affiliation "aff" and Figure "fig"
+                                                                   -->
+<!ENTITY % ref-types    "aff | app | author-notes | bibr | 
+                         book-part | boxed-text | chem | contrib | 
+                         corresp |  disp-formula | fig | fn | 
+                         glossary | kwd | list | plate | scheme | 
+                         sec | statement | supplementary-material | 
+                         table | table-fn | 
+                         other"                                      >
+
+
+<!--                    SECTION ATTRIBUTES                         -->
+<!--                    Attribute list for Section element <sec>
+                                                                   -->
+<!ENTITY % sec-atts   
+            "id         ID                                 #IMPLIED
+             xml:lang   NMTOKEN                            #IMPLIED
+             sec-type   CDATA                              #IMPLIED 
+             disp-level CDATA                              #IMPLIED 
+             indexed    (true | false)                     'true'
+             specific-use
+                        CDATA                              #IMPLIED" >
+
+
+<!--                    TITLE ATTRIBUTE LIST                       -->
+<!--                    Adding attributes to the <title> element.  -->
+<!ENTITY % title-atts   
+             "id        ID                                 #IMPLIED
+              content-type
+                        CDATA                              #IMPLIED
+              xml:lang   NMTOKEN                           #IMPLIED" > 
+
+
+<!-- ================== End NCBI BOOK Content/Attribute Over-ride= -->
