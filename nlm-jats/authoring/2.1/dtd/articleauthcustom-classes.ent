@@ -119,10 +119,14 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 
 
 <!--                    DISPLAY ELEMENT BACK MATTER ELEMENTS       -->
-<!--                    Miscellaneous stuff at the end of a display
+<!--                    Miscellaneous stuff (such as photo credits or
+                        copyright statement) at the end of a display
                         element such as a figure or a boxed text
                         element such as a sidebar                  
-                        Deleted <copyright-statement>              -->
+                        Maintenance Modification Note: This model 
+                        originally allowed the <copyright-statement>
+                        element which was deleted here, since that 
+                        element is available within <permissions>. -->
 <!ENTITY % display-back-matter.class
                         "attrib | permissions"                       >
 

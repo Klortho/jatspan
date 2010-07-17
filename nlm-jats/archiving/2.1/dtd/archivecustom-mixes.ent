@@ -180,7 +180,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         to be "ordinary" phrase-level elements and
                         are not in %all-phrase;.
                         ### Usage Alert ###
-                        Design Notes: 
+                        Design Note: 
                         1) Since this is used in other mixes,
                         unlike all other mixes, all-phrase must be 
                         declared first in this module. 

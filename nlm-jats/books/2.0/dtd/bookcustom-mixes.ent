@@ -117,7 +117,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!--                    EXTERNAL LINK ELEMENTS                     -->
 <!--                    The elements that can be included along with
                         data characters inside the content model of
-                        a <ext-link>. This was modified to allow
+                        an <ext-link>. This was modified to allow
                         graphical elements inside <ext-link>, for
                         those cases where, for example, an onscreen
                         arrow is a link to a picture or a database.-->
@@ -129,7 +129,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!--                    X(CROSS) REFERENCE ELEMENTS                -->
 <!--                    The elements that can be included along with
                         data characters inside the content model of
-                        a <xref>. This was modified to allow
+                        an <xref>. This was modified to allow
                         graphical elements inside <xref>, for
                         those cases where, for example, an onscreen
                         arrow is a link to a picture or a database.-->

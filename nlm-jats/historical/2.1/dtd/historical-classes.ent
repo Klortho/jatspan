@@ -129,7 +129,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!--                    EMPHASIS/RENDITION ELEMENTS                -->
 <!--                    Elements concerning with marking the location
                         of typographical emphasis (highlighting)
-                        DTD DESIGN NOTE: There are no emphasis
+                        DTD Design Note: There are no emphasis
                         elements for <fractur>, <openface> (black
                         board), <script>, etc. because this DTD
                         recommends the use of the STIX extensions

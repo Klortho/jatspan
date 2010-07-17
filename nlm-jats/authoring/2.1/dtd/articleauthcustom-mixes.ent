@@ -170,7 +170,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         not to contain any of these things.
                         Note that there is no math and no links.
                         Simpler even than %simple-phrase;        
-                        DESIGN NOTE: Inline mixes begin with an
+                        Design Note: Inline mixes begin with an
                         OR bar                                     -->
 <!ENTITY % simple-text  "| %emphasis.class; | %inline-display.class; |
                          %inline-math.class; | %phrase.class; | 
