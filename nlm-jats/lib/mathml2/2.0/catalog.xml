@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE catalog PUBLIC "-//OASIS//DTD Entity Resolution XML Catalog V1.0//EN" 
+  "http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd">
+
+
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" 
+         prefer="public">
+
+  <!-- 
+    XML Catalog for Math ML 2.0 (Second Edition) 21 October 2003
+    This catalog file was adapted from two sources:
+      - The one distributed with Oxygen XML ver. 11.
+      - The catalogs distributed with the NLM DTDs
+  -->
+
+  <!-- main -->
+  <public publicId="-//W3C//DTD MathML 2.0//EN" uri="dtd/mathml2.dtd"/>        
+  <system systemId="mathml2.dtd" uri="dtd/mathml2.dtd"/>
+  <rewriteSystem systemIdStartString="http://www.w3.org/Math/DTD/mathml2/" rewritePrefix="dtd/"/>
+  <rewriteSystem systemIdStartString="http://www.w3.org/TR/MathML2/dtd/" rewritePrefix="dtd/"/>
+
+  <public publicId="-//W3C//ENTITIES MathML 2.0 Qualified Names 1.0//EN" uri="dtd/mathml2-qname-1.mod"/>  
+  
+  <!-- mathml -->
+  <public publicId="-//W3C//ENTITIES Aliases for MathML 2.0//EN" uri="dtd/mathml/mmlalias.ent"/>
+  <public publicId="-//W3C//ENTITIES Extra for MathML 2.0//EN" uri="dtd/mathml/mmlextra.ent"/>
+  
+  <!-- iso8879 -->
+  <public publicId="-//W3C//ENTITIES Box and Line Drawing for MathML 2.0//EN"  uri="dtd/iso8879/isobox.ent"/>
+  <public publicId="-//W3C//ENTITIES Russian Cyrillic for MathML 2.0//EN"  uri="dtd/iso8879/isocyr1.ent"/>
+  <public publicId="-//W3C//ENTITIES Non-Russian Cyrillic for MathML 2.0//EN"  uri="dtd/iso8879/isocyr2.ent"/>
+  <public publicId="-//W3C//ENTITIES Diacritical Marks for MathML 2.0//EN"  uri="dtd/iso8879/isodia.ent"/>
+  <public publicId="-//W3C//ENTITIES Greek Letters//EN"  uri="dtd/iso8879/isogrk1.ent"/>
+  <public publicId="-//W3C//ENTITIES Monotoniko Greek//EN"  uri="dtd/iso8879/isogrk2.ent"/>
+  <public publicId="-//W3C//ENTITIES Alternative Greek Symbols//EN"  uri="dtd/iso8879/isogrk4.ent"/>
+  <public publicId="-//W3C//ENTITIES Added Latin 1 for MathML 2.0//EN"  uri="dtd/iso8879/isolat1.ent"/>
+  <public publicId="-//W3C//ENTITIES Added Latin 2 for MathML 2.0//EN"  uri="dtd/iso8879/isolat2.ent"/>
+  <public publicId="-//W3C//ENTITIES Numeric and Special Graphic for MathML 2.0//EN"  uri="dtd/iso8879/isonum.ent"/>
+  <public publicId="-//W3C//ENTITIES Publishing for MathML 2.0//EN"  uri="dtd/iso8879/isopub.ent"/>
+  
+  <!-- iso9573-13 -->
+  <public publicId="-//W3C//ENTITIES General Technical for MathML 2.0//EN"  uri="dtd/iso9573-13/isotech.ent"/>
+  <public publicId="-//W3C//ENTITIES Greek Symbols for MathML 2.0//EN"  uri="dtd/iso9573-13/isogrk3.ent"/>
+  <public publicId="-//W3C//ENTITIES Math Alphabets: Script for MathML 2.0//EN"  uri="dtd/iso9573-13/isomscr.ent"/>
+  <public publicId="-//W3C//ENTITIES Added Math Symbols: Arrow Relations for MathML 2.0//EN"  uri="dtd/iso9573-13/isoamsa.ent"/>
+  <public publicId="-//W3C//ENTITIES Added Math Symbols: Binary Operators for MathML 2.0//EN"  uri="dtd/iso9573-13/isoamsb.ent"/>
+  <public publicId="-//W3C//ENTITIES Added Math Symbols: Delimiters for MathML 2.0//EN"  uri="dtd/iso9573-13/isoamsc.ent"/>
+  <public publicId="-//W3C//ENTITIES Added Math Symbols: Negated Relations for MathML 2.0//EN"  uri="dtd/iso9573-13/isoamsn.ent"/>
+  <public publicId="-//W3C//ENTITIES Added Math Symbols: Ordinary for MathML 2.0//EN"  uri="dtd/iso9573-13/isoamso.ent"/>
+  <public publicId="-//W3C//ENTITIES Added Math Symbols: Relations for MathML 2.0//EN"  uri="dtd/iso9573-13/isoamsr.ent"/>
+  <public publicId="-//W3C//ENTITIES Math Alphabets: Fraktur for MathML 2.0//EN"  uri="dtd/iso9573-13/isomfrk.ent"/>
+  <public publicId="-//W3C//ENTITIES Math Alphabets: Open Face for MathML 2.0//EN"  uri="dtd/iso9573-13/isomopf.ent"/>
+  
+  
+  
+</catalog>
