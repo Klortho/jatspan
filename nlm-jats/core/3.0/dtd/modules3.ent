@@ -319,7 +319,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         will be invoked in the DTD module          -->
 <!ENTITY % oasis-tablesetup.ent 
                         PUBLIC
-"-//NLM//DTD Archiving and Interchange DTD Suite OASIS XML Table Setup Module v1.2 20040830//EN"
+"-//NLM//DTD Archiving and Interchange DTD Suite OASIS XML Table Setup Module v3.0 20100717//EN"
 "oasis-tablesetup3.ent"                                              >
 
 
