@@ -1,7 +1,7 @@
 <!-- ============================================================= -->
 <!--  MODULE:    Math Class Elements                               -->
-<!--  VERSION:   2.0                                               -->
-<!--  DATE:      August 2004                                       -->
+<!--  VERSION:   2.2                                               -->
+<!--  DATE:      July, 2010                                        -->
 <!--                                                               -->
 <!-- ============================================================= -->
 
@@ -9,7 +9,7 @@
 <!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
 <!--                        TYPICAL INVOCATION                     -->
 <!--
-"-//NLM//DTD Archiving and Interchange DTD Suite Math Class Elements v2.0 20040830//EN"
+"-//NLM//DTD Archiving and Interchange DTD Suite Math Class Elements v2.2 20100718//EN"
      Delivered as file "math.ent"                                  -->
 <!-- ============================================================= -->
 
