@@ -1,4 +1,12 @@
 <!-- ============================================================= -->
+<!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
+<!--                        TYPICAL INVOCATION                     -->
+<!--
+"-//NLM//DTD Journal Archiving DTD-OASIS Custom Classes Module v2.3 20070813//EN"
+Delivered as file "archive-OASIScustom-classes.ent"                      -->
+
+
+<!-- ============================================================= -->
 <!--                    METADATA CLASSES (articlemeta.ent)         -->
 <!-- ============================================================= -->
 
