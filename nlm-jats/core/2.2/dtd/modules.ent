@@ -272,7 +272,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 
 <!--                    MATH ELEMENTS                              -->
 <!ENTITY % math.ent  PUBLIC
-"-//NLM//DTD Archiving and Interchange DTD Suite Math Class Elements v2.0 20040830//EN"
+"-//NLM//DTD Archiving and Interchange DTD Suite Math Class Elements v2.2 20100718//EN"
 "math.ent"                                                           >
 
 
