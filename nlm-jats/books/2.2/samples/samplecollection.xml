@@ -1,5 +1,11 @@
 <?xml version="1.0" ?>
 <!DOCTYPE collection SYSTEM "bookcollection.dtd">
+
+<!--
+  This is a sample file for books/2.2.  Except for this comment, it is the
+  same as the one for books/2.1.
+-->
+
 <collection>
 <!-- ================================================== -->
 <!-- SYSTEM:  Archiving and Interchange DTD Suite       -->

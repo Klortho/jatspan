@@ -1,5 +1,11 @@
 <?xml version="1.0" ?>
 <!DOCTYPE book SYSTEM "historical.dtd">
+
+<!--
+  This is a sample file for historical/2.2.  Except for this comment, it is the
+  same as the one for historical/2.1.
+-->
+
 <book>
 <!-- ================================================== -->
 <!-- SYSTEM:  Archiving and Interchange DTD Suite       -->
