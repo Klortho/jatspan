@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE catalog PUBLIC "-//OASIS//DTD Entity Resolution XML Catalog V1.0//EN" 
+  "http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd">
+
+<!-- $Id$ -->
+
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"
+         prefer='public'>
+
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD Annotation Elements v2.3 20070202//EN" uri="dtd/annotation.ent"/>
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD Over-ride Classes Module v2.3 20070202//EN" uri="dtd/historical-classes.ent"/>
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD Over-ride Mixes Module v2.3 20070202//EN" uri="dtd/historical-mixes.ent"/>
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD Content and Attribute Over-ride Module v2.3 20070202//EN" uri="dtd/historical-models.ent"/>
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD Module of Modules v2.3 20070202//EN" uri="dtd/historical-modules.ent"/>
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD v2.3 20070202//EN" uri="dtd/historical.dtd"/>
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD Metadata Elements v2.3 20070202//EN" uri="dtd/historicalmeta.ent"/>
+
+</catalog>

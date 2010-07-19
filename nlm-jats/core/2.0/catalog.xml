@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE catalog PUBLIC "-//OASIS//DTD Entity Resolution XML Catalog V1.0//EN" 
+  "http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd">
+
+<!-- $Id$ -->
+
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"
+         prefer='public'>
+
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Journal Article Metadata Elements v2.0 20040830//EN" uri="dtd/articlemeta.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Back Matter Elements v2.0 20040830//EN" uri="dtd/backmatter.ent"/>
+   <public publicId="-//NLM//DTD Journal Archiving and Interchange DTD to Test the Base Suite v2.0 20040830//EN" uri="dtd/base-test.dtd"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Custom Special Characters Module v2.0 20040830//EN" uri="dtd/chars.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Common (Shared) Elements Module v2.0 20040830//EN" uri="dtd/common.ent"/>
+   <public publicId="-//NLM//DTD Default Element Classes Module v2.0 20040830//EN" uri="dtd/default-classes.ent"/>
+   <public publicId="-//NLM//DTD Default Element Mixes Module v2.0 20040830//EN" uri="dtd/default-mixes.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v2.0 20040830//EN" uri="dtd/display.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Formatting Element Classes v2.0 20040830//EN" uri="dtd/format.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Journal Metadata Elements v2.0 20040830//EN" uri="dtd/journalmeta.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Link Class Elements v2.0 20040830//EN" uri="dtd/link.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite List Class Elements v2.0 20040830//EN" uri="dtd/list.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Math Class Elements v2.0 20040830//EN" uri="dtd/math.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite MathML Setup Module v2.0 20040830//EN" uri="dtd/mathmlsetup.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v2.0 20040830//EN" uri="dtd/modules.ent"/>
+   <public publicId="-//NLM//DTD NLM Citation v2.0 20040830//EN" uri="dtd/nlmcitation.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Notation Declarations v2.0 20040830//EN" uri="dtd/notat.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite OASIS XML Table Setup Module v1.2 20040830//EN" uri="dtd/oasis-tablesetup.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Paragraph-Like Elements v2.0 20040830//EN" uri="dtd/para.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Subject Phrase Class Elements v2.0 20040830//EN" uri="dtd/phrase.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Bibliographic Reference (Citation) Class Elements v2.0 20040830//EN" uri="dtd/references.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Section Class Elements v2.0 20040830//EN" uri="dtd/section.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite XHTML Table Setup Module v2.0 20040830//EN" uri="dtd/XHTMLtablesetup.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite XML Special Characters Module v2.0 20040830//EN" uri="dtd/xmlspecchars.ent"/>
+
+</catalog>

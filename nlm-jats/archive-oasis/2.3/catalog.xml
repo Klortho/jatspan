@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE catalog PUBLIC "-//OASIS//DTD Entity Resolution XML Catalog V1.0//EN" 
+  "http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd">
+
+<!-- $Id$ -->
+
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"
+         prefer='public'>
+
+   <public publicId="-//NLM//DTD Journal Archiving with OASIS Tables v2.3 20070813//EN" uri="dtd/archive-OASIS.dtd"/>
+   <public publicId="-//NLM//DTD Journal Archiving DTD-OASIS Custom Classes Module v2.3 20070813//EN" uri="dtd/archive-OASIScustom-classes.ent"/>
+   <public publicId="-//NLM//DTD Journal Archiving DTD-OASIS Specific Modules v2.3 20070813//EN" uri="dtd/archive-OASIScustom-modules.ent"/>
+
+  
+</catalog>

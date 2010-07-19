@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE catalog PUBLIC "-//OASIS//DTD Entity Resolution XML Catalog V1.0//EN" 
+  "http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd">
+
+<!-- $Id$ -->
+
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"
+         prefer='public'>
+
+   <public publicId="-//NLM//DTD Article Authoring DTD Over-ride Classes Module v2.3 20070202//EN" uri="dtd/articleauthcustom-classes.ent"/>
+   <public publicId="-//NLM//DTD Article Authoring DTD Over-ride Mixes Module v2.3 20070202//EN" uri="dtd/articleauthcustom-mixes.ent"/>
+   <public publicId="-//NLM//DTD Article Authoring DTD Over-ride Content and Attribute Module v2.3 20070202//EN" uri="dtd/articleauthcustom-models.ent"/>
+   <public publicId="-//NLM//DTD Article Authoring DTD-Specific Modules v2.3 20070202//EN" uri="dtd/articleauthcustom-modules.ent"/>
+   <public publicId="-//NLM//DTD Article Authoring DTD v2.3 20070202//EN" uri="dtd/articleauthoring.dtd"/>
+
+</catalog>
