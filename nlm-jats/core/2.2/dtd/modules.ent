@@ -201,7 +201,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % default-mixes.ent
                         PUBLIC  
 "-//NLM//DTD Default Element Mixes Module v2.1 20050630//EN"
-"default-mixes.ent"                                                  >
+"../../2.1/dtd/default-mixes.ent"                                                  >
                                                                     
 
 <!-- ============================================================= -->
@@ -232,7 +232,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % backmatter.ent
                         PUBLIC  
 "-//NLM//DTD Archiving and Interchange DTD Suite Back Matter Elements v2.1 20050630//EN"
-"backmatter.ent"                                                     >
+"../../2.1/dtd/backmatter.ent"                                                     >
 
 
 <!--                    DISPLAY (GRAPHICAL) ELEMENTS INVOCATION    -->
@@ -249,25 +249,25 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % format.ent
                         PUBLIC
 "-//NLM//DTD Archiving and Interchange DTD Suite Formatting Element Classes v2.0 20040830//EN"
-"format.ent"                                                         >
+"../../2.0/dtd/format.ent"                                                         >
 
 
 <!--                    JOURNAL METADATA ELEMENTS                  -->
 <!ENTITY % journalmeta.ent PUBLIC
 "-//NLM//DTD Archiving and Interchange DTD Suite Journal Metadata Elements v2.1 20050630//EN"
-"journalmeta.ent"                                                          >
+"../../2.1/dtd/journalmeta.ent"                                                          >
 
 
 <!--                    LINK ELEMENTS                              -->
 <!ENTITY % link.ent  PUBLIC
 "-//NLM//DTD Archiving and Interchange DTD Suite Link Class Elements v2.1 20050630//EN"
-"link.ent"                                                           >
+"../../2.1/dtd/link.ent"                                                           >
 
 
 <!--                    LIST ELEMENTS                              -->
 <!ENTITY % list.ent  PUBLIC
 "-//NLM//DTD Archiving and Interchange DTD Suite List Class Elements v2.1 20050630//EN"
-"list.ent"                                                           >
+"../../2.1/dtd/list.ent"                                                           >
 
 
 <!--                    MATH ELEMENTS                              -->
@@ -286,7 +286,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % phrase.ent
                         PUBLIC
 "-//NLM//DTD Archiving and Interchange DTD Suite Subject Phrase Class Elements v2.0 20040830//EN"
-"phrase.ent"                                                         >
+"../../2.0/dtd/phrase.ent"                                                         >
 
 
 <!--                    BIBLIOGRAPHY REFERENCES (CITATION) ELEMENTS-->
@@ -317,7 +317,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % XHTMLtablesetup.ent 
                         PUBLIC
 "-//NLM//DTD Archiving and Interchange DTD Suite XHTML Table Setup Module v2.1 20050630//EN"
-"XHTMLtablesetup.ent"                                                >
+"../../2.1/dtd/XHTMLtablesetup.ent"                                                >
 
 
 <!--                    XHTML TABLE MODEL                          -->
@@ -344,7 +344,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % oasis-tablesetup.ent 
                         PUBLIC
 "-//NLM//DTD Archiving and Interchange DTD Suite OASIS XML Table Setup Module v1.2 20040830//EN"
-"oasis-tablesetup.ent"                                               >
+"../../2.0/dtd/oasis-tablesetup.ent"                                               >
 
 
 <!--                    OASIS XML TABLE MODEL                      -->
@@ -368,7 +368,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % xmlspecchars.ent   
                         PUBLIC
 "-//NLM//DTD Archiving and Interchange DTD Suite XML Special Characters Module v2.1 20050630//EN"
-"xmlspecchars.ent"                                                   >
+"../../2.1/dtd/xmlspecchars.ent"                                                   >
 
 
 <!--                    CUSTOM SPECIAL CHARACTERS DECLARATIONS     -->
@@ -376,7 +376,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         entities created for this Suite            -->
  <!ENTITY % chars.ent PUBLIC
 "-//NLM//DTD Archiving and Interchange DTD Suite Custom Special Characters Module v2.0 20040830//EN"
-"chars.ent"                                                          > 
+"../../2.0/dtd/chars.ent"                                                          > 
 
 
 <!-- ============================================================= -->
@@ -390,7 +390,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % mathmlsetup.ent 
                         PUBLIC
 "-//NLM//DTD Archiving and Interchange DTD Suite MathML Setup Module v2.1 20050630//EN"
-"mathmlsetup.ent"                                                    >
+"../../2.1/dtd/mathmlsetup.ent"                                                    >
 
 
 <!--                    MATHML 2.0 QUALIFIED NAMES                 -->
@@ -432,7 +432,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         replacement.                               -->
 <!ENTITY % notat.ent PUBLIC 
 "-//NLM//DTD Archiving and Interchange DTD Suite Notation Declarations v2.0 20040830//EN"
-"notat.ent"                                                          >
+"../../2.0/dtd/notat.ent"                                                          >
 
 
 <!-- =================== End Journal Article Module of Modules === -->

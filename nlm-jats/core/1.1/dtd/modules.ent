@@ -143,7 +143,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % backmatter.ent
                         PUBLIC  
 "-//NLM//DTD Archiving and Interchange DTD Suite Back Matter Elements v1.0 20021201//EN"
-"backmatter.ent"                                                     >
+"../../1.0/dtd/backmatter.ent"                                                     >
 
 
 <!--                    DISPLAY (GRAPHICAL) ELEMENTS INVOCATION    -->
@@ -160,7 +160,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % format.ent
                         PUBLIC
  "-//NLM//DTD Archiving and Interchange DTD Suite Formatting Element Classes v1.0 20021201//EN"
-"format.ent"                                                         >
+"../../1.0/dtd/format.ent"                                                         >
 
 
 <!--                    JOURNAL METADATA ELEMENTS                  -->
@@ -204,14 +204,14 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % references.ent     
                         PUBLIC
 "-//NLM//DTD Archiving and Interchange DTD Suite Bibliographic Reference (Citation) Class Elements v1.0 20021201//EN"
-"references.ent"                                                     >
+"../../1.0/dtd/references.ent"                                                     >
 
 
 <!--                    SECTION ELEMENTS                           -->
 <!ENTITY % section.ent     
                         PUBLIC  
 "-//NLM//DTD Archiving and Interchange DTD Suite Section Class Elements v1.0 20021201//EN"
-"section.ent"                                                        >
+"../../1.0/dtd/section.ent"                                                        >
 
 
 <!-- ============================================================= -->
@@ -320,7 +320,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % xmlspecchars.ent   
                         PUBLIC
 "-//NLM//DTD Archiving and Interchange DTD Suite XML Special Characters Module v1.0 20021201//EN"
-"xmlspecchars.ent"                                                   >
+"../../1.0/dtd/xmlspecchars.ent"                                                   >
 
 
 <!--                    CUSTOM SPECIAL CHARACTERS DECLARATIONS     -->
@@ -343,7 +343,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         replacement.                               -->
 <!ENTITY % notat.ent PUBLIC 
 "-//NLM//DTD Archiving and Interchange DTD Suite Notation Declarations v1.0 20021201//EN"
-"notat.ent"                                                          >
+"../../1.0/dtd/notat.ent"                                                          >
 
 
 <!-- =================== End Journal Article Module of Modules === -->

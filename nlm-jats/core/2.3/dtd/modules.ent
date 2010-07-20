@@ -384,7 +384,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % oasis-tablesetup.ent 
                         PUBLIC
 "-//NLM//DTD Archiving and Interchange DTD Suite OASIS XML Table Setup Module v1.2 20040830//EN"
-"oasis-tablesetup.ent"                                               >
+"../../2.0/dtd/oasis-tablesetup.ent"                                               >
 
 
 <!--                    OASIS XML TABLE MODEL                      -->

@@ -122,7 +122,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!--                    Names all DTD-specific external modules    -->
 <!ENTITY % historical-modules.ent PUBLIC  
 "-//NLM//DTD NCBI Historical Book DTD Module of Modules v2.1 20050630//EN"
-"historical-modules.ent"                                             >
+"../../2.1/dtd/historical-modules.ent"                                             >
 %historical-modules.ent;
 
 
@@ -130,7 +130,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!--                    Names all DTD-specific external modules    -->
 <!ENTITY % bookcustom-modules.ent PUBLIC  
 "-//NLM//DTD Book DTD Module of Modules v2.2 20061013//EN"
-"bookcustom-modules.ent"                                             >
+"../../../books/2.2/dtd/bookcustom-modules.ent"                                             >
 %bookcustom-modules.ent;
 
 
@@ -140,7 +140,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         Interchange DTD Suite library.             -->
 <!ENTITY % modules.ent PUBLIC  
 "-//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v2.2 20060430//EN" 
-"modules.ent"                                                        >
+"../../../core/2.2/dtd/modules.ent"                                                        >
 %modules.ent;
 
 
