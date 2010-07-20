@@ -238,7 +238,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % htmltable.dtd 
                         PUBLIC
 "-//W3C//ELEMENTS XHTML Tables 1.0//EN" 
-"htmltable.dtd"                                                      >
+"../../../lib/xhtml/1.0/xhtml-table-1.mod"                           >
 
 
 <!-- ============================================================= -->
@@ -286,27 +286,27 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % mathml-qname.mod 
                         PUBLIC
 "-//W3C//ENTITIES MathML 2.0 Qualified Names 1.0//EN" 
-"mathml/mathml2-qname-1.mod"                                         >
+"../../../lib/mathml2/2.0/dtd/mathml2-qname-1.mod"                    >
 
 
 <!--                    MATHML 2.0 DTD                             -->
 <!ENTITY % mathml.dtd   PUBLIC
 "-//W3C//DTD MathML 2.0//EN"
-"mathml2.dtd"                                                        >
+"../../../lib/mathml2/2.0/dtd/mathml2.dtd"                           >
 
 
 <!--                    MATHML 2.0 EXTRA ENTITIES                  -->
 <!ENTITY % ent-mmlextra 
                         PUBLIC
 "-//W3C//ENTITIES Extra for MathML 2.0//EN" 
-"mathml/mmlextra.ent"                                                >
+"../../../lib/mathml2/2.0/dtd/mathml/mmlextra.ent"                   >
 
 
 <!--                    MATHML 2.0 ALIASES                         -->
 <!ENTITY % ent-mmlalias 
                         PUBLIC
 "-//W3C//ENTITIES Aliases for MathML 2.0//EN" 
-"mathml/mmlalias.ent"                                                >
+"../../../lib/mathml2/2.0/dtd/mathml/mmlalias.ent"                   >
 
 
 <!-- ============================================================= -->
