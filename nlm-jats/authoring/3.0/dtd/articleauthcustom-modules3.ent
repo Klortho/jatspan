@@ -118,7 +118,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % nlmcitation.ent 
                         PUBLIC  
 "-//NLM//DTD NLM Citation v3.0 20080202//EN"
-"nlmcitation3.ent"                                                   >
+"../../../core/3.0/dtd/nlmcitation3.ent"                                                   >
 
 
 <!-- =================== End Authoring DTD Module of Modules ===== -->

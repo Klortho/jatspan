@@ -128,7 +128,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % bookmultilink.ent 
                         PUBLIC  
 "-//NLM//DTD NCBI Book Multi-link Elements v2.0 20041031//EN" 
-"bookmultilink.ent"                                                  >
+"../../2.1/dtd/bookmultilink.ent"                                                  >
  
 
 <!--                    BOOK COMPONENT ELEMENTS AND METADATA       -->
