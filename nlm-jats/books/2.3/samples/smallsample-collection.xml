@@ -1,5 +1,6 @@
 <?xml version="1.0" ?>
-<!DOCTYPE collection SYSTEM "bookcollection.dtd">
+<!DOCTYPE collection PUBLIC "-//NLM//DTD NCBI Book Collection DTD v2.3 20070202//EN"
+                     "bookcollection.dtd">
 <collection 
 dtd-version="2.3" xml:lang="en" 
 xmlns:mml="http://www.w3.org/1998/Math/MathML" 
