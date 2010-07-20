@@ -172,8 +172,8 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!--                    MODULE TO NAME DTD-SPECIFIC MODULES        -->
 <!--                    Names all DTD-specific external modules    -->
 <!ENTITY % archive-oasis-custom-modules.ent PUBLIC  
-"-//NLM//DTD Journal Archiving DTD-Specific Modules v3.0 20080202//EN"
-"../../../archiving/3.0/dtd/archivecustom-modules3.ent"                                  >
+"-//NLM//DTD Journal Archiving with OASIS Tables-Specific Modules v3.0 20080202//EN"
+"archive-oasis-custom-modules3.ent"                                  >
 %archive-oasis-custom-modules.ent;
 
 
