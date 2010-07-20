@@ -1,5 +1,6 @@
 <?xml version="1.0" ?>
-<!DOCTYPE book SYSTEM "../book3.dtd">
+<!DOCTYPE book PUBLIC "-//NLM//DTD Book DTD v3.0 20080202//EN"
+               "../book3.dtd">
 <!-- SYSTEM:  NLM Book DTD                                 -->
 <!-- Updated July 2007 An archival journal article with minimal 
 Front Matter, Sections, a Table, and Citations for testing -->

@@ -1,5 +1,6 @@
 <?xml version="1.0" ?>
-<!DOCTYPE book SYSTEM "historical.dtd">
+<!DOCTYPE book PUBLIC "-//NLM//DTD NCBI Historical Book DTD v2.2 20061013//EN"
+               "historical.dtd">
 
 <!--
   This is a sample file for historical/2.2.  Except for this comment, it is the

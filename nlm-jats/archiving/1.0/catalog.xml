@@ -7,8 +7,10 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"
          prefer='public'>
 
-   <public publicId="-//NLM//DTD Journal Archiving and Interchange DTD v1.0 20021201//EN" uri="dtd/archivearticle.dtd"/>
-   <public publicId="-//NLM//DTD Journal Archiving and Interchange DTD Customize Classes Module v1.0 20021201//EN" uri="dtd/archivecustomize.ent"/>
+  <public publicId="-//NLM//DTD Journal Archiving and Interchange DTD v1.0 20021201//EN" 
+          uri="dtd/archivearticle.dtd"/>
+  <public publicId="-//NLM//DTD Journal Archiving and Interchange DTD Customize Classes Module v1.0 20021201//EN" 
+          uri="dtd/archivecustomize.ent"/>
 
   
 </catalog>

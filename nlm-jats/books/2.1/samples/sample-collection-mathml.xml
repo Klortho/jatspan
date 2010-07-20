@@ -1,5 +1,6 @@
 <?xml version="1.0" ?>
-<!DOCTYPE collection SYSTEM "bookcollection.dtd">
+<!DOCTYPE collection PUBLIC "-//NLM//DTD NCBI Book Collection DTD v2.1 20050630//EN"
+                     "bookcollection.dtd">
 <collection>
 <!-- ================================================== -->
 <!-- SYSTEM:  Archiving and Interchange DTD Suite       -->

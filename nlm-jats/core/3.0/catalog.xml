@@ -7,7 +7,13 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"
          prefer="public">
 
+<!--+=================================================+
+    | DTD to test the base classes.                   |
+    +=================================================+-->
 
+  <public publicId="-//NLM//DTD Journal Archiving DTD to Test the Base Suite v3.0 20080202//EN" 
+          uri="dtd/base-test3.dtd"/>
+        
 <!--+=================================================+
     | Core modules and entities, 3.0                  |
     +=================================================+-->

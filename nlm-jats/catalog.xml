@@ -18,11 +18,6 @@
   <nextCatalog catalog="core/2.3/catalog.xml"/>
   <nextCatalog catalog="core/3.0/catalog.xml"/>
   
-  <nextCatalog catalog="authoring/2.1/catalog.xml"/>
-  <nextCatalog catalog="authoring/2.2/catalog.xml"/>
-  <nextCatalog catalog="authoring/2.3/catalog.xml"/>
-  <nextCatalog catalog="authoring/3.0/catalog.xml"/>
-
   <nextCatalog catalog="archiving/1.0/catalog.xml"/>
   <nextCatalog catalog="archiving/1.1/catalog.xml"/>
   <nextCatalog catalog="archiving/2.0/catalog.xml"/>
@@ -31,6 +26,11 @@
   <nextCatalog catalog="archiving/2.3/catalog.xml"/>
   <nextCatalog catalog="archiving/3.0/catalog.xml"/>
   
+  <nextCatalog catalog="authoring/2.1/catalog.xml"/>
+  <nextCatalog catalog="authoring/2.2/catalog.xml"/>
+  <nextCatalog catalog="authoring/2.3/catalog.xml"/>
+  <nextCatalog catalog="authoring/3.0/catalog.xml"/>
+
   <nextCatalog catalog="archive-oasis/2.3/catalog.xml"/>
   <nextCatalog catalog="archive-oasis/3.0/catalog.xml"/>
   

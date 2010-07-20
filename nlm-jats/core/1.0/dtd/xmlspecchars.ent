@@ -182,60 +182,60 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!--                    ISO STANDARD MATH ALPHABETS (SCRIPT)       -->
 <!ENTITY % ISOmscr PUBLIC
 "-//W3C//ENTITIES Math Alphabets: Script for MathML 2.0//EN" 
-"../../../lib/mathml2/2.0/dtd/iso8879/isomscr.ent"                                               >
+"../../../lib/mathml2/2.0/dtd/iso9573-13/isomscr.ent"                                               >
 
 
 <!--                    ISO STANDARD ADDED MATH SYMBOLS 
                            (ARROW RELATIONS)                       -->
 <!ENTITY % ISOamsa PUBLIC
 "-//W3C//ENTITIES Added Math Symbols: Arrow Relations for MathML 2.0//EN" 
-"../../../lib/mathml2/2.0/dtd/iso8879/isoamsa.ent"                                               >
+"../../../lib/mathml2/2.0/dtd/iso9573-13/isoamsa.ent"                                               >
 
 
 <!--                    ISO STANDARD ADDED MATH SYMBOLS 
                            (BINARY OPERATORS)                      -->
 <!ENTITY % ISOamsb PUBLIC 
 "-//W3C//ENTITIES Added Math Symbols: Binary Operators for MathML 2.0//EN" 
-"../../../lib/mathml2/2.0/dtd/iso8879/isoamsb.ent"                                               >
+"../../../lib/mathml2/2.0/dtd/iso9573-13/isoamsb.ent"                                               >
 
 
 <!--                    ISO STANDARD ADDED MATH SYMBOLS 
                            (DELIMITERS)                            -->
 <!ENTITY % ISOamsc PUBLIC 
 "-//W3C//ENTITIES Added Math Symbols: Delimiters for MathML 2.0//EN" 
-"../../../lib/mathml2/2.0/dtd/iso8879/isoamsc.ent"                                               >
+"../../../lib/mathml2/2.0/dtd/iso9573-13/isoamsc.ent"                                               >
 
 
 <!--                    ISO STANDARD ADDED MATH SYMBOLS 
                            (NEGATED RELATIONS)                     -->
 <!ENTITY % ISOamsn PUBLIC 
 "-//W3C//ENTITIES Added Math Symbols: Negated Relations for MathML 2.0//EN"
-"../../../lib/mathml2/2.0/dtd/iso8879/isoamsn.ent"                                               >
+"../../../lib/mathml2/2.0/dtd/iso9573-13/isoamsn.ent"                                               >
 
 
 <!--                    ISO STANDARD ADDED MATH SYMBOLS (ORDINARY) -->
 <!ENTITY % ISOamso PUBLIC 
 "-//W3C//ENTITIES Added Math Symbols: Ordinary for MathML 2.0//EN" 
-"../../../lib/mathml2/2.0/dtd/iso8879/isoamso.ent"                                               >
+"../../../lib/mathml2/2.0/dtd/iso9573-13/isoamso.ent"                                               >
 
 
 <!--                    ISO STANDARD ADDED MATH SYMBOLS 
                            (RELATIONS)                             -->
 <!ENTITY % ISOamsr PUBLIC 
 "-//W3C//ENTITIES Added Math Symbols: Relations for MathML 2.0//EN" 
-"../../../lib/mathml2/2.0/dtd/iso8879/isoamsr.ent"                                               >
+"../../../lib/mathml2/2.0/dtd/iso9573-13/isoamsr.ent"                                               >
 
 
 <!--                    ISO STANDARD MATH ALPHABETS (FRAKTUR)      -->
 <!ENTITY % ISOmfrk PUBLIC
 "-//W3C//ENTITIES Math Alphabets: Fraktur for MathML 2.0//EN" 
-"../../../lib/mathml2/2.0/dtd/iso8879/isomfrk.ent"                                               >
+"../../../lib/mathml2/2.0/dtd/iso9573-13/isomfrk.ent"                                               >
 
 
 <!--                    ISO STANDARD MATH ALPHABETS (OPEN FACE)    -->
 <!ENTITY % ISOmopf PUBLIC
 "-//W3C//ENTITIES Math Alphabets: Open Face for MathML 2.0//EN" 
-"../../../lib/mathml2/2.0/dtd/iso8879/isomopf.ent"                                               >
+"../../../lib/mathml2/2.0/dtd/iso9573-13/isomopf.ent"                                               >
 
 
 <!-- ============================================================= -->
