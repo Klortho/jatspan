@@ -84,7 +84,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         DTD Suite.                                 -->
 <!ENTITY % archive-oasis-custom-classes.ent 
                         PUBLIC  
-"-//NLM//DTD Journal Archiving DTD Customize Classes Module v3.0 20080202//EN"
+"-//NLM//DTD Journal Archiving with OASIS Tables Customize Classes Module v3.0 20080202//EN"
 "archive-oasis-custom-classes3.ent"                                  >
 
 
@@ -95,7 +95,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         Suite.                                     -->
 <!ENTITY % archive-oasis-custom-mixes.ent 
                         PUBLIC  
-"-//NLM//DTD Journal Archiving DTD Customize Mixes Module v3.0 20080202//EN"
+"-//NLM//DTD Journal Archiving with OASIS Tables Customize Mixes Module v3.0 20080202//EN"
 "archive-oasis-custom-mixes3.ent"                                    >
 
 
