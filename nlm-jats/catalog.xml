@@ -53,7 +53,7 @@
   <nextCatalog catalog="publishing/2.3/catalog.xml"/>
   <nextCatalog catalog="publishing/3.0/catalog.xml"/>
   
-  <nextCatalog catalog="publishing-oasis/3.0/catalog.xm"/>
-  <nextCatalog catalog="publishing-oasis/2.3/catalog.xm"/>
+  <nextCatalog catalog="publishing-oasis/3.0/catalog.xml"/>
+  <nextCatalog catalog="publishing-oasis/2.3/catalog.xml"/>
 
 </catalog>
