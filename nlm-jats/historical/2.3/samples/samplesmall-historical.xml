@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!DOCTYPE book PUBLIC "-//NLM//DTD NCBI Historical Book DTD v2.3 20070202//EN"
-               "historical.dtd">
+               "../dtd/historical.dtd">
 <book xmlns:mml="http://www.w3.org/1998/Math/MathML" >
 <!-- ================================================== -->
 <!-- SYSTEM:  Archiving and Interchange DTD Suite       -->

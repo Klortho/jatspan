@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!DOCTYPE book PUBLIC "-//NLM//DTD NCBI Historical Book DTD v2.0 20041225//EN"
-               "historical.dtd">
+               "../dtd/historical.dtd">
 <book>
 <!-- ================================================== -->
 <!-- SYSTEM:  Archiving and Interchange DTD Suite       -->

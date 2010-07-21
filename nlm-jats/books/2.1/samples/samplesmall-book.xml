@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!DOCTYPE book PUBLIC "-//NLM//DTD Book DTD v2.1 20050630//EN"
-               "book.dtd">
+               "../dtd/book.dtd">
 
 <!--
   This is a sample file for books/2.1.  Except for this comment, it is the

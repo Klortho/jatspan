@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!DOCTYPE collection PUBLIC "-//NLM//DTD NCBI Book Collection DTD v2.2 20061013//EN"
-                     "bookcollection.dtd">
+                     "../dtd/bookcollection.dtd">
 
 <!--
   This is a sample file for books/2.2.  Except for this comment, it is the

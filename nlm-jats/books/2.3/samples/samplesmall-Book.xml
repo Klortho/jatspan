@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!DOCTYPE book PUBLIC "-//NLM//DTD Book DTD v2.3 20070202//EN" 
-               "book.dtd">
+               "../dtd/book.dtd">
 <book 
 dtd-version="2.3" xml:lang="en" 
 xmlns:mml="http://www.w3.org/1998/Math/MathML" 

@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!DOCTYPE article PUBLIC "-//NLM//DTD Journal Archiving and Interchange DTD to Test the Base Suite v2.0 20040830//EN"
-                  "base-test.dtd">
+                  "../dtd/base-test.dtd">
 <article>
 <!-- =================================================== -->
 <!-- SYSTEM:  Archiving and Interchange DTD Suite        -->

@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!DOCTYPE book PUBLIC "-//NLM//DTD Book DTD v2.2 20061013//EN"
-               "book.dtd">
+               "../dtd/book.dtd">
 <book>
 <!-- ================================================== -->
 <!-- SYSTEM:  Archiving and Interchange DTD Suite       -->
