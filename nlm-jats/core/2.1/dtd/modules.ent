@@ -397,7 +397,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % mathml-qname.mod 
                         PUBLIC
 "-//W3C//ENTITIES MathML 2.0 Qualified Names 1.0//EN" 
-"../../../lib/mathml2/2.0/dtd/mathml2-qname-1.mod"                                                >
+"../../../lib/mathml2/2.0/dtd/mathml2-qname-1.mod"                   >
 
 
 <!--                    MATHML 2.0 DTD                             -->

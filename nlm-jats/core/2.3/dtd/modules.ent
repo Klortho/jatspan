@@ -356,7 +356,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % xhtml-table-1.mod 
                         PUBLIC
 "-//W3C//ELEMENTS XHTML Tables 1.0//EN"
-"xhtml-table-1.mod"                                                  >
+"../../../lib/xhtml/1.0/xhtml-table-1.mod"                                                  >
 
 
 <!--                    XHTML TABLE INLINE STYLE MODULE            -->
@@ -367,7 +367,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % xhtml-inlstyle-1.mod 
                         PUBLIC
 "-//W3C//ENTITIES XHTML Inline Style 1.0//EN"
-"xhtml-inlstyle-1.mod"                                                  >
+"../../../lib/xhtml/1.0/xhtml-inlstyle-1.mod"                                                  >
 
 
 <!-- ============================================================= -->
@@ -437,7 +437,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % mathml-qname.mod 
                         PUBLIC
 "-//W3C//ENTITIES MathML 2.0 Qualified Names 1.0//EN" 
-"mathml2-qname-1.mod"                                                >
+"../../../lib/mathml2/2.0/dtd/mathml2-qname-1.mod"                   >
 
 
 <!--                    MATHML 2.0 DTD                             -->
