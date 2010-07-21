@@ -44,7 +44,6 @@
   <nextCatalog catalog="historical/2.1/catalog.xml"/>
   <nextCatalog catalog="historical/2.2/catalog.xml"/>
   <nextCatalog catalog="historical/2.3/catalog.xml"/>
-  <nextCatalog catalog="historical/3.0/catalog.xml"/>
   
   <nextCatalog catalog="publishing/1.0/catalog.xml"/>
   <nextCatalog catalog="publishing/1.1/catalog.xml"/>
