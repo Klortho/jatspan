@@ -195,7 +195,9 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         DTD references the external Parameter Entity 
                         of the module that contains the declarations.
                                                                    -->
-<!ENTITY % modules.ent SYSTEM  "modules.ent"      >
+<!ENTITY % modules.ent PUBLIC  
+"-//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v1.1 20031101//EN"
+"../../../core/1.1/dtd/modules.ent"                                  >
 %modules.ent;
 
 

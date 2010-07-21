@@ -354,7 +354,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % oasis-exchange.ent 
                         PUBLIC
 "-//OASIS//DTD XML Exchange Table Model 19990315//EN" 
-"oasis-exchange.ent"                                                 >
+"../../1.0/dtd/oasis-exchange.ent"                                                 >
 
 
 <!-- ============================================================= -->

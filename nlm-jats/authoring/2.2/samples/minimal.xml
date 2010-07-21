@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD Article Authoring DTD v2.2 20060430//EN"
+                  "../dtd/articleauthoring.dtd">
+
+<article>
+  <front>
+    <article-meta>
+      <title-group>
+        <article-title/>
+      </title-group>
+      <contrib-group>
+        <contrib>
+          <collab/>
+        </contrib>
+      </contrib-group>
+      <abstract/>
+    </article-meta>
+  </front>
+  <body/>
+</article>
