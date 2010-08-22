@@ -259,7 +259,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         %OASIStablesetup.ent;                      -->
 <!ENTITY % oasis-exchange.ent 
                         PUBLIC
-"-//OASIS//DTD XML Exchange Table Model 19990315//EN" 
+"-//NLM//DTD Archiving and Interchange DTD Suite OASIS XML Table Model v1.0 20100821//EN" 
 "oasis-exchange.ent"                                                 >
 
 

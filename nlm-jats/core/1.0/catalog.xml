@@ -48,7 +48,11 @@
   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite XML Special Characters Module v1.0 20021201//EN" 
           uri="dtd/xmlspecchars.ent"/>
 
+<!-- This public identifier must change, because the file is not the same as the standard
+  OASIS table model file.  
   <public publicId="-//OASIS//DTD XML Exchange Table Model 19990315//EN" 
-          uri="dtd/oasis-exchange.ent"/>
+          uri="dtd/oasis-exchange.ent"/> -->
+  <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite OASIS XML Table Model v1.0 20100821//EN" 
+          uri="dtd/oasis-exchange.ent"/> 
   
 </catalog>

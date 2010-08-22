@@ -208,7 +208,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % oasis.xmlns.attrib
              "xmlns:oasis
                         CDATA      #FIXED
-              '-//OASIS//DTD XML Exchange Table Model 19990315//EN'" > 
+              'http://docs.oasis-open.org/ns/oasis-exchange/table'" > 
 
 
 <!--                    YES OR NO                                  -->
