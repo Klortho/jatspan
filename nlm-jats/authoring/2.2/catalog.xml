@@ -7,8 +7,11 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"
          prefer='public'>
 
-   <public publicId="-//NLM//DTD Article Authoring DTD Over-ride Content and Attribute Module v2.2 20060430//EN" uri="dtd/articleauthcustom-models.ent"/>
-   <public publicId="-//NLM//DTD Article Authoring DTD-Specific Modules v2.2 20060430//EN" uri="dtd/articleauthcustom-modules.ent"/>
-   <public publicId="-//NLM//DTD Article Authoring DTD v2.2 20060430//EN" uri="dtd/articleauthoring.dtd"/>
+   <public publicId="-//NLM//DTD Article Authoring DTD Over-ride Content and Attribute Module v2.2 20060430//EN" 
+           uri="dtd/articleauthcustom-models.ent"/>
+   <public publicId="-//NLM//DTD Article Authoring DTD-Specific Modules v2.2 20060430//EN" 
+           uri="dtd/articleauthcustom-modules.ent"/>
+   <public publicId="-//NLM//DTD Article Authoring DTD v2.2 20060430//EN" 
+           uri="dtd/articleauthoring.dtd"/>
 
 </catalog>

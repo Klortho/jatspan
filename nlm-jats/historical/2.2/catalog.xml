@@ -7,6 +7,7 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"
          prefer='public'>
 
-   <public publicId="-//NLM//DTD NCBI Historical Book DTD v2.2 20061013//EN" uri="dtd/historical.dtd"/>
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD v2.2 20061013//EN" 
+           uri="dtd/historical.dtd"/>
 
 </catalog>

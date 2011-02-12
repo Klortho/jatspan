@@ -7,8 +7,11 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"
          prefer='public'>
 
-   <public publicId="-//NLM//DTD Journal Publishing with OASIS Tables DTD v2.3 20070813//EN" uri="dtd/publishing-OASIS.dtd"/>
-   <public publicId="-//NLM//DTD Journal Publishing DTD-OASIS Customize Mixes Module v2.3 20070813//EN" uri="dtd/publishing-OASIScustom-classes.ent"/>
-   <public publicId="-//NLM//DTD Journal Publishing DTD-OASIS Specific Modules v2.3 20070813//EN" uri="dtd/publishing-OASIScustom-modules.ent"/>
+   <public publicId="-//NLM//DTD Journal Publishing with OASIS Tables DTD v2.3 20070813//EN" 
+           uri="dtd/publishing-OASIS.dtd"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD-OASIS Customize Mixes Module v2.3 20070813//EN" 
+           uri="dtd/publishing-OASIScustom-classes.ent"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD-OASIS Specific Modules v2.3 20070813//EN" 
+           uri="dtd/publishing-OASIScustom-modules.ent"/>
 
 </catalog>

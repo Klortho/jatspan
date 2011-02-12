@@ -7,10 +7,15 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"
          prefer='public'>
 
-   <public publicId="-//NLM//DTD Journal Publishing DTD Customize Classes Module v3.0 20080202//EN" uri="dtd/journalpubcustom-classes3.ent"/>
-   <public publicId="-//NLM//DTD Journal Publishing DTD Customize Mixes Module v3.0 20080202//EN" uri="dtd/journalpubcustom-mixes3.ent"/>
-   <public publicId="-//NLM//DTD Journal Publishing DTD Customize Content and Attributes Module v3.0 20080202//EN" uri="dtd/journalpubcustom-models3.ent"/>
-   <public publicId="-//NLM//DTD Journal Publishing DTD-Specific Modules v3.0 20080202//EN" uri="dtd/journalpubcustom-modules3.ent"/>
-   <public publicId="-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" uri="dtd/journalpublishing3.dtd"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD Customize Classes Module v3.0 20080202//EN" 
+           uri="dtd/journalpubcustom-classes3.ent"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD Customize Mixes Module v3.0 20080202//EN" 
+           uri="dtd/journalpubcustom-mixes3.ent"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD Customize Content and Attributes Module v3.0 20080202//EN" 
+           uri="dtd/journalpubcustom-models3.ent"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD-Specific Modules v3.0 20080202//EN" 
+           uri="dtd/journalpubcustom-modules3.ent"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" 
+           uri="dtd/journalpublishing3.dtd"/>
 
 </catalog>

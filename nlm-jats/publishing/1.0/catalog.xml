@@ -7,7 +7,9 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"
          prefer='public'>
 
-   <public publicId="-//NLM//DTD Journal Publishing DTD Customization Module v1.0 20030324//EN" uri="dtd/journalpubcustomize.ent"/>
-   <public publicId="-//NLM//DTD Journal Publishing DTD v1.0 20030210//EN" uri="dtd/journalpublishing.dtd"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD Customization Module v1.0 20030324//EN" 
+           uri="dtd/journalpubcustomize.ent"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD v1.0 20030210//EN" 
+           uri="dtd/journalpublishing.dtd"/>
 
 </catalog>

@@ -7,11 +7,16 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"
          prefer='public'>
 
-   <public publicId="-//NLM//DTD Journal Archiving and Interchange DTD v3.0 20080202//EN" uri="dtd/archivearticle3.dtd"/>
-   <public publicId="-//NLM//DTD Journal Archiving DTD Customize Classes Module v3.0 20080202//EN" uri="dtd/archivecustom-classes3.ent"/>
-   <public publicId="-//NLM//DTD Journal Archiving DTD Customize Mixes Module v3.0 20080202//EN" uri="dtd/archivecustom-mixes3.ent"/>
-   <public publicId="-//NLM//DTD Journal Archiving DTD Customize Content and Attributes Module v3.0 20080202//EN" uri="dtd/archivecustom-models3.ent"/>
-   <public publicId="-//NLM//DTD Journal Archiving DTD-Specific Modules v3.0 20080202//EN" uri="dtd/archivecustom-modules3.ent"/>
+   <public publicId="-//NLM//DTD Journal Archiving and Interchange DTD v3.0 20080202//EN" 
+           uri="dtd/archivearticle3.dtd"/>
+   <public publicId="-//NLM//DTD Journal Archiving DTD Customize Classes Module v3.0 20080202//EN" 
+           uri="dtd/archivecustom-classes3.ent"/>
+   <public publicId="-//NLM//DTD Journal Archiving DTD Customize Mixes Module v3.0 20080202//EN" 
+           uri="dtd/archivecustom-mixes3.ent"/>
+   <public publicId="-//NLM//DTD Journal Archiving DTD Customize Content and Attributes Module v3.0 20080202//EN" 
+           uri="dtd/archivecustom-models3.ent"/>
+   <public publicId="-//NLM//DTD Journal Archiving DTD-Specific Modules v3.0 20080202//EN" 
+           uri="dtd/archivecustom-modules3.ent"/>
 
   
 </catalog>
