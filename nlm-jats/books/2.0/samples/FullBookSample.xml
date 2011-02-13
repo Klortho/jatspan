@@ -1,8 +1,10 @@
 <?xml version="1.0"?>
-<!DOCTYPE book PUBLIC "-//NLM//DTD Book DTD v2.0 20041031//EN" "nlm_lib/2.0/book.dtd">
+<!DOCTYPE book PUBLIC "-//NLM//DTD Book DTD v2.0 20041031//EN" "../dtd/book.dtd">
 <!--
-  Copied from the books/2.0 documentation.
   $Id$
+  
+  Copied from the books/2.0 documentation.
+  Modified the system identifier above to use the correct relative path.
 -->
 <book>
 <book-meta>

@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
-<!DOCTYPE book PUBLIC "-//NLM//DTD Book DTD v2.1 20050630//EN" "book.dtd">
+<!DOCTYPE book PUBLIC "-//NLM//DTD Book DTD v2.1 20050630//EN" "../dtd/book.dtd">
 <!--
+  $Id$
   Copied from the books/2.1 documentation.
   This is identical to the books/2.0/samples/FullBookSample.xml file, except for the
   doctype decl and this comment.
-  $Id$
 -->
 <book>
 <book-meta>
