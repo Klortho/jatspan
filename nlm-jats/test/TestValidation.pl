@@ -2,6 +2,16 @@
 # $Id$
 # See POD documentation below for information.
 
+# Here are some other xmllint options that might be useful for other test
+# "methods", if you ever want to expand this script's functionality:
+#  --path <paths> - a set of paths for resources.
+#    Not the same as setting xml:base.  For example, even if a resource is 
+#    specified in the XML file as "../junk.dtd", then xmllint will only look 
+#    for junk.dtd in <paths>, not in the parents of <paths>.
+#  --loaddtd
+#  --dtdvalid - specify the dtd explicitly
+#  --dtdvalidfpi - specify the dtd by fpi.  Requires catalogs.
+
 use FindBin;
 use Getopt::Long;
 use Pod::Usage;
@@ -143,7 +153,12 @@ sub TestSample
         $ENV{XML_CATALOG_FILES} = '';
         local $CWD = $samplePathname;
         print "    Working directory:  $CWD\n" if $verbose;
-        my $cmd = "xmllint --valid --noout $sampleFilename 2>&1";
+        
+        # Note that "--nocatalogs" doesn't seem to work.  That is, even if I 
+        # include it on a validation command that requires the catalog to work,
+        # it still validates okay, proving that it does use the catalog.
+        # Nevertheless, include it here just for good measure.
+        my $cmd = "xmllint --valid --noout --nocatalogs --nonet $sampleFilename 2>&1";
         print "    Test command:  '$cmd'\n" if $verbose;
         return ExecXmllint($cmd, $sampleFullname);
     }
@@ -154,7 +169,7 @@ sub TestSample
         copy($sampleFullname, $tempFullname);
         local $CWD = $tempdir;
         print "    Working directory:  $CWD\n" if $verbose;
-        my $cmd = "xmllint --valid --noout $sampleFilename 2>&1";
+        my $cmd = "xmllint --valid --noout --nonet $sampleFilename 2>&1";
         print "    Test command:  '$cmd'\n" if $verbose;
         my $status = ExecXmllint($cmd, $tempFullname);
         unlink $tempFullname;
@@ -221,15 +236,24 @@ directory and directories of the DTDs is consistent.
 
 By copying the sample into a temporary directory, and setting 
 the XML_CATALOG_FILES environment variable to point to the master catalog 
-file.  This tests the consistency of all the catalog files.
+file.  This tests the consistency of all the catalog files.  The master catalog
+file is assumed to be a file named "catalog.xml" in the B<JATS_HOME> directory
+(see below).
 
 =back
 
-The sample file(s) can either be given on the command line with the --samples
-option, or are assumed to be listed in a file named TestSampleList.txt in
-the current working directory.  Each file should be given as a pathname that's
-either absolute or relative to B<JATS_HOME>.  If B<JATS_HOME> is not set, it is
+By default, the sample files are assumed to be listed in a file named 
+TestSampleList.txt in the current working directory.  Alternatively, you can
+give one sample file on the command line with the --sample
+option.  In either case, each file should be given as a pathname that's
+either absolute or relative to a directory specified in the B<JATS_HOME>
+environment variable.  If B<JATS_HOME> is not set, it is
 assumed to be the B<parent> of the current working directory.
+
+Important:  If you want to make sure you are testing the DTDs and sample files
+relative to the current working directory, make sure B<JATS_HOME> is I<not set>.
+Then, for example, if you run this from the directory /home/joe/nlm-jats/test,
+B<JATS_HOME> will be /home/joe/nlm-jats.
 
 =head1 OPTIONS
 
