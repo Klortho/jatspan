@@ -19,10 +19,11 @@ Here are some details, in no particular order.
 
 - The OASIS catalog files here do not use the xml:base attribute, so this
   archive should be completely relocateable.  The top-level catalog file is in
-  the nlm-jats root directory, and is named catalog.xml.  To set up oXygen to
-  use this catalog file with this set of DTDs, select "Options" ->
-  "Preferences".  Then, in the tree on the left, "XML" -> "XML Catalog", and
-  then add the main  catalog.xml file from the nlm-jats directory
+  the nlm-jats root directory, and is named catalog.xml.
+
+- To set up oXygen to use this catalog file with this set of DTDs, select
+  "Options" -> "Preferences".  Then, in the tree on the left, "XML" -> "XML
+  Catalog", and then add the main catalog.xml file from the nlm-jats directory
 
 - The directory structure is consistent and clean.  Library files are those
   from XHTML and MathML, have been factored out into the "lib" directory.
