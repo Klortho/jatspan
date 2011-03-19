@@ -1,0 +1,74 @@
+File ./archiving/1.0/archive-interchange-dtd/display.ent, line 12
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v1.0 20021201//EN
+File ./archiving/1.0/archive-interchange-dtd/modules.ent, line 147
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v1.0 20021201//EN
+File ./archiving/1.1/archive-interchange-dtd-1.1/display.ent, line 12
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v1.1 20031101//EN
+File ./archiving/1.1/archive-interchange-dtd-1.1/modules.ent, line 152
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v1.1 20031101//EN
+File ./archiving/2.0/archive-interchange-dtd-2.0/catalog.ent, line 63
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.0 20040830//EN
+File ./archiving/2.0/archive-interchange-dtd-2.0/display.ent, line 12
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.0 20040830//EN
+File ./archiving/2.0/archive-interchange-dtd-2.0/modules.ent, line 220
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.0 20040830//EN
+File ./archiving/2.1/archive-interchange-dtd-2.1/catalog-v2.xml, line 406
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.1 20050630//EN
+File ./archiving/2.1/archive-interchange-dtd-2.1/catalog.ent, line 119
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.1 20050630//EN
+File ./archiving/2.1/archive-interchange-dtd-2.1/display.ent, line 12
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.1 20050630//EN
+File ./archiving/2.1/archive-interchange-dtd-2.1/modules.ent, line 241
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.1 20050630//EN
+File ./article_authoring/2.1/article-authoring-dtd-2.1/catalog-v2.xml, line 406
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.1 20050630//EN
+File ./article_authoring/2.1/article-authoring-dtd-2.1/catalog.ent, line 119
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.1 20050630//EN
+File ./article_authoring/2.1/article-authoring-dtd-2.1/display.ent, line 12
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.1 20050630//EN
+File ./article_authoring/2.1/article-authoring-dtd-2.1/modules.ent, line 241
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.1 20050630//EN
+File ./books/2.0/book-dtd-2.0/catalog.ent, line 63
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.0 20040830//EN
+File ./books/2.0/book-dtd-2.0/display.ent, line 12
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.0 20040830//EN
+File ./books/2.0/book-dtd-2.0/modules.ent, line 220
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.0 20040830//EN
+File ./books/2.1/book-dtd-2.1/catalog-v2.xml, line 406
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.1 20050630//EN
+File ./books/2.1/book-dtd-2.1/catalog.ent, line 119
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.1 20050630//EN
+File ./books/2.1/book-dtd-2.1/display.ent, line 12
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.1 20050630//EN
+File ./books/2.1/book-dtd-2.1/modules.ent, line 241
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.1 20050630//EN
+File ./books/historical/2.1/book-historical-dtd-2.1/catalog-v2.xml, line 406
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.1 20050630//EN
+File ./books/historical/2.1/book-historical-dtd-2.1/catalog.ent, line 119
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.1 20050630//EN
+File ./books/historical/2.1/book-historical-dtd-2.1/display.ent, line 12
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.1 20050630//EN
+File ./books/historical/2.1/book-historical-dtd-2.1/modules.ent, line 241
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.1 20050630//EN
+File ./publishing/1.0/journal-publishing-dtd/display.ent, line 12
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v1.0 20021201//EN
+File ./publishing/1.0/journal-publishing-dtd/modules.ent, line 147
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v1.0 20021201//EN
+File ./publishing/1.1/journal-publishing-dtd-1.1/display.ent, line 12
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v1.1 20031101//EN
+File ./publishing/1.1/journal-publishing-dtd-1.1/modules.ent, line 152
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v1.1 20031101//EN
+File ./publishing/2.0/journal-publishing-dtd-2.0/catalog.ent, line 63
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.0 20040830//EN
+File ./publishing/2.0/journal-publishing-dtd-2.0/display.ent, line 12
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.0 20040830//EN
+File ./publishing/2.0/journal-publishing-dtd-2.0/modules.ent, line 220
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.0 20040830//EN
+File ./publishing/2.1/journal-publishing-dtd-2.1/catalog-v2.xml, line 406
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.1 20050630//EN
+File ./publishing/2.1/journal-publishing-dtd-2.1/catalog.ent, line 119
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.1 20050630//EN
+File ./publishing/2.1/journal-publishing-dtd-2.1/display.ent, line 12
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.1 20050630//EN
+File ./publishing/2.1/journal-publishing-dtd-2.1/modules.ent, line 241
+  -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements  v2.1 20050630//EN

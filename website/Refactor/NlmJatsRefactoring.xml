@@ -1,0 +1,1204 @@
+<?xml version="1.0" standalone='no'?>
+
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Archiving and Interchange DTD v3.0 20080202//EN"
+  "http://dtd.nlm.nih.gov/archiving/3.0/archivearticle3.dtd">
+
+<?xml-stylesheet href='archiving3-to-xhtml.xsl' type='text/xsl'?>
+
+<article dtd-version="3.0" xmlns:xlink='http://www.w3.org/1999/xlink'>
+  <front>
+    <article-meta>
+      <title-group>
+        <article-title>NLM JATS Refactoring Suggestions</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Maloney</surname>
+            <given-names>Chris</given-names>
+          </name>
+        </contrib>
+      </contrib-group>
+      <pub-date>
+        <day>23</day>
+        <month>08</month>
+        <year>2010</year>
+      </pub-date>
+      
+      <abstract>
+        <p></p>
+      </abstract>
+    </article-meta>
+  </front>
+
+  <body>
+    <sec id='background'>
+      <title>Background</title>
+      <p>A couple of months ago, I decided to learn as much as I could about the 
+        NLM tag sets (I like the name "JATS", so from here on, I'll use that name as
+        a synonym for the entire collection of tag sets.)
+        I have been interested in XML-based publishing for a long time,
+        and I realized that my lack of knowledge
+        of the existing NLM/NCBI infrastructure, especially JATS, was something
+        that I should address.  I also wanted to learn as much as I could so that I could 
+        participate more meaningfully in the upcoming JATS-Con.</p>
+      <p>I decided to approach the project as an outsider would, and, doing all the work in
+        my spare time, I downloaded the files from the NCBI FTP site, and started to poke 
+        around.  My first goal was to understand what the
+        intended domain of each tag set is, and then to learn 
+        how the extension mechanisms are designed – both how the existing sets are 
+        extended from a common group of core modules,
+        and then to figure out how to make my own customizations and extensions.</p>
+      <p>I've gotten to the
+        point where I want to give an initial report of some of the things I've found,
+        in hopes that they might be useful.</p> 
+      <p>
+        Please keep in mind that I am a newcomer to these schema.  In some ways, I 
+        think, that is a good thing.  Hopefully my perspective will have allowed me
+        to see some things that others with more familiarity might have overlooked.
+        On the other hand, some of the things I've "found", I'm sure, will
+        already be common knowledge and will have already been discussed and and/or
+        dismissed.
+      </p>
+      <p>I think the NLM JATS are a great resource, and I'm very impressed by them,
+        especially with the thoroughness of the comments and documentation.  I'm a 
+        big fan of good documentation, so perusing the sources here has been a
+        pleasure.  So I hope that the fact that I've found a few problems and data
+        errors doesn't give the impression that I'm not a 
+        JATS fan – I am!
+      </p>
+    </sec>
+
+    <sec id='scope'>
+      <title>Scope</title>
+      <p>
+        This initial report is just about a few of the public-facing resources that 
+        NCBI provides, and not about anything that we use internally.  These resources
+        include:
+      </p>
+      <list>
+        <list-item>
+          <p>Zip files from the <ext-link xlink:href='ftp://ftp.ncbi.nlm.nih.gov/pub/archive_dtd/'>public 
+            FTP archive site</ext-link>
+          </p>
+        </list-item>
+        <list-item>
+          <p>The <ext-link xlink:href='http://www.ncbi.nlm.nih.gov/pmc/pmcdoc/dtd/'>PMC 
+            DTD public site</ext-link></p>
+        </list-item>
+        <list-item>
+          <p>The <ext-link xlink:href='http://dtd.nlm.nih.gov/'>dtd.nlm.nih.gov site</ext-link>,
+            which contains 
+            the static HTML pages and also the DTD resources.</p>
+        </list-item>
+      </list>
+
+      <p>The above sites serve many different kinds of files.  This report is only 
+        concerned with the DTDs and the sample files; not any of the documentation, 
+        Relax NG (rng files), W3C Schema (xsd files), tools, or other miscellaneous
+        files.</p>
+    </sec>
+    
+    <sec id='existing-problems'>
+      <title>Existing problems</title>
+      <p>
+        Here is a list of things that I consider to be problems in the existing 
+        resources, as served from the above-mentioned sites.
+      </p>
+      <list list-type="order">
+        <list-item id='problem-1'>
+          <p>Redundancy.</p>
+          <p>The zip files downloadable from the
+            <ext-link xlink:href='ftp://ftp.ncbi.nlm.nih.gov/pub/archive_dtd/'>public 
+              FTP archive site</ext-link>,
+            in each DTD set/version, are each delivered as a stand-alone
+            bundle.  
+            For example, the books 2.3 DTD zip file includes all of the
+            books-specific modules, as well as all of the shared modules, and even
+            the xhtml and mathml2 library modules.  This means that if a user were
+            to download and install several different tag set bundles (which is 
+            probably a common use-case), then he/she would end up with many different
+            copies of the same files.  This is a maintenance problem.
+          </p>
+        </list-item>
+        
+        <list-item id='problem-2'>
+          <p>Flat directory structure.
+          </p>
+          <p>
+            Within each zip archive, most of the files are mixed together into the
+            same directory.  There are a few subdirectories
+            (iso8879, mathml, etc.) but these don't correspond clearly to the
+            libraries to which they belong.
+          </p>
+          <p>This way of delivering the files is fine if all the user wants to do is 
+            validate documents against a specific tag set and version, and he/she doesn't care
+            about the internal structure of the DTD.
+            But developers and systems maintainers, on the other hand, 
+            would be interested in understanding the architecture
+            of the set, and the relationships between the files.
+            As they are delivered now, it is
+            very difficult to see the modular nature and the various dependencies
+            of the tag sets.
+          </p>
+        </list-item>
+
+        <list-item id='problem-3'>
+          <p>File/directory organization is inconsistent.</p>
+          <p>The contents of the zip files, in terms of directory
+            structures and the sets of included files, is not completely consistent.  
+            This makes it hard to
+            set up a system to handle multiple version of multiple sets of DTDs.</p>
+          <p>Here are just a few simple examples:</p>
+          <list>
+            <list-item>
+              <p>The folder <ext-link xlink:href='ftp://ftp.ncbi.nih.gov/pub/archive_dtd/archiving'>archiving</ext-link> actually contains two tag sets:  archiving
+              and archive-oasis</p>
+            </list-item>
+            <list-item>
+              <p>The <ext-link xlink:href='ftp://ftp.ncbi.nih.gov/pub/archive_dtd/archiving/2.2/'>archiving/2.2</ext-link>
+                directory contains and ArchiveReadme.txt file and a 
+                ChangeReport2.2.zip file that don't have analogs elsewhere,</p>
+            </list-item>
+            <list-item>
+              <p>In <ext-link xlink:href='ftp://ftp.ncbi.nih.gov/pub/archive_dtd/archiving/2.3/'>archiving/2.3</ext-link>,
+              the HTML documentation for the archive-oasis tag set is in a zip file named
+              OASIS2_3-HTML.zip, which doesn't match the naming convention of the other files.
+              </p>
+            </list-item>
+          </list>
+          <p>Individually, these inconsistencies are each very minor.  But this is just a few examples, and
+            taken together, these problems make the FTP
+            site more confusing and harder to use.</p>
+        </list-item>
+
+        <list-item id='problem-4'>
+          <p>The delivered OASIS catalog files use the xml:base attribute.
+          </p>
+          <p>For example, the publishing 3.0 DTD set includes a catalog file
+            <ext-link xlink:href="http://dtd.nlm.nih.gov/publishing/3.0/catalog-v3.xml">catalog-v3.xml</ext-link>,
+            that has &lt;group&gt; elements similar to:
+            <preformat>&lt;group xml:base='file:///C:/Work/Tasks/DTDJournal/'&gt;</preformat>  
+            There are two problems with this.</p>
+          <p>
+            The first is that the existence of this attribute
+            makes the catalog file impossible to relocate without modification.
+            Indeed, unless the user happens to put the tag set files in the exact same place
+            on his/her machine, these catalog files are unusable unless the installer
+            manually edits these values (or removes the attribute altogether).
+          </p>
+          <p>The second problem is that the attribute value is a reference
+            to some developer's working directory, and it really doesn't belong in a
+            public-facing resource.</p>
+        </list-item>
+
+        <list-item id='problem-5'>
+          <p>Naming inconsistencies.</p>
+          <p>There is inconsistency in the use of abbreviations and names
+            used to refer to the tag sets.
+          </p>
+          <p>Here are some examples:</p>
+          <list>
+            <list-item>
+              <p>"Archiving and Interchange Tag Set" is also known as
+                the "Journal Archiving and Interchange Tag Set".</p>
+            </list-item>
+            <list-item>
+              <p>One of the main directories on the FTP site is "archiving",
+                but zip files contained within it are named "archive-interchange...".</p>
+            </list-item>
+            <list-item>
+              <p>In the "Journal Publishing Tag Set", the 
+                main FTP directory is "publishing", but the zip files are named 
+                "journal-publishing...".</p>
+            </list-item>
+            <list-item>
+              <p>In the "Article Authoring" set, the main web page is at 
+                ".../articleauthoring", the main FTP directory is 
+                "article_authoring" (with an underscore), but the zip files are named 
+                "article-authoring" (with a hyphen).</p>
+            </list-item>
+          </list>
+          <p>There are others.  Again, most of these, individually, are minor; but
+            these kinds of inconsistencies, in my experience, make it harder for
+            a newcomer (such as myself) to get started understanding and using the 
+            tag sets.</p>
+        </list-item>
+
+        <list-item id='problem-6'>
+          <p>No canonical system identifiers for the DTDs.</p>
+          <p>Compare with DocBook, which recommends the 
+            following preamble for all new DocBook 4 documents [R1]:
+            <preformat>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!DOCTYPE article PUBLIC '-//OASIS//DTD DocBook XML V4.5//EN'
+                  'http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd'&gt;</preformat>
+            In this preamble, the document type is specified both with a 
+            public identifier as well as a <italic>well-defined,
+            canonical, stable system identifier</italic>.
+          </p>
+          <p>
+            In contrast, there are no such canonical system identifiers established
+            for the NLM JATS tag set DTDs, that I know of.  There are two reasons 
+            that this is a problem.
+          </p>
+          <p>The first is that 
+            documents must identify themselves either with a public id or
+            with a <italic>relative</italic> system id.  This, in turn, means that
+            it's impossible for someone to use (parse) a document without 
+            downloading and installing the tag set, and/or setting up
+            an OASIS catalog file.  If the person happened to know the location of the DTD
+            or module on the site http://dtd.nlm.nih.gov/, he/she could use that, but
+            (again, as far as I know) these addresses are not published anywhere, and
+            NCBI doesn't provide any guarantee that these URLs will be 
+            stable and persistent.</p>  
+          <p>If there were published, easy to
+            find, and stable canonical system identifiers for 
+            each public identifer (or at least the .dtd files themselves), then a 
+            casual user would be able to write and validate
+            a document (say, in a web browser) using the DTD from our web site.</p>
+          <p>The other reason this is a problem is that formal public identifiers 
+            are a legacy system, even in doctype declarations.  Therefore,
+            system identifiers should be used to identify the document type, and these should be
+            absolute URIs with the characteristics of uniqueness and persistence, similar
+            to namespace URIs.
+          </p>
+        </list-item>
+
+        <list-item id='problem-7'>
+          <p>File discrepencies.</p>
+          <p>Among the deployed DTDs, there are many differences among
+            two or more files that are refered to by the same 
+            formal public identifier.  This is a direct result of the
+            <xref rid='problem-1'>Redundancy problem</xref> described above.  </p>
+          <p>Most of the differences are minor – either differences in
+            whitespace or in comments.  But in a few cases, they are
+            significant, and would/do result in changes to the models of the DTDs
+            that use them.</p>
+          <p>I think they are significant, even when the differences are minor, because 
+            they are a source of ambiguity and confusion, and cause extra work for
+            anybody who sets out to thoroughly understand or to organize the DTDs 
+            on their own systems; for example,
+            publishers who might want to adopt and/or extend the DTDs for their own
+            use.  
+          </p>
+          <p>Personally, this is the problem that I found to be the most vexing, 
+            because there are
+            so many files, and figuring out which was the correct version of different
+            files with the same public identifier took an enormous amount of time.</p>
+          <p>There is also one
+            case where there are two different public identifiers that are used (in 
+            catalog.ent files) to refer to the same physical resource.</p>
+        </list-item>
+
+        <list-item id='problem-8'>
+          <p>OASIS Exchange Table Model DTD problems</p>
+          <p>The main problem here was that the 
+            <ext-link xlink:href='http://www.oasis-open.org/specs/tm9901.html'>OASIS 
+            Exchange Table Model DTD</ext-link> was modified without changing
+            the public identifier in the catalog files.
+          </p>
+          <p>
+            The catalog entry for books 2.3, for example, is
+            <preformat>&lt;public publicId="-//OASIS//DTD XML Exchange Table Model 19990315//EN"
+        uri="oasis-exchange.ent"/&gt;</preformat>
+            but the file oasis-exchange.ent does not match the official version of this
+            file.  The header explains
+            that all the elements were put into a "namespace" 
+            called "oasis:".  This was a non-trivial change.</p>
+          <p>
+            This creates a serious problem, because if somebody is using a catalog or 
+            some other tool
+            (like oXygen) that maps this public identifier to the official version of
+            this DTD, then JATS documents will not validate.  On the other hand, if they 
+            set up the tool
+            such that it maps this public identifier to the non-standard JATS version, then other
+            documents, that use this DTD (for example, DocBook), will no longer validate.</p>
+          <p>There were a number of other problems with this set of files.  The 
+            public identifier 
+            <preformat>-//OASIS//DTD MD copy XML Exchange Table Model 19990315//EN</preformat>
+            was in use in many places, but not in any catalog file, so it was
+            probably not being used by any XML validating tool.
+          </p>
+          <p>Also, the value of the xmlns:oasis attribute was given in many places as the
+            same as the public identifier, and in other places as the value of the
+            OASIS URI "http://docs.oasis-open.org/ns/oasis-exchange/table".
+          </p>
+        </list-item>
+
+        <list-item id='problem-9'>
+          <p>Other discrepencies.</p>
+          <p>These include:</p>
+          <list>
+            <list-item>
+              <p>Files whose contents were identical, but had different names.</p>
+            </list-item>
+            <list-item>
+              <p>Public identifiers appear in files in a non-normalized form;
+                see the report
+                <ext-link xlink:href='Details/NormalizedPublicIds.txt'>NormalizedPublicIds.txt</ext-link>.
+              This makes them more difficult to search.</p>
+            </list-item>
+            <list-item>
+              <p>Some system id entries in the catalog.ent files had the wrong case</p>
+            </list-item>
+            <list-item>
+              <p>A few cases of incorrect public identifiers.</p>
+            </list-item>
+            <list-item>
+              <p>Files that appear in DTD bundles where they are not used.</p>
+            </list-item>
+            <list-item>
+              <p>In a few files, the comments at the top that give the
+                public identifiers were missing.  A few had incorrect values for the public
+                identifiers.</p>
+            </list-item>
+            <list-item>
+              <p>One of the sample files provided (archiving 1.0, sampleminimal.xml)
+              is actually not valid according to the DTD that it accompanies.</p>
+            </list-item>
+          </list>
+          <p>For a fill list of discrepencies, search the 
+            <ext-link xlink:href='Details/Details.txt'>detailed 
+              report</ext-link> for the character "✕".</p>
+        </list-item>
+
+        <list-item id='problem-10'>
+          <p>Orphan zip file.</p>
+          <p>On the FTP site is a zip file,
+            <ext-link xlink:href='ftp://ftp.ncbi.nih.gov/pub/archive_dtd/books/0.1/ncbi-books-0.1.zip'>
+              ftp://ftp.ncbi.nih.gov/pub/archive_dtd/books/0.1/ncbi-books-0.1.zip
+            </ext-link>
+            but its contents do not match its location and name.  This seems to be
+            a draft version of 2.0.
+          </p>
+        </list-item>
+      </list>
+    </sec>
+
+    <sec id='methodology'>
+      <title>Methodology</title>
+      <p>As I investigated these issues, and the list of problems / suggested changes grew, 
+        I tried to think of some way to document everything so
+        that my work could be tracked and repeated, if desired.
+      </p>
+      <p>First I considered writing a Perl script that would perform
+        the changes automatically, starting with the Zip archives from the
+        FTP site.  It quickly became apparent, however, that there were too many
+        different kinds of changes, including edits to fix typos, etc., 
+        and that automating them didn't make sense.  Any such automation
+        procedure would be extremely brittle – if anything changed in the
+        distribution files, the change procedure would be unusable.
+      </p>
+      <p>Then, I hit on the idea of using a version control system such as
+        Subversion.  I decided to make the changes in Subversion, which provides 
+        complete change tracking from beginning to end.  It's also possible
+        to add comments associated with every commit, and to see the state of the 
+        repository at any intermediate state.
+      </p>
+      <p>I decided not to use the NCBI subversion repository, for two reasons.
+        The first is that I did this work from home, and accessing the NCBI 
+        repository would have been slightly less convenient.  The second is that
+        I wanted to take the opportunity to set up a project on 
+        <ext-link xlink:href="http://sourceforge.net">Sourceforge</ext-link>.
+        I was inspired by the <ext-link 
+          xlink:href="http://sourceforge.net/projects/taxpub/">TaxPub project</ext-link>,
+        which I recently discovered there.</p>
+      <p>A summary of the steps taken to start this project are:</p>
+      <list>
+        <list-item>
+          <p>Set up the <ext-link 
+            xlink:href="http://sourceforge.net/projects/nlm-jats/">NLM-JATS Sourceforge
+            project</ext-link>,</p>
+        </list-item>
+        <list-item>
+          <p>Started a text log <ext-link xlink:href="Details/Details.txt">Details/Details.txt</ext-link>
+          to track step-by-step, in great detail, what I was doing,</p>
+        </list-item>
+        <list-item>
+          <p>Using a Perl utility I wrote, downloaded, extracted, and flattened all of the
+            "DTD" Zip archive from the FTP site.  Note that this excludes all
+          documentation, Relax-NG, Schema, etc. zip files.</p>
+        </list-item>
+        <list-item>
+          <p>Imported these into the <ext-link 
+            xlink:href="https://sourceforge.net/scm/?type=svn&amp;group_id=333971">Subversion 
+            repository at Sourceforge</ext-link>, at "trunk/nlm-jats".</p>
+        </list-item>
+      </list>
+
+      <p>I then proceeded to make changes, as described below.  The first section
+        below, <xref rid="suggested-changes-done">Suggested changes - done in Sourceforge</xref>, 
+        summarizes the changes that I made to the files in the Sourceforge
+        repository, to address the problems listed above.</p>
+      <p>The next section, "Suggested changes - future", is a list of changes
+        that I think should be made, but that are not done yet in the Sourceforge
+        repository.</p>
+
+      
+      
+      <p>Note that by using a newly-created Sourceforge project, I am not suggesting
+        that the maintenance of the JATS files be officially moved to this platform.
+        As mentioned above, it is merely a way of providing a clear, easily
+        accessible record of all changes.
+        I hope that this way of making suggestions for changes will allow
+        interested people to investigate and understand the suggestions in
+      detail, if they want.  If some changes are accepted while others are
+      rejected, it is fairly easy to do "diffs", and to create sets of 
+      patches that could be applied, to facilitate that work.
+      One could also easily revert the repository to an earlier version,
+      and restart from that point.</p>
+
+      <p>On the other hand, perhaps moving the maintenance of the JATS DTDs 
+        permanently to this Sourceforge project could have added benefits.  
+        For example, we could invite participation
+        from the user community and it could become a truly collaborative, open-source
+        project.  Having a project on Sourceforge wouldn't imply that we would
+        relinquish any control over it, but it would mean that the work
+        itself would be more visible and open to scrutiny and discussion.  I 
+      realize, however, that this would be a huge change from the current way of 
+      doing things, and I'm not officially suggesting it.</p>
+
+      <p>While working on this project, I also created a Perl library,
+        called "JatsUtils",
+        which includes some modules and several scripts for downloading
+        and extracting the zip files from the NCBI FTP archive, and then
+        digesting and analyzing the results.  There are more details about
+        this library <xref rid="jatsutils">below</xref>.</p>
+    </sec>
+     
+    <sec id='suggested-changes-done'>
+      <title>Suggested changes - done in Sourceforge</title>
+      
+      <sec id='new-dir-struct'>
+        <title>New directory structure</title>
+        <p>(This addresses problems <xref rid='problem-1'>1</xref>, <xref rid='problem-2'>2</xref>, and
+          <xref rid='problem-3'>3</xref>.)</p>
+        <p>I recommend changing the directory structure that holds all of the DTD
+        modules, and eliminating all of the redundant files.</p>
+        <p>The most important aspect of this is factoring
+          out all of the shared files, and moving them into separate locations.
+          I created two new directories, "core"
+          (for JATS modules) and "lib" (for third party modules:  mathml2 and xhtml).</p>
+
+        <p>Each tag set should have it's own top-level directory.  In a few cases, this
+          involves separating out and moving some modules from the directories
+          in which they are currently deployed.  For example, "historical" was
+          separated from "books".</p>
+        <p>Here are the abbreviations I settled on, which are used for the directory
+          names of each of the tag sets:
+          "archive-oasis", "archiving", "authoring", "books",
+          "historical", "publishing", and "publishing-oasis".
+        </p>
+        <p>Underneath each tag set directory are individual directories corresponding
+        to the version numbers.</p>
+        <p>Underneath the version number directories, for each tag set, are separate
+          directories "dtd", "rng", "xsd", "docs", etc. (But note that in the current
+          repository, "rng", "xsd", "docs", and others are not yet implemented.)</p>
+        
+        <p>Also, there are some sample .xml files among the zip archives, 
+          but in the current distributions, they are included in the dtd directory.  
+          These sample files should be in their own directory,
+          which is a sibling of 'dtd', 'rng', etc.  The reason is that the same sample
+          can be used with any of the types of schema.  I recommend a directory named
+          "samples".</p>
+
+        <p>Here is the directory structure that I implemented in
+          the <ext-link xlink:href="http://nlm-jats.svn.sourceforge.net/viewvc/nlm-jats/trunk/nlm-jats/">Sourceforge 
+            repository</ext-link>:</p>
+        <preformat>nlm-jats/
+    lib/ - third party "libraries"
+        mathml2/
+            2.0/
+                dtd/ - contents from the MathML distribution, see <xref rid="lib-setup">below</xref>
+        xhtml/
+            1.0/
+    core/ - all NLM JATS shared modules
+        1.0/
+            catalog.xml
+            dtd/
+            rng/
+            xsd/
+            docs/
+            samples/
+            tools/
+        2.0/
+            catalog.xml
+            ...
+        ...
+    archive-oasis/ - was mixed in with archiving
+        2.3/
+        3.0/
+    archiving/ - green
+        ...
+    authoring/ - pumpkin
+        ...
+    books/ - purple
+        ...
+    historical/ - was mixed in with books
+        ...
+    publishing/ - blue
+        ...
+    publishing-oasis/ - was mixed in with publishing
+        ...</preformat>
+        
+        <p>This reorganization has the added benefit that now each of the 
+          tag sets can be versioned independently.  In other words, version 4.0
+          of historical doesn't have to correspond to version 4.0 of any of
+        the other sets.  This might become more important as the number
+        of custom tag sets increases.</p>
+
+      </sec>
+
+      <sec id='lib-setup'>
+        <title>Use standard versions of MathML and XHTML</title>
+        <p>I downloaded MathML 2.0 from the
+          <ext-link xlink:href="http://www.w3.org/Math/DTD/mathml2.tgz">W3C site</ext-link>,
+          and extracted it to <ext-link
+            xlink:href='http://nlm-jats.svn.sourceforge.net/viewvc/nlm-jats/trunk/nlm-jats/lib/mathml2/2.0/dtd/'>lib/mathml2/2.0/dtd</ext-link>.
+        </p>
+        <p>I created an <ext-link 
+          xlink:href="http://nlm-jats.svn.sourceforge.net/viewvc/nlm-jats/trunk/nlm-jats/lib/mathml2/2.0/catalog.xml">OASIS 
+          catalog file</ext-link> for this set, which I adapted from two sources:
+        </p>
+        <list>
+          <list-item>
+            <p>The catalog file distributed with Oxygen XML ver. 11.
+            </p>
+          </list-item>
+          <list-item>
+            <p>The catalogs distributed with the NLM DTDs
+            </p>
+          </list-item>
+        </list>
+        <p>
+          For the XHTML library, I created a new directory 
+          <ext-link
+          xlink:href='http://nlm-jats.svn.sourceforge.net/viewvc/nlm-jats/trunk/nlm-jats/lib/xhtml/1.0/'>lib/xhtml/1.0</ext-link>,
+          and moved the two files
+          xhtml-table-1.mod and xhtml-inlstyle-1.mod into it.  I then created an
+          <ext-link xlink:href="http://nlm-jats.svn.sourceforge.net/viewvc/nlm-jats/trunk/nlm-jats/lib/xhtml/1.0/catalog.xml">OASIS
+          catalog file</ext-link> that links to these two modules.
+        </p>
+      </sec>
+          
+      <sec id='fix-catalogs'>
+        <title>Create new OASIS catalog files</title>
+        <p>(This addresses problem <xref rid='problem-4'>4</xref>.)</p>
+        <p>I created new OASIS catalog files, one for each tag set / version.
+        </p>
+        <p>I completely removed xml:base attributes.  In my opinion, these should
+          not be used.  Instead, the URIs used to locate resources are specified 
+          relative to the location of the catalog file itself.</p>
+        <p>Also, each catalog file only references those modules and files 
+          that exist underneath the directory in which it resides.  Since common
+          modules were segregated out into lib and core, the catalog files for
+          each tag set / version are much smaller than those currently included in
+          the zip files.</p>
+        <p>These changes make the catalog files, and each library to which they 
+          are attached, completely relocateable.  They would
+          be usable as soon as they are downloaded and extracted from the zip file,
+          regardless of where on the target machine they are installed,
+          (along with the rest of the DTD modules) without any modifications.</p>
+        <p>Here are a few examples of the new catalog files:</p>
+        <list>
+          <list-item>
+            <p><ext-link xlink:href='http://nlm-jats.svn.sourceforge.net/viewvc/nlm-jats/trunk/nlm-jats/core/2.3/catalog.xml'>core/2.3/catalog.xml</ext-link></p>
+          </list-item>
+          <list-item>
+            <p><ext-link xlink:href='http://nlm-jats.svn.sourceforge.net/viewvc/nlm-jats/trunk/nlm-jats/authoring/2.3/catalog.xml'>authoring/2.3/catalog.xml</ext-link></p>
+          </list-item>
+          <list-item>
+            <p><ext-link xlink:href='http://nlm-jats.svn.sourceforge.net/viewvc/nlm-jats/trunk/nlm-jats/books/3.0/catalog.xml'>books/3.0/catalog.xml</ext-link></p>
+          </list-item>
+        </list>
+        <p>Finally, I created a <ext-link 
+          xlink:href="http://nlm-jats.svn.sourceforge.net/viewvc/nlm-jats/trunk/nlm-jats/catalog.xml">master 
+          catalog file</ext-link>, which resides in the parent "nlm-jats" directory,
+          and which includes all of the others using the
+          &lt;nextCatalog&gt; element.  In order to set up an XML tool, such as,
+          for example, oXygen, to use these, all that is required is to add this
+          master catalog file to the list of catalog files in its preferences.
+        </p>
+        <p>There is another benefit to this modular approach: 
+          if a developer wants to override the DTDs for a particular subset (for 
+          debugging, for example) all he/she would have to do is to load the catalog for that
+          particular working copy of the subset
+          first, before any of the other catalogs.  Then, just those entities that
+          are specified in this development version of the catalog are overridden;
+          all other entities continue to use the defaults.
+        </p>
+      </sec>
+      
+      <sec id='adjust-rel-sysids'>
+        <title>Adjust the relative system identifiers in all modules</title>
+        <p>By itself, the directory structure reorganization above would break 
+          the resolution of entities on systems that don't use catalogs.  This is
+          because, without catalogs, the resolver must rely on the system
+          identifiers to find the included entities.  
+        </p>
+        <p>For example, in the
+          <ext-link xlink:href="http://dtd.nlm.nih.gov/book/2.3/book.dtd">books 
+            2.3 dtd</ext-link>, we find this:
+          <preformat>&lt;!ENTITY % modules.ent 
+    PUBLIC "-//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v2.3 20070202//EN"
+    "modules.ent">
+%modules.ent;</preformat>
+        </p>
+        <p>Any application that does not use catalogs would ignore the public
+          identifier, and try to locate this module based on the relative system
+          identifer "modules.ent".  In other words, it would look for a file
+          "modules.ent" in the same directory as the book.dtd file.
+          But since this file was moved to core/2.3/dtd, it will not find it.
+        </p>
+        <p>The solution is to update these relative system identifiers to 
+          give the correct relative location based on the new directory structure.
+          For example, in the <ext-link 
+            xlink:href="http://nlm-jats.svn.sourceforge.net/viewvc/nlm-jats/trunk/nlm-jats/books/2.3/dtd/book.dtd">new 
+            version</ext-link> of the books 2.3 dtd, this
+          entity reference becomes:
+          <preformat>&lt;!ENTITY % modules.ent 
+    PUBLIC "-//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v2.3 20070202//EN"
+    "../../../core/2.3/dtd/modules.ent"&gt;
+%modules.ent;</preformat>
+          </p>
+
+        <p>I suspect that this change will be
+          very controversial.  I was very hesitant to suggest making changes to
+          any file without changing its public identifier.  After all, in the
+        "problems" section above I listed discrepencies between files that have
+        the same public identifier as one of the most vexing problems – yet,
+        here I am advocating making rather significant changes to a significant
+        subset of the files in JATS, without changing
+        their public identifiers.  Yet, I think this is the right decision, for 
+        the following reasons:</p>
+        <list>
+          <list-item>
+            <p>The significance of a public
+            identifier is that any tool that resolves it correctly will get identical 
+            results.  The public
+            identifier specifies a <italic>logical</italic> resource – a DTD or an external 
+              parsed entity, <italic>not a specific byte sequence</italic>.  With this change, 
+            the resolution of any given public identifier will still result
+            in the exact same entity replacement text, assuming that all the
+            sub-entities are correctly resolved.</p>
+          </list-item>
+          <list-item>
+            <p>It is more important that the redundancy in the deployed files
+            be eliminated, than that the existing released files be preserved.  
+            By introducing one more set of changes to each of the .dtd
+            and .ent files, we get rid of many real and potential conflicts.</p>
+          </list-item>
+          <list-item>
+            <p>This is the only way that I can think of to eliminate the redundancy and
+            to establish standard canonical versions of each of the resources in such
+            a way that they can be used in place, without having to be moved around
+            when they are deployed on a local system.</p>
+          </list-item>
+        </list>
+      </sec>
+
+      <sec id='math.ent-pubid'>
+        <title>Create a new public identifier for version 2.2 of the math.ent file</title>
+        <p>This addresses a specific instance of 
+          <xref rid="problem-7">problem 7</xref>.
+        </p>
+        <p>The module math.ent was changed in
+            version 2.2, in a non-trivial way, without changing the public identifier.  So this public id is used for
+            two different entities:
+          <preformat>-//NLM//DTD Archiving and Interchange DTD Suite Math Class Elements v2.0 20040830//EN</preformat>
+        </p>
+        <p>I created a new public identifier for version 2.2,
+          <preformat>-//NLM//DTD Archiving and Interchange DTD Suite Math Class Elements v2.2 20100718//EN</preformat>
+          and changed the references to it.</p>
+      </sec>
+
+      <sec id='fix-oasis-table'>
+        <title>Fix OASIS table model problems.</title>
+        <p>(This addresses problem <xref rid='problem-8'>8</xref>.)</p>
+        <p>I assigned a new public identifier to the modified oasis-exchange.ent file.
+          I used the value
+          <preformat>-//NLM//DTD Archiving and Interchange DTD Suite OASIS XML Table Model v1.0 20100821//EN</preformat>.
+          I thought about using this value, which appears in some places:
+          <preformat>-//OASIS//DTD MD copy XML Exchange Table Model 19990315//EN</preformat>
+          but I think
+          it is not a good idea, primarily because it begins with "OASIS", and this
+          public identifier was not assigned by OASIS.</p>
+        <p>Fixed the value of the namespace attribute xmlns:oasis, so that it is the
+          same everywhere.  The value I used was "http://docs.oasis-open.org/ns/oasis-exchange/table".</p>
+      </sec>
+      
+    </sec>
+
+    <sec id='suggested-future'>
+      <title>Suggested changes - future</title>
+
+      <sec id='canonical-sysids'>
+        <title>Establish canonical system identifiers</title>
+        <p>(This addresses problem <xref rid='problem-6'>6</xref>.)</p>
+        
+        <p>Many (if not most) of the .dtd and .ent files are currently
+          being served from the <ext-link 
+            xlink:href='http://dtd.nlm.nih.gov/'>dtd.nlm.nih.gov</ext-link>
+          domain.  For example:
+          <preformat>http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd
+http://dtd.nlm.nih.gov/archiving/2.3/archivearticle.dtd
+http://dtd.nlm.nih.gov/publishing/2.3/journalpublishing.dtd
+...</preformat>
+        </p>
+        <p>
+          However, there are differences between the path portions of these URLs and the 
+          directory structure that I've implemented.
+          </p>
+        <p>I propose that we establish <italic>canonical</italic> system identifiers,
+          as absolute URLs, for each
+          resource, and that these correspond to the redesigned directory structure 
+          described above.  This would mean that the new URLs would 
+          be different from the existing ones just listed, but it would probably
+          be necessary to maintain these existing URLs, so that they still work as 
+          before, so that existing applications would not break.
+        </p>
+
+        <p>There seems to be no overlap between the existing deployed set of
+          files and a new set that is rooted at the same domain, corresponding to
+          the "nlm-jats" directory of the Sourceforge repository.  The new files are in 
+          the respective "dtd" directories, which don't exist on the current server.  
+          Therefore, one possibility for the set of new URLs is, for example,
+        <preformat>http://dtd.nlm.nih.gov/publishing/3.0/dtd/journalpublishing3.dtd
+http://dtd.nlm.nih.gov/archiving/2.3/dtd/archivearticle.dtd
+http://dtd.nlm.nih.gov/publishing/2.3/dtd/journalpublishing.dtd
+...</preformat></p>
+
+        <p>However, I think it would be better to include a new top-level directory 
+          to the new URLs, so that the set that is being addressed is clear and 
+          unambiguous.  Also, this top-level directory serves an additional 
+          namespace-like prefix, so that the "dtd.nlm.nih.gov" domain could be
+          used more generically in the future (see NWS-113 for a discussion of
+          standards for NCBI namespace URIs, which are related).
+          For example,
+        <preformat>http://dtd.nlm.nih.gov/nlm-jats/publishing/3.0/dtd/journalpublishing3.dtd
+http://dtd.nlm.nih.gov/nlm-jats/archiving/2.3/dtd/archivearticle.dtd
+http://dtd.nlm.nih.gov/nlm-jats/publishing/2.3/dtd/journalpublishing.dtd
+...</preformat>
+        </p>
+        <p>Other possibilities for the top-level directory are "nlm" and "jats". </p>
+
+
+        <p>As mentioned above, the absolute system URLs that are currently in use should
+        continue to work as before, and return the exact same resource as before,
+        byte-for-byte.  Hopefully, this would be a temporary situation, until all
+        tools that use them could be updated to use the new canonical URLs.</p>
+        <p>It would not work to update the files that are served from the old URLs
+          to the new versions,
+        because the relative system identifiers within them would have changed to reflect
+        the new directory structure.</p>
+        <p>It might work to cause the old URLs to give a 301 "Moved Permanently" 
+        redirect to the requesting client, but it would have to be tested thoroughly.
+        I would be concerned that not all XML entitiy resolvers would correctly
+        follow these redirects, and then correctly interpret relative system identifiers
+        based on the new URL, as opposed to resolving them relative to the original
+        requested URL.</p>
+      </sec>
+      
+      
+      <sec id='rec-doctype-decls'>
+        <title>Establish recommended doctype declarations</title>
+
+        <p>It would be nice if we could establish a recommended header 
+          (doctype-decl) for each document of each set/version, that includes
+          the public and the system identifiers.  I recently noticed this text from
+          the Documentation for NCBI ncbi_briefarticle.dtd [R2]:          
+          <disp-quote><p>Identifiers:
+            <preformat>SYSTEM: "ncbi_briefarticle.dtd"
+        "http://dtd.nlm.nih.gov/ncbi/briefarticle/ncbi_briefarticle.dtd"
+
+PUBLIC: "-//NCBI//DTD Brief Article DTD v1 20090814//EN"</preformat>
+            </p>
+            <p>Suggested DOCTYPE Declarations:
+            <preformat>&lt;!DOCTYPE article PUBLIC "-//NCBI//DTD Brief Article DTD v1 20090814//EN" 
+"ncbi_briefarticle.dtd" &gt;
+
+&lt;!DOCTYPE article PUBLIC "-//NCBI//DTD Brief Article DTD v1 20090814//EN" 
+"http://dtd.nlm.nih.gov/ncbi/briefarticle/ncbi_briefarticle.dtd" &gt;</preformat>
+              </p>
+          </disp-quote>
+        </p>
+        
+        <p>As another example, see this from the 
+          <ext-link xlink:href="http://www.w3.org/TR/MathML2/appendixa.html#parsing.usingdtdt">MathML 
+        specification</ext-link> [R3]：
+          <disp-quote>
+            <p>
+            Documents using this DTD should contain a doctype declaration of the
+            form:
+            <preformat>&lt;!DOCTYPE math
+      PUBLIC "-//W3C//DTD MathML 2.0//EN"
+             "http://www.w3.org/Math/DTD/mathml2/mathml2.dtd"&gt;</preformat>
+            The URI may be changed to that of a local copy of the DTD if required.
+            </p>
+          </disp-quote>
+        </p>     
+        <p>I prefer the MethML form of the recommendation -- in other words, giving
+        the absolute URL for the recommended system identifier, instead of a relative
+        one.  Using this style of system identifier makes the documents easier to
+        transfer from one system to another.</p>
+        <p>The one consideration that would argue against recommending the absolute
+        system identifier is the possibility that our servers might be overloaded
+        as the result, in a way similar to W3C's servers [R4].  I think the
+        potential for this becoming a serious problem is pretty small, however, since
+        the number of people using and processing JATS documents is, relatively
+        speaking, very small.</p>
+      </sec>
+      
+      <sec id='more-catalog-changes'>
+        <title>Use rewriteSystem in the catalog files</title>
+        <p>That mathml catalog uses &lt;rewriteSystem&gt; elements such that absolute
+          system identifier URLs are rewritten to local pathnames.  For example:
+          <preformat>&lt;rewriteSystem systemIdStartString="http://www.w3.org/Math/DTD/mathml2/" 
+          rewritePrefix="dtd/"/&gt;</preformat></p>
+        <p>Our catalog files should use these too.  This causes any XML resolver
+          using the catalog to look for a local copy of the resource, if the system
+          identifier of that resource begins with the indicated prefix portion.
+        </p>
+        <p>Implementing this change would depend on establishing
+        stable, canonical system identifiers for each resource.</p>
+      </sec>
+
+      <sec id='ftp-zip-refactor'>
+        <title>FTP Zip file refactoring</title>
+        <p>For each set and version of the DTDs, there should be two zip files:
+          one which contains all the files in all of the sets needed for that
+          version, including lib and core.  The second contains just the
+          files for that version and that set (e.g. books/2.3).</p>
+        <p>First it would be necessary to write a script to analyze the existing 
+          .dtd and .ent files
+          to find all the dependencies between the sets / versions.  
+        </p>
+        <p>It would be nice to establish and document a simple naming convention
+        for these zip files.  The convention should be clear and consistent, and 
+        lets the user know, just by glancing at the filename, what 
+        to expect in the content.</p>
+        <p>Likewise, the directory structure inside the zip files should be 
+          consistent.  In my opinion, all of the zip files, regardless of their
+          type (set-plus-dependencies or set-only), should be "rooted" at 
+          nlm-jats.  Then the instructions would always be the same:  copy
+        the zip file to the root directory on the local system, and unzip it.
+        The contents would land in the correct place without the need for 
+        moving or copying.</p>
+      </sec>
+  
+      <sec id='pubid-to-sysid-xref-util'>
+        <title>Public identifier / system identifier utilities</title>
+        <list>
+          <list-item>
+            <p>The web site should include a public identifier to system 
+              identifier cross-reference
+              utility.  It would be nice if it could also include a simple HTML form with radio
+              buttons to allow users to select set, version, and then a list of modules.</p>
+          </list-item>
+          <list-item>
+            <p>As part of this utility, for each major document type, the
+              recommended doctype declaration could be displayed.</p>
+          </list-item>
+        </list>
+      </sec>
+
+      <sec id='cleanup-pmc-dtd'>
+        <title>Reconcile the PMC DTD site</title>
+        <p>As mentioned in the scope, another public-facing site in which the DTDs are
+        deployed is 
+          <ext-link xlink:href='http://www.ncbi.nlm.nih.gov/pmc/pmcdoc/dtd/'>http://www.ncbi.nlm.nih.gov/pmc/pmcdoc/dtd/</ext-link>.
+          It seems that this site is completely redundant, and I'd therefore
+          suggest that it be removed, since it is another source for confusion 
+          and discrepancies.
+          If there is a good reason to keep it around, then it should be updated
+          with the latest versions of each of the modules.
+        </p>
+      </sec>
+      
+
+      <sec id='standard-procs'>
+        <title>Establish and document standards, and provide a tag-set-validation tool</title>
+        <p>(This addresses problem <xref rid='problem-5'>5</xref>.)</p>
+        <p>Any newly established standards for tag sets should be
+        clearly documented, both to avoid these kinds of problems in the
+        future, and to act as a guide for others who would create their 
+        own extensions of JATS.</p>
+
+        <p>Accompanying these could be a utility that can be run before each 
+          official release of
+          a new tag set, that checks that the established conventions are 
+          satisfied.
+        </p>
+        <p>Among the things this tool should check (this is not a complete list):</p>
+        <list>
+          <list-item>
+            <p>
+            Verify that the set includes a valid OASIS catalog file, and verifies
+            that all of the references in the catalog file resolve correctly (no
+            broken links).</p>
+          </list-item>
+          <list-item>
+            <p>Check each .dtd and .ent file for the existence of a comment at the
+            top that gives this file's public identifier.  Verify that it matches 
+            the one in the catalog file.</p>
+          </list-item>
+          <list-item>
+            <p>Check that the form of the public identifiers are consistent:  that
+            they are whitespace-normalized, that the version number is correct, etc.</p>
+          </list-item>
+          <list-item>
+            <p>Verify that there are no extra files in the set.</p>
+          </list-item>
+          <list-item>
+            <p>Verify that a set of sample files accompanies each tag set.</p>
+          </list-item>
+          <list-item>
+            <p>Validate each of the sample files, with and without the use
+            of the catalog file, and using more than one validation engine.
+            When using the catalog file, use both "prefer-public" and "prefer-system"
+            options.  When validating without the catalog file, test that the sample validates
+            without explicitly specifying the DTD location (so that it uses the
+            system identifier in the sample file's doctype decl) and with specifying
+            it as the local copy under test.</p>
+          </list-item>
+        </list>
+      </sec>
+    </sec>
+
+    <sec id='usage-notes'>
+      <title>Usage notes</title>
+      
+      <sec id='sourceforge-usage'>
+        <title>Sourceforge project</title>
+        <p>
+          Here are some useful links into the nlm-jats Sourceforge project:
+        </p>
+        <list>
+          <list-item>
+            <p><ext-link xlink:href='http://sourceforge.net/projects/nlm-jats/'>Project page</ext-link></p>
+          </list-item>
+          <list-item>
+            <p><ext-link xlink:href='http://sourceforge.net/projects/nlm-jats/develop'>Subversion repository info</ext-link></p>
+          </list-item>
+          <list-item>
+            <p><ext-link xlink:href='http://nlm-jats.svn.sourceforge.net/viewvc/nlm-jats/'>Subversion repository browse</ext-link></p>
+          </list-item>
+        </list>
+        <p>
+          To check out the latest versions of the files from subversion, into a local 
+          working copy, use this command:
+        </p>
+        <preformat>svn co https://nlm-jats.svn.sourceforge.net/svnroot/nlm-jats/trunk/nlm-jats nlm-jats</preformat>
+        <p>
+          At the time this report was written, the repository was at revision 101.
+          To ensure that the versions of the files are as described in this document, 
+          check out that revision with the following:
+        </p>
+        <preformat>svn co -r 101 https://nlm-jats.svn.sourceforge.net/svnroot/nlm-jats/trunk/nlm-jats nlm-jats</preformat>
+      </sec>
+
+      <sec>
+        <title>Setting up oXygen</title>
+        <p>
+          To set up oXygen to use this set of DTDs, select "Options" → "Preferences", then
+          in the tree on the left, "XML" → "XML Catalog", and then add the main
+          catalog.xml file from the nlm-jats directory where you checked out the
+          Sourceforge files.  For testing sample files and validation, I found it
+          important to make sure that oXygen uses this and only this catalog file,
+          so I unchecked "Use default catalog", and I deleted all the other 
+          catalog file entries from the main list.
+        </p>
+      </sec>
+
+    </sec>
+
+  </body>
+
+  <back>
+    <ref-list id='ref-list'>
+      <title>References</title>
+      <ref id='R1'>
+        <mixed-citation xlink:href='http://www.docbook.org/docs/howto/'>
+          DocBook V5.0, The Transition Guide, 16 June 2009
+        </mixed-citation>
+      </ref>
+      <ref id='R2'>
+        <mixed-citation xlink:href='http://dtd.nlm.nih.gov/ncbi/briefarticle/doc/'>
+          Documentation for NCBI ncbi_briefarticle.dtd
+        </mixed-citation>
+      </ref>
+      <ref id='R3'>
+        <mixed-citation xlink:href='http://www.w3.org/TR/MathML2/appendixa.html'>
+          MathML specification
+        </mixed-citation>
+      </ref>
+      <ref id='R4'>
+        <mixed-citation xlink:href='http://www.w3.org/blog/systeam/2008/02/08/w3c_s_excessive_dtd_traffic'>
+          W3C's Excessive DTD Traffic
+        </mixed-citation>
+      </ref>
+    </ref-list>
+
+    <app-group>
+      <app id='attachments'>
+        <title>Appendix A.  Attachments</title>
+        <p>This report and all the files related to it are on snowman at
+          \\snowman\maloneyc\JATS\Refactor.</p>
+        <p>These files are all in the Details subdirectory.</p>
+        <list>
+          <list-item>
+            <p><ext-link xlink:href="Details/Details.txt">Details.txt</ext-link>
+              - gory details
+              of every step.</p>
+          </list-item>
+          <list-item>
+            <p><ext-link xlink:href='Details/NormalizedPublicIds.txt'>NormalizedPublicIds.txt</ext-link>
+               - list of non-normalized public identifiers.
+            </p>
+          </list-item>
+          <list-item>
+            <p><ext-link xlink:href='Details/FixSysIdCase.pl'>FixSysIdCase.pl</ext-link>
+               - Script to change the case of some of the 
+              system id entries in some of the catalog.ent files, to match the actual
+              case of the filenames.
+            </p>
+          </list-item>
+          <list-item>
+            <p><ext-link xlink:href='Details/MoveDtdDirs.pl'>MoveDtdDirs.pl</ext-link>
+               - Move some of the DTDs into a standardized directory structure.
+            </p>
+          </list-item>
+          <list-item>
+            <p><ext-link xlink:href='Details/PubIdReport-orig.xml'>PubIdReport-orig.xml</ext-link>
+               - Original report on all the public identifiers.  This is 
+              the result of comparisons that produce a many-to-many relationship between 
+              public identifiers and files on the filesystem.  If, for example, two public identifiers
+              point to identical files, then they will be in the same &lt;PublicIdGroup&gt;.
+              Within a &lt;PublicIdGroup&gt;, files themselves are grouped together into &lt;WSNode&gt;s
+              and &lt;Node&gt;s.  A single &lt;Node&gt; element holds a list of files that are 
+              byte-for-byte identical.  A &lt;WSNode&gt; holds a list of &lt;Node&gt;s that 
+              differ only by comments and/or whitespace.
+            <p>If a &lt;PublicIdGroup&gt; contains more than one &lt;WSNode&gt;, then it
+            also includes a differences section where the differences between the second
+            (and subsequent) &lt;WSNode&gt; and the first one is displayed.</p>
+            </p>
+          </list-item>
+          <list-item>
+            <p><ext-link xlink:href='Details/PubIdReport.xml'>PubIdReport.xml</ext-link>
+               - An edited version of the above, as described in the Details.txt file.
+            </p>
+          </list-item>
+          <list-item>
+            <p><ext-link xlink:href='Details/GenElimRedSvn-1.xsl'>GenElimRedSvn-1.xsl</ext-link>
+              
+               - An XSLT that generates a shell script that has svn commands used
+              to eliminate redundant modules, as described in the Details.txt file.
+              
+            </p>
+          </list-item>
+          <list-item>
+            <p><ext-link xlink:href='Details/ElimRedSvn-1.sh'>ElimRedSvn-1.sh</ext-link>
+               - The shell script generated from PubIdReport.xml and the above XSLT.
+              
+            </p>
+          </list-item>
+          <list-item>
+            <p><ext-link xlink:href='Details/ElimRedSvn-1.out'>ElimRedSvn-1.out</ext-link>
+               - The output from the above shell script.
+              
+            </p>
+          </list-item>
+          <list-item>
+            <p><ext-link xlink:href='Details/JatsReport-rev77.xml'>JatsReport-rev77.xml</ext-link>
+               - The output of JatsReport.pl on revision 77 of the
+              repository.  It lists every
+              public id and the pathname of the file that it references
+              
+            </p>
+          </list-item>
+          <list-item>
+            <p><ext-link xlink:href='Details/MakeCatalogs1.xsl'>MakeCatalogs1.xsl</ext-link>
+               - First stage of a two-stage XSLT to transform the above report
+              into an OASIS catalog file.
+              
+            </p>
+          </list-item>
+          <list-item>
+            <p><ext-link xlink:href='Details/MakeCatalogs-intermediate.xml'>MakeCatalogs-intermediate.xml</ext-link>
+               - Output of the first stage.
+              
+            </p>
+          </list-item>
+          <list-item>
+            <p><ext-link xlink:href='Details/MakeCatalogs2.xsl'>MakeCatalogs2.xsl</ext-link>
+               - Second stage.
+              
+            </p>
+          </list-item>
+          <list-item>
+            <p><ext-link xlink:href='Details/MakeCatalogs-product.xml'>MakeCatalogs-product.xml</ext-link>
+               - Output of the second stage. This has
+              a group of &lt;public&gt; elements for each directory path.
+                
+            </p>
+          </list-item>
+          <list-item>
+            <p><ext-link xlink:href='Details/FixRelativeSysIds.pl'>FixRelativeSysIds.pl</ext-link>
+               - script to adjust the relative system identifiers
+          of all of the .dtd and .ent files.
+          
+            </p>
+          </list-item>
+          <list-item>
+            <p><ext-link xlink:href='Details/Original-Oxygen-Setup.txt'>Original-Oxygen-Setup.txt</ext-link>
+            - just a record of my original oXygen catalog setup.</p>
+          </list-item>
+        </list>
+      </app>
+
+      <app id='jatsutils'>
+        <title>Appendix B.  JatsUtils Perl library</title>
+        <p>These are in NCBI Sourceforge at 
+          https://svn/repos/staff/trunk/maloneyc/JATS/JatsUtils.  There are these main
+          routines, which might be helpful for ongoing work.  For usage information about
+        any of them, just enter the command with the "--help" switch.</p>
+        <list>
+          <list-item>
+            <p>
+            FetchFtp.pl - Retrieve all the files from an FTP site that match a specific
+            pattern.
+            </p>
+          </list-item>
+          <list-item>
+            <p>
+            ExtractZips.pl - Find and extract all the Zip files under the current
+            directory
+            </p>
+          </list-item>
+          <list-item>
+            <p>
+              JatsFetchAndExtract.pl - Download and mung the JATS DTD files from the
+            NLM site.  This is a combination of the above two.
+            </p>
+          </list-item>
+          <list-item>
+            <p>
+              FindDuplicateFiles.pl - Find sets of duplicated files under the current
+            directory.
+            </p>
+          </list-item>
+          <list-item>
+            <p>
+              JatsReport.pl - Analyze JATS DTD files from the NLM site, and make a
+              report.</p>
+          </list-item>
+        </list>
+        <p>
+          They all rely on the Perl module JatsUtils.pm, so the Perl compiler must
+          be able to find that library modules.
+        </p>
+      </app>
+      
+    </app-group>
+  </back>
+</article>

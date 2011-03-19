@@ -1,0 +1,447 @@
+﻿Step-by-step refactoring procedure:
+
+
+Key:
+  ✕ means a bug or data error (sometimes just an anomaly)
+  ✓ means a good milestone
+  → means something that should be fixed later ("fixme")
+
+Downloaded and extract the files
+  - Download zip FTP files from the repository
+      - I used my JatsFetchAndExtract.pl utility for this (stage 1)
+      - At ftp://ftp.ncbi.nlm.nih.gov/pub/archive_dtd/
+      - All zip files that had 'dtd' somewhere in their names, so this
+        excludes documentation, rng, schema, etc.
+  
+  - Deleted duplicate zip files.  In most cases, the zip file for the latest
+    release version of each set occurs in the base directory for that set
+    as well as the version-specific directory.  For example:
+      - ./archiving/archive-interchange-dtd-3.0.zip
+      - ./archiving/3.0/archive-interchange-dtd-3.0.zip
+    I deleted the ones with the shorter pathnames -- just keeping the ones
+    that are in the release-version specific subdirectory.
+      - JatsFetchAndExtract.pl utility did this (stage 2)
+      - These are the files deleted:
+          ./archiving/archive-interchange-dtd-3.0.zip
+          ./archiving/archive-interchange-oasis-dtd-3.0.zip
+          ./article_authoring/article-authoring-dtd-3.0.zip
+          ./books/book-dtd-3.0.zip
+          ./books/historical/book-historical-dtd-2.3.zip
+          ./publishing/journal-publishing-dtd-3.0.zip
+          ./publishing/journalpub-oasis-dtd-3.0.zip
+  
+  - Extract and flatten the zip files
+      - JatsFetchAndExtract.pl stage 3
+      - Each zip file was extracted into a top-level directory of the same
+        name.  I.e.  frooble.zip would be extracted to a subdirectory named
+        frooble.
+      - If all of the contents were contained within one and only one
+        top-level directory, then that directory was "flattened".
+      - I manually flattened one directory:  book-historical-dtd-2.2.
+        This one had a file "HistoricalReadme.txt", that was a sibling of
+        the top-level directory, so I merged them.
+
+- Save these as "originals"
+    - Made the original download directory read-only.
+    - Copied them and committed them into svn
+    - Did a 'diff' to make sure adding the files and committing them didn't
+      change anything.  The only differences were the addition of the
+      .svn directories in the svn working dir.
+
+
+Minor clean up
+
+  ✕ Found some sets of files that were identical, but had different names.
+    This is not an error, just strange.  I decided not to do anything about 
+    these for now.
+      - These four files are identical, but have different names:
+          ./books/2.1/book-dtd-2.1/sample-collection-mathml.xml
+          ./books/2.2/book-dtd-2.2/sample-collection-mathml2.xml
+          ./books/historical/2.1/book-historical-dtd-2.1/sample-collection-mathml.xml
+          ./books/historical/2.2/book-historical-dtd-2.2/sample-collection-mathml2.xml
+      - These four files are identical, but have different names:
+          ./books/2.1/book-dtd-2.1/sample-historical-mathml.xml
+          ./books/2.2/book-dtd-2.2/sample-historical-mathml3.xml
+          ./books/historical/2.1/book-historical-dtd-2.1/sample-historical-mathml.xml
+          ./books/historical/2.2/book-historical-dtd-2.2/sample-historical-mathml3.xml
+  
+  - Here's the complete set of extensions in this file set (again, just the dtd-related
+    files, not documentation, rng, etc.):
+      .10Jan-ent, .dtd, .ent, .md5, .mod, .txt, .xml
+  
+  ✕ Reconciled minor differences between files with the same public ids:
+      - -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v1.0 20021201//EN
+        Two files differ only by whitespace.
+        Copied ./archiving/1.0/archive-interchange-dtd/display.ent
+        over ./publishing/1.0/journal-publishing-dtd/display.ent
+  
+  ✕ Normalized whitespace in a bunch of public identifiers:
+      - See NormalizedPublidIds.txt
+      * committed revision 2
+  
+  ✕ Some system id entries in the catalog.ent files had the wrong case:
+      - The strings were "ISOlat1.ent" and "ISOlat2.ent", but they should be
+        all lowercase, in these files:
+          ./archiving/1.0/archive-interchange-dtd/catalog.ent
+          ./archiving/1.1/archive-interchange-dtd-1.1/catalog.ent
+          ./archiving/2.0/archive-interchange-dtd-2.0/catalog.ent
+          ./books/2.0/book-dtd-2.0/catalog.ent
+          ./publishing/1.0/journal-publishing-dtd/catalog.ent
+          ./publishing/1.1/journal-publishing-dtd-1.1/catalog.ent
+          ./publishing/2.0/journal-publishing-dtd-2.0/catalog.ent
+      * committed revision 3
+
+Start to move to a standardized directory structure
+  - I used the script MoveDtdDirs.pl for this.
+  
+  - article_authoring → authoring
+  * committed revision 4
+  
+  - archiving/2.3/archive-interchange-oasis-dtd-2.3 → archive-oasis/2.3/dtd
+  * committed revision 5
+  
+  - archiving/3.0/archive-interchange-oasis-dtd-3.0 → archive-oasis/3.0/dtd
+  * committed revision 6
+  
+  - books/historical → historical
+  * committed revision 7
+  
+  - publishing/2.3/journalpub-oasis-dtd-2.3 → publishing-oasis/2.3/dtd
+  * committed revision 8
+  
+  - publishing/3.0/journalpub-oasis-dtd-3.0 → publishing-oasis/3.0/dtd
+  * committed revision 9
+  
+  - <set>/<ver>/* → <set>/<ver>/dtd
+  * committed up to 13.
+
+
+Produced a report on Public Ids
+  - Used my script JatsReport.pl.  Saved this as PubIdReport-orig.xml, and 
+    made it read-only
+
+More clean up
+  ✕ Reconcile multiple public ids for the same resource:
+      - It seems this public id is wrong:
+        -//NLM//DTD Archiving Suite XML Special Characters Module v1.0 20021201//EN
+      - It should be
+        -//NLM//DTD Archiving and Interchange DTD Suite XML Special Characters Module v1.0 20021201//EN
+      - Fixed this in
+          <Path>./archiving/1.0/dtd/xmlspecchars.ent</Path>
+          <Path>./archiving/1.1/dtd/xmlspecchars.ent</Path>
+          <Path>./publishing/1.0/dtd/xmlspecchars.ent</Path>
+          <Path>./publishing/1.1/dtd/xmlspecchars.ent</Path>
+      * committed 14
+
+More reorganizing directory structure
+  - Created directories for "core"
+  * committed 15
+
+
+Eliminating redundancy
+  - First round is moving various shared files into the 'core' directories.
+      - These are files that are either completely identical, or
+        "comment-identical", meaning that the files only differ by whitespace
+        or comments.
+      - In the latter case, I selected one of the set to be "canonical"
+        -- usually the latest one.
+  - First I copied PubIdReport-orig.xml → PubIdReport.xml, and edited it by hand
+    as follows.
+      - I added a <Notes> element if there was something special of note.
+      - If the files belonging to the PublicIdGroup should be consolodated into one
+        file, that is not already part of the group (for example, moved to core)
+        then I added, for example,
+          <MoveTo dir="core/1.0/dtd/"/>
+      - If such a group had more than one Node child, meaning that the files in the
+        group were not identical, then I selected one of the Nodes by adding the
+        @canonical="yes" attribute
+      - If there was a "group" that had only one file (one Path), and it was already
+        in the correct place, I added <Remains/> to that group.
+      - If there was a group that had more than one Path, one of which was correct,
+        then I used <Remains/>, and added @canonical="yes" to the correct Path.
+      - Finally if there was a group that had more than one Path, and one of those
+        was the correct location, but the canonical version of the resource was
+        a different Node, then I used <MoveTo/> with a @force attribute.
+
+  - I used an XSLT, GenElimRedSvn-1.xsl, to generate svn commands to consolidate
+    the duplicated files found.  The output was a shell script, ElimRedSvn-1.sh.
+    Like so:
+      xsltproc GenElimRedSvn-1.xsl PubIdReport.xml > ElimRedSvn-1.sh
+
+  - I then ran that, and captured the output in ElimRedSvn-1.out.
+
+  ✕ The module annotation.ent,
+      -//NLM//DTD NCBI Historical Book DTD Annotation Elements v2.0 20041225//EN
+    was found in many directories in which I think it didn't belong.
+
+Continued reorganizing and resolving discrepencies
+
+  ✕ This module is strange:
+    -//NLM//DTD Archiving and Interchange DTD Suite OASIS XML Table Setup Module v1.2 20040830//EN
+      - First of all, it is the only module that indicates version "1.2".
+      - There are two different versions that use this public identifier.  One set
+        is named oasis-tablesetup.ent and the other is oasis-tablesetup3.ent.
+      - I'll take the first one and put it into core/2.0/dtd (2.0 is the first version
+        that it is referenced from)
+      - And the second set and *change it's public identifier* to
+        -//NLM//DTD Archiving and Interchange DTD Suite OASIS XML Table Setup Module v3.0 20100717//EN
+      - Change these files that reference it: modules3.ent
+      * committed thru rev. 19
+      → Note that I would still like to change the public id of the first module
+        to be "v2.0".
+
+  ✕ This public id doesn't have any file associated with it:
+    -//NLM//DTD NCBI Book DTD Over-ride Classes Module v2.2 20060430//EN
+      - It was listed in the catalog files, but the date was wrong.  The correct
+        public id is:
+        -//NLM//DTD NCBI Book DTD Over-ride Classes Module v2.2 20061013//EN
+      - This doesn't affect anything.
+
+  - The OASIS Exchange Table Model DTD module, oasis-exchange.ent, has problems.
+    See the memo for a description.
+      - I put the latest NLM version of this into core/1.0 and deleted other copies.
+      → I think that we *should* change the public id for this everywhere.
+    * committed rev. 20
+
+  - Added a new-style catalog file to core/2.3 and core/3.0
+    * committed up to rev. 22
+
+  - Deleting library stuff from the NLM dtd tree:  mathml and html
+    * committed up to rev. 34.
+
+  - Deleted catalog.ent files.  These have too much duplicate and overlapping information,
+    and should not be maintained.  The OASIS catalog.xml files should supercede these.
+    * committed rev. 37
+
+  - Deleted catalog-v2.xml files.  These will be replaced with catalog.xml files in
+    the parent directories.
+    * committed rev. 38
+
+  - Added a new directory called lib, which contains the latest versions of mathml
+    and html from the Internet.
+    * committed rev. 39
+
+  - Deleted catalog-v3.xml files.
+    * committed rev. 41
+
+  - Moving sample files into samples subdirectories
+    * committed up to rev. 51
+
+  ✕ This file:
+      authoring/2.2/dtd/base-test.dtd
+      -//NLM//DTD Journal Archiving DTD to Test the Base Suite v2.0 20040830//EN
+    seems to have an error in the public id, which you can see when you compare it to
+      ./publishing/2.0/dtd/base-test.dtd
+      -//NLM//DTD Journal Archiving and Interchange DTD to Test the Base Suite v2.0 20040830//EN
+      - I changed it to
+        -//NLM//DTD Journal Archiving and Interchange DTD to Test the Base Suite v2.2 20100718//EN
+      - I them moved this file into core/2.2/dtd.
+    * committed rev. 53
+
+  - Continued moving sample files
+    * committed rev. 56
+
+  - Moved readme files into the parent directories, and deleted old samples directories
+    * committed rev. 66
+
+  - Need to move 2.0 historical stuff from books/2.0 into historical/2.0
+    * committed rev. 67
+
+  ✕ Resolve discrepency in Math class elements.  The module math.ent was changed in
+    version 2.2, without changing the public identifier.  So this public id is used for
+    two different entities:
+      -//NLM//DTD Archiving and Interchange DTD Suite Math Class Elements v2.0 20040830//EN
+      - I changed it for version 2.2 of the files to
+        -//NLM//DTD Archiving and Interchange DTD Suite Math Class Elements v2.2 20100718//EN
+      - Moved the older version into core/2.0
+      - Moved the newer version into core/2.2
+      - Changed the public id used to reference this module in all 2.2 dtds, only
+        place needed was core/2.2/dtd/modules.ent
+    * committed rev. 70
+
+  ✕ This file: display.ent, public id:
+    -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v2.2 20060430//EN
+    has some discrepencies.  But it turns out that the differences were just in the
+    order of the entity definitions, and not significant.
+    * commited rev. 71
+
+  - Many of the sample files were duplicated.  I thought about eliminating the duplicates,
+    but then thought that for a given dtd version, it would be nice to have the sample
+    in the corresponding folder, with the implied guarantee that it should work for
+    that version, even if it was the same as an earlier sample.  So instead, I added
+    comments to the samples for each of the later versions, indicating that they hadn't
+    changed.
+    * committed rev. 73
+
+  ✓ FindDuplicateFiles.pl now reports that there are no duplicate files!
+
+  ✕ This file:
+    -//NLM//DTD Journal Publishing DTD Customize Content and Attributes Module v2.0 20040830//EN
+    has some minor discrepancies.  These two are different:
+      - archiving/2.0/dtd/journalpubcustom-models.ent
+      - publishing/2.0/dtd/journalpubcustom-models.ent
+    It turns out the later version is the one in 'publishing', and the file doesn't belong in
+    'archiving' at all, anyway, so I removed it from there.
+    * committed rev. 74
+
+  ✓ Now there are no two files that self-identify with the same public id.  In other
+    words, every file in the tree that has a public id has a unique one.
+
+  ✕ These two files were missing the comment at the top that identifies their
+    public ids, so I added them:
+      - archive-oasis/2.3/dtd/archive-OASIScustom-classes.ent
+      - archive-oasis/2.3/dtd/archive-OASIScustom-modules.ent
+    × committed rev. 75
+
+  ✕ Likewise, to
+      - publishing-oasis/2.3/dtd/publishing-OASIScustom-classes.ent
+      - publishing-oasis/2.3/dtd/publishing-OASIScustom-modules.ent
+    * committed rev. 76
+
+Add modular OASIS catalog files
+
+  - I generated new OASIS catalog files for each of the sets/versions.  To do this:
+      - I used JatsReport.pl to generate JatsReport-rev77.xml, which lists every
+        public id and the pathname of the file that it references
+      - I then wrote wrote some stylesheets that transformed the list, in two stages.
+        These are MakeCatalogs1.xsl and MakeCatalogs2.xsl.
+      - The output of the second stage was MakeCatalogs-product.xml, which had
+        a group of <public> elements for each directory path.
+      - I then manually cut-and-pasted these into new catalog.xml files
+    * committed rev. 78
+
+Resolve discrepencies
+
+  ✕ Fixed the incorrect public identifier in the comments at the top of
+    core/3.0/dtd/notat3.ent's self-identification public id
+
+Adjust system identifiers
+
+  - Started to adjust relative system identifiers to account for the new directory
+    structure.  Did a couple of test files first.
+    * committed rev. 80
+
+  ✕ Fixed bad public identifiers in archive-oasis-custom-modules3.ent
+    * committed rev. 81
+
+  - Fixed the rest of the relative system identifiers to NLM resources, using a
+    script called FixRelativeSysIds.pl.
+    * committed rev. 86
+
+  - Manually fixed relative system identifiers to library modules
+    * committed rev. 88
+
+  - Changed a couple of sample files in books/2.3 to use the public id to reference
+    the DTD.
+
+  - Added a master catalog file which includes all the others using "nextCatalog".
+
+  ✓ These books/2.3 sample files now validate, when Oxygen is set up with the master
+    catalog file.  Note that it is setup up with *only* this master catalog file,
+    proving that it is using it to find the XHTML and MathML modules as well.
+    
+  - Added "Id" keyword to all the catalog files
+    *committed rev. 91
+  
+  ✕ Fixed another bad public identifier in archive-oasis, file: archive-oasis-article3.dtd
+    *committed rev. 92
+
+  ✕ archiving/1.0/samples/sampleminimal.xml never validated - not even in the current
+    distribution.  I fixed it.
+    *committed rev. 93
+  
+  - Continued adjusting system identifiers to use the correct relative paths, in all 
+    sample files and in the dtd modules.
+  ✓ All the samples that came with the original ftp zip files now validate, with
+    catalogs (using public ids) or without (using system ids).
+    *committed rev. 96
+    
+Make new sample files
+
+  - Making new sample files for those sets/versions that never had them.
+      - archive-oasis/2.3/samples/minimal.xml - 
+          - no catalog - pass
+          - catalog - pass
+      - archiving/1.1/samples/minimal.xml
+          - no catalog - pass
+          - catalog - pass
+      - authoring/2.2/samples/minimal.xml
+          - no catalog - pass
+          - catalog - pass
+    * committed ver. 97
+
+  ✕ Discovered this file:  historical/3.0/dtd/annotation3.ent, which originally
+    appeared in several different 3.0 DTD sets, but is not referenced anywhere.
+    It is the only file in the historical/3.0 set, so I deleted it, and the 
+    historical/3.0 set.
+    * committed ver. 98
+
+  - More new samples:
+      - publishing/1.0/samples/minimal.xml
+          - no catalog - pass
+          - catalog - pass
+      - publishing/1.1/samples/minimal.xml
+          - no catalog - pass
+          - catalog - pass
+      - publishing-oasis/2.3/samples/minimal.xml
+          - no catalog - pass
+          - catalog - pass
+      - publishing-oasis/3.0/samples/minimal.xml
+          - no catalog - pass
+          - catalog - pass
+
+  ✓ Every tag set / version now has at least one sample, that validates both with
+    and without using the catalog files.
+    *committed ver. 100
+
+Fix the OASIS Table Model public identifier problem.
+  - Main problem is that the OASIS public identifier is being used to
+    reference the modified oasis-exchange.ent file.
+      - In core/1.0/catalog.xml, I changed the public identifier of the entity
+        oasis-exchange.ent from
+          -//OASIS//DTD XML Exchange Table Model 19990315//EN
+        to
+          -//NLM//DTD Archiving and Interchange DTD Suite OASIS XML Table Model v1.0 20100821//EN
+      - Note that this file is also referenced with a different public identifier
+        in several versions of the oasis-tablesetup.ent file, as
+          -//OASIS//DTD MD copy XML Exchange Table Model 19990315//EN
+        but this public identifier doesn't appear in any catalog anywhere.
+        I decided not to use this public identifier because it begins with
+        "OASIS", but I think that it was not actually assigned by OASIS.
+      - I updated the public identifier values in the following files:
+          - core/1.0/dtd/modules.ent
+          - core/1.0/dtd/oasis-exchange.ent
+          - core/1.1/dtd/modules.ent
+          - core/2.0/dtd/modules.ent
+          - core/2.1/dtd/modules.ent
+          - core/2.2/dtd/modules.ent
+          - core/2.3/dtd/modules.ent
+          - core/3.0/dtd/modules.ent
+
+  - Another problem has to do with the value of the "xmlns:oasis" 
+    namespace declaration attribute.  The comment in the oasis-exhange.ent
+    file itself, it says:
+      The elements have been assigned an namespace:
+        xmlns:oasis CDATA #FIXED                    
+        "http://docs.oasis-open.org/ns/oasis-exchange/table"  
+    But this is not true in many cases.
+      - Several versions of oasis-tablesetup.ent is:
+          <!ENTITY % oasis.xmlns.attrib
+             "xmlns:oasis CDATA #FIXED
+              '-//OASIS//DTD XML Exchange Table Model 19990315//EN'" > 
+        That is all versions except in oasis-tablesetup3.ent, which has the 
+        namespace value as described in the comment.
+      - Changed the namespace value to 
+        "http://docs.oasis-open.org/ns/oasis-exchange/table" in
+          - core/1.0/dtd/oasis-tablesetup.ent
+          - core/1.1/dtd/oasis-tablesetup.ent
+          - core/2.0/dtd/oasis-tablesetup.ent
+  - Changed the relative system identifiers for oasis-exchange.ent to point
+    to the core/1.0/dtd directory, in the following files:
+      - core/1.1/dtd/modules.ent
+      - core/2.0/dtd/modules.ent
+      - core/2.2/dtd/modules.ent
+      - core/3.0/dtd/modules3.ent
+      
+  * committed version 101.
+

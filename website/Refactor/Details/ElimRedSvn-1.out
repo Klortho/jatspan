@@ -1,0 +1,1246 @@
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite XML Special Characters Module v1.0 20021201//EN
+A         core/1.0/dtd/xmlspecchars.ent
+D         archiving/1.0/dtd/xmlspecchars.ent
+D         archiving/1.1/dtd/xmlspecchars.ent
+D         publishing/1.0/dtd/xmlspecchars.ent
+D         publishing/1.1/dtd/xmlspecchars.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Back Matter Elements v1.0 20021201//EN
+A         core/1.0/dtd/backmatter.ent
+D         archiving/1.0/dtd/backmatter.ent
+D         archiving/1.1/dtd/backmatter.ent
+D         publishing/1.0/dtd/backmatter.ent
+D         publishing/1.1/dtd/backmatter.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Back Matter Elements v2.0 20040830//EN
+A         core/2.0/dtd/backmatter.ent
+D         archiving/2.0/dtd/backmatter.ent
+D         books/2.0/dtd/backmatter.ent
+D         publishing/2.0/dtd/backmatter.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Back Matter Elements v2.1 20050630//EN
+A         core/2.1/dtd/backmatter.ent
+D         archiving/2.2/dtd/backmatter.ent
+D         archiving/2.1/dtd/backmatter.ent
+D         authoring/2.1/dtd/backmatter.ent
+D         books/2.1/dtd/backmatter.ent
+D         historical/2.1/dtd/backmatter.ent
+D         publishing/2.1/dtd/backmatter.ent
+D         authoring/2.2/dtd/backmatter.ent
+D         books/2.2/dtd/backmatter.ent
+D         historical/2.2/dtd/backmatter.ent
+D         publishing/2.2/dtd/backmatter.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Back Matter Elements v2.3 20070202//EN
+A         core/2.3/dtd/backmatter.ent
+D         archive-oasis/2.3/dtd/backmatter.ent
+D         archiving/2.3/dtd/backmatter.ent
+D         authoring/2.3/dtd/backmatter.ent
+D         books/2.3/dtd/backmatter.ent
+D         historical/2.3/dtd/backmatter.ent
+D         publishing-oasis/2.3/dtd/backmatter.ent
+D         publishing/2.3/dtd/backmatter.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Back Matter Elements v3.0 20080202//EN
+A         core/3.0/dtd/backmatter3.ent
+D         archive-oasis/3.0/dtd/backmatter3.ent
+D         archiving/3.0/dtd/backmatter3.ent
+D         authoring/3.0/dtd/backmatter3.ent
+D         books/3.0/dtd/backmatter3.ent
+D         publishing-oasis/3.0/dtd/backmatter3.ent
+D         publishing/3.0/dtd/backmatter3.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Bibliographic Reference (Citation) Class Elements v1.0 20021201//EN
+A         core/1.0/dtd/references.ent
+D         archiving/1.1/dtd/references.ent
+D         archiving/1.0/dtd/references.ent
+D         publishing/1.0/dtd/references.ent
+D         publishing/1.1/dtd/references.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Bibliographic Reference (Citation) Class Elements v2.0 20040830//EN
+A         core/2.0/dtd/references.ent
+D         books/2.0/dtd/references.ent
+D         archiving/2.0/dtd/references.ent
+D         publishing/2.0/dtd/references.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Bibliographic Reference (Citation) Class Elements v2.1 20050630//EN
+A         core/2.1/dtd/references.ent
+D         archiving/2.1/dtd/references.ent
+D         authoring/2.1/dtd/references.ent
+D         books/2.1/dtd/references.ent
+D         historical/2.1/dtd/references.ent
+D         publishing/2.1/dtd/references.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Bibliographic Reference (Citation) Class Elements v2.2 20060430//EN
+A         core/2.2/dtd/references.ent
+D         archiving/2.2/dtd/references.ent
+D         authoring/2.2/dtd/references.ent
+D         books/2.2/dtd/references.ent
+D         historical/2.2/dtd/references.ent
+D         publishing/2.2/dtd/references.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Bibliographic Reference (Citation) Class Elements v2.3 20070202//EN
+A         core/2.3/dtd/references.ent
+D         archive-oasis/2.3/dtd/references.ent
+D         archiving/2.3/dtd/references.ent
+D         authoring/2.3/dtd/references.ent
+D         books/2.3/dtd/references.ent
+D         historical/2.3/dtd/references.ent
+D         publishing-oasis/2.3/dtd/references.ent
+D         publishing/2.3/dtd/references.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Bibliographic Reference (Citation) Class Elements v3.0 20080202//EN
+A         core/3.0/dtd/references3.ent
+D         archive-oasis/3.0/dtd/references3.ent
+D         archiving/3.0/dtd/references3.ent
+D         authoring/3.0/dtd/references3.ent
+D         books/3.0/dtd/references3.ent
+D         publishing-oasis/3.0/dtd/references3.ent
+D         publishing/3.0/dtd/references3.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Common (Shared) Elements Module v1.0 20021201//EN
+A         core/1.0/dtd/common.ent
+D         archiving/1.0/dtd/common.ent
+D         publishing/1.0/dtd/common.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Common (Shared) Elements Module v1.1 20031101//EN
+A         core/1.1/dtd/common.ent
+D         archiving/1.1/dtd/common.ent
+D         publishing/1.1/dtd/common.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Common (Shared) Elements Module v2.0 20040830//EN
+A         core/2.0/dtd/common.ent
+D         archiving/2.0/dtd/common.ent
+D         books/2.0/dtd/common.ent
+D         publishing/2.0/dtd/common.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Common (Shared) Elements Module v2.1 20050630//EN
+A         core/2.1/dtd/common.ent
+D         archiving/2.1/dtd/common.ent
+D         authoring/2.1/dtd/common.ent
+D         books/2.1/dtd/common.ent
+D         historical/2.1/dtd/common.ent
+D         publishing/2.1/dtd/common.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Common (Shared) Elements Module v2.2 20060430//EN
+A         core/2.2/dtd/common.ent
+D         archiving/2.2/dtd/common.ent
+D         authoring/2.2/dtd/common.ent
+D         books/2.2/dtd/common.ent
+D         historical/2.2/dtd/common.ent
+D         publishing/2.2/dtd/common.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Common (Shared) Elements Module v2.3 20070202//EN
+A         core/2.3/dtd/common.ent
+D         archive-oasis/2.3/dtd/common.ent
+D         archiving/2.3/dtd/common.ent
+D         authoring/2.3/dtd/common.ent
+D         books/2.3/dtd/common.ent
+D         historical/2.3/dtd/common.ent
+D         publishing-oasis/2.3/dtd/common.ent
+D         publishing/2.3/dtd/common.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Common (Shared) Elements Module v3.0 20080202//EN
+A         core/3.0/dtd/common3.ent
+D         archive-oasis/3.0/dtd/common3.ent
+D         archiving/3.0/dtd/common3.ent
+D         authoring/3.0/dtd/common3.ent
+D         books/3.0/dtd/common3.ent
+D         publishing-oasis/3.0/dtd/common3.ent
+D         publishing/3.0/dtd/common3.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Custom Special Characters Module v1.0 20021201//EN
+A         core/1.0/dtd/chars.ent
+D         archiving/1.0/dtd/chars.ent
+D         publishing/1.0/dtd/chars.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Custom Special Characters Module v1.1 20031101//EN
+A         core/1.1/dtd/chars.ent
+D         archiving/1.1/dtd/chars.ent
+D         publishing/1.1/dtd/chars.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Custom Special Characters Module v2.0 20040830//EN
+A         core/2.0/dtd/chars.ent
+D         archiving/2.0/dtd/chars.ent
+D         archiving/2.1/dtd/chars.ent
+D         archiving/2.2/dtd/chars.ent
+D         authoring/2.1/dtd/chars.ent
+D         authoring/2.2/dtd/chars.ent
+D         books/2.0/dtd/chars.ent
+D         books/2.1/dtd/chars.ent
+D         books/2.2/dtd/chars.ent
+D         historical/2.1/dtd/chars.ent
+D         historical/2.2/dtd/chars.ent
+D         publishing/2.0/dtd/chars.ent
+D         publishing/2.1/dtd/chars.ent
+D         publishing/2.2/dtd/chars.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Custom Special Characters Module v2.3 20070202//EN
+A         core/2.3/dtd/chars.ent
+D         archive-oasis/2.3/dtd/chars.ent
+D         archiving/2.3/dtd/chars.ent
+D         authoring/2.3/dtd/chars.ent
+D         books/2.3/dtd/chars.ent
+D         historical/2.3/dtd/chars.ent
+D         publishing-oasis/2.3/dtd/chars.ent
+D         publishing/2.3/dtd/chars.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Custom Special Characters Module v3.0 20080202//EN
+A         core/3.0/dtd/chars3.ent
+D         archive-oasis/3.0/dtd/chars3.ent
+D         archiving/3.0/dtd/chars3.ent
+D         authoring/3.0/dtd/chars3.ent
+D         books/3.0/dtd/chars3.ent
+D         publishing-oasis/3.0/dtd/chars3.ent
+D         publishing/3.0/dtd/chars3.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v1.0 20021201//EN
+A         core/1.0/dtd/display.ent
+D         archiving/1.0/dtd/display.ent
+D         publishing/1.0/dtd/display.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v1.1 20031101//EN
+A         core/1.1/dtd/display.ent
+D         archiving/1.1/dtd/display.ent
+D         publishing/1.1/dtd/display.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v2.0 20040830//EN
+A         core/2.0/dtd/display.ent
+D         books/2.0/dtd/display.ent
+D         archiving/2.0/dtd/display.ent
+D         publishing/2.0/dtd/display.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v2.1 20050630//EN
+A         core/2.1/dtd/display.ent
+D         archiving/2.1/dtd/display.ent
+D         authoring/2.1/dtd/display.ent
+D         books/2.1/dtd/display.ent
+D         historical/2.1/dtd/display.ent
+D         publishing/2.1/dtd/display.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v2.3 20070202//EN
+A         core/2.3/dtd/display.ent
+D         archive-oasis/2.3/dtd/display.ent
+D         archiving/2.3/dtd/display.ent
+D         authoring/2.3/dtd/display.ent
+D         books/2.3/dtd/display.ent
+D         historical/2.3/dtd/display.ent
+D         publishing-oasis/2.3/dtd/display.ent
+D         publishing/2.3/dtd/display.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v3.0 20080202//EN
+A         core/3.0/dtd/display3.ent
+D         archive-oasis/3.0/dtd/display3.ent
+D         archiving/3.0/dtd/display3.ent
+D         authoring/3.0/dtd/display3.ent
+D         books/3.0/dtd/display3.ent
+D         publishing-oasis/3.0/dtd/display3.ent
+D         publishing/3.0/dtd/display3.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Formatting Element Classes v1.0 20021201//EN
+A         core/1.0/dtd/format.ent
+D         archiving/1.1/dtd/format.ent
+D         archiving/1.0/dtd/format.ent
+D         publishing/1.0/dtd/format.ent
+D         publishing/1.1/dtd/format.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Formatting Element Classes v2.0 20040830//EN
+A         core/2.0/dtd/format.ent
+D         archiving/2.0/dtd/format.ent
+D         archiving/2.1/dtd/format.ent
+D         archiving/2.2/dtd/format.ent
+D         authoring/2.1/dtd/format.ent
+D         authoring/2.2/dtd/format.ent
+D         books/2.0/dtd/format.ent
+D         books/2.1/dtd/format.ent
+D         books/2.2/dtd/format.ent
+D         historical/2.1/dtd/format.ent
+D         historical/2.2/dtd/format.ent
+D         publishing/2.0/dtd/format.ent
+D         publishing/2.1/dtd/format.ent
+D         publishing/2.2/dtd/format.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Formatting Element Classes v2.3 20070202//EN
+A         core/2.3/dtd/format.ent
+D         archive-oasis/2.3/dtd/format.ent
+D         archiving/2.3/dtd/format.ent
+D         authoring/2.3/dtd/format.ent
+D         books/2.3/dtd/format.ent
+D         historical/2.3/dtd/format.ent
+D         publishing-oasis/2.3/dtd/format.ent
+D         publishing/2.3/dtd/format.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Formatting Element Classes v3.0 20080202//EN
+A         core/3.0/dtd/format3.ent
+D         archive-oasis/3.0/dtd/format3.ent
+D         archiving/3.0/dtd/format3.ent
+D         authoring/3.0/dtd/format3.ent
+D         books/3.0/dtd/format3.ent
+D         publishing-oasis/3.0/dtd/format3.ent
+D         publishing/3.0/dtd/format3.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Funding Elements v3.0 20080202//EN
+A         core/3.0/dtd/funding3.ent
+D         archive-oasis/3.0/dtd/funding3.ent
+D         archiving/3.0/dtd/funding3.ent
+D         authoring/3.0/dtd/funding3.ent
+D         books/3.0/dtd/funding3.ent
+D         publishing-oasis/3.0/dtd/funding3.ent
+D         publishing/3.0/dtd/funding3.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Journal Article Metadata Elements v1.0 20021201//EN
+A         core/1.0/dtd/articlemeta.ent
+D         archiving/1.0/dtd/articlemeta.ent
+D         publishing/1.0/dtd/articlemeta.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Journal Article Metadata Elements v1.1 20031101//EN
+A         core/1.1/dtd/articlemeta.ent
+D         archiving/1.1/dtd/articlemeta.ent
+D         publishing/1.1/dtd/articlemeta.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Journal Article Metadata Elements v2.0 20040830//EN
+A         core/2.0/dtd/articlemeta.ent
+D         books/2.0/dtd/articlemeta.ent
+D         archiving/2.0/dtd/articlemeta.ent
+D         publishing/2.0/dtd/articlemeta.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Journal Article Metadata Elements v2.1 20050630//EN
+A         core/2.1/dtd/articlemeta.ent
+D         archiving/2.1/dtd/articlemeta.ent
+D         authoring/2.1/dtd/articlemeta.ent
+D         books/2.1/dtd/articlemeta.ent
+D         historical/2.1/dtd/articlemeta.ent
+D         publishing/2.1/dtd/articlemeta.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Journal Article Metadata Elements v2.2 20060430//EN
+A         core/2.2/dtd/articlemeta.ent
+D         books/2.2/dtd/articlemeta.ent
+D         archiving/2.2/dtd/articlemeta.ent
+D         authoring/2.2/dtd/articlemeta.ent
+D         publishing/2.2/dtd/articlemeta.ent
+D         historical/2.2/dtd/articlemeta.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Journal Article Metadata Elements v2.3 20070202//EN
+A         core/2.3/dtd/articlemeta.ent
+D         archive-oasis/2.3/dtd/articlemeta.ent
+D         archiving/2.3/dtd/articlemeta.ent
+D         authoring/2.3/dtd/articlemeta.ent
+D         books/2.3/dtd/articlemeta.ent
+D         historical/2.3/dtd/articlemeta.ent
+D         publishing-oasis/2.3/dtd/articlemeta.ent
+D         publishing/2.3/dtd/articlemeta.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Journal Article Metadata Elements v3.0 20080202//EN
+A         core/3.0/dtd/articlemeta3.ent
+D         archive-oasis/3.0/dtd/articlemeta3.ent
+D         archiving/3.0/dtd/articlemeta3.ent
+D         authoring/3.0/dtd/articlemeta3.ent
+D         books/3.0/dtd/articlemeta3.ent
+D         publishing-oasis/3.0/dtd/articlemeta3.ent
+D         publishing/3.0/dtd/articlemeta3.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Journal Metadata Elements v1.0 20021201//EN
+A         core/1.0/dtd/journalmeta.ent
+D         archiving/1.0/dtd/journalmeta.ent
+D         publishing/1.0/dtd/journalmeta.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Journal Metadata Elements v1.1 20031101//EN
+A         core/1.1/dtd/journalmeta.ent
+D         archiving/1.1/dtd/journalmeta.ent
+D         publishing/1.1/dtd/journalmeta.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Journal Metadata Elements v2.0 20040830//EN
+A         core/2.0/dtd/journalmeta.ent
+D         archiving/2.0/dtd/journalmeta.ent
+D         books/2.0/dtd/journalmeta.ent
+D         publishing/2.0/dtd/journalmeta.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Journal Metadata Elements v2.1 20050630//EN
+A         core/2.1/dtd/journalmeta.ent
+D         archiving/2.2/dtd/journalmeta.ent
+D         archiving/2.1/dtd/journalmeta.ent
+D         authoring/2.1/dtd/journalmeta.ent
+D         books/2.1/dtd/journalmeta.ent
+D         historical/2.1/dtd/journalmeta.ent
+D         publishing/2.1/dtd/journalmeta.ent
+D         authoring/2.2/dtd/journalmeta.ent
+D         publishing/2.2/dtd/journalmeta.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Journal Metadata Elements v2.3 20070202//EN
+A         core/2.3/dtd/journalmeta.ent
+D         archive-oasis/2.3/dtd/journalmeta.ent
+D         archiving/2.3/dtd/journalmeta.ent
+D         authoring/2.3/dtd/journalmeta.ent
+D         publishing-oasis/2.3/dtd/journalmeta.ent
+D         publishing/2.3/dtd/journalmeta.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Journal Metadata Elements v3.0 20080202//EN
+A         core/3.0/dtd/journalmeta3.ent
+D         archive-oasis/3.0/dtd/journalmeta3.ent
+D         archiving/3.0/dtd/journalmeta3.ent
+D         authoring/3.0/dtd/journalmeta3.ent
+D         books/3.0/dtd/journalmeta3.ent
+D         publishing-oasis/3.0/dtd/journalmeta3.ent
+D         publishing/3.0/dtd/journalmeta3.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Link Class Elements v1.0 20021201//EN
+A         core/1.0/dtd/link.ent
+D         archiving/1.0/dtd/link.ent
+D         publishing/1.0/dtd/link.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Link Class Elements v1.1 20031101//EN
+A         core/1.1/dtd/link.ent
+D         archiving/1.1/dtd/link.ent
+D         publishing/1.1/dtd/link.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Link Class Elements v2.0 20040830//EN
+A         core/2.0/dtd/link.ent
+D         archiving/2.0/dtd/link.ent
+D         books/2.0/dtd/link.ent
+D         publishing/2.0/dtd/link.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Link Class Elements v2.1 20050630//EN
+A         core/2.1/dtd/link.ent
+D         archiving/2.2/dtd/link.ent
+D         archiving/2.1/dtd/link.ent
+D         authoring/2.1/dtd/link.ent
+D         books/2.1/dtd/link.ent
+D         historical/2.1/dtd/link.ent
+D         publishing/2.1/dtd/link.ent
+D         authoring/2.2/dtd/link.ent
+D         books/2.2/dtd/link.ent
+D         historical/2.2/dtd/link.ent
+D         publishing/2.2/dtd/link.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Link Class Elements v2.3 20070202//EN
+A         core/2.3/dtd/link.ent
+D         archive-oasis/2.3/dtd/link.ent
+D         archiving/2.3/dtd/link.ent
+D         authoring/2.3/dtd/link.ent
+D         books/2.3/dtd/link.ent
+D         historical/2.3/dtd/link.ent
+D         publishing-oasis/2.3/dtd/link.ent
+D         publishing/2.3/dtd/link.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Link Class Elements v3.0 20080202//EN
+A         core/3.0/dtd/link3.ent
+D         archive-oasis/3.0/dtd/link3.ent
+D         archiving/3.0/dtd/link3.ent
+D         authoring/3.0/dtd/link3.ent
+D         books/3.0/dtd/link3.ent
+D         publishing-oasis/3.0/dtd/link3.ent
+D         publishing/3.0/dtd/link3.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite List Class Elements v1.0 20021201//EN
+A         core/1.0/dtd/list.ent
+D         archiving/1.0/dtd/list.ent
+D         publishing/1.0/dtd/list.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite List Class Elements v1.1 20031101//EN
+A         core/1.1/dtd/list.ent
+D         archiving/1.1/dtd/list.ent
+D         publishing/1.1/dtd/list.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite List Class Elements v2.0 20040830//EN
+A         core/2.0/dtd/list.ent
+D         books/2.0/dtd/list.ent
+D         archiving/2.0/dtd/list.ent
+D         publishing/2.0/dtd/list.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite List Class Elements v2.1 20050630//EN
+A         core/2.1/dtd/list.ent
+D         archiving/2.2/dtd/list.ent
+D         archiving/2.1/dtd/list.ent
+D         authoring/2.1/dtd/list.ent
+D         books/2.1/dtd/list.ent
+D         historical/2.1/dtd/list.ent
+D         publishing/2.1/dtd/list.ent
+D         authoring/2.2/dtd/list.ent
+D         books/2.2/dtd/list.ent
+D         historical/2.2/dtd/list.ent
+D         publishing/2.2/dtd/list.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite List Class Elements v2.3 20070202//EN
+A         core/2.3/dtd/list.ent
+D         archive-oasis/2.3/dtd/list.ent
+D         archiving/2.3/dtd/list.ent
+D         authoring/2.3/dtd/list.ent
+D         books/2.3/dtd/list.ent
+D         historical/2.3/dtd/list.ent
+D         publishing-oasis/2.3/dtd/list.ent
+D         publishing/2.3/dtd/list.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite List Class Elements v3.0 20080202//EN
+A         core/3.0/dtd/list3.ent
+D         archive-oasis/3.0/dtd/list3.ent
+D         archiving/3.0/dtd/list3.ent
+D         authoring/3.0/dtd/list3.ent
+D         books/3.0/dtd/list3.ent
+D         publishing-oasis/3.0/dtd/list3.ent
+D         publishing/3.0/dtd/list3.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Math Class Elements v1.0 20021201//EN
+A         core/1.0/dtd/math.ent
+D         archiving/1.0/dtd/math.ent
+D         publishing/1.0/dtd/math.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Math Class Elements v1.1 20031101//EN
+A         core/1.1/dtd/math.ent
+D         archiving/1.1/dtd/math.ent
+D         publishing/1.1/dtd/math.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Math Class Elements v2.3 20070202//EN
+A         core/2.3/dtd/math.ent
+D         archive-oasis/2.3/dtd/math.ent
+D         archiving/2.3/dtd/math.ent
+D         authoring/2.3/dtd/math.ent
+D         books/2.3/dtd/math.ent
+D         historical/2.3/dtd/math.ent
+D         publishing-oasis/2.3/dtd/math.ent
+D         publishing/2.3/dtd/math.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Math Class Elements v3.0 20080202//EN
+A         core/3.0/dtd/math3.ent
+D         archive-oasis/3.0/dtd/math3.ent
+D         archiving/3.0/dtd/math3.ent
+D         authoring/3.0/dtd/math3.ent
+D         books/3.0/dtd/math3.ent
+D         publishing-oasis/3.0/dtd/math3.ent
+D         publishing/3.0/dtd/math3.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite MathML Setup Module v1.0 20021201//EN
+A         core/1.0/dtd/mathmlsetup.ent
+D         archiving/1.0/dtd/mathmlsetup.ent
+D         publishing/1.0/dtd/mathmlsetup.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite MathML Setup Module v1.1 20031101//EN
+A         core/1.1/dtd/mathmlsetup.ent
+D         archiving/1.1/dtd/mathmlsetup.ent
+D         publishing/1.1/dtd/mathmlsetup.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite MathML Setup Module v2.0 20040830//EN
+A         core/2.0/dtd/mathmlsetup.ent
+D         archiving/2.0/dtd/mathmlsetup.ent
+D         books/2.0/dtd/mathmlsetup.ent
+D         publishing/2.0/dtd/mathmlsetup.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite MathML Setup Module v2.1 20050630//EN
+A         core/2.1/dtd/mathmlsetup.ent
+D         archiving/2.1/dtd/mathmlsetup.ent
+D         archiving/2.2/dtd/mathmlsetup.ent
+D         authoring/2.1/dtd/mathmlsetup.ent
+D         authoring/2.2/dtd/mathmlsetup.ent
+D         books/2.1/dtd/mathmlsetup.ent
+D         books/2.2/dtd/mathmlsetup.ent
+D         historical/2.1/dtd/mathmlsetup.ent
+D         historical/2.2/dtd/mathmlsetup.ent
+D         publishing/2.1/dtd/mathmlsetup.ent
+D         publishing/2.2/dtd/mathmlsetup.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite MathML Setup Module v2.3 20070202//EN
+A         core/2.3/dtd/mathmlsetup.ent
+D         archive-oasis/2.3/dtd/mathmlsetup.ent
+D         archiving/2.3/dtd/mathmlsetup.ent
+D         authoring/2.3/dtd/mathmlsetup.ent
+D         books/2.3/dtd/mathmlsetup.ent
+D         historical/2.3/dtd/mathmlsetup.ent
+D         publishing-oasis/2.3/dtd/mathmlsetup.ent
+D         publishing/2.3/dtd/mathmlsetup.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite MathML Setup Module v3.0 20080202//EN
+A         core/3.0/dtd/mathmlsetup3.ent
+D         archive-oasis/3.0/dtd/mathmlsetup3.ent
+D         archiving/3.0/dtd/mathmlsetup3.ent
+D         authoring/3.0/dtd/mathmlsetup3.ent
+D         books/3.0/dtd/mathmlsetup3.ent
+D         publishing-oasis/3.0/dtd/mathmlsetup3.ent
+D         publishing/3.0/dtd/mathmlsetup3.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v1.0 20021201//EN
+A         core/1.0/dtd/modules.ent
+D         archiving/1.0/dtd/modules.ent
+D         publishing/1.0/dtd/modules.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v1.1 20031101//EN
+A         core/1.1/dtd/modules.ent
+D         archiving/1.1/dtd/modules.ent
+D         publishing/1.1/dtd/modules.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v2.0 20040830//EN
+A         core/2.0/dtd/modules.ent
+D         archiving/2.0/dtd/modules.ent
+D         books/2.0/dtd/modules.ent
+D         publishing/2.0/dtd/modules.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v2.1 20050630//EN
+A         core/2.1/dtd/modules.ent
+D         archiving/2.1/dtd/modules.ent
+D         authoring/2.1/dtd/modules.ent
+D         books/2.1/dtd/modules.ent
+D         historical/2.1/dtd/modules.ent
+D         publishing/2.1/dtd/modules.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v2.2 20060430//EN
+A         core/2.2/dtd/modules.ent
+D         archiving/2.2/dtd/modules.ent
+D         authoring/2.2/dtd/modules.ent
+D         books/2.2/dtd/modules.ent
+D         historical/2.2/dtd/modules.ent
+D         publishing/2.2/dtd/modules.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v2.3 20070202//EN
+A         core/2.3/dtd/modules.ent
+D         archive-oasis/2.3/dtd/modules.ent
+D         archiving/2.3/dtd/modules.ent
+D         authoring/2.3/dtd/modules.ent
+D         books/2.3/dtd/modules.ent
+D         historical/2.3/dtd/modules.ent
+D         publishing-oasis/2.3/dtd/modules.ent
+D         publishing/2.3/dtd/modules.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v3.0 20080202//EN
+A         core/3.0/dtd/modules3.ent
+D         archive-oasis/3.0/dtd/modules3.ent
+D         archiving/3.0/dtd/modules3.ent
+D         authoring/3.0/dtd/modules3.ent
+D         books/3.0/dtd/modules3.ent
+D         publishing-oasis/3.0/dtd/modules3.ent
+D         publishing/3.0/dtd/modules3.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Notation Declarations v1.0 20021201//EN
+A         core/1.0/dtd/notat.ent
+D         archiving/1.0/dtd/notat.ent
+D         archiving/1.1/dtd/notat.ent
+D         publishing/1.0/dtd/notat.ent
+D         publishing/1.1/dtd/notat.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Notation Declarations v2.0 20040830//EN
+A         core/2.0/dtd/notat.ent
+D         archiving/2.1/dtd/notat.ent
+D         archiving/2.0/dtd/notat.ent
+D         books/2.0/dtd/notat.ent
+D         publishing/2.0/dtd/notat.ent
+D         archiving/2.2/dtd/notat.ent
+D         authoring/2.1/dtd/notat.ent
+D         authoring/2.2/dtd/notat.ent
+D         books/2.1/dtd/notat.ent
+D         books/2.2/dtd/notat.ent
+D         historical/2.1/dtd/notat.ent
+D         historical/2.2/dtd/notat.ent
+D         publishing/2.1/dtd/notat.ent
+D         publishing/2.2/dtd/notat.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Notation Declarations v2.3 20070202//EN
+A         core/2.3/dtd/notat.ent
+D         archive-oasis/2.3/dtd/notat.ent
+D         archiving/2.3/dtd/notat.ent
+D         authoring/2.3/dtd/notat.ent
+D         books/2.3/dtd/notat.ent
+D         historical/2.3/dtd/notat.ent
+D         publishing-oasis/2.3/dtd/notat.ent
+D         publishing/2.3/dtd/notat.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Notation Declarations v3.0 20080202//EN
+A         core/3.0/dtd/notat3.ent
+D         archive-oasis/3.0/dtd/notat3.ent
+D         archiving/3.0/dtd/notat3.ent
+D         authoring/3.0/dtd/notat3.ent
+D         books/3.0/dtd/notat3.ent
+D         publishing-oasis/3.0/dtd/notat3.ent
+D         publishing/3.0/dtd/notat3.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite OASIS XML Table Setup Module v1.0 20021201//EN
+A         core/1.0/dtd/oasis-tablesetup.ent
+D         archiving/1.0/dtd/oasis-tablesetup.ent
+D         publishing/1.0/dtd/oasis-tablesetup.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite OASIS XML Table Setup Module v1.1 20031101//EN
+A         core/1.1/dtd/oasis-tablesetup.ent
+D         archiving/1.1/dtd/oasis-tablesetup.ent
+D         publishing/1.1/dtd/oasis-tablesetup.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Paragraph-Like Elements v1.0 20021201//EN
+A         core/1.0/dtd/para.ent
+D         archiving/1.0/dtd/para.ent
+D         publishing/1.0/dtd/para.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Paragraph-Like Elements v1.1 20031101//EN
+A         core/1.1/dtd/para.ent
+D         archiving/1.1/dtd/para.ent
+D         publishing/1.1/dtd/para.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Paragraph-Like Elements v2.0 20040830//EN
+A         core/2.0/dtd/para.ent
+D         archiving/2.0/dtd/para.ent
+D         books/2.0/dtd/para.ent
+D         publishing/2.0/dtd/para.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Paragraph-Like Elements v2.1 20050630//EN
+A         core/2.1/dtd/para.ent
+D         archiving/2.1/dtd/para.ent
+D         authoring/2.1/dtd/para.ent
+D         books/2.1/dtd/para.ent
+D         historical/2.1/dtd/para.ent
+D         publishing/2.1/dtd/para.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Paragraph-Like Elements v2.2 20060430//EN
+A         core/2.2/dtd/para.ent
+D         archiving/2.2/dtd/para.ent
+D         authoring/2.2/dtd/para.ent
+D         books/2.2/dtd/para.ent
+D         historical/2.2/dtd/para.ent
+D         publishing/2.2/dtd/para.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Paragraph-Like Elements v2.3 20070202//EN
+A         core/2.3/dtd/para.ent
+D         archive-oasis/2.3/dtd/para.ent
+D         archiving/2.3/dtd/para.ent
+D         authoring/2.3/dtd/para.ent
+D         books/2.3/dtd/para.ent
+D         historical/2.3/dtd/para.ent
+D         publishing-oasis/2.3/dtd/para.ent
+D         publishing/2.3/dtd/para.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Paragraph-Like Elements v3.0 20080202//EN
+A         core/3.0/dtd/para3.ent
+D         archive-oasis/3.0/dtd/para3.ent
+D         archiving/3.0/dtd/para3.ent
+D         authoring/3.0/dtd/para3.ent
+D         books/3.0/dtd/para3.ent
+D         publishing-oasis/3.0/dtd/para3.ent
+D         publishing/3.0/dtd/para3.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Related Object Element v3.0 20080202//EN
+A         core/3.0/dtd/related-object3.ent
+D         archive-oasis/3.0/dtd/related-object3.ent
+D         archiving/3.0/dtd/related-object3.ent
+D         authoring/3.0/dtd/related-object3.ent
+D         books/3.0/dtd/related-object3.ent
+D         publishing-oasis/3.0/dtd/related-object3.ent
+D         publishing/3.0/dtd/related-object3.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Section Class Elements v1.0 20021201//EN
+A         core/1.0/dtd/section.ent
+D         archiving/1.1/dtd/section.ent
+D         archiving/1.0/dtd/section.ent
+D         publishing/1.0/dtd/section.ent
+D         publishing/1.1/dtd/section.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Section Class Elements v2.0 20040830//EN
+A         core/2.0/dtd/section.ent
+D         archiving/2.1/dtd/section.ent
+D         archiving/2.0/dtd/section.ent
+D         books/2.0/dtd/section.ent
+D         publishing/2.0/dtd/section.ent
+D         authoring/2.1/dtd/section.ent
+D         books/2.1/dtd/section.ent
+D         historical/2.1/dtd/section.ent
+D         publishing/2.1/dtd/section.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Section Class Elements v2.2 20060430//EN
+A         core/2.2/dtd/section.ent
+D         archiving/2.2/dtd/section.ent
+D         authoring/2.2/dtd/section.ent
+D         books/2.2/dtd/section.ent
+D         historical/2.2/dtd/section.ent
+D         publishing/2.2/dtd/section.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Section Class Elements v2.3 20070202//EN
+A         core/2.3/dtd/section.ent
+D         archive-oasis/2.3/dtd/section.ent
+D         archiving/2.3/dtd/section.ent
+D         authoring/2.3/dtd/section.ent
+D         books/2.3/dtd/section.ent
+D         historical/2.3/dtd/section.ent
+D         publishing-oasis/2.3/dtd/section.ent
+D         publishing/2.3/dtd/section.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Section Class Elements v3.0 20080202//EN
+A         core/3.0/dtd/section3.ent
+D         archive-oasis/3.0/dtd/section3.ent
+D         archiving/3.0/dtd/section3.ent
+D         authoring/3.0/dtd/section3.ent
+D         books/3.0/dtd/section3.ent
+D         publishing-oasis/3.0/dtd/section3.ent
+D         publishing/3.0/dtd/section3.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Subject Phrase Class Elements v1.0 20021201//EN
+A         core/1.0/dtd/phrase.ent
+D         archiving/1.0/dtd/phrase.ent
+D         publishing/1.0/dtd/phrase.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Subject Phrase Class Elements v1.1 20031101//EN
+A         core/1.1/dtd/phrase.ent
+D         archiving/1.1/dtd/phrase.ent
+D         publishing/1.1/dtd/phrase.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Subject Phrase Class Elements v2.0 20040830//EN
+A         core/2.0/dtd/phrase.ent
+D         archiving/2.2/dtd/phrase.ent
+D         archiving/2.0/dtd/phrase.ent
+D         archiving/2.1/dtd/phrase.ent
+D         authoring/2.1/dtd/phrase.ent
+D         books/2.0/dtd/phrase.ent
+D         books/2.1/dtd/phrase.ent
+D         historical/2.1/dtd/phrase.ent
+D         publishing/2.0/dtd/phrase.ent
+D         publishing/2.1/dtd/phrase.ent
+D         authoring/2.2/dtd/phrase.ent
+D         books/2.2/dtd/phrase.ent
+D         historical/2.2/dtd/phrase.ent
+D         publishing/2.2/dtd/phrase.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Subject Phrase Class Elements v2.3 20070202//EN
+A         core/2.3/dtd/phrase.ent
+D         archive-oasis/2.3/dtd/phrase.ent
+D         archiving/2.3/dtd/phrase.ent
+D         authoring/2.3/dtd/phrase.ent
+D         books/2.3/dtd/phrase.ent
+D         historical/2.3/dtd/phrase.ent
+D         publishing-oasis/2.3/dtd/phrase.ent
+D         publishing/2.3/dtd/phrase.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite Subject Phrase Class Elements v3.0 20080202//EN
+A         core/3.0/dtd/phrase3.ent
+D         archive-oasis/3.0/dtd/phrase3.ent
+D         archiving/3.0/dtd/phrase3.ent
+D         authoring/3.0/dtd/phrase3.ent
+D         books/3.0/dtd/phrase3.ent
+D         publishing-oasis/3.0/dtd/phrase3.ent
+D         publishing/3.0/dtd/phrase3.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite XHTML Table Setup Module v1.0 20021201//EN
+A         core/1.0/dtd/XHTMLtablesetup.ent
+D         archiving/1.0/dtd/XHTMLtablesetup.ent
+D         publishing/1.0/dtd/XHTMLtablesetup.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite XHTML Table Setup Module v1.1 20031101//EN
+A         core/1.1/dtd/XHTMLtablesetup.ent
+D         archiving/1.1/dtd/XHTMLtablesetup.ent
+D         publishing/1.1/dtd/XHTMLtablesetup.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite XHTML Table Setup Module v2.0 20040830//EN
+A         core/2.0/dtd/XHTMLtablesetup.ent
+D         archiving/2.0/dtd/XHTMLtablesetup.ent
+D         books/2.0/dtd/XHTMLtablesetup.ent
+D         publishing/2.0/dtd/XHTMLtablesetup.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite XHTML Table Setup Module v2.1 20050630//EN
+A         core/2.1/dtd/XHTMLtablesetup.ent
+D         archiving/2.1/dtd/XHTMLtablesetup.ent
+D         archiving/2.2/dtd/XHTMLtablesetup.ent
+D         authoring/2.1/dtd/XHTMLtablesetup.ent
+D         authoring/2.2/dtd/XHTMLtablesetup.ent
+D         books/2.1/dtd/XHTMLtablesetup.ent
+D         books/2.2/dtd/XHTMLtablesetup.ent
+D         historical/2.1/dtd/XHTMLtablesetup.ent
+D         historical/2.2/dtd/XHTMLtablesetup.ent
+D         publishing/2.1/dtd/XHTMLtablesetup.ent
+D         publishing/2.2/dtd/XHTMLtablesetup.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite XHTML Table Setup Module v2.3 20070202//EN
+A         core/2.3/dtd/XHTMLtablesetup.ent
+D         archive-oasis/2.3/dtd/XHTMLtablesetup.ent
+D         archiving/2.3/dtd/XHTMLtablesetup.ent
+D         authoring/2.3/dtd/XHTMLtablesetup.ent
+D         books/2.3/dtd/XHTMLtablesetup.ent
+D         historical/2.3/dtd/XHTMLtablesetup.ent
+D         publishing-oasis/2.3/dtd/XHTMLtablesetup.ent
+D         publishing/2.3/dtd/XHTMLtablesetup.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite XHTML Table Setup Module v3.0 20080202//EN
+A         core/3.0/dtd/XHTMLtablesetup3.ent
+D         archive-oasis/3.0/dtd/XHTMLtablesetup3.ent
+D         archiving/3.0/dtd/XHTMLtablesetup3.ent
+D         authoring/3.0/dtd/XHTMLtablesetup3.ent
+D         books/3.0/dtd/XHTMLtablesetup3.ent
+D         publishing-oasis/3.0/dtd/XHTMLtablesetup3.ent
+D         publishing/3.0/dtd/XHTMLtablesetup3.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite XML Special Characters Module v2.0 20040830//EN
+A         core/2.0/dtd/xmlspecchars.ent
+D         archiving/2.0/dtd/xmlspecchars.ent
+D         books/2.0/dtd/xmlspecchars.ent
+D         publishing/2.0/dtd/xmlspecchars.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite XML Special Characters Module v2.1 20050630//EN
+A         core/2.1/dtd/xmlspecchars.ent
+D         archiving/2.1/dtd/xmlspecchars.ent
+D         archiving/2.2/dtd/xmlspecchars.ent
+D         authoring/2.1/dtd/xmlspecchars.ent
+D         authoring/2.2/dtd/xmlspecchars.ent
+D         books/2.1/dtd/xmlspecchars.ent
+D         books/2.2/dtd/xmlspecchars.ent
+D         historical/2.1/dtd/xmlspecchars.ent
+D         historical/2.2/dtd/xmlspecchars.ent
+D         publishing/2.1/dtd/xmlspecchars.ent
+D         publishing/2.2/dtd/xmlspecchars.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite XML Special Characters Module v2.3 20070202//EN
+A         core/2.3/dtd/xmlspecchars.ent
+D         archive-oasis/2.3/dtd/xmlspecchars.ent
+D         archiving/2.3/dtd/xmlspecchars.ent
+D         authoring/2.3/dtd/xmlspecchars.ent
+D         books/2.3/dtd/xmlspecchars.ent
+D         historical/2.3/dtd/xmlspecchars.ent
+D         publishing-oasis/2.3/dtd/xmlspecchars.ent
+D         publishing/2.3/dtd/xmlspecchars.ent
+
+MoveTo -//NLM//DTD Archiving and Interchange DTD Suite XML Special Characters Module v3.0 20080202//EN
+A         core/3.0/dtd/xmlspecchars3.ent
+D         archive-oasis/3.0/dtd/xmlspecchars3.ent
+D         archiving/3.0/dtd/xmlspecchars3.ent
+D         authoring/3.0/dtd/xmlspecchars3.ent
+D         books/3.0/dtd/xmlspecchars3.ent
+D         publishing-oasis/3.0/dtd/xmlspecchars3.ent
+D         publishing/3.0/dtd/xmlspecchars3.ent
+
+MoveTo force -//NLM//DTD Article Authoring DTD Over-ride Classes Module v2.1 20050630//EN
+D         authoring/2.1/dtd/articleauthcustom-classes.ent
+A         authoring/2.1/dtd/articleauthcustom-classes.ent
+D         authoring/2.2/dtd/articleauthcustom-classes.ent
+
+MoveTo force -//NLM//DTD Article Authoring DTD Over-ride Mixes Module v2.1 20050630//EN
+D         authoring/2.1/dtd/articleauthcustom-mixes.ent
+A         authoring/2.1/dtd/articleauthcustom-mixes.ent
+D         authoring/2.2/dtd/articleauthcustom-mixes.ent
+
+Remains -//NLM//DTD Book DTD Module of Modules v2.1 20050630//EN
+D         historical/2.1/dtd/bookcustom-modules.ent
+
+Remains -//NLM//DTD Book DTD Module of Modules v2.2 20061013//EN
+D         historical/2.2/dtd/bookcustom-modules.ent
+
+Remains -//NLM//DTD Book DTD Module of Modules v2.3 20070202//EN
+D         historical/2.3/dtd/bookcustom-modules.ent
+
+Remains -//NLM//DTD Book DTD v2.1 20050630//EN
+D         historical/2.1/dtd/book.dtd
+
+Remains -//NLM//DTD Book DTD v2.2 20061013//EN
+D         historical/2.2/dtd/book.dtd
+
+MoveTo -//NLM//DTD Default Element Classes Module v2.0 20040830//EN
+A         core/2.0/dtd/default-classes.ent
+D         books/2.0/dtd/default-classes.ent
+D         archiving/2.0/dtd/default-classes.ent
+D         publishing/2.0/dtd/default-classes.ent
+
+MoveTo -//NLM//DTD Default Element Classes Module v2.1 20050630//EN
+A         core/2.1/dtd/default-classes.ent
+D         archiving/2.1/dtd/default-classes.ent
+D         authoring/2.1/dtd/default-classes.ent
+D         books/2.1/dtd/default-classes.ent
+D         historical/2.1/dtd/default-classes.ent
+D         publishing/2.1/dtd/default-classes.ent
+
+MoveTo -//NLM//DTD Default Element Classes Module v2.2 20060430//EN
+A         core/2.2/dtd/default-classes.ent
+D         archiving/2.2/dtd/default-classes.ent
+D         authoring/2.2/dtd/default-classes.ent
+D         books/2.2/dtd/default-classes.ent
+D         historical/2.2/dtd/default-classes.ent
+D         publishing/2.2/dtd/default-classes.ent
+
+MoveTo -//NLM//DTD Default Element Classes Module v2.3 20070202//EN
+A         core/2.3/dtd/default-classes.ent
+D         archive-oasis/2.3/dtd/default-classes.ent
+D         archiving/2.3/dtd/default-classes.ent
+D         authoring/2.3/dtd/default-classes.ent
+D         books/2.3/dtd/default-classes.ent
+D         historical/2.3/dtd/default-classes.ent
+D         publishing-oasis/2.3/dtd/default-classes.ent
+D         publishing/2.3/dtd/default-classes.ent
+
+MoveTo -//NLM//DTD Default Element Classes Module v3.0 20080202//EN
+A         core/3.0/dtd/default-classes3.ent
+D         archive-oasis/3.0/dtd/default-classes3.ent
+D         archiving/3.0/dtd/default-classes3.ent
+D         authoring/3.0/dtd/default-classes3.ent
+D         books/3.0/dtd/default-classes3.ent
+D         publishing-oasis/3.0/dtd/default-classes3.ent
+D         publishing/3.0/dtd/default-classes3.ent
+
+MoveTo -//NLM//DTD Default Element Mixes Module v2.0 20040830//EN
+A         core/2.0/dtd/default-mixes.ent
+D         archiving/2.0/dtd/default-mixes.ent
+D         books/2.0/dtd/default-mixes.ent
+D         publishing/2.0/dtd/default-mixes.ent
+
+MoveTo -//NLM//DTD Default Element Mixes Module v2.1 20050630//EN
+A         core/2.1/dtd/default-mixes.ent
+D         archiving/2.2/dtd/default-mixes.ent
+D         archiving/2.1/dtd/default-mixes.ent
+D         authoring/2.1/dtd/default-mixes.ent
+D         books/2.1/dtd/default-mixes.ent
+D         historical/2.1/dtd/default-mixes.ent
+D         publishing/2.1/dtd/default-mixes.ent
+D         authoring/2.2/dtd/default-mixes.ent
+D         books/2.2/dtd/default-mixes.ent
+D         historical/2.2/dtd/default-mixes.ent
+D         publishing/2.2/dtd/default-mixes.ent
+
+MoveTo -//NLM//DTD Default Element Mixes Module v2.3 20070202//EN
+A         core/2.3/dtd/default-mixes.ent
+D         archive-oasis/2.3/dtd/default-mixes.ent
+D         archiving/2.3/dtd/default-mixes.ent
+D         authoring/2.3/dtd/default-mixes.ent
+D         books/2.3/dtd/default-mixes.ent
+D         historical/2.3/dtd/default-mixes.ent
+D         publishing-oasis/2.3/dtd/default-mixes.ent
+D         publishing/2.3/dtd/default-mixes.ent
+
+MoveTo -//NLM//DTD Default Element Mixes Module v3.0 20080202//EN
+A         core/3.0/dtd/default-mixes3.ent
+D         archive-oasis/3.0/dtd/default-mixes3.ent
+D         archiving/3.0/dtd/default-mixes3.ent
+D         authoring/3.0/dtd/default-mixes3.ent
+D         books/3.0/dtd/default-mixes3.ent
+D         publishing-oasis/3.0/dtd/default-mixes3.ent
+D         publishing/3.0/dtd/default-mixes3.ent
+
+Remains -//NLM//DTD Journal Archiving DTD Customize Classes Module v2.1 20050630//EN
+D         archiving/2.2/dtd/archivecustom-classes.ent
+
+Remains -//NLM//DTD Journal Archiving DTD Customize Content and Attributes Module v2.3 20070202//EN
+D         archive-oasis/2.3/dtd/archivecustom-models.ent
+
+Remains -//NLM//DTD Journal Archiving DTD Customize Content and Attributes Module v3.0 20080202//EN
+D         archive-oasis/3.0/dtd/archivecustom-models3.ent
+
+MoveTo force -//NLM//DTD Journal Archiving DTD Customize Mixes Module v2.1 20050630//EN
+D         archiving/2.1/dtd/archivecustom-mixes.ent
+A         archiving/2.1/dtd/archivecustom-mixes.ent
+D         archiving/2.2/dtd/archivecustom-mixes.ent
+
+Remains -//NLM//DTD Journal Archiving DTD Customize Mixes Module v2.3 20070202//EN
+D         archive-oasis/2.3/dtd/archivecustom-mixes.ent
+
+MoveTo -//NLM//DTD Journal Archiving DTD to Test the Base Suite v3.0 20080202//EN
+A         core/3.0/dtd/base-test3.dtd
+D         archive-oasis/3.0/dtd/base-test3.dtd
+D         archiving/3.0/dtd/base-test3.dtd
+D         authoring/3.0/dtd/base-test3.dtd
+D         books/3.0/dtd/base-test3.dtd
+D         publishing-oasis/3.0/dtd/base-test3.dtd
+D         publishing/3.0/dtd/base-test3.dtd
+
+MoveTo -//NLM//DTD Journal Archiving and Interchange DTD to Test the Base Suite v2.0 20040830//EN
+A         core/2.0/dtd/base-test.dtd
+D         publishing/2.0/dtd/base-test.dtd
+
+Remains -//NLM//DTD Journal Publishing DTD Customize Classes Module v2.0 20040830//EN
+D         archiving/2.0/dtd/journalpubcustom-classes.ent
+D         publishing/2.1/dtd/journalpubcustom-classes.ent
+D         publishing/2.2/dtd/journalpubcustom-classes.ent
+
+Remains -//NLM//DTD Journal Publishing DTD Customize Content and Attributes Module v2.3 20070202//EN
+D         publishing-oasis/2.3/dtd/journalpubcustom-models.ent
+
+Remains -//NLM//DTD Journal Publishing DTD Customize Content and Attributes Module v3.0 20080202//EN
+D         publishing-oasis/3.0/dtd/journalpubcustom-models3.ent
+
+Remains -//NLM//DTD Journal Publishing DTD Customize Mixes Module v2.0 20040830//EN
+D         archiving/2.0/dtd/journalpubcustom-mixes.ent
+D         publishing/2.1/dtd/journalpubcustom-mixes.ent
+D         publishing/2.2/dtd/journalpubcustom-mixes.ent
+
+Remains -//NLM//DTD Journal Publishing DTD Customize Mixes Module v2.3 20070202//EN
+D         publishing-oasis/2.3/dtd/journalpubcustom-mixes.ent
+
+Remains -//NLM//DTD Journal Publishing DTD Customize Mixes Module v3.0 20080202//EN
+D         publishing-oasis/3.0/dtd/journalpubcustom-mixes3.ent
+
+Remains -//NLM//DTD Journal Publishing DTD v2.0 20040830//EN
+D         archiving/2.0/dtd/journalpublishing.dtd
+
+Remains -//NLM//DTD Journal Publishing DTD v2.3 20070202//EN
+D         publishing-oasis/2.3/dtd/journalpublishing.dtd
+
+Remains -//NLM//DTD Journal Publishing DTD-Specific Modules v2.0 20040830//EN
+D         archiving/2.0/dtd/journalpubcustom-modules.ent
+
+Remains -//NLM//DTD NCBI Book Collection DTD v2.1 20050630//EN
+D         historical/2.1/dtd/bookcollection.dtd
+
+Remains -//NLM//DTD NCBI Book Collection DTD v2.2 20061013//EN
+D         historical/2.2/dtd/bookcollection.dtd
+
+Remains -//NLM//DTD NCBI Book DTD Book Component Metadata Elements v2.1 20050630//EN
+D         historical/2.1/dtd/bookpart.ent
+
+Remains -//NLM//DTD NCBI Book DTD Book Component Metadata Elements v2.2 20061013//EN
+D         historical/2.2/dtd/bookpart.ent
+
+Remains -//NLM//DTD NCBI Book DTD Book Component Metadata Elements v2.3 20070202//EN
+D         historical/2.3/dtd/bookpart.ent
+
+Remains -//NLM//DTD NCBI Book DTD Book Metadata Elements v2.1 20050630//EN
+D         historical/2.1/dtd/bookmeta.ent
+
+Remains -//NLM//DTD NCBI Book DTD Book Metadata Elements v2.2 20061013//EN
+D         historical/2.2/dtd/bookmeta.ent
+
+Remains -//NLM//DTD NCBI Book DTD Book Metadata Elements v2.3 20070202//EN
+D         historical/2.3/dtd/bookmeta.ent
+
+Remains -//NLM//DTD NCBI Book DTD Book Related Object Element v2.2 20061013//EN
+D         historical/2.2/dtd/bookrelated-object.ent
+
+Remains -//NLM//DTD NCBI Book DTD Book Related Object Element v2.3 20070202//EN
+D         historical/2.3/dtd/bookrelated-object.ent
+
+Remains -//NLM//DTD NCBI Book DTD Content and Attribute Over-ride Module v2.1 20050630//EN
+D         historical/2.1/dtd/bookcustom-models.ent
+
+Remains -//NLM//DTD NCBI Book DTD Content and Attribute Over-ride Module v2.2 20061013//EN
+D         historical/2.2/dtd/bookcustom-models.ent
+
+Remains -//NLM//DTD NCBI Book DTD Content and Attribute Over-ride Module v2.3 20070202//EN
+D         historical/2.3/dtd/bookcustom-models.ent
+
+Remains -//NLM//DTD NCBI Book DTD Over-ride Classes Module v2.1 20050630//EN
+D         historical/2.1/dtd/bookcustom-classes.ent
+
+Remains -//NLM//DTD NCBI Book DTD Over-ride Classes Module v2.2 20061013//EN
+D         historical/2.2/dtd/bookcustom-classes.ent
+
+Remains -//NLM//DTD NCBI Book DTD Over-ride Classes Module v2.3 20070202//EN
+D         historical/2.3/dtd/bookcustom-classes.ent
+
+MoveTo force -//NLM//DTD NCBI Book DTD Over-ride Mixes Module v2.0 20041031//EN
+D         books/2.0/dtd/bookcustom-mixes.ent
+A         books/2.0/dtd/bookcustom-mixes.ent
+D         books/2.1/dtd/bookcustom-mixes.ent
+D         historical/2.1/dtd/bookcustom-mixes.ent
+
+Remains -//NLM//DTD NCBI Book DTD Over-ride Mixes Module v2.2 20061013//EN
+D         historical/2.2/dtd/bookcustom-mixes.ent
+
+Remains -//NLM//DTD NCBI Book DTD Over-ride Mixes Module v2.3 20070202//EN
+D         historical/2.3/dtd/bookcustom-mixes.ent
+
+MoveTo force -//NLM//DTD NCBI Book Image Map Elements v2.0 20041031//EN
+D         books/2.0/dtd/bookimagemap.ent
+A         books/2.0/dtd/bookimagemap.ent
+D         books/2.1/dtd/bookimagemap.ent
+D         historical/2.1/dtd/bookimagemap.ent
+
+Remains -//NLM//DTD NCBI Book Image Map Elements v2.2 20061013//EN
+D         historical/2.2/dtd/bookimagemap.ent
+
+Remains -//NLM//DTD NCBI Book Image Map Elements v2.3 20070202//EN
+D         historical/2.3/dtd/bookimagemap.ent
+
+Remains -//NLM//DTD NCBI Book Multi-link Elements v2.0 20041031//EN
+D         books/2.0/dtd/bookmultilink.ent
+D         historical/2.1/dtd/bookmultilink.ent
+
+Remains -//NLM//DTD NCBI Book Multi-link Elements v2.2 20061013//EN
+D         historical/2.2/dtd/bookmultilink.ent
+
+Remains -//NLM//DTD NCBI Book Multi-link Elements v2.3 20070202//EN
+D         historical/2.3/dtd/bookmultilink.ent
+
+MoveTo -//NLM//DTD NCBI Historical Book DTD Annotation Elements v2.0 20041225//EN
+A         historical/2.0/dtd/annotation.ent
+D         books/2.0/dtd/annotation.ent
+D         archiving/2.2/dtd/annotation.ent
+D         authoring/2.2/dtd/annotation.ent
+D         books/2.2/dtd/annotation.ent
+D         historical/2.2/dtd/annotation.ent
+D         publishing/2.2/dtd/annotation.ent
+D         books/2.1/dtd/annotation.ent
+D         historical/2.1/dtd/annotation.ent
+
+Remains -//NLM//DTD NCBI Historical Book DTD Annotation Elements v2.3 20070202//EN
+D         archive-oasis/2.3/dtd/annotation.ent
+D         archiving/2.3/dtd/annotation.ent
+D         authoring/2.3/dtd/annotation.ent
+D         books/2.3/dtd/annotation.ent
+D         publishing-oasis/2.3/dtd/annotation.ent
+D         publishing/2.3/dtd/annotation.ent
+
+MoveTo -//NLM//DTD NCBI Historical Book DTD Annotation Elements v3.0 20080202//EN
+A         historical/3.0/dtd/annotation3.ent
+D         archive-oasis/3.0/dtd/annotation3.ent
+D         archiving/3.0/dtd/annotation3.ent
+D         authoring/3.0/dtd/annotation3.ent
+D         books/3.0/dtd/annotation3.ent
+D         publishing-oasis/3.0/dtd/annotation3.ent
+D         publishing/3.0/dtd/annotation3.ent
+
+MoveTo -//NLM//DTD NCBI Historical Book DTD Content and Attribute Over-ride Module v2.0 20041225//EN
+A         historical/2.0/dtd/historical-models.ent
+D         books/2.0/dtd/historical-models.ent
+
+Remains -//NLM//DTD NCBI Historical Book DTD Content and Attribute Over-ride Module v2.1 20050630//EN
+D         books/2.1/dtd/historical-models.ent
+D         books/2.2/dtd/historical-models.ent
+D         historical/2.2/dtd/historical-models.ent
+
+MoveTo force -//NLM//DTD NCBI Historical Book DTD Metadata Elements v2.1 20050630//EN
+D         historical/2.1/dtd/historicalmeta.ent
+A         historical/2.1/dtd/historicalmeta.ent
+D         books/2.2/dtd/historicalmeta.ent
+D         books/2.1/dtd/historicalmeta.ent
+D         historical/2.2/dtd/historicalmeta.ent
+
+Remains -//NLM//DTD NCBI Historical Book DTD Module of Modules v2.1 20050630//EN
+D         books/2.1/dtd/historical-modules.ent
+D         books/2.2/dtd/historical-modules.ent
+D         historical/2.2/dtd/historical-modules.ent
+
+MoveTo force -//NLM//DTD NCBI Historical Book DTD Over-ride Classes Module v2.1 20050630//EN
+D         historical/2.1/dtd/historical-classes.ent
+A         historical/2.1/dtd/historical-classes.ent
+D         books/2.2/dtd/historical-classes.ent
+D         books/2.1/dtd/historical-classes.ent
+D         historical/2.2/dtd/historical-classes.ent
+
+MoveTo -//NLM//DTD NCBI Historical Book DTD Over-ride Mixes Module v2.0 20041225//EN
+A         historical/2.0/dtd/historical-mixes.ent
+D         books/2.1/dtd/historical-mixes.ent
+D         books/2.0/dtd/historical-mixes.ent
+D         books/2.2/dtd/historical-mixes.ent
+D         historical/2.1/dtd/historical-mixes.ent
+D         historical/2.2/dtd/historical-mixes.ent
+
+Remains -//NLM//DTD NCBI Historical Book DTD v2.1 20050630//EN
+D         books/2.1/dtd/historical.dtd
+
+Remains -//NLM//DTD NCBI Historical Book DTD v2.2 20061013//EN
+D         books/2.2/dtd/historical.dtd
+
+MoveTo -//NLM//DTD NLM Citation v2.0 20040830//EN
+A         core/2.0/dtd/nlmcitation.ent
+D         authoring/2.1/dtd/nlmcitation.ent
+D         archiving/2.0/dtd/nlmcitation.ent
+D         archiving/2.2/dtd/nlmcitation.ent
+D         authoring/2.2/dtd/nlmcitation.ent
+D         books/2.0/dtd/nlmcitation.ent
+D         books/2.2/dtd/nlmcitation.ent
+D         historical/2.2/dtd/nlmcitation.ent
+D         publishing/2.0/dtd/nlmcitation.ent
+D         publishing/2.2/dtd/nlmcitation.ent
+D         publishing/2.1/dtd/nlmcitation.ent
+
+MoveTo -//NLM//DTD NLM Citation v2.3 20070202//EN
+A         core/2.3/dtd/nlmcitation.ent
+D         archive-oasis/2.3/dtd/nlmcitation.ent
+D         archiving/2.3/dtd/nlmcitation.ent
+D         authoring/2.3/dtd/nlmcitation.ent
+D         books/2.3/dtd/nlmcitation.ent
+D         historical/2.3/dtd/nlmcitation.ent
+D         publishing-oasis/2.3/dtd/nlmcitation.ent
+D         publishing/2.3/dtd/nlmcitation.ent
+
+MoveTo -//NLM//DTD NLM Citation v3.0 20080202//EN
+A         core/3.0/dtd/nlmcitation3.ent
+D         archive-oasis/3.0/dtd/nlmcitation3.ent
+D         archiving/3.0/dtd/nlmcitation3.ent
+D         authoring/3.0/dtd/nlmcitation3.ent
+D         books/3.0/dtd/nlmcitation3.ent
+D         publishing-oasis/3.0/dtd/nlmcitation3.ent
+D         publishing/3.0/dtd/nlmcitation3.ent

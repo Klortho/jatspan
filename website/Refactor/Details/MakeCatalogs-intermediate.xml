@@ -1,0 +1,1745 @@
+<?xml version="1.0" encoding="utf-8"?><JatsReport>
+  <PublicIds total="290">
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Back Matter Elements v1.0 20021201//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.0/dtd/</Dir><Filename>backmatter.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Back Matter Elements v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.0/dtd/</Dir><Filename>backmatter.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Back Matter Elements v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.1/dtd/</Dir><Filename>backmatter.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Back Matter Elements v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.3/dtd/</Dir><Filename>backmatter.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Back Matter Elements v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/3.0/dtd/</Dir><Filename>backmatter3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Bibliographic Reference (Citation) Class Elements v1.0 20021201//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.0/dtd/</Dir><Filename>references.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Bibliographic Reference (Citation) Class Elements v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.0/dtd/</Dir><Filename>references.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Bibliographic Reference (Citation) Class Elements v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.1/dtd/</Dir><Filename>references.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Bibliographic Reference (Citation) Class Elements v2.2 20060430//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.2/dtd/</Dir><Filename>references.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Bibliographic Reference (Citation) Class Elements v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.3/dtd/</Dir><Filename>references.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Bibliographic Reference (Citation) Class Elements v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/3.0/dtd/</Dir><Filename>references3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Common (Shared) Elements Module v1.0 20021201//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.0/dtd/</Dir><Filename>common.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Common (Shared) Elements Module v1.1 20031101//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.1/dtd/</Dir><Filename>common.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Common (Shared) Elements Module v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.0/dtd/</Dir><Filename>common.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Common (Shared) Elements Module v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.1/dtd/</Dir><Filename>common.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Common (Shared) Elements Module v2.2 20060430//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.2/dtd/</Dir><Filename>common.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Common (Shared) Elements Module v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.3/dtd/</Dir><Filename>common.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Common (Shared) Elements Module v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/3.0/dtd/</Dir><Filename>common3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Custom Special Characters Module v1.0 20021201//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.0/dtd/</Dir><Filename>chars.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Custom Special Characters Module v1.1 20031101//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.1/dtd/</Dir><Filename>chars.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Custom Special Characters Module v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.0/dtd/</Dir><Filename>chars.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Custom Special Characters Module v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.3/dtd/</Dir><Filename>chars.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Custom Special Characters Module v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/3.0/dtd/</Dir><Filename>chars3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v1.0 20021201//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.0/dtd/</Dir><Filename>display.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v1.1 20031101//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.1/dtd/</Dir><Filename>display.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.0/dtd/</Dir><Filename>display.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.1/dtd/</Dir><Filename>display.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v2.2 20060430//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.2/dtd/</Dir><Filename>display.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.3/dtd/</Dir><Filename>display.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/3.0/dtd/</Dir><Filename>display3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Formatting Element Classes v1.0 20021201//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.0/dtd/</Dir><Filename>format.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Formatting Element Classes v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.0/dtd/</Dir><Filename>format.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Formatting Element Classes v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.3/dtd/</Dir><Filename>format.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Formatting Element Classes v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/3.0/dtd/</Dir><Filename>format3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Funding Elements v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/3.0/dtd/</Dir><Filename>funding3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Journal Article Metadata Elements v1.0 20021201//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.0/dtd/</Dir><Filename>articlemeta.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Journal Article Metadata Elements v1.1 20031101//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.1/dtd/</Dir><Filename>articlemeta.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Journal Article Metadata Elements v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.0/dtd/</Dir><Filename>articlemeta.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Journal Article Metadata Elements v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.1/dtd/</Dir><Filename>articlemeta.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Journal Article Metadata Elements v2.2 20060430//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.2/dtd/</Dir><Filename>articlemeta.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Journal Article Metadata Elements v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.3/dtd/</Dir><Filename>articlemeta.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Journal Article Metadata Elements v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/3.0/dtd/</Dir><Filename>articlemeta3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Journal Metadata Elements v1.0 20021201//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.0/dtd/</Dir><Filename>journalmeta.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Journal Metadata Elements v1.1 20031101//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.1/dtd/</Dir><Filename>journalmeta.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Journal Metadata Elements v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.0/dtd/</Dir><Filename>journalmeta.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Journal Metadata Elements v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.1/dtd/</Dir><Filename>journalmeta.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Journal Metadata Elements v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.3/dtd/</Dir><Filename>journalmeta.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Journal Metadata Elements v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/3.0/dtd/</Dir><Filename>journalmeta3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Link Class Elements v1.0 20021201//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.0/dtd/</Dir><Filename>link.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Link Class Elements v1.1 20031101//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.1/dtd/</Dir><Filename>link.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Link Class Elements v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.0/dtd/</Dir><Filename>link.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Link Class Elements v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.1/dtd/</Dir><Filename>link.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Link Class Elements v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.3/dtd/</Dir><Filename>link.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Link Class Elements v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/3.0/dtd/</Dir><Filename>link3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite List Class Elements v1.0 20021201//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.0/dtd/</Dir><Filename>list.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite List Class Elements v1.1 20031101//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.1/dtd/</Dir><Filename>list.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite List Class Elements v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.0/dtd/</Dir><Filename>list.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite List Class Elements v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.1/dtd/</Dir><Filename>list.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite List Class Elements v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.3/dtd/</Dir><Filename>list.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite List Class Elements v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/3.0/dtd/</Dir><Filename>list3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Math Class Elements v1.0 20021201//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.0/dtd/</Dir><Filename>math.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Math Class Elements v1.1 20031101//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.1/dtd/</Dir><Filename>math.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Math Class Elements v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.0/dtd/</Dir><Filename>math.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Math Class Elements v2.2 20100718//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.2/dtd/</Dir><Filename>math.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Math Class Elements v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.3/dtd/</Dir><Filename>math.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Math Class Elements v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/3.0/dtd/</Dir><Filename>math3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite MathML Setup Module v1.0 20021201//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.0/dtd/</Dir><Filename>mathmlsetup.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite MathML Setup Module v1.1 20031101//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.1/dtd/</Dir><Filename>mathmlsetup.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite MathML Setup Module v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.0/dtd/</Dir><Filename>mathmlsetup.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite MathML Setup Module v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.1/dtd/</Dir><Filename>mathmlsetup.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite MathML Setup Module v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.3/dtd/</Dir><Filename>mathmlsetup.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite MathML Setup Module v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/3.0/dtd/</Dir><Filename>mathmlsetup3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v1.0 20021201//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.0/dtd/</Dir><Filename>modules.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v1.1 20031101//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.1/dtd/</Dir><Filename>modules.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.0/dtd/</Dir><Filename>modules.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.1/dtd/</Dir><Filename>modules.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v2.2 20060430//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.2/dtd/</Dir><Filename>modules.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.3/dtd/</Dir><Filename>modules.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/3.0/dtd/</Dir><Filename>modules3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Notation Declarations v1.0 20021201//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.0/dtd/</Dir><Filename>notat.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Notation Declarations v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.0/dtd/</Dir><Filename>notat.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Notation Declarations v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.3/dtd/</Dir><Filename>notat.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Notation Declarations v3.0 20071031//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/3.0/dtd/</Dir><Filename>notat3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite OASIS XML Table Setup Module v1.0 20021201//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.0/dtd/</Dir><Filename>oasis-tablesetup.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite OASIS XML Table Setup Module v1.1 20031101//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.1/dtd/</Dir><Filename>oasis-tablesetup.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite OASIS XML Table Setup Module v1.2 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.0/dtd/</Dir><Filename>oasis-tablesetup.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite OASIS XML Table Setup Module v3.0 20100717//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/3.0/dtd/</Dir><Filename>oasis-tablesetup3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Paragraph-Like Elements v1.0 20021201//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.0/dtd/</Dir><Filename>para.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Paragraph-Like Elements v1.1 20031101//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.1/dtd/</Dir><Filename>para.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Paragraph-Like Elements v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.0/dtd/</Dir><Filename>para.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Paragraph-Like Elements v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.1/dtd/</Dir><Filename>para.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Paragraph-Like Elements v2.2 20060430//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.2/dtd/</Dir><Filename>para.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Paragraph-Like Elements v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.3/dtd/</Dir><Filename>para.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Paragraph-Like Elements v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/3.0/dtd/</Dir><Filename>para3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Related Object Element v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/3.0/dtd/</Dir><Filename>related-object3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Section Class Elements v1.0 20021201//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.0/dtd/</Dir><Filename>section.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Section Class Elements v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.0/dtd/</Dir><Filename>section.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Section Class Elements v2.2 20060430//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.2/dtd/</Dir><Filename>section.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Section Class Elements v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.3/dtd/</Dir><Filename>section.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Section Class Elements v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/3.0/dtd/</Dir><Filename>section3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Subject Phrase Class Elements v1.0 20021201//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.0/dtd/</Dir><Filename>phrase.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Subject Phrase Class Elements v1.1 20031101//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.1/dtd/</Dir><Filename>phrase.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Subject Phrase Class Elements v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.0/dtd/</Dir><Filename>phrase.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Subject Phrase Class Elements v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.3/dtd/</Dir><Filename>phrase.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite Subject Phrase Class Elements v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/3.0/dtd/</Dir><Filename>phrase3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite XHTML Table Setup Module v1.0 20021201//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.0/dtd/</Dir><Filename>XHTMLtablesetup.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite XHTML Table Setup Module v1.1 20031101//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.1/dtd/</Dir><Filename>XHTMLtablesetup.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite XHTML Table Setup Module v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.0/dtd/</Dir><Filename>XHTMLtablesetup.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite XHTML Table Setup Module v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.1/dtd/</Dir><Filename>XHTMLtablesetup.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite XHTML Table Setup Module v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.3/dtd/</Dir><Filename>XHTMLtablesetup.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite XHTML Table Setup Module v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/3.0/dtd/</Dir><Filename>XHTMLtablesetup3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite XML Special Characters Module v1.0 20021201//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.0/dtd/</Dir><Filename>xmlspecchars.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite XML Special Characters Module v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.0/dtd/</Dir><Filename>xmlspecchars.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite XML Special Characters Module v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.1/dtd/</Dir><Filename>xmlspecchars.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite XML Special Characters Module v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.3/dtd/</Dir><Filename>xmlspecchars.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Archiving and Interchange DTD Suite XML Special Characters Module v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/3.0/dtd/</Dir><Filename>xmlspecchars3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Article Authoring DTD Over-ride Classes Module v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./authoring/2.1/dtd/</Dir><Filename>articleauthcustom-classes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Article Authoring DTD Over-ride Classes Module v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./authoring/2.3/dtd/</Dir><Filename>articleauthcustom-classes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Article Authoring DTD Over-ride Classes Module v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./authoring/3.0/dtd/</Dir><Filename>articleauthcustom-classes3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Article Authoring DTD Over-ride Content and Attribute Module v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./authoring/2.1/dtd/</Dir><Filename>articleauthcustom-models.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Article Authoring DTD Over-ride Content and Attribute Module v2.2 20060430//EN</PublicId>
+      <Node>
+        <Path><Dir>./authoring/2.2/dtd/</Dir><Filename>articleauthcustom-models.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Article Authoring DTD Over-ride Content and Attribute Module v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./authoring/2.3/dtd/</Dir><Filename>articleauthcustom-models.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Article Authoring DTD Over-ride Content and Attribute Module v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./authoring/3.0/dtd/</Dir><Filename>articleauthcustom-models3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Article Authoring DTD Over-ride Mixes Module v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./authoring/2.1/dtd/</Dir><Filename>articleauthcustom-mixes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Article Authoring DTD Over-ride Mixes Module v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./authoring/2.3/dtd/</Dir><Filename>articleauthcustom-mixes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Article Authoring DTD Over-ride Mixes Module v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./authoring/3.0/dtd/</Dir><Filename>articleauthcustom-mixes3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Article Authoring DTD v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./authoring/2.1/dtd/</Dir><Filename>articleauthoring.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Article Authoring DTD v2.2 20060430//EN</PublicId>
+      <Node>
+        <Path><Dir>./authoring/2.2/dtd/</Dir><Filename>articleauthoring.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Article Authoring DTD v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./authoring/2.3/dtd/</Dir><Filename>articleauthoring.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Article Authoring DTD v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./authoring/3.0/dtd/</Dir><Filename>articleauthoring3.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Article Authoring DTD-Specific Modules v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./authoring/2.1/dtd/</Dir><Filename>articleauthcustom-modules.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Article Authoring DTD-Specific Modules v2.2 20060430//EN</PublicId>
+      <Node>
+        <Path><Dir>./authoring/2.2/dtd/</Dir><Filename>articleauthcustom-modules.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Article Authoring DTD-Specific Modules v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./authoring/2.3/dtd/</Dir><Filename>articleauthcustom-modules.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Article Authoring DTD-Specific Modules v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./authoring/3.0/dtd/</Dir><Filename>articleauthcustom-modules3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Book DTD Module of Modules v2.0 20041031//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.0/dtd/</Dir><Filename>bookcustom-modules.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Book DTD Module of Modules v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.1/dtd/</Dir><Filename>bookcustom-modules.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Book DTD Module of Modules v2.2 20061013//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.2/dtd/</Dir><Filename>bookcustom-modules.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Book DTD Module of Modules v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.3/dtd/</Dir><Filename>bookcustom-modules.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Book DTD Module of Modules v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/3.0/dtd/</Dir><Filename>bookcustom-modules3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Book DTD v2.0 20041031//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.0/dtd/</Dir><Filename>book.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Book DTD v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.1/dtd/</Dir><Filename>book.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Book DTD v2.2 20061013//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.2/dtd/</Dir><Filename>book.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Book DTD v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.3/dtd/</Dir><Filename>book.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Book DTD v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/3.0/dtd/</Dir><Filename>book3.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Default Element Classes Module v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.0/dtd/</Dir><Filename>default-classes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Default Element Classes Module v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.1/dtd/</Dir><Filename>default-classes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Default Element Classes Module v2.2 20060430//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.2/dtd/</Dir><Filename>default-classes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Default Element Classes Module v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.3/dtd/</Dir><Filename>default-classes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Default Element Classes Module v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/3.0/dtd/</Dir><Filename>default-classes3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Default Element Mixes Module v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.0/dtd/</Dir><Filename>default-mixes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Default Element Mixes Module v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.1/dtd/</Dir><Filename>default-mixes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Default Element Mixes Module v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.3/dtd/</Dir><Filename>default-mixes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Default Element Mixes Module v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/3.0/dtd/</Dir><Filename>default-mixes3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving DTD Customize Classes Module v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./archiving/2.0/dtd/</Dir><Filename>archivecustom-classes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving DTD Customize Classes Module v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./archiving/2.1/dtd/</Dir><Filename>archivecustom-classes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving DTD Customize Classes Module v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./archiving/2.3/dtd/</Dir><Filename>archivecustom-classes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving DTD Customize Classes Module v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./archiving/3.0/dtd/</Dir><Filename>archivecustom-classes3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving DTD Customize Content and Attributes Module v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./archiving/2.0/dtd/</Dir><Filename>archivecustom-models.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving DTD Customize Content and Attributes Module v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./archiving/2.1/dtd/</Dir><Filename>archivecustom-models.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving DTD Customize Content and Attributes Module v2.2 20060430//EN</PublicId>
+      <Node>
+        <Path><Dir>./archiving/2.2/dtd/</Dir><Filename>archivecustom-models.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving DTD Customize Content and Attributes Module v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./archiving/2.3/dtd/</Dir><Filename>archivecustom-models.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving DTD Customize Content and Attributes Module v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./archiving/3.0/dtd/</Dir><Filename>archivecustom-models3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving DTD Customize Mixes Module v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./archiving/2.0/dtd/</Dir><Filename>archivecustom-mixes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving DTD Customize Mixes Module v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./archiving/2.1/dtd/</Dir><Filename>archivecustom-mixes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving DTD Customize Mixes Module v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./archiving/2.3/dtd/</Dir><Filename>archivecustom-mixes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving DTD Customize Mixes Module v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./archiving/3.0/dtd/</Dir><Filename>archivecustom-mixes3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving DTD to Test the Base Suite v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/3.0/dtd/</Dir><Filename>base-test3.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving DTD-OASIS Custom Classes Module v2.3 20070813//EN</PublicId>
+      <Node>
+        <Path><Dir>./archive-oasis/2.3/dtd/</Dir><Filename>archive-OASIScustom-classes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving DTD-OASIS Specific Modules v2.3 20070813//EN</PublicId>
+      <Node>
+        <Path><Dir>./archive-oasis/2.3/dtd/</Dir><Filename>archive-OASIScustom-modules.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving DTD-Specific Modules v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./archiving/2.0/dtd/</Dir><Filename>archivecustom-modules.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving DTD-Specific Modules v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./archiving/2.1/dtd/</Dir><Filename>archivecustom-modules.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving DTD-Specific Modules v2.2 20060430//EN</PublicId>
+      <Node>
+        <Path><Dir>./archiving/2.2/dtd/</Dir><Filename>archivecustom-modules.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving DTD-Specific Modules v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./archiving/2.3/dtd/</Dir><Filename>archivecustom-modules.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving DTD-Specific Modules v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./archiving/3.0/dtd/</Dir><Filename>archivecustom-modules3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving and Interchange DTD Customize Classes Module v1.0 20021201//EN</PublicId>
+      <Node>
+        <Path><Dir>./archiving/1.0/dtd/</Dir><Filename>archivecustomize.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving and Interchange DTD Customize Classes Module v1.1 20031101//EN</PublicId>
+      <Node>
+        <Path><Dir>./archiving/1.1/dtd/</Dir><Filename>archivecustomize.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving and Interchange DTD to Test the Base Suite v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.0/dtd/</Dir><Filename>base-test.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving and Interchange DTD to Test the Base Suite v2.2 20100718//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.2/dtd/</Dir><Filename>base-test.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving and Interchange DTD v1.0 20021201//EN</PublicId>
+      <Node>
+        <Path><Dir>./archiving/1.0/dtd/</Dir><Filename>archivearticle.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving and Interchange DTD v1.1 20031101//EN</PublicId>
+      <Node>
+        <Path><Dir>./archiving/1.1/dtd/</Dir><Filename>archivearticle.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving and Interchange DTD v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./archiving/2.0/dtd/</Dir><Filename>archivearticle.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving and Interchange DTD v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./archiving/2.1/dtd/</Dir><Filename>archivearticle.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving and Interchange DTD v2.2 20060430//EN</PublicId>
+      <Node>
+        <Path><Dir>./archiving/2.2/dtd/</Dir><Filename>archivearticle.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving and Interchange DTD v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./archiving/2.3/dtd/</Dir><Filename>archivearticle.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving and Interchange DTD v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./archiving/3.0/dtd/</Dir><Filename>archivearticle3.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving with OASIS Tables Customize Classes Module v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./archive-oasis/3.0/dtd/</Dir><Filename>archive-oasis-custom-classes3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving with OASIS Tables Customize Mixes Module v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./archive-oasis/3.0/dtd/</Dir><Filename>archive-oasis-custom-mixes3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving with OASIS Tables v2.3 20070813//EN</PublicId>
+      <Node>
+        <Path><Dir>./archive-oasis/2.3/dtd/</Dir><Filename>archive-OASIS.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving with OASIS Tables v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./archive-oasis/3.0/dtd/</Dir><Filename>archive-oasis-article3.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Archiving with OASIS Tables-Specific Modules v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./archive-oasis/3.0/dtd/</Dir><Filename>archive-oasis-custom-modules3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing DTD Customization Module v1.0 20030324//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing/1.0/dtd/</Dir><Filename>journalpubcustomize.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing DTD Customization Module v1.1 20031101//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing/1.1/dtd/</Dir><Filename>journalpubcustomize.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing DTD Customize Classes Module v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing/2.0/dtd/</Dir><Filename>journalpubcustom-classes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing DTD Customize Classes Module v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing/2.3/dtd/</Dir><Filename>journalpubcustom-classes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing DTD Customize Classes Module v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing/3.0/dtd/</Dir><Filename>journalpubcustom-classes3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing DTD Customize Content and Attributes Module v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing/2.0/dtd/</Dir><Filename>journalpubcustom-models.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing DTD Customize Content and Attributes Module v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing/2.1/dtd/</Dir><Filename>journalpubcustom-models.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing DTD Customize Content and Attributes Module v2.2 20060430//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing/2.2/dtd/</Dir><Filename>journalpubcustom-models.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing DTD Customize Content and Attributes Module v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing/2.3/dtd/</Dir><Filename>journalpubcustom-models.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing DTD Customize Content and Attributes Module v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing/3.0/dtd/</Dir><Filename>journalpubcustom-models3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing DTD Customize Mixes Module v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing/2.0/dtd/</Dir><Filename>journalpubcustom-mixes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing DTD Customize Mixes Module v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing/2.3/dtd/</Dir><Filename>journalpubcustom-mixes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing DTD Customize Mixes Module v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing/3.0/dtd/</Dir><Filename>journalpubcustom-mixes3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing DTD v1.0 20030210//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing/1.0/dtd/</Dir><Filename>journalpublishing.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing DTD v1.1 20031101//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing/1.1/dtd/</Dir><Filename>journalpublishing.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing DTD v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing/2.0/dtd/</Dir><Filename>journalpublishing.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing DTD v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing/2.1/dtd/</Dir><Filename>journalpublishing.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing DTD v2.2 20060430//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing/2.2/dtd/</Dir><Filename>journalpublishing.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing DTD v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing/2.3/dtd/</Dir><Filename>journalpublishing.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing/3.0/dtd/</Dir><Filename>journalpublishing3.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing DTD-OASIS Customize Mixes Module v2.3 20070813//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing-oasis/2.3/dtd/</Dir><Filename>publishing-OASIScustom-classes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing DTD-OASIS Specific Modules v2.3 20070813//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing-oasis/2.3/dtd/</Dir><Filename>publishing-OASIScustom-modules.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing DTD-Specific Modules v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing/2.0/dtd/</Dir><Filename>journalpubcustom-modules.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing DTD-Specific Modules v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing/2.1/dtd/</Dir><Filename>journalpubcustom-modules.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing DTD-Specific Modules v2.2 20060430//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing/2.2/dtd/</Dir><Filename>journalpubcustom-modules.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing DTD-Specific Modules v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing/2.3/dtd/</Dir><Filename>journalpubcustom-modules.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing DTD-Specific Modules v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing/3.0/dtd/</Dir><Filename>journalpubcustom-modules3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing with OASIS Tables Customize Classes Module v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing-oasis/3.0/dtd/</Dir><Filename>journalpub-oasis-custom-classes3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing with OASIS Tables DTD v2.3 20070813//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing-oasis/2.3/dtd/</Dir><Filename>publishing-OASIS.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing with OASIS Tables v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing-oasis/3.0/dtd/</Dir><Filename>journalpub-oasis3.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD Journal Publishing with OASIS Tables-Specific Modules v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./publishing-oasis/3.0/dtd/</Dir><Filename>journalpub-oasis-custom-modules3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book Collection DTD v2.0 20041031//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.0/dtd/</Dir><Filename>bookcollection.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book Collection DTD v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.1/dtd/</Dir><Filename>bookcollection.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book Collection DTD v2.2 20061013//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.2/dtd/</Dir><Filename>bookcollection.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book Collection DTD v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.3/dtd/</Dir><Filename>bookcollection.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book Collection DTD v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/3.0/dtd/</Dir><Filename>bookcollection3.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book DTD Book Component Metadata Elements v2.0 20041031//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.0/dtd/</Dir><Filename>bookpart.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book DTD Book Component Metadata Elements v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.1/dtd/</Dir><Filename>bookpart.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book DTD Book Component Metadata Elements v2.2 20061013//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.2/dtd/</Dir><Filename>bookpart.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book DTD Book Component Metadata Elements v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.3/dtd/</Dir><Filename>bookpart.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book DTD Book Component Metadata Elements v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/3.0/dtd/</Dir><Filename>bookpart3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book DTD Book Metadata Elements v2.0 20041031//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.0/dtd/</Dir><Filename>bookmeta.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book DTD Book Metadata Elements v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.1/dtd/</Dir><Filename>bookmeta.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book DTD Book Metadata Elements v2.2 20061013//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.2/dtd/</Dir><Filename>bookmeta.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book DTD Book Metadata Elements v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.3/dtd/</Dir><Filename>bookmeta.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book DTD Book Metadata Elements v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/3.0/dtd/</Dir><Filename>bookmeta3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book DTD Book Related Object Element v2.2 20061013//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.2/dtd/</Dir><Filename>bookrelated-object.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book DTD Book Related Object Element v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.3/dtd/</Dir><Filename>bookrelated-object.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book DTD Content and Attribute Over-ride Module v2.0 20041031//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.0/dtd/</Dir><Filename>bookcustom-models.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book DTD Content and Attribute Over-ride Module v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.1/dtd/</Dir><Filename>bookcustom-models.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book DTD Content and Attribute Over-ride Module v2.2 20061013//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.2/dtd/</Dir><Filename>bookcustom-models.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book DTD Content and Attribute Over-ride Module v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.3/dtd/</Dir><Filename>bookcustom-models.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book DTD Content and Attribute Over-ride Module v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/3.0/dtd/</Dir><Filename>bookcustom-models3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book DTD Over-ride Classes Module v2.0 20041031//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.0/dtd/</Dir><Filename>bookcustom-classes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book DTD Over-ride Classes Module v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.1/dtd/</Dir><Filename>bookcustom-classes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book DTD Over-ride Classes Module v2.2 20061013//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.2/dtd/</Dir><Filename>bookcustom-classes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book DTD Over-ride Classes Module v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.3/dtd/</Dir><Filename>bookcustom-classes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book DTD Over-ride Classes Module v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/3.0/dtd/</Dir><Filename>bookcustom-classes3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book DTD Over-ride Mixes Module v2.0 20041031//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.0/dtd/</Dir><Filename>bookcustom-mixes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book DTD Over-ride Mixes Module v2.2 20061013//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.2/dtd/</Dir><Filename>bookcustom-mixes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book DTD Over-ride Mixes Module v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.3/dtd/</Dir><Filename>bookcustom-mixes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book DTD Over-ride Mixes Module v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/3.0/dtd/</Dir><Filename>bookcustom-mixes3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book Image Map Elements v2.0 20041031//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.0/dtd/</Dir><Filename>bookimagemap.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book Image Map Elements v2.2 20061013//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.2/dtd/</Dir><Filename>bookimagemap.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book Image Map Elements v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.3/dtd/</Dir><Filename>bookimagemap.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book Image Map Elements v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/3.0/dtd/</Dir><Filename>bookimagemap3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book Multi-link Elements v2.0 20041031//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.1/dtd/</Dir><Filename>bookmultilink.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book Multi-link Elements v2.2 20061013//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.2/dtd/</Dir><Filename>bookmultilink.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book Multi-link Elements v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/2.3/dtd/</Dir><Filename>bookmultilink.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Book Multi-link Elements v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./books/3.0/dtd/</Dir><Filename>bookmultilink3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Historical Book DTD Annotation Elements v2.0 20041225//EN</PublicId>
+      <Node>
+        <Path><Dir>./historical/2.0/dtd/</Dir><Filename>annotation.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Historical Book DTD Annotation Elements v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./historical/2.3/dtd/</Dir><Filename>annotation.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Historical Book DTD Annotation Elements v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./historical/3.0/dtd/</Dir><Filename>annotation3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Historical Book DTD Content and Attribute Over-ride Module v2.0 20041225//EN</PublicId>
+      <Node>
+        <Path><Dir>./historical/2.0/dtd/</Dir><Filename>historical-models.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Historical Book DTD Content and Attribute Over-ride Module v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./historical/2.1/dtd/</Dir><Filename>historical-models.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Historical Book DTD Content and Attribute Over-ride Module v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./historical/2.3/dtd/</Dir><Filename>historical-models.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Historical Book DTD Metadata Elements v2.0 20041225//EN</PublicId>
+      <Node>
+        <Path><Dir>./historical/2.0/dtd/</Dir><Filename>historicalmeta.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Historical Book DTD Metadata Elements v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./historical/2.1/dtd/</Dir><Filename>historicalmeta.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Historical Book DTD Metadata Elements v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./historical/2.3/dtd/</Dir><Filename>historicalmeta.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Historical Book DTD Module of Modules v2.0 20041225//EN</PublicId>
+      <Node>
+        <Path><Dir>./historical/2.0/dtd/</Dir><Filename>historical-modules.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Historical Book DTD Module of Modules v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./historical/2.1/dtd/</Dir><Filename>historical-modules.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Historical Book DTD Module of Modules v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./historical/2.3/dtd/</Dir><Filename>historical-modules.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Historical Book DTD Over-ride Classes Module v2.0 20041225//EN</PublicId>
+      <Node>
+        <Path><Dir>./historical/2.0/dtd/</Dir><Filename>historical-classes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Historical Book DTD Over-ride Classes Module v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./historical/2.1/dtd/</Dir><Filename>historical-classes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Historical Book DTD Over-ride Classes Module v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./historical/2.3/dtd/</Dir><Filename>historical-classes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Historical Book DTD Over-ride Mixes Module v2.0 20041225//EN</PublicId>
+      <Node>
+        <Path><Dir>./historical/2.0/dtd/</Dir><Filename>historical-mixes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Historical Book DTD Over-ride Mixes Module v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./historical/2.3/dtd/</Dir><Filename>historical-mixes.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Historical Book DTD v2.0 20041225//EN</PublicId>
+      <Node>
+        <Path><Dir>./historical/2.0/dtd/</Dir><Filename>historical.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Historical Book DTD v2.1 20050630//EN</PublicId>
+      <Node>
+        <Path><Dir>./historical/2.1/dtd/</Dir><Filename>historical.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Historical Book DTD v2.2 20061013//EN</PublicId>
+      <Node>
+        <Path><Dir>./historical/2.2/dtd/</Dir><Filename>historical.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NCBI Historical Book DTD v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./historical/2.3/dtd/</Dir><Filename>historical.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NLM Citation v2.0 20040830//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.0/dtd/</Dir><Filename>nlmcitation.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NLM Citation v2.3 20070202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/2.3/dtd/</Dir><Filename>nlmcitation.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//NLM//DTD NLM Citation v3.0 20080202//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/3.0/dtd/</Dir><Filename>nlmcitation3.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//OASIS//DTD XML Exchange Table Model 19990315//EN</PublicId>
+      <Node>
+        <Path><Dir>./core/1.0/dtd/</Dir><Filename>oasis-exchange.ent</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//W3C//DTD MathML 2.0//EN</PublicId>
+      <Node>
+        <Path><Dir>./lib/mathml2/2.0/</Dir><Filename>dtd/mathml2.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//W3C//DTD XHTML 1.1//EN</PublicId>
+      <Node>
+        <Path><Dir>./lib/mathml2/2.0/</Dir><Filename>dtd/xhtml-math11-f.dtd</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//W3C//ELEMENTS XHTML Tables 1.0//EN</PublicId>
+      <Node>
+        <Path><Dir>./lib/xhtml/1.0/</Dir><Filename>xhtml-table-1.mod</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//W3C//ENTITIES MathML 2.0 Qualified Names 1.0//EN</PublicId>
+      <Node>
+        <Path><Dir>./lib/mathml2/2.0/</Dir><Filename>dtd/mathml2-qname-1.mod</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+    <PublicIdGroup>
+      <PublicId>-//W3C//ENTITIES XHTML Inline Style 1.0//EN</PublicId>
+      <Node>
+        <Path><Dir>./lib/xhtml/1.0/</Dir><Filename>xhtml-inlstyle-1.mod</Filename></Path>
+      </Node>
+    </PublicIdGroup>
+  </PublicIds>
+  
+</JatsReport>

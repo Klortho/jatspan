@@ -1,0 +1,16 @@
+﻿NLM JATS Refactoring Suggestions
+
+Conventions:
+  - "zip" is lowercase.  "zip file" is two words, no hyphen or dot.
+  - Use "he/she", "his/her".
+  - "DocBook" - camel caps.
+  - "system identifiers" and "public identifiers" (or "formal public
+    identifiers".
+
+
+To do:
+  - Prepare a "download" -- a released set of files.
+  - Need to check that each file is where it belongs based on the text of
+    it's public id -- that is, does it make sense?
+  - How is it that the number of public ids dropped from 310 in PubIdReport.xml to
+    290 in JatsReport-rev77.xml?

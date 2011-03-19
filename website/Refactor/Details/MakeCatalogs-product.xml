@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Group dir="./archive-oasis/2.3/dtd/">
+   <public publicId="-//NLM//DTD Journal Archiving with OASIS Tables v2.3 20070813//EN" uri="dtd/archive-OASIS.dtd"/>
+   <public publicId="-//NLM//DTD Journal Archiving DTD-OASIS Custom Classes Module v2.3 20070813//EN" uri="dtd/archive-OASIScustom-classes.ent"/>
+   <public publicId="-//NLM//DTD Journal Archiving DTD-OASIS Specific Modules v2.3 20070813//EN" uri="dtd/archive-OASIScustom-modules.ent"/>
+</Group>
+<Group dir="./archive-oasis/3.0/dtd/">
+   <public publicId="-//NLM//DTD Journal Archiving with OASIS Tables v3.0 20080202//EN" uri="dtd/archive-oasis-article3.dtd"/>
+   <public publicId="-//NLM//DTD Journal Archiving with OASIS Tables Customize Classes Module v3.0 20080202//EN" uri="dtd/archive-oasis-custom-classes3.ent"/>
+   <public publicId="-//NLM//DTD Journal Archiving with OASIS Tables Customize Mixes Module v3.0 20080202//EN" uri="dtd/archive-oasis-custom-mixes3.ent"/>
+   <public publicId="-//NLM//DTD Journal Archiving with OASIS Tables-Specific Modules v3.0 20080202//EN" uri="dtd/archive-oasis-custom-modules3.ent"/>
+</Group>
+<Group dir="./archiving/1.0/dtd/">
+   <public publicId="-//NLM//DTD Journal Archiving and Interchange DTD v1.0 20021201//EN" uri="dtd/archivearticle.dtd"/>
+   <public publicId="-//NLM//DTD Journal Archiving and Interchange DTD Customize Classes Module v1.0 20021201//EN" uri="dtd/archivecustomize.ent"/>
+</Group>
+<Group dir="./archiving/1.1/dtd/">
+   <public publicId="-//NLM//DTD Journal Archiving and Interchange DTD v1.1 20031101//EN" uri="dtd/archivearticle.dtd"/>
+   <public publicId="-//NLM//DTD Journal Archiving and Interchange DTD Customize Classes Module v1.1 20031101//EN" uri="dtd/archivecustomize.ent"/>
+</Group>
+<Group dir="./archiving/2.0/dtd/">
+   <public publicId="-//NLM//DTD Journal Archiving and Interchange DTD v2.0 20040830//EN" uri="dtd/archivearticle.dtd"/>
+   <public publicId="-//NLM//DTD Journal Archiving DTD Customize Classes Module v2.0 20040830//EN" uri="dtd/archivecustom-classes.ent"/>
+   <public publicId="-//NLM//DTD Journal Archiving DTD Customize Mixes Module v2.0 20040830//EN" uri="dtd/archivecustom-mixes.ent"/>
+   <public publicId="-//NLM//DTD Journal Archiving DTD Customize Content and Attributes Module v2.0 20040830//EN" uri="dtd/archivecustom-models.ent"/>
+   <public publicId="-//NLM//DTD Journal Archiving DTD-Specific Modules v2.0 20040830//EN" uri="dtd/archivecustom-modules.ent"/>
+</Group>
+<Group dir="./archiving/2.1/dtd/">
+   <public publicId="-//NLM//DTD Journal Archiving and Interchange DTD v2.1 20050630//EN" uri="dtd/archivearticle.dtd"/>
+   <public publicId="-//NLM//DTD Journal Archiving DTD Customize Classes Module v2.1 20050630//EN" uri="dtd/archivecustom-classes.ent"/>
+   <public publicId="-//NLM//DTD Journal Archiving DTD Customize Mixes Module v2.1 20050630//EN" uri="dtd/archivecustom-mixes.ent"/>
+   <public publicId="-//NLM//DTD Journal Archiving DTD Customize Content and Attributes Module v2.1 20050630//EN" uri="dtd/archivecustom-models.ent"/>
+   <public publicId="-//NLM//DTD Journal Archiving DTD-Specific Modules v2.1 20050630//EN" uri="dtd/archivecustom-modules.ent"/>
+</Group>
+<Group dir="./archiving/2.2/dtd/">
+   <public publicId="-//NLM//DTD Journal Archiving and Interchange DTD v2.2 20060430//EN" uri="dtd/archivearticle.dtd"/>
+   <public publicId="-//NLM//DTD Journal Archiving DTD Customize Content and Attributes Module v2.2 20060430//EN" uri="dtd/archivecustom-models.ent"/>
+   <public publicId="-//NLM//DTD Journal Archiving DTD-Specific Modules v2.2 20060430//EN" uri="dtd/archivecustom-modules.ent"/>
+</Group>
+<Group dir="./archiving/2.3/dtd/">
+   <public publicId="-//NLM//DTD Journal Archiving and Interchange DTD v2.3 20070202//EN" uri="dtd/archivearticle.dtd"/>
+   <public publicId="-//NLM//DTD Journal Archiving DTD Customize Classes Module v2.3 20070202//EN" uri="dtd/archivecustom-classes.ent"/>
+   <public publicId="-//NLM//DTD Journal Archiving DTD Customize Mixes Module v2.3 20070202//EN" uri="dtd/archivecustom-mixes.ent"/>
+   <public publicId="-//NLM//DTD Journal Archiving DTD Customize Content and Attributes Module v2.3 20070202//EN" uri="dtd/archivecustom-models.ent"/>
+   <public publicId="-//NLM//DTD Journal Archiving DTD-Specific Modules v2.3 20070202//EN" uri="dtd/archivecustom-modules.ent"/>
+</Group>
+<Group dir="./archiving/3.0/dtd/">
+   <public publicId="-//NLM//DTD Journal Archiving and Interchange DTD v3.0 20080202//EN" uri="dtd/archivearticle3.dtd"/>
+   <public publicId="-//NLM//DTD Journal Archiving DTD Customize Classes Module v3.0 20080202//EN" uri="dtd/archivecustom-classes3.ent"/>
+   <public publicId="-//NLM//DTD Journal Archiving DTD Customize Mixes Module v3.0 20080202//EN" uri="dtd/archivecustom-mixes3.ent"/>
+   <public publicId="-//NLM//DTD Journal Archiving DTD Customize Content and Attributes Module v3.0 20080202//EN" uri="dtd/archivecustom-models3.ent"/>
+   <public publicId="-//NLM//DTD Journal Archiving DTD-Specific Modules v3.0 20080202//EN" uri="dtd/archivecustom-modules3.ent"/>
+</Group>
+<Group dir="./authoring/2.1/dtd/">
+   <public publicId="-//NLM//DTD Article Authoring DTD Over-ride Classes Module v2.1 20050630//EN" uri="dtd/articleauthcustom-classes.ent"/>
+   <public publicId="-//NLM//DTD Article Authoring DTD Over-ride Mixes Module v2.1 20050630//EN" uri="dtd/articleauthcustom-mixes.ent"/>
+   <public publicId="-//NLM//DTD Article Authoring DTD Over-ride Content and Attribute Module v2.1 20050630//EN" uri="dtd/articleauthcustom-models.ent"/>
+   <public publicId="-//NLM//DTD Article Authoring DTD-Specific Modules v2.1 20050630//EN" uri="dtd/articleauthcustom-modules.ent"/>
+   <public publicId="-//NLM//DTD Article Authoring DTD v2.1 20050630//EN" uri="dtd/articleauthoring.dtd"/>
+</Group>
+<Group dir="./authoring/2.2/dtd/">
+   <public publicId="-//NLM//DTD Article Authoring DTD Over-ride Content and Attribute Module v2.2 20060430//EN" uri="dtd/articleauthcustom-models.ent"/>
+   <public publicId="-//NLM//DTD Article Authoring DTD-Specific Modules v2.2 20060430//EN" uri="dtd/articleauthcustom-modules.ent"/>
+   <public publicId="-//NLM//DTD Article Authoring DTD v2.2 20060430//EN" uri="dtd/articleauthoring.dtd"/>
+</Group>
+<Group dir="./authoring/2.3/dtd/">
+   <public publicId="-//NLM//DTD Article Authoring DTD Over-ride Classes Module v2.3 20070202//EN" uri="dtd/articleauthcustom-classes.ent"/>
+   <public publicId="-//NLM//DTD Article Authoring DTD Over-ride Mixes Module v2.3 20070202//EN" uri="dtd/articleauthcustom-mixes.ent"/>
+   <public publicId="-//NLM//DTD Article Authoring DTD Over-ride Content and Attribute Module v2.3 20070202//EN" uri="dtd/articleauthcustom-models.ent"/>
+   <public publicId="-//NLM//DTD Article Authoring DTD-Specific Modules v2.3 20070202//EN" uri="dtd/articleauthcustom-modules.ent"/>
+   <public publicId="-//NLM//DTD Article Authoring DTD v2.3 20070202//EN" uri="dtd/articleauthoring.dtd"/>
+</Group>
+<Group dir="./authoring/3.0/dtd/">
+   <public publicId="-//NLM//DTD Article Authoring DTD Over-ride Classes Module v3.0 20080202//EN" uri="dtd/articleauthcustom-classes3.ent"/>
+   <public publicId="-//NLM//DTD Article Authoring DTD Over-ride Mixes Module v3.0 20080202//EN" uri="dtd/articleauthcustom-mixes3.ent"/>
+   <public publicId="-//NLM//DTD Article Authoring DTD Over-ride Content and Attribute Module v3.0 20080202//EN" uri="dtd/articleauthcustom-models3.ent"/>
+   <public publicId="-//NLM//DTD Article Authoring DTD-Specific Modules v3.0 20080202//EN" uri="dtd/articleauthcustom-modules3.ent"/>
+   <public publicId="-//NLM//DTD Article Authoring DTD v3.0 20080202//EN" uri="dtd/articleauthoring3.dtd"/>
+</Group>
+<Group dir="./books/2.0/dtd/">
+   <public publicId="-//NLM//DTD Book DTD v2.0 20041031//EN" uri="dtd/book.dtd"/>
+   <public publicId="-//NLM//DTD NCBI Book Collection DTD v2.0 20041031//EN" uri="dtd/bookcollection.dtd"/>
+   <public publicId="-//NLM//DTD NCBI Book DTD Over-ride Classes Module v2.0 20041031//EN" uri="dtd/bookcustom-classes.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book DTD Over-ride Mixes Module v2.0 20041031//EN" uri="dtd/bookcustom-mixes.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book DTD Content and Attribute Over-ride Module v2.0 20041031//EN" uri="dtd/bookcustom-models.ent"/>
+   <public publicId="-//NLM//DTD Book DTD Module of Modules v2.0 20041031//EN" uri="dtd/bookcustom-modules.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book Image Map Elements v2.0 20041031//EN" uri="dtd/bookimagemap.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book DTD Book Metadata Elements v2.0 20041031//EN" uri="dtd/bookmeta.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book DTD Book Component Metadata Elements v2.0 20041031//EN" uri="dtd/bookpart.ent"/>
+</Group>
+<Group dir="./books/2.1/dtd/">
+   <public publicId="-//NLM//DTD Book DTD v2.1 20050630//EN" uri="dtd/book.dtd"/>
+   <public publicId="-//NLM//DTD NCBI Book Collection DTD v2.1 20050630//EN" uri="dtd/bookcollection.dtd"/>
+   <public publicId="-//NLM//DTD NCBI Book DTD Over-ride Classes Module v2.1 20050630//EN" uri="dtd/bookcustom-classes.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book DTD Content and Attribute Over-ride Module v2.1 20050630//EN" uri="dtd/bookcustom-models.ent"/>
+   <public publicId="-//NLM//DTD Book DTD Module of Modules v2.1 20050630//EN" uri="dtd/bookcustom-modules.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book DTD Book Metadata Elements v2.1 20050630//EN" uri="dtd/bookmeta.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book Multi-link Elements v2.0 20041031//EN" uri="dtd/bookmultilink.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book DTD Book Component Metadata Elements v2.1 20050630//EN" uri="dtd/bookpart.ent"/>
+</Group>
+<Group dir="./books/2.2/dtd/">
+   <public publicId="-//NLM//DTD Book DTD v2.2 20061013//EN" uri="dtd/book.dtd"/>
+   <public publicId="-//NLM//DTD NCBI Book Collection DTD v2.2 20061013//EN" uri="dtd/bookcollection.dtd"/>
+   <public publicId="-//NLM//DTD NCBI Book DTD Over-ride Classes Module v2.2 20061013//EN" uri="dtd/bookcustom-classes.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book DTD Over-ride Mixes Module v2.2 20061013//EN" uri="dtd/bookcustom-mixes.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book DTD Content and Attribute Over-ride Module v2.2 20061013//EN" uri="dtd/bookcustom-models.ent"/>
+   <public publicId="-//NLM//DTD Book DTD Module of Modules v2.2 20061013//EN" uri="dtd/bookcustom-modules.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book Image Map Elements v2.2 20061013//EN" uri="dtd/bookimagemap.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book DTD Book Metadata Elements v2.2 20061013//EN" uri="dtd/bookmeta.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book Multi-link Elements v2.2 20061013//EN" uri="dtd/bookmultilink.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book DTD Book Component Metadata Elements v2.2 20061013//EN" uri="dtd/bookpart.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book DTD Book Related Object Element v2.2 20061013//EN" uri="dtd/bookrelated-object.ent"/>
+</Group>
+<Group dir="./books/2.3/dtd/">
+   <public publicId="-//NLM//DTD Book DTD v2.3 20070202//EN" uri="dtd/book.dtd"/>
+   <public publicId="-//NLM//DTD NCBI Book Collection DTD v2.3 20070202//EN" uri="dtd/bookcollection.dtd"/>
+   <public publicId="-//NLM//DTD NCBI Book DTD Over-ride Classes Module v2.3 20070202//EN" uri="dtd/bookcustom-classes.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book DTD Over-ride Mixes Module v2.3 20070202//EN" uri="dtd/bookcustom-mixes.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book DTD Content and Attribute Over-ride Module v2.3 20070202//EN" uri="dtd/bookcustom-models.ent"/>
+   <public publicId="-//NLM//DTD Book DTD Module of Modules v2.3 20070202//EN" uri="dtd/bookcustom-modules.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book Image Map Elements v2.3 20070202//EN" uri="dtd/bookimagemap.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book DTD Book Metadata Elements v2.3 20070202//EN" uri="dtd/bookmeta.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book Multi-link Elements v2.3 20070202//EN" uri="dtd/bookmultilink.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book DTD Book Component Metadata Elements v2.3 20070202//EN" uri="dtd/bookpart.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book DTD Book Related Object Element v2.3 20070202//EN" uri="dtd/bookrelated-object.ent"/>
+</Group>
+<Group dir="./books/3.0/dtd/">
+   <public publicId="-//NLM//DTD Book DTD v3.0 20080202//EN" uri="dtd/book3.dtd"/>
+   <public publicId="-//NLM//DTD NCBI Book Collection DTD v3.0 20080202//EN" uri="dtd/bookcollection3.dtd"/>
+   <public publicId="-//NLM//DTD NCBI Book DTD Over-ride Classes Module v3.0 20080202//EN" uri="dtd/bookcustom-classes3.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book DTD Over-ride Mixes Module v3.0 20080202//EN" uri="dtd/bookcustom-mixes3.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book DTD Content and Attribute Over-ride Module v3.0 20080202//EN" uri="dtd/bookcustom-models3.ent"/>
+   <public publicId="-//NLM//DTD Book DTD Module of Modules v3.0 20080202//EN" uri="dtd/bookcustom-modules3.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book Image Map Elements v3.0 20080202//EN" uri="dtd/bookimagemap3.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book DTD Book Metadata Elements v3.0 20080202//EN" uri="dtd/bookmeta3.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book Multi-link Elements v3.0 20080202//EN" uri="dtd/bookmultilink3.ent"/>
+   <public publicId="-//NLM//DTD NCBI Book DTD Book Component Metadata Elements v3.0 20080202//EN" uri="dtd/bookpart3.ent"/>
+</Group>
+<Group dir="./core/1.0/dtd/">
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Journal Article Metadata Elements v1.0 20021201//EN" uri="dtd/articlemeta.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Back Matter Elements v1.0 20021201//EN" uri="dtd/backmatter.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Custom Special Characters Module v1.0 20021201//EN" uri="dtd/chars.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Common (Shared) Elements Module v1.0 20021201//EN" uri="dtd/common.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v1.0 20021201//EN" uri="dtd/display.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Formatting Element Classes v1.0 20021201//EN" uri="dtd/format.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Journal Metadata Elements v1.0 20021201//EN" uri="dtd/journalmeta.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Link Class Elements v1.0 20021201//EN" uri="dtd/link.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite List Class Elements v1.0 20021201//EN" uri="dtd/list.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Math Class Elements v1.0 20021201//EN" uri="dtd/math.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite MathML Setup Module v1.0 20021201//EN" uri="dtd/mathmlsetup.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v1.0 20021201//EN" uri="dtd/modules.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Notation Declarations v1.0 20021201//EN" uri="dtd/notat.ent"/>
+   <public publicId="-//OASIS//DTD XML Exchange Table Model 19990315//EN" uri="dtd/oasis-exchange.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite OASIS XML Table Setup Module v1.0 20021201//EN" uri="dtd/oasis-tablesetup.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Paragraph-Like Elements v1.0 20021201//EN" uri="dtd/para.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Subject Phrase Class Elements v1.0 20021201//EN" uri="dtd/phrase.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Bibliographic Reference (Citation) Class Elements v1.0 20021201//EN" uri="dtd/references.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Section Class Elements v1.0 20021201//EN" uri="dtd/section.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite XHTML Table Setup Module v1.0 20021201//EN" uri="dtd/XHTMLtablesetup.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite XML Special Characters Module v1.0 20021201//EN" uri="dtd/xmlspecchars.ent"/>
+</Group>
+<Group dir="./core/1.1/dtd/">
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Journal Article Metadata Elements v1.1 20031101//EN" uri="dtd/articlemeta.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Custom Special Characters Module v1.1 20031101//EN" uri="dtd/chars.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Common (Shared) Elements Module v1.1 20031101//EN" uri="dtd/common.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v1.1 20031101//EN" uri="dtd/display.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Journal Metadata Elements v1.1 20031101//EN" uri="dtd/journalmeta.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Link Class Elements v1.1 20031101//EN" uri="dtd/link.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite List Class Elements v1.1 20031101//EN" uri="dtd/list.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Math Class Elements v1.1 20031101//EN" uri="dtd/math.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite MathML Setup Module v1.1 20031101//EN" uri="dtd/mathmlsetup.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v1.1 20031101//EN" uri="dtd/modules.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite OASIS XML Table Setup Module v1.1 20031101//EN" uri="dtd/oasis-tablesetup.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Paragraph-Like Elements v1.1 20031101//EN" uri="dtd/para.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Subject Phrase Class Elements v1.1 20031101//EN" uri="dtd/phrase.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite XHTML Table Setup Module v1.1 20031101//EN" uri="dtd/XHTMLtablesetup.ent"/>
+</Group>
+<Group dir="./core/2.0/dtd/">
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Journal Article Metadata Elements v2.0 20040830//EN" uri="dtd/articlemeta.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Back Matter Elements v2.0 20040830//EN" uri="dtd/backmatter.ent"/>
+   <public publicId="-//NLM//DTD Journal Archiving and Interchange DTD to Test the Base Suite v2.0 20040830//EN" uri="dtd/base-test.dtd"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Custom Special Characters Module v2.0 20040830//EN" uri="dtd/chars.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Common (Shared) Elements Module v2.0 20040830//EN" uri="dtd/common.ent"/>
+   <public publicId="-//NLM//DTD Default Element Classes Module v2.0 20040830//EN" uri="dtd/default-classes.ent"/>
+   <public publicId="-//NLM//DTD Default Element Mixes Module v2.0 20040830//EN" uri="dtd/default-mixes.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v2.0 20040830//EN" uri="dtd/display.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Formatting Element Classes v2.0 20040830//EN" uri="dtd/format.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Journal Metadata Elements v2.0 20040830//EN" uri="dtd/journalmeta.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Link Class Elements v2.0 20040830//EN" uri="dtd/link.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite List Class Elements v2.0 20040830//EN" uri="dtd/list.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Math Class Elements v2.0 20040830//EN" uri="dtd/math.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite MathML Setup Module v2.0 20040830//EN" uri="dtd/mathmlsetup.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v2.0 20040830//EN" uri="dtd/modules.ent"/>
+   <public publicId="-//NLM//DTD NLM Citation v2.0 20040830//EN" uri="dtd/nlmcitation.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Notation Declarations v2.0 20040830//EN" uri="dtd/notat.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite OASIS XML Table Setup Module v1.2 20040830//EN" uri="dtd/oasis-tablesetup.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Paragraph-Like Elements v2.0 20040830//EN" uri="dtd/para.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Subject Phrase Class Elements v2.0 20040830//EN" uri="dtd/phrase.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Bibliographic Reference (Citation) Class Elements v2.0 20040830//EN" uri="dtd/references.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Section Class Elements v2.0 20040830//EN" uri="dtd/section.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite XHTML Table Setup Module v2.0 20040830//EN" uri="dtd/XHTMLtablesetup.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite XML Special Characters Module v2.0 20040830//EN" uri="dtd/xmlspecchars.ent"/>
+</Group>
+<Group dir="./core/2.1/dtd/">
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Journal Article Metadata Elements v2.1 20050630//EN" uri="dtd/articlemeta.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Back Matter Elements v2.1 20050630//EN" uri="dtd/backmatter.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Common (Shared) Elements Module v2.1 20050630//EN" uri="dtd/common.ent"/>
+   <public publicId="-//NLM//DTD Default Element Classes Module v2.1 20050630//EN" uri="dtd/default-classes.ent"/>
+   <public publicId="-//NLM//DTD Default Element Mixes Module v2.1 20050630//EN" uri="dtd/default-mixes.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v2.1 20050630//EN" uri="dtd/display.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Journal Metadata Elements v2.1 20050630//EN" uri="dtd/journalmeta.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Link Class Elements v2.1 20050630//EN" uri="dtd/link.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite List Class Elements v2.1 20050630//EN" uri="dtd/list.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite MathML Setup Module v2.1 20050630//EN" uri="dtd/mathmlsetup.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v2.1 20050630//EN" uri="dtd/modules.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Paragraph-Like Elements v2.1 20050630//EN" uri="dtd/para.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Bibliographic Reference (Citation) Class Elements v2.1 20050630//EN" uri="dtd/references.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite XHTML Table Setup Module v2.1 20050630//EN" uri="dtd/XHTMLtablesetup.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite XML Special Characters Module v2.1 20050630//EN" uri="dtd/xmlspecchars.ent"/>
+</Group>
+<Group dir="./core/2.2/dtd/">
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Journal Article Metadata Elements v2.2 20060430//EN" uri="dtd/articlemeta.ent"/>
+   <public publicId="-//NLM//DTD Journal Archiving and Interchange DTD to Test the Base Suite v2.2 20100718//EN" uri="dtd/base-test.dtd"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Common (Shared) Elements Module v2.2 20060430//EN" uri="dtd/common.ent"/>
+   <public publicId="-//NLM//DTD Default Element Classes Module v2.2 20060430//EN" uri="dtd/default-classes.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v2.2 20060430//EN" uri="dtd/display.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Math Class Elements v2.2 20100718//EN" uri="dtd/math.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v2.2 20060430//EN" uri="dtd/modules.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Paragraph-Like Elements v2.2 20060430//EN" uri="dtd/para.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Bibliographic Reference (Citation) Class Elements v2.2 20060430//EN" uri="dtd/references.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Section Class Elements v2.2 20060430//EN" uri="dtd/section.ent"/>
+</Group>
+<Group dir="./core/2.3/dtd/">
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Journal Article Metadata Elements v2.3 20070202//EN" uri="dtd/articlemeta.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Back Matter Elements v2.3 20070202//EN" uri="dtd/backmatter.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Custom Special Characters Module v2.3 20070202//EN" uri="dtd/chars.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Common (Shared) Elements Module v2.3 20070202//EN" uri="dtd/common.ent"/>
+   <public publicId="-//NLM//DTD Default Element Classes Module v2.3 20070202//EN" uri="dtd/default-classes.ent"/>
+   <public publicId="-//NLM//DTD Default Element Mixes Module v2.3 20070202//EN" uri="dtd/default-mixes.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v2.3 20070202//EN" uri="dtd/display.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Formatting Element Classes v2.3 20070202//EN" uri="dtd/format.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Journal Metadata Elements v2.3 20070202//EN" uri="dtd/journalmeta.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Link Class Elements v2.3 20070202//EN" uri="dtd/link.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite List Class Elements v2.3 20070202//EN" uri="dtd/list.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Math Class Elements v2.3 20070202//EN" uri="dtd/math.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite MathML Setup Module v2.3 20070202//EN" uri="dtd/mathmlsetup.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v2.3 20070202//EN" uri="dtd/modules.ent"/>
+   <public publicId="-//NLM//DTD NLM Citation v2.3 20070202//EN" uri="dtd/nlmcitation.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Notation Declarations v2.3 20070202//EN" uri="dtd/notat.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Paragraph-Like Elements v2.3 20070202//EN" uri="dtd/para.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Subject Phrase Class Elements v2.3 20070202//EN" uri="dtd/phrase.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Bibliographic Reference (Citation) Class Elements v2.3 20070202//EN" uri="dtd/references.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Section Class Elements v2.3 20070202//EN" uri="dtd/section.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite XHTML Table Setup Module v2.3 20070202//EN" uri="dtd/XHTMLtablesetup.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite XML Special Characters Module v2.3 20070202//EN" uri="dtd/xmlspecchars.ent"/>
+</Group>
+<Group dir="./core/3.0/dtd/">
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Journal Article Metadata Elements v3.0 20080202//EN" uri="dtd/articlemeta3.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Back Matter Elements v3.0 20080202//EN" uri="dtd/backmatter3.ent"/>
+   <public publicId="-//NLM//DTD Journal Archiving DTD to Test the Base Suite v3.0 20080202//EN" uri="dtd/base-test3.dtd"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Custom Special Characters Module v3.0 20080202//EN" uri="dtd/chars3.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Common (Shared) Elements Module v3.0 20080202//EN" uri="dtd/common3.ent"/>
+   <public publicId="-//NLM//DTD Default Element Classes Module v3.0 20080202//EN" uri="dtd/default-classes3.ent"/>
+   <public publicId="-//NLM//DTD Default Element Mixes Module v3.0 20080202//EN" uri="dtd/default-mixes3.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v3.0 20080202//EN" uri="dtd/display3.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Formatting Element Classes v3.0 20080202//EN" uri="dtd/format3.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Funding Elements v3.0 20080202//EN" uri="dtd/funding3.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Journal Metadata Elements v3.0 20080202//EN" uri="dtd/journalmeta3.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Link Class Elements v3.0 20080202//EN" uri="dtd/link3.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite List Class Elements v3.0 20080202//EN" uri="dtd/list3.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Math Class Elements v3.0 20080202//EN" uri="dtd/math3.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite MathML Setup Module v3.0 20080202//EN" uri="dtd/mathmlsetup3.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v3.0 20080202//EN" uri="dtd/modules3.ent"/>
+   <public publicId="-//NLM//DTD NLM Citation v3.0 20080202//EN" uri="dtd/nlmcitation3.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Notation Declarations v3.0 20071031//EN" uri="dtd/notat3.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite OASIS XML Table Setup Module v3.0 20100717//EN" uri="dtd/oasis-tablesetup3.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Paragraph-Like Elements v3.0 20080202//EN" uri="dtd/para3.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Subject Phrase Class Elements v3.0 20080202//EN" uri="dtd/phrase3.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Bibliographic Reference (Citation) Class Elements v3.0 20080202//EN" uri="dtd/references3.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Related Object Element v3.0 20080202//EN" uri="dtd/related-object3.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Section Class Elements v3.0 20080202//EN" uri="dtd/section3.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite XHTML Table Setup Module v3.0 20080202//EN" uri="dtd/XHTMLtablesetup3.ent"/>
+   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite XML Special Characters Module v3.0 20080202//EN" uri="dtd/xmlspecchars3.ent"/>
+</Group>
+<Group dir="./historical/2.0/dtd/">
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD Annotation Elements v2.0 20041225//EN" uri="dtd/annotation.ent"/>
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD Over-ride Classes Module v2.0 20041225//EN" uri="dtd/historical-classes.ent"/>
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD Over-ride Mixes Module v2.0 20041225//EN" uri="dtd/historical-mixes.ent"/>
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD Content and Attribute Over-ride Module v2.0 20041225//EN" uri="dtd/historical-models.ent"/>
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD Module of Modules v2.0 20041225//EN" uri="dtd/historical-modules.ent"/>
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD v2.0 20041225//EN" uri="dtd/historical.dtd"/>
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD Metadata Elements v2.0 20041225//EN" uri="dtd/historicalmeta.ent"/>
+</Group>
+<Group dir="./historical/2.1/dtd/">
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD Over-ride Classes Module v2.1 20050630//EN" uri="dtd/historical-classes.ent"/>
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD Content and Attribute Over-ride Module v2.1 20050630//EN" uri="dtd/historical-models.ent"/>
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD Module of Modules v2.1 20050630//EN" uri="dtd/historical-modules.ent"/>
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD v2.1 20050630//EN" uri="dtd/historical.dtd"/>
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD Metadata Elements v2.1 20050630//EN" uri="dtd/historicalmeta.ent"/>
+</Group>
+<Group dir="./historical/2.2/dtd/">
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD v2.2 20061013//EN" uri="dtd/historical.dtd"/>
+</Group>
+<Group dir="./historical/2.3/dtd/">
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD Annotation Elements v2.3 20070202//EN" uri="dtd/annotation.ent"/>
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD Over-ride Classes Module v2.3 20070202//EN" uri="dtd/historical-classes.ent"/>
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD Over-ride Mixes Module v2.3 20070202//EN" uri="dtd/historical-mixes.ent"/>
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD Content and Attribute Over-ride Module v2.3 20070202//EN" uri="dtd/historical-models.ent"/>
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD Module of Modules v2.3 20070202//EN" uri="dtd/historical-modules.ent"/>
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD v2.3 20070202//EN" uri="dtd/historical.dtd"/>
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD Metadata Elements v2.3 20070202//EN" uri="dtd/historicalmeta.ent"/>
+</Group>
+<Group dir="./historical/3.0/dtd/">
+   <public publicId="-//NLM//DTD NCBI Historical Book DTD Annotation Elements v3.0 20080202//EN" uri="dtd/annotation3.ent"/>
+</Group>
+<Group dir="./publishing-oasis/2.3/dtd/">
+   <public publicId="-//NLM//DTD Journal Publishing with OASIS Tables DTD v2.3 20070813//EN" uri="dtd/publishing-OASIS.dtd"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD-OASIS Customize Mixes Module v2.3 20070813//EN" uri="dtd/publishing-OASIScustom-classes.ent"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD-OASIS Specific Modules v2.3 20070813//EN" uri="dtd/publishing-OASIScustom-modules.ent"/>
+</Group>
+<Group dir="./publishing-oasis/3.0/dtd/">
+   <public publicId="-//NLM//DTD Journal Publishing with OASIS Tables Customize Classes Module v3.0 20080202//EN" uri="dtd/journalpub-oasis-custom-classes3.ent"/>
+   <public publicId="-//NLM//DTD Journal Publishing with OASIS Tables-Specific Modules v3.0 20080202//EN" uri="dtd/journalpub-oasis-custom-modules3.ent"/>
+   <public publicId="-//NLM//DTD Journal Publishing with OASIS Tables v3.0 20080202//EN" uri="dtd/journalpub-oasis3.dtd"/>
+</Group>
+<Group dir="./publishing/1.0/dtd/">
+   <public publicId="-//NLM//DTD Journal Publishing DTD Customization Module v1.0 20030324//EN" uri="dtd/journalpubcustomize.ent"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD v1.0 20030210//EN" uri="dtd/journalpublishing.dtd"/>
+</Group>
+<Group dir="./publishing/1.1/dtd/">
+   <public publicId="-//NLM//DTD Journal Publishing DTD Customization Module v1.1 20031101//EN" uri="dtd/journalpubcustomize.ent"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD v1.1 20031101//EN" uri="dtd/journalpublishing.dtd"/>
+</Group>
+<Group dir="./publishing/2.0/dtd/">
+   <public publicId="-//NLM//DTD Journal Publishing DTD Customize Classes Module v2.0 20040830//EN" uri="dtd/journalpubcustom-classes.ent"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD Customize Mixes Module v2.0 20040830//EN" uri="dtd/journalpubcustom-mixes.ent"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD Customize Content and Attributes Module v2.0 20040830//EN" uri="dtd/journalpubcustom-models.ent"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD-Specific Modules v2.0 20040830//EN" uri="dtd/journalpubcustom-modules.ent"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD v2.0 20040830//EN" uri="dtd/journalpublishing.dtd"/>
+</Group>
+<Group dir="./publishing/2.1/dtd/">
+   <public publicId="-//NLM//DTD Journal Publishing DTD Customize Content and Attributes Module v2.1 20050630//EN" uri="dtd/journalpubcustom-models.ent"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD-Specific Modules v2.1 20050630//EN" uri="dtd/journalpubcustom-modules.ent"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD v2.1 20050630//EN" uri="dtd/journalpublishing.dtd"/>
+</Group>
+<Group dir="./publishing/2.2/dtd/">
+   <public publicId="-//NLM//DTD Journal Publishing DTD Customize Content and Attributes Module v2.2 20060430//EN" uri="dtd/journalpubcustom-models.ent"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD-Specific Modules v2.2 20060430//EN" uri="dtd/journalpubcustom-modules.ent"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD v2.2 20060430//EN" uri="dtd/journalpublishing.dtd"/>
+</Group>
+<Group dir="./publishing/2.3/dtd/">
+   <public publicId="-//NLM//DTD Journal Publishing DTD Customize Classes Module v2.3 20070202//EN" uri="dtd/journalpubcustom-classes.ent"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD Customize Mixes Module v2.3 20070202//EN" uri="dtd/journalpubcustom-mixes.ent"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD Customize Content and Attributes Module v2.3 20070202//EN" uri="dtd/journalpubcustom-models.ent"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD-Specific Modules v2.3 20070202//EN" uri="dtd/journalpubcustom-modules.ent"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD v2.3 20070202//EN" uri="dtd/journalpublishing.dtd"/>
+</Group>
+<Group dir="./publishing/3.0/dtd/">
+   <public publicId="-//NLM//DTD Journal Publishing DTD Customize Classes Module v3.0 20080202//EN" uri="dtd/journalpubcustom-classes3.ent"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD Customize Mixes Module v3.0 20080202//EN" uri="dtd/journalpubcustom-mixes3.ent"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD Customize Content and Attributes Module v3.0 20080202//EN" uri="dtd/journalpubcustom-models3.ent"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD-Specific Modules v3.0 20080202//EN" uri="dtd/journalpubcustom-modules3.ent"/>
+   <public publicId="-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" uri="dtd/journalpublishing3.dtd"/>
+</Group>

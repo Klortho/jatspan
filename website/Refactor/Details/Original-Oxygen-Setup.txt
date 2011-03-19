@@ -1,0 +1,8 @@
+﻿My old oXygen catalog setup:
+
+  ✓ Use default catalog
+  file:/M:/JATS/pmc3-catalog/oxygen-pmc3-catalog.xml
+  file:/C:/bin/eclipse-3.4.1-portal/plugins/com.oxygenxml.editor_9.3.0/frameworks/catalog.xml
+  
+  
+  
