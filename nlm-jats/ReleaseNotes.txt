@@ -1,0 +1,23 @@
+$Id$
+
+Release Notes for NLM JATS at Sourceforge.
+These notes are in reverse chronological order (newest releases at the top).
+
+=======================================================================
+nlm-jats-0.6
+3/19/2011
+
+Changes:
+- Changed the root directory of the distribution file to "nlm-jats", instead of
+  using the name of the release.  I think system identifiers in document type
+  declarations could use relative pathnames that start with nlm-jats.  There is
+  opposition to the idea of using absolute URLs, and I think this would be a
+  good compromise.
+- Added this ReleaseNotes.txt file.
+
+
+=======================================================================
+nlm-jats-0.5-r110
+2/14/2011
+
+This was the first alpha release.
