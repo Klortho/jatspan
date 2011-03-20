@@ -15,7 +15,6 @@ Changes:
   good compromise.
 - Added this ReleaseNotes.txt file.
 
-
 =======================================================================
 nlm-jats-0.5-r110
 2/14/2011
