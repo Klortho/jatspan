@@ -43,14 +43,17 @@
         <li>
           Create a tag in Subversion for this release, with a command similar to the
           following.
-          <pre>svn copy https://nlm-jats.svn.sourceforge.net/svnroot/nlm-jats/trunk \
-  https://nlm-jats.svn.sourceforge.net/svnroot/nlm-jats/branches/Releases/<em>v.vv</em> \
+          <pre>svn copy --parents \
+  https://nlm-jats.svn.sourceforge.net/svnroot/nlm-jats/trunk \
+  https://nlm-jats.svn.sourceforge.net/svnroot/nlm-jats/releases/<em>v.vv</em> \
   -m "Tagging release '<em>v.vv</em>'."</pre>
-
+          Verify that the release tag was created by
+          <a href='http://nlm-jats.svn.sourceforge.net/viewvc/nlm-jats/releases/'>browsing
+          the respository</a>.
         </li>
         <li>
           Create the download file.  From the trunk directory, enter a command
-          similar to the following:
+          similar to the following.  This uses the InfoZip's zip utility.
           <pre>zip -9r -ll nlm-jats-<em>v.vv</em>.zip nlm-jats -x *.svn*</pre>
           <ul>
             <li>
@@ -85,11 +88,16 @@
         </li>
         <li>
           Rename the zip file to include the final Subversion repository
-          revision.  For example,
+          revision.  Use the revision number that was generated when you created
+          the release tag (which you can see
+          <a href='http://nlm-jats.svn.sourceforge.net/viewvc/nlm-jats/releases/'>here</a>).
+          For example,
           "nlm-jats-<em>1.16</em>-r<em>1024</em>.zip".
         </li>
         <li>
-          Upload the Zip file to the site.
+          Upload the Zip file to the site.  Also, if there were any changes
+          to the README.txt file, upload it too, so that they are reflected on
+          the Files page.
         </li>
       <!--
         <li>

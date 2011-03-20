@@ -29,7 +29,7 @@ Here are some details, in no particular order.
   from XHTML and MathML, have been factored out into the "lib" directory.
   Common JATS files have been factored out into the "core" directory.
 
-    nlm-jats-0.5-rxxx/
+    nlm-jats/
         catalog.xml
         README.txt
         lib/ - third party "libraries"
