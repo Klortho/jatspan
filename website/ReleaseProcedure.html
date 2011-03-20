@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- $Id$ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>NLM JATS Release Procedure</title>
+    <link rel='stylesheet' href="article.css"/>
+  </head>
+
+  <body>
+    <h1>NLM JATS Release Procedure</h1>
+    <div class='sec'>
+      <p>
+        This documents the procedure to be followed to create a new
+        release version.
+      </p>
+      <ol>
+        <li>
+          In the trunk directory, make sure that the tests pass successfully.
+        </li>
+        <li>
+          Edit ReleaseNotes.txt.
+          <ul>
+            <li>
+              Decide on a major/minor version number.
+              Create a name for this release of the form
+              "nlm-jats-<em>v.vv</em>", where <em>v.vv</em>
+              is the version number.
+            </li>
+            <li>
+              Add a new section at to the top.  Copy the format of previous
+              sections.
+            </li>
+          </ul>
+        </li>
+        <li>
+          From trunk, commit everything, with a note about the release.  E.g.
+          <pre>svn commit -m "Release <em>v.vv</em>, candidate <em>1</em>"</pre>
+          Increment the candidate number if this isn't the first attempt at a
+          release for this version number.
+        </li>
+        <li>
+          Create a tag in Subversion for this release, with a command similar to the
+          following.
+          <pre>svn copy https://nlm-jats.svn.sourceforge.net/svnroot/nlm-jats/trunk \
+  https://nlm-jats.svn.sourceforge.net/svnroot/nlm-jats/branches/Releases/<em>v.vv</em> \
+  -m "Tagging release '<em>v.vv</em>'."</pre>
+
+        </li>
+        <li>
+          Create the download file.  From the trunk directory, enter a command
+          similar to the following:
+          <pre>zip -9r -ll nlm-jats-<em>v.vv</em>.zip nlm-jats -x *.svn*</pre>
+          <ul>
+            <li>
+              <em>v.vv</em> is the version number of the release.
+            </li>
+            <li>
+              "-9" says to "compress better".
+            </li>
+            <li>
+              "-r" means recurse into subdirectories.
+            </li>
+            <li>
+              "-ll" causes all Windows line-endings 'CR LF' to be converted to
+              Unix style 'LF'.
+            </li>
+            <li>
+              "-x *.svn*" excludes the subversion repository directories.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Test one more time.  This is important to ensure
+          the integrity of the release file.
+          <ul>
+            <li>
+              Unzip it to a temporary directory.
+            </li>
+            <li>
+              Rerun the tests.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Rename the zip file to include the final Subversion repository
+          revision.  For example,
+          "nlm-jats-<em>1.16</em>-r<em>1024</em>.zip".
+        </li>
+        <li>
+          Upload the Zip file to the site.
+        </li>
+      <!--
+        <li>
+        </li>
+      -->
+      </ol>
+    </div>
+
+
+  </body>
+</html>

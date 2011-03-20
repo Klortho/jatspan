@@ -1,0 +1,52 @@
+/* $Id$ */
+
+body {
+  font-family: helvetica;
+  font-size: 10pt;
+  max-width: 800px;
+}
+h1, h2, h3, h4 {
+  font-family: times;
+}
+h2, h3 {
+    margin-left: -15px;
+}
+h1 {
+  color: #000080;
+}
+h2 {
+  color: #000080;
+}
+h3 {
+  color: #703020;
+  font-family: helvetica;
+  font-style: italic;
+}
+
+div.sec {
+  padding-left: 15px;
+}
+
+pre {
+  background-color: #E8E8E8;
+  margin-left: 1em;
+  padding: 3px;
+  overflow: auto;
+}
+
+blockquote {
+  border: 1px solid gray;
+  padding: 3px;
+}
+
+blockquote p:first-child {
+  margin-top: 0;
+}
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 3px;
+}
+
