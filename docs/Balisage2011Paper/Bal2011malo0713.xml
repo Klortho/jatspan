@@ -4,6 +4,7 @@
 <?xml-stylesheet type="text/xsl" href="balisage-1-2-xsl/balisage-html.xsl"?>
 <!--<?xml-stylesheet type="text/xsl" href="balisage-1-2-xsl/balisage-proceedings-html.xsl"?>-->
 
+<!-- $Id$ -->
 
 <article version="5.0-subset Balisage-1.2" xmlns="http://docbook.org/ns/docbook"
   xmlns:xlink="http://www.w3.org/1999/xlink">
