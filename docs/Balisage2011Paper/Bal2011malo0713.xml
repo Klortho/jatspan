@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE article SYSTEM "balisage-1-2.dtd">
-<?xml-stylesheet type="text/css" href="balisage-author.css" title="Authoring" alternate="no"?>
-<?xml-stylesheet type="text/xsl" href="balisage-html.xsl"?>
-<!--<?xml-stylesheet type="text/xsl" href="balisage-proceedings-html.xsl"?>-->
+<?xml-stylesheet type="text/css" href="balisage-1-2-xsl/balisage-author.css" title="Authoring" alternate="no"?>
+<?xml-stylesheet type="text/xsl" href="balisage-1-2-xsl/balisage-html.xsl"?>
+<!--<?xml-stylesheet type="text/xsl" href="balisage-1-2-xsl/balisage-proceedings-html.xsl"?>-->
 
 
 <article version="5.0-subset Balisage-1.2" xmlns="http://docbook.org/ns/docbook"
