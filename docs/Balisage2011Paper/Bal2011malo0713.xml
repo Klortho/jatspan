@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE article SYSTEM "balisage-1-2.dtd">
+<!DOCTYPE article SYSTEM "balisage-1-2-xsl/balisage-1-2.dtd">
 <?xml-stylesheet type="text/css" href="balisage-1-2-xsl/balisage-author.css" title="Authoring" alternate="no"?>
 <?xml-stylesheet type="text/xsl" href="balisage-1-2-xsl/balisage-html.xsl"?>
 <!--<?xml-stylesheet type="text/xsl" href="balisage-1-2-xsl/balisage-proceedings-html.xsl"?>-->
@@ -34,7 +34,7 @@
           projects.</para>
       </personblurb>
       <affiliation>
-        <orgname>A-Tek Inc.</orgname>
+        <orgname>NCBI (Contractor)</orgname>
       </affiliation>
     </author>
   </info>

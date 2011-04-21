@@ -67,6 +67,7 @@
   exclude-result-prefixes="d xlink"
   version="1.0">
   
+  <xsl:param name="css-file">balisage-plain.css</xsl:param>
   
   <xsl:strip-space elements="d:article d:info d:appendix d:bibliography
     d:abstract d:author d:legalnotice d:keywordset d:confgroup
@@ -92,7 +93,6 @@
   </xsl:template>
   
   
-  <xsl:variable name="css-file">balisage-plain.css</xsl:variable>
   
   
   <xsl:template match="/">
