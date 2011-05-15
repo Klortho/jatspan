@@ -40,36 +40,6 @@
     </author>
   </info>
 
-  <section xml:id='draft'>
-    <title>Notes on this draft version</title>
-    <para>
-      This paper is not quite finished; but is pretty close.  These are the areas that still
-      need a little bit of work.
-    </para>
-    <itemizedlist>
-      <listitem>
-        <para>
-          The <xref linkend="rap-it"/> has not yet been written.
-          As mentioned there, I intend to recap all of the main points, 
-          to urge people to embrace this infrastructure, and to invite 
-          collaboration on the SourceForge development site.
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Bibliography citations are not formatted.
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Some of the software described in this paper is still under development,
-          and some of the details are subject to change.
-        </para>
-      </listitem>
-    </itemizedlist>
-    
-  </section>
-
   <section xml:id='yo'>
     <title>Introduction</title>
     <para> "JATS", the <link xlink:href="http://jats.nlm.nih.gov/">Journal Article Tag Suite</link>,
