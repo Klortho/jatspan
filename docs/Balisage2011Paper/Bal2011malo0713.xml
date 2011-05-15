@@ -12,16 +12,17 @@
     Journal Archiving Tag Suite (JATS)</title>
   <info>
     <abstract>
-      <para>The NLM/NISO Journal Archiving Tag Suite (hereinafter JATS) is a common format used in
-        publishing of scientific literature. JATSPack, which is based on the new <link
+      <para>The NISO Journal Archiving Tag Suite (JATS, formerly known as ‘the NLM DTD’) is a 
+        common format used in
+        publication of scientific literature. JATSPack, a proposal based on the new <link
           xlink:href="http://www.expath.org/modules/pkg/">EXPath Packaging System</link>,
-        provides a standard way of packaging customizations and 
-        libraries associated with any of the JATS schema. 
-        <link xlink:href="http://jatspan.org/">JATSPAN</link> is the JATSPack Archive Network, and is
-        a website allowing users to share and collaborate on JATSPacks. <code>jatspan</code>
-        (lower case) is a
-        client-side command line program that interacts with JATSPAN (the site) to create and
-        maintain local repositories of JATSPacks. </para>
+        provides a way to package schema customizations and software 
+        libraries associated with any of the JATS schemas, thus making it easier for developers 
+        to distribute JATS-related resources and easier for users to acquire, install, and use them. 
+        <link xlink:href="http://jatspan.org/">JATSPAN</link> (the JATSPack Archive Network) is
+        a website allowing users to share and collaborate on JATSPacks. A client-side command
+        line tool, <code>jatspan</code>, interacts with the site and eases the task of 
+        maintaining local repositories of JATSPacks. </para>
     </abstract>
 
     <author>
