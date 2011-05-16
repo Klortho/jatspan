@@ -1,7 +1,9 @@
 <?xml version="1.0"?>
-<!DOCTYPE catalog PUBLIC
-"-//OASIS//DTD Entity Resolution XML Catalog V3.0//EN"
-"http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd">
+<!DOCTYPE catalog 
+  PUBLIC "-//OASIS//DTD Entity Resolution XML Catalog V3.0//EN"
+  "http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd">
+
+<!-- $Id$ -->
 
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"
          prefer="public">
@@ -12,16 +14,12 @@
 
   <public publicId="-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v0.4 20110131//EN"
                uri="dtd/JATS-archivearticle0.dtd"/>
-
   <public publicId="-//NLM//DTD JATS (Z39.96) Journal Archiving DTD-Specific Modules v0.4 20110131//EN"
                uri="dtd/JATS-archivecustom-modules0.ent"/>
-
   <public publicId="-//NLM//DTD JATS (Z39.96) Journal Archiving DTD Customize Classes Module v0.4 20110131//EN"
                uri="dtd/JATS-archivecustom-classes0.ent"/>
-
   <public publicId="-//NLM//DTD JATS (Z39.96) Journal Archiving DTD Customize Mixes Module v0.4 20110131//EN"
                uri="dtd/JATS-archivecustom-mixes0.ent"/>
-
   <public publicId="-//NLM//DTD JATS (Z39.96) Journal Archiving DTD Customize Content and Attributes Module v0.4 20110131//EN"
                uri="dtd/JATS-archivecustom-models0.ent"/>
 
@@ -31,15 +29,11 @@
 
   <public publicId="-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD (OASIS Tables) v0.4 20110131//EN"
                uri="dtd/JATS-archive-oasis-article0.dtd"/>
-
   <public publicId="-//NLM//DTD JATS (Z39.96) Journal Archiving DTD-Specific Modules (OASIS Tables) v0.4 20110131//EN"
                uri="dtd/JATS-archive-oasis-custom-modules0.ent"/>
-
   <public publicId="-//NLM//DTD JATS (Z39.96) Journal Archiving DTD Customize Classes Module (OASIS Tables) v0.4 20110131//EN"
                uri="dtd/JATS-archive-oasis-custom-classes0.ent"/>
-
   <public publicId="-//NLM//DTD JATS (Z39.96) Journal Archiving DTD Customize Mixes Module (OASIS Tables) v0.4 20110131//EN"
                uri="dtd/JATS-archive-oasis-custom-mixes0.ent"/>
-
 
 </catalog>

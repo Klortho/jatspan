@@ -1,11 +1,12 @@
 <?xml version="1.0"?>
-<!DOCTYPE catalog PUBLIC
-"-//OASIS//DTD Entity Resolution XML Catalog V3.0//EN"
-"http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd">
+<!DOCTYPE catalog 
+  PUBLIC "-//OASIS//DTD Entity Resolution XML Catalog V3.0//EN"
+  "http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd">
+
+<!-- $Id$ -->
 
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"
          prefer="public">
-
 
 <!-- ============================================================== -->
 <!--                    JOURNAL PUBLISHING DTD (BLUE)               -->
@@ -13,22 +14,16 @@
 
   <public publicId="-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v0.4 20110131//EN"
                uri="dtd/JATS-journalpublishing0.dtd"/>
-
   <public publicId="-//NLM//DTD JATS (Z39.96) Journal Publishing DTD-Specific Modules v0.4 20110131//EN"
                uri="dtd/JATS-journalpubcustom-modules0.ent"/>
-
   <public publicId="-//NLM//DTD JATS (Z39.96) Journal Publishing DTD Customize Classes Module v0.4 20110131//EN"
                uri="dtd/JATS-journalpubcustom-classes0.ent"/>
-
   <public publicId="-//NLM//DTD JATS (Z39.96) Journal Publishing DTD Customize Mixes Module v0.4 20110131//EN"
                uri="dtd/JATS-journalpubcustom-mixes0.ent"/>
-
   <public publicId="-//NLM//DTD JATS (Z39.96) Journal Publishing DTD Customize Content and Attributes Module v0.4 20110131//EN"
                uri="dtd/JATS-journalpubcustom-models0.ent"/>
-
   <public publicId="-//NLM//DTD JATS (Z39.96) NLM Citation v0.4 20110131//EN"
                uri="dtd/JATS-nlmcitation0.ent"/>
-
 
 <!-- ============================================================== -->
 <!--                    JOURNAL ARTICLE PUBLISHING OASIS DTD        -->
@@ -36,134 +31,9 @@
 
   <public publicId="-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD (OASIS Tables) v0.4 20110131//EN"
                uri="dtd/JATS-journalpublishing-oasis0.dtd"/>
-
   <public publicId="-//NLM//DTD JATS (Z39.96) Journal Archiving DTD-Specific Modules (OASIS Tables) v0.4 20110131//EN"
                uri="dtd/JATS-journalpub-oasis-custom-modules0.ent"/>
-
   <public publicId="-//NLM//DTD JATS (Z39.96) Journal Archiving DTD Customize Classes Module (OASIS Tables) v0.4 20110131//EN"
                uri="dtd/JATS-journalpub-oasis-custom-classes0.ent"/>
-
-
-<!-- ============================================================= -->
-<!--                    COMMONLY-USED PUBLIC MODELS AND PUBLIC     -->
-<!--                    CHARACTER-ENTITY SETS USED IN THE SUITE    -->
-<!-- ============================================================= -->
-
-<!-- .............................................................. -->
-<!--                    TABLES: XHTML TABLE MODULES                 -->
-<!-- .............................................................. -->
-
-  <public publicId="-//W3C//ELEMENTS XHTML Tables 1.0//EN"
-               uri="dtd/xhtml-table-1.mod"/>
-
-  <public publicId="-//W3C//ENTITIES XHTML Inline Style 1.0//EN"
-               uri="dtd/xhtml-inlstyle-1.mod"/>
-
-
-<!-- .............................................................. -->
-<!--                    TABLES: OASIS EXCHANGE TABLE MODULES        -->
-<!-- .............................................................. -->
-
-  <public publicId="-//OASIS//DTD XML Exchange Table Model 19990315//EN"
-               uri="dtd/oasis-exchange.ent"/>
-
-<!-- .............................................................. -->
-<!--                    MATHML MODULES                              -->
-<!-- .............................................................. -->
-
-  <public publicId="-//W3C//DTD MathML 2.0//EN"
-               uri="dtd/mathml2.dtd"/>
-
-  <public publicId="-//W3C//ENTITIES MathML 2.0 Qualified Names 1.0//EN"
-               uri="dtd/mathml2-qname-1.mod"/>
-
-  <public publicId="-//W3C//ENTITIES Extra for MathML 2.0//EN"
-               uri="dtd/mathml/mmlextra.ent"/>
-
-  <public publicId="-//W3C//ENTITIES Aliases for MathML 2.0//EN"
-               uri="dtd/mathml/mmlalias.ent"/>
-
-
-<!-- .............................................................. -->
-<!--                    ISO 8879 ENTITIES                           -->
-<!-- .............................................................. -->
-
-
-  <public publicId="-//W3C//ENTITIES Box and Line Drawing for MathML 2.0//EN"
-               uri="dtd/iso8879/isobox.ent"/>
-
-  <public publicId="-//W3C//ENTITIES Russian Cyrillic for MathML 2.0//EN"
-               uri="dtd/iso8879/isocyr1.ent"/>
-
-  <public publicId="-//W3C//ENTITIES Non-Russian Cyrillic for MathML 2.0//EN"
-               uri="dtd/iso8879/isocyr2.ent"/>
-
-  <public publicId="-//W3C//ENTITIES Diacritical Marks for MathML 2.0//EN"
-               uri="dtd/iso8879/isodia.ent"/>
-
-  <public publicId="-//W3C//ENTITIES Added Latin 1 for MathML 2.0//EN"
-               uri="dtd/iso8879/isolat1.ent"/>
-
-  <public publicId="-//W3C//ENTITIES Added Latin 2 for MathML 2.0//EN"
-               uri="dtd/iso8879/isolat2.ent"/>
-
-  <public publicId="-//W3C//ENTITIES Numeric and Special Graphic for MathML 2.0//EN"
-               uri="dtd/iso8879/isonum.ent"/>
-
-  <public publicId="-//W3C//ENTITIES Publishing for MathML 2.0//EN"
-               uri="dtd/iso8879/isopub.ent"/>
-
-<!-- .............................................................. -->
-<!--                    ISO 9573-10.entITIES                        -->
-<!-- .............................................................. -->
-
-  <public publicId="-//W3C//ENTITIES General Technical for MathML 2.0//EN"
-               uri="dtd/iso9573-13/isotech.ent"/>
-
-  <public publicId="-//W3C//ENTITIES Greek Symbols for MathML 2.0//EN"
-               uri="dtd/iso9573-13/isogrk3.ent"/>
-
-  <public publicId="-//W3C//ENTITIES Math Alphabets: Script for MathML 2.0//EN"
-               uri="dtd/iso9573-13/isomscr.ent"/>
-
-  <public publicId="-//W3C//ENTITIES Added Math Symbols: Arrow Relations for MathML 2.0//EN"
-               uri="dtd/iso9573-13/isoamsa.ent"/>
-
-  <public publicId="-//W3C//ENTITIES Added Math Symbols: Binary Operators for MathML 2.0//EN"
-               uri="dtd/iso9573-13/isoamsb.ent"/>
-
-  <public publicId="-//W3C//ENTITIES Added Math Symbols: Delimiters for MathML 2.0//EN"
-               uri="dtd/iso9573-13/isoamsc.ent"/>
-
-  <public publicId="-//W3C//ENTITIES Added Math Symbols: Negated Relations for MathML 2.0//EN"
-               uri="dtd/iso9573-13/isoamsn.ent"/>
-
-  <public publicId="-//W3C//ENTITIES Added Math Symbols: Ordinary for MathML 2.0//EN"
-               uri="dtd/iso9573-13/isoamso.ent"/>
-
-  <public publicId="-//W3C//ENTITIES Added Math Symbols: Relations for MathML 2.0//EN"
-               uri="dtd/iso9573-13/isoamsr.ent"/>
-
-  <public publicId="-//W3C//ENTITIES Math Alphabets: Fraktur for MathML 2.0//EN"
-               uri="dtd/iso9573-13/isomfrk.ent"/>
-
-  <public publicId="-//W3C//ENTITIES Math Alphabets: Open Face for MathML 2.0//EN"
-               uri="dtd/iso9573-13/isomopf.ent"/>
-
-<!-- .............................................................. -->
-<!--                    NON-MATHML ENTITIES(backwards compatibility)-->
-<!-- .............................................................. -->
-
-  <public publicId="-//W3C//ENTITIES Greek Letters//EN"
-               uri="dtd/xmlchars/isogrk1.ent"/>
-
-  <public publicId="-//W3C//ENTITIES Monotoniko Greek//EN"
-               uri="dtd/xmlchars/isogrk2.ent"/>
-
-  <public publicId="-//W3C//ENTITIES Alternative Greek Symbols//EN"
-               uri="dtd/xmlchars/isogrk4.ent"/>
-
-
-<!-- ============================================================== -->
 
 </catalog>
