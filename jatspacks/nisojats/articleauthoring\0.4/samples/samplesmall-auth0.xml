@@ -1,5 +1,7 @@
 <?xml version="1.0" ?>
-<!DOCTYPE article SYSTEM  "../JATS-articleauthoring0.dtd">
+<!DOCTYPE article 
+  PUBLIC "-//NLM//DTD JATS (Z39.96) Article Authoring DTD v0.4 20110131//EN"
+  "../dtd/JATS-articleauthoring0.dtd">
 <article xmlns='http://jatspan.org'
   dtd-version="0.4"
   xml:lang="en" 
