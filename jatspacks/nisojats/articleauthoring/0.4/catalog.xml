@@ -6,14 +6,6 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"
          prefer="public">
 
-
-
-
-<!-- ============================================================== -->
-<!--                    JOURNAL ARTICLE AUTHORING DTD (PUMPKIN)     -->
-<!-- ============================================================== -->
-
-
   <public publicId="-//NLM//DTD JATS (Z39.96) Article Authoring DTD v0.4 20110131//EN"
                uri="dtd/JATS-articleauthoring0.dtd"/>
 
@@ -28,104 +20,6 @@
 
   <public publicId= "-//NLM//DTD JATS (Z39.96) Article Authoring DTD Over-ride Content and Attribute Module v0.4 20110131//EN"
                uri="dtd/JATS-articleauthcustom-models0.ent"/>
-
-
-
-
-
-<!-- ============================================================== -->
-<!--                    ARCHIVING AND INTERCHANGE DTD SUITE         -->
-<!--                    MODULAR LIBRARY                             -->
-<!-- ============================================================== -->
-
-<!--                    MODULE OF MODULES                           -->
-
-  <public publicId="-//NLM//DTD JATS (Z39.96) Archiving and Interchange DTD Suite Module of Modules v0.4 20110131//EN"
-               uri="dtd/JATS-modules0.ent"/>
-
-
-<!--                    CLASSES AND MIXES                           -->
-
-  <public publicId="-//NLM//DTD JATS (Z39.96) Default Element Classes Module v0.4 20110131//EN"
-               uri="dtd/JATS-default-classes0.ent"/>
-
-  <public publicId="-//NLM//DTD JATS (Z39.96) Default Element Mixes Module v0.4 20110131//EN"
-               uri="dtd/JATS-default-mixes0.ent"/>
-
-
-<!--                    ELEMENT COMMON (SHARED) ELEMENTS/CHARACTERS -->
-
-  <public publicId="-//NLM//DTD JATS (Z39.96) Archiving and Interchange DTD Suite Common (Shared) Elements Module v0.4 20110131//EN"
-               uri="dtd/JATS-common0.ent"/>
-
-  <public publicId="-//NLM//DTD JATS (Z39.96) Archiving and Interchange DTD Suite Notation Declarations v0.4 20110131//EN"
-               uri="dtd/JATS-notat0.ent"/>
-
-  <public publicId="-//NLM//DTD JATS (Z39.96) Archiving and Interchange DTD Suite XML Special Characters Module v0.4 20110131//EN"
-               uri="dtd/JATS-xmlspecchars0.ent"/>
-
-  <public publicId="-//NLM//DTD JATS (Z39.96) Archiving and Interchange DTD Suite Custom Special Characters Module v0.4 20110131//EN"
-               uri="dtd/JATS-chars0.ent"/>
-
-
-<!--                    CLASS MODULES                               -->
-
-  <public publicId="-//NLM//DTD JATS (Z39.96) Archiving and Interchange DTD Suite Journal Article Metadata Elements v0.4 20110131//EN"
-               uri="dtd/JATS-articlemeta0.ent"/>
-
-  <public publicId="-//NLM//DTD JATS (Z39.96) Archiving and Interchange DTD Suite Back Matter Elements v0.4 20110131//EN"
-               uri="dtd/JATS-backmatter0.ent"/>
-
-  <public publicId="-//NLM//DTD JATS (Z39.96) Archiving and Interchange DTD Suite Display Class Elements v0.4 20110131//EN"
-               uri="dtd/JATS-display0.ent"/>
-
-  <public publicId="-//NLM//DTD JATS (Z39.96) Archiving and Interchange DTD Suite Formatting Element Classes v0.4 20110131//EN"
-               uri="dtd/JATS-format0.ent"/>
-
-  <public publicId="-//NLM//DTD JATS (Z39.96) Archiving and Interchange DTD Suite Funding Elements v0.4 20110131//EN"
-               uri="dtd/JATS-funding0.ent"/>
-
-  <public publicId="-//NLM//DTD JATS (Z39.96) Archiving and Interchange DTD Suite Journal Metadata Elements v0.4 20110131//EN"
-               uri="dtd/JATS-journalmeta0.ent"/>
-
-  <public publicId="-//NLM//DTD JATS (Z39.96) Archiving and Interchange DTD Suite Link Class Elements v0.4 20110131//EN"
-               uri="dtd/JATS-link0.ent"/>
-
-  <public publicId="-//NLM//DTD JATS (Z39.96) Archiving and Interchange DTD Suite List Class Elements v0.4 20110131//EN"
-               uri="dtd/JATS-list0.ent"/>
-
-  <public publicId="-//NLM//DTD JATS (Z39.96) Archiving and Interchange DTD Suite Math Class Elements v0.4 20110131//EN"
-               uri="dtd/JATS-math0.ent"/>
-
-  <public publicId="-//NLM//DTD JATS (Z39.96) Archiving and Interchange DTD Suite Paragraph-Like Elements v0.4 20110131//EN"
-               uri="dtd/JATS-para0.ent"/>
-
-  <public publicId="-//NLM//DTD JATS (Z39.96) Archiving and Interchange DTD Suite Subject Phrase Class Elements v0.4 20110131//EN"
-               uri="dtd/JATS-phrase0.ent"/>
-
-  <public publicId="-//NLM//DTD JATS (Z39.96) Archiving and Interchange DTD Suite Bibliographic Reference (Citation) Class Elements v0.4 20110131//EN"
-               uri="dtd/JATS-references0.ent"/>
-
-  <public publicId="-//NLM//DTD JATS (Z39.96) Archiving and Interchange DTD Suite Related Object Element v0.4 20110131//EN"
-               uri="dtd/JATS-related-object0.ent"/>
-
-  <public publicId="-//NLM//DTD JATS (Z39.96) Archiving and Interchange DTD Suite Section Class Elements v0.4 20110131//EN"
-               uri="dtd/JATS-section0.ent"/>
-
-
-<!--                    SET UP TABLES                              -->
-
-  <public publicId="-//NLM//DTD JATS (Z39.96) Archiving and Interchange DTD Suite XHTML Table Setup Module v0.4 20110131//EN"
-               uri="dtd/JATS-XHTMLtablesetup0.ent"/>
-
-
-  <public publicId="-//NLM//DTD JATS (Z39.96) Archiving and Interchange DTD Suite OASIS XML Table Setup Module v1.2 20040830//EN"
-               uri="dtd/JATS-oasis-tablesetup0.ent"/>
-
-<!--                    SET UP MATHML                              -->
-
-  <public publicId="-//NLM//DTD JATS (Z39.96) Archiving and Interchange DTD Suite MathML Setup Module v0.4 20110131//EN"
-               uri="dtd/JATS-mathmlsetup0.ent"/>
 
 
 
