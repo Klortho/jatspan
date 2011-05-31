@@ -321,7 +321,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % xhtml-table-1.mod
                         PUBLIC
 "-//W3C//ELEMENTS XHTML Tables 1.0//EN"
-"xhtml-table-1.mod"                                                  >
+"../../../../lib/xhtml/1.0/xhtml-table-1.mod"                        >
 
 
 <!--                    XHTML TABLE INLINE STYLE MODULE            -->
@@ -332,7 +332,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % xhtml-inlstyle-1.mod
                         PUBLIC
 "-//W3C//ENTITIES XHTML Inline Style 1.0//EN"
-"xhtml-inlstyle-1.mod"                                                  >
+"../../../../lib/xhtml/1.0/xhtml-inlstyle-1.mod"                     >
 
 
 <!-- ============================================================= -->
@@ -358,8 +358,8 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         %OASIStablesetup3.ent;                     -->
 <!ENTITY % oasis-exchange.ent
                         PUBLIC
-"-//OASIS//DTD XML Exchange Table Model 19990315//EN"
-"oasis-exchange.ent"                                                 >
+"-//OASIS//DTD MD copy XML Exchange Table Model 19990315//EN"
+"../../../../lib/jatsoasis/1.0/oasis-exchange.ent"                                                 >
 
 
 <!-- ============================================================= -->
@@ -402,27 +402,27 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % mathml-qname.mod
                         PUBLIC
 "-//W3C//ENTITIES MathML 2.0 Qualified Names 1.0//EN"
-"mathml2-qname-1.mod"                                                >
+"../../../../lib/mathml2/2.0/dtd/mathml2-qname-1.mod"                >
 
 
 <!--                    MATHML 2.0 DTD                             -->
 <!ENTITY % mathml.dtd   PUBLIC
 "-//W3C//DTD MathML 2.0//EN"
-"mathml2.dtd"                                                        >
+"../../../../lib/mathml2/2.0/dtd/mathml2.dtd"                        >
 
 
 <!--                    MATHML 2.0 EXTRA ENTITIES                  -->
 <!ENTITY % ent-mmlextra
                         PUBLIC
 "-//W3C//ENTITIES Extra for MathML 2.0//EN"
-"mathml/mmlextra.ent"                                               >
+"../../../../lib/mathml2/2.0/dtd/mathml/mmlextra.ent"                >
 
 
 <!--                    MATHML 2.0 ALIASES                         -->
 <!ENTITY % ent-mmlalias
                         PUBLIC
 "-//W3C//ENTITIES Aliases for MathML 2.0//EN"
-"mathml/mmlalias.ent"                                               >
+"../../../../lib/mathml2/2.0/dtd/mathml/mmlalias.ent"                >
 
 
 <!-- ============================================================= -->
