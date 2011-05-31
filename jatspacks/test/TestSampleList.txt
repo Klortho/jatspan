@@ -50,3 +50,12 @@ publishing/2.3/samples/samplesmall-pub.xml
 publishing/3.0/samples/samplesmall3-pub.xml
 publishing-oasis/2.3/samples/minimal.xml
 publishing-oasis/3.0/samples/minimal.xml
+
+# New NISO JATS samples
+
+nisojats/articleauthoring/0.4/samples/samplesmall-auth0.xml
+nisojats/publishing/0.4/samples/samplesmall-pub0-oasis.xml
+nisojats/publishing/0.4/samples/samplesmall-pub0.xml
+nisojats/archiving/0.4/samples/samplesmall-archive0-oasis.xml
+nisojats/archiving/0.4/samples/samplesmall-archive0.xml
+
