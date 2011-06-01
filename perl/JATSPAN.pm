@@ -5,6 +5,7 @@
 package JATSPAN;
 
 use strict;
+use JATSPAN::LocalRepos;
 
 
 

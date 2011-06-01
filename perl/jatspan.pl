@@ -9,4 +9,5 @@ use strict;
 use JATSPAN;
 
 
-
+my $repos = JATSPAN::LocalRepos->new();
+print "repository root is " . $repos->{'rootdir'};
