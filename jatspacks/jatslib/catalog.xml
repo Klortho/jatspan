@@ -7,8 +7,8 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"
          prefer='public'>
 
-  <nextCatalog catalog="jatslib/catalog.xml"/>
-  <nextCatalog catalog="nlmjats/catalog.xml"/>
-  <nextCatalog catalog="nisojats/catalog.xml"/>
-
+  <nextCatalog catalog="mathml2/2.0/catalog.xml"/>
+  <nextCatalog catalog="xhtml/1.0/catalog.xml"/>
+  <nextCatalog catalog="jatsoasis/1.0/catalog.xml"/>
+  
 </catalog>
