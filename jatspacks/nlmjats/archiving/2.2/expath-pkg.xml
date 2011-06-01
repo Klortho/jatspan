@@ -27,4 +27,9 @@
   <jp:catalog>
     <file>catalog.xml</file>
   </jp:catalog>
+  
+  <!-- Tests -->
+  <jp:tests>
+    <jp:test-validate in-xml='samples/sampleGreen-UGLY.xml'/>
+  </jp:tests>
 </package>

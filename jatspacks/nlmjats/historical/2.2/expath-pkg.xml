@@ -27,4 +27,10 @@
   <jp:catalog>
     <file>catalog.xml</file>
   </jp:catalog>
+  
+  <!-- Tests -->
+  <jp:tests>
+    <jp:test-validate in-xml='samples/samplesmall-historical.xml'/>
+    <jp:test-validate in-xml='samples/samples-historical-mathml.xml'/>
+  </jp:tests>
 </package>
