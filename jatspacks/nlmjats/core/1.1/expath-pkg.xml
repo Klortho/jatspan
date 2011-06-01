@@ -14,12 +14,13 @@
   <title>NLM JATS Core v1.1</title>
   
   <rdf:Description>
-    <dc:creator>Chris Maloney</dc:contributor>
-      <dc:date>2011-05-15</dc:date>
-      <dc:description>
-      </dc:description>
-      <dc:language>en</dc:language>
-      <dc:rights>This work is in the public domain.</dc:rights>
+    <dc:creator>National Center for Biotechnology Information. National Library of Medicine</dc:creator>
+    <dc:publisher>Maloney, Chris</dc:publisher>
+    <dc:date>2011-05-15</dc:date>
+    <dc:description>
+    </dc:description>
+    <dc:language>en</dc:language>
+    <dc:rights>This work is in the public domain.</dc:rights>
   </rdf:Description>
   
   <!-- Package contents.  -->

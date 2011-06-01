@@ -5,8 +5,8 @@
          xmlns:jp='http://jatspack.org/ns/jatspacks'
          xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         abbrev='archiving'
-         name='http://jatspan.org/jatspacks/archiving/2.0'
+         abbrev='nlmjats/archiving'
+         name='http://jatspan.org/jatspacks/nlmjats/archiving/2.0'
          version='2.0.0'
          spec='1.0'
          jp:spec='0.1'>
@@ -14,7 +14,8 @@
   <title>Journal Archiving and Interchange DTD v2.0</title>
   
   <rdf:Description>
-    <dc:creator>Chris Maloney</dc:contributor>
+    <dc:creator>National Center for Biotechnology Information. National Library of Medicine</dc:creator>
+    <dc:publisher>Maloney, Chris</dc:publisher>
     <dc:date>2011-05-15</dc:date>
     <dc:description>
     </dc:description>

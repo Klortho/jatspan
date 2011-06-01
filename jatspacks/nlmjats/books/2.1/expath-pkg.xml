@@ -5,8 +5,8 @@
          xmlns:jp='http://jatspack.org/ns/jatspacks'
          xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         abbrev='books'
-         name='http://jatspan.org/jatspacks/books/2.1'
+         abbrev='nlmjats/books'
+         name='http://jatspan.org/jatspacks/nlmjats/books/2.1'
          version='2.1.0'
          spec='1.0'
          jp:spec='0.1'>
@@ -14,12 +14,13 @@
   <title>Book DTD v2.1</title>
   
   <rdf:Description>
-    <dc:creator>Chris Maloney</dc:contributor>
-      <dc:date>2011-05-15</dc:date>
-      <dc:description>
-      </dc:description>
-      <dc:language>en</dc:language>
-      <dc:rights>This work is in the public domain.</dc:rights>
+    <dc:creator>National Center for Biotechnology Information. National Library of Medicine</dc:creator>
+    <dc:publisher>Maloney, Chris</dc:publisher>
+    <dc:date>2011-05-15</dc:date>
+    <dc:description>
+    </dc:description>
+    <dc:language>en</dc:language>
+    <dc:rights>This work is in the public domain.</dc:rights>
   </rdf:Description>
   
   <!-- Package contents.  -->
