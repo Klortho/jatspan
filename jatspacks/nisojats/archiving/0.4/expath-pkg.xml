@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id$ -->
+
+<package xmlns="http://expath.org/ns/pkg"
+         xmlns:jp='http://jatspack.org/ns/jatspacks'
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         abbrev='nisojats/archiving'
+         name='http://jatspan.org/jatspacks/nisojats/archiving/0.4'
+         version='0.4.0'
+         spec='1.0'
+         jp:spec='0.1'>
+  
+  <title>NISO JATS (Z39.96) Journal Archiving and Interchange Suite v0.4</title>
+  
+  <rdf:Description>
+    <dc:creator>National Center for Biotechnology Information. National Library of Medicine</dc:creator>
+    <dc:creator>National Information Standards Organization</dc:creator>
+    <dc:publisher>Maloney, Chris</dc:publisher>
+    <dc:date>2011-05-15</dc:date>
+    <dc:description>
+    </dc:description>
+    <dc:language>en</dc:language>
+    <dc:rights>This work is in the public domain.</dc:rights>
+  </rdf:Description>
+  
+  <!-- Package contents.  -->
+  <jp:catalog>
+    <file>catalog.xml</file>
+  </jp:catalog>
+</package>
