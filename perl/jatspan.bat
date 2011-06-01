@@ -1,0 +1,1 @@
+perl %JATSPAN_ROOT%\perl\jatspan.pl
