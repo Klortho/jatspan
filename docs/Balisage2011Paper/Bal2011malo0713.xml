@@ -134,7 +134,7 @@
       is a website similar in
       concept to the very successful <link xlink:href='http://www.cpan.org/'>CPAN</link> 
       (Comprehensive Perl Archive
-      Network). It's main purpose is to allow users to share and collaborate on JATSPacks. 
+      Network). Its main purpose is to allow users to share and collaborate on JATSPacks. 
       Any author can upload
       his or her customization or library, and can search for and download JATSPacks produced by
       others.  Every JATSPack can be downloaded in one of two formats.  The contents are actually
@@ -674,7 +674,7 @@
         as before. </para>
       <para> Another advantage is that other JATSPacks, written by other authors, could
         declare a dependency on this package.  This would simplify the installation and
-        integration of those later packages.  And this point makes a good seque to the next example.
+        integration of those later packages.  And this point makes a good segue to the next example.
       </para>
     </section>
 

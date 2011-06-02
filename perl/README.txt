@@ -14,10 +14,11 @@ To set up to use these utilities, make a batch file somewhere, with something li
 
 I put mine in C:\bin\SetJatsEnv.bat.
 
-Next, create a desktop shortcut to, for example
-  C:\Windows\System32\cmd.exe /K C:\bin\SetJatsEnv.bat
+Next, create a desktop shortcut to, for example, set the "Target" to
+  %SystemRoot%\System32\cmd.exe /K C:\bin\SetJatsEnv.bat
 
-This will open up a DOS window, and run the setup script.
+This will open up a DOS window, and run the setup script.  Name the shortcut something like
+"JATSPAN".
 
 
 
