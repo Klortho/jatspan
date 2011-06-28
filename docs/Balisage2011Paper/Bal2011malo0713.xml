@@ -514,7 +514,8 @@
         customization.  That's because these DTD modules are specified in the OASIS catalog 
         file, and,
         following the principle of DRY (Don't Repeat Yourself), are not duplicated in the 
-        descriptor. Resolution of FPIs and system identifiers (URIs) to DTD modules within 
+        descriptor. Resolution of public identifiers (FPIs) and system identifiers (URIs) to 
+        DTD modules within 
         this package is delegated to the catalog file mechanism. </para>
       <para> An elided view of the OASIS catalog file accompanying this package is the following. </para>
       <programlisting>&lt;catalog xmlns=&quot;urn:oasis:names:tc:entity:xmlns:xml:catalog&quot;
@@ -564,7 +565,8 @@
         an instance of the DTD, among the complete set of all flavors and versions, there is a lot
         of duplication of files. 
         This leads to some ambiguity when many of these sets coexist on the
-        same system at the same time. If the same FPI is used in multiple catalog files on the
+        same system at the same time. If the same public identifier is used in multiple catalog 
+        files on the
         system, and point to document instances which are not identical, 
         it is difficult for someone
         configuring the system to sort out whether the differences are substantive, and if so,
@@ -586,7 +588,8 @@
             using the relative system identifiers, I had to change these identifiers in the 
             modules that reference the moved files. I also made other minor edits to reconcile 
             cases where, for example, two different instances of a document were refered to by 
-            the same FPI. I made these changes without changing the FPIs for those files that 
+            the same public identifier (FPI). I made these changes, without changing the FPIs,
+            for those files that 
             were changed. I think this is the right decision, for the following reason. The 
             significance of an FPI is that any tool that resolves it correctly will get 
             identical results. The FPI specifies a <emphasis>logical resource</emphasis> –- a
@@ -798,7 +801,7 @@
           </listitem>
           <listitem>
             <para> Fixed the DOCTYPE declarations of the sample files. As downloaded, the included
-              sample files' DOCTYPE declarations did not use FPIs, and used only relative system
+              sample files' DOCTYPE declarations did not use public identifiers (FPIs), and used only relative system
               identifiers. For example:
               <programlisting>&lt;!DOCTYPE article SYSTEM "../tax-treatment-NS0.dtd"&gt;</programlisting>
               These were changed to use FPIs, and the relative system identifier was changed to
@@ -848,7 +851,7 @@
         have to download the Zip file, unpack it, and read the README file to see if there are any
         specific instructions I needed to worry about. Then I would find a place for it to reside on
         my filesystem and move the files there. The tricky bit is then to set up oXygen to
-        understand the FPI, and have it retrieve the correct DTD. I could either add an entry to my
+        understand the public identifer, and have it retrieve the correct DTD. I could either add an entry to my
         own personal catalog file (if I have one), add it to oXygen's master catalog file,
         or set up a "document type association" inside oXygen. </para>
 
@@ -881,7 +884,7 @@
       </para>
       <para> That is it -- everything else is done automatically. When the TaxPub JATSPack is
         downloaded, a <code>&lt;nextCatalog&gt;</code> entry is added to the JATSPAN repository master catalog
-        file, so oXygen instantly resolve any FPI defined by TaxPub. After entering the above
+        file, so oXygen instantly resolves any public identifiers defined by TaxPub. After entering the above
         command, I can instantly validate and process TaxPub documents in oXygen. </para>
     </section>
   </section>
@@ -1022,7 +1025,7 @@
         The JATSPAN infrastructure is designed to adapt to
         this decentralization, while at the same time providing specifications and imposing
         requirements, such that the proliferation of new schema doesn't become a problem.
-        It does this by requiring that the FPIs and URIs used to identify resources are 
+        It does this by requiring that the public identifiers (FPIs) and URIs used to identify resources are 
         well defined and unique, and also by virtue of it's fixed directory structure, ensuring
         that separate individual JATSPacks fit together on the same system without clashing.
       </para>
@@ -1234,7 +1237,8 @@
       <para> In order to enable interchange of documents and of the software that processes them,
         instance documents must be self-identifying. Among the recommendations for proper JATSPacks
         which supply DTD customizations, sample files should be included which have the appropriate
-        DOCTYPE declaration for that customization, which use the correct FPI. The <code>jatspan</code> client
+        DOCTYPE declaration for that customization, which use the correct formal public identifer 
+        (FPI). The <code>jatspan</code> client
         utility, when installing a new JATSPack, performs automatic tests, which include validation
         of each of the sample files. In addition to validating them in place, this step includes a
         test in which each sample file is copied to a separate temporary directory and then
