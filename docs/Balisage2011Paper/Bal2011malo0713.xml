@@ -8,7 +8,7 @@
 
 <article version="5.0-subset Balisage-1.2" xmlns="http://docbook.org/ns/docbook"
   xmlns:xlink="http://www.w3.org/1999/xlink">
-  <title>JATSPack and JATSPAN, a standard packaging format and infrastructure for the NLM/NISO
+  <title>JATSPack and JATSPAN, a packaging format and infrastructure for the NLM/NISO
     Journal Archiving Tag Suite (JATS)</title>
   <info>
     <abstract>
@@ -112,9 +112,10 @@
       often refered to as the "NLM DTDs", this paper will use the terms "JATS" and "JATS schemas", to
       be clear that: A, the standard is now NISO, and is no longer specifically issued by
       the NLM; and B, it is not just DTDs, but also other schema formats. </para>
+
     <para> This paper describes JATSPack, which is based on the new <link
-        xlink:href="http://www.expath.org/modules/pkg/">EXPath Packaging System standard</link>,
-      and provides a standard way of packaging customizations and libraries associated with
+        xlink:href="http://www.expath.org/modules/pkg/">EXPath Packaging System specification</link>,
+      and provides a well-defined way of packaging customizations and libraries associated with
       any of the JATS schema. JATSPacks are bundled packages of catalog files, schema,
       documentation, code, and sample files, all with a coherent purpose. The JATSPack format was
       primarily designed to facilitate the exchange and reuse of JATS customizations, but it could
@@ -122,10 +123,10 @@
       translate JATS to/from some other format. JATSPack is basically a plugin file format, and each
       plugin provides a bundle of new functionality which can be easily installed into an XML 
       toolset. </para>
-    <para> JATSPack specifies a standard directory structure and a standard package descriptor file.
-      The package descriptor file, similar to a manifest file in other packaging format standards,
+    <para> JATSPack specifies a directory structure and a package descriptor file format.
+      The package descriptor file, similar to a manifest file in other packaging formats,
       describes the contents, the mapping of URIs to resources, and the dependencies of the pack. </para>
-    <para> Establishing this standard format will facilitate the automatic installation and
+    <para> Establishing this format will facilitate the automatic installation and
       maintenance of libraries and of schema extensions, which should allow easier reuse and
       interchange of the schema themselves, and then, in turn, easier interchange of JATS document
       instances. </para>
@@ -162,7 +163,7 @@
   
   <section xml:id='why'>
     <title>Use Cases</title>
-    <para> The following are a few examples of use cases that these standards are designed to
+    <para> The following are a few examples of use cases that these specifications are designed to
       address. </para>
 
 
@@ -179,7 +180,7 @@
         must be downloaded and installed on the local filesystem, and the XML processors be made
         aware of it. This is not especially difficult, but does require a certain level of expertise
         and coordination of system resources. </para>
-      <para> If the customization were packaged in the JATSPack standard format, then the
+      <para> If the customization were packaged in the JATSPack format, then the
         necessary setup would be more automated. It would be as easy as identifying the desired
         pack, and using the <code>jatspan</code> utility to install it in the local repository. 
         The <code>jatspan</code>
@@ -211,7 +212,7 @@
         present a barrier to this kind of sharing of code libraries.
       </para>
       <para> 
-        All this is ripe for standardization. The transformation languages in which these
+        All this is ripe for standardization.  The transformation languages in which these
         are usually written, XSLT, XQuery, and XProc, are mature enough that they can be written in
         a portable, system-independent way. 
         The JATSPack format is specified; and JATSPAN provides many examples, which reduces the
@@ -310,11 +311,11 @@
       <para> JATSPack is an extension of the 
         <link xlink:href="http://www.expath.org/modules/pkg/">EXPath 
           Packaging System</link> (hereinafter EXPath-pkg, written by Florent Georges).
-        EXPath-pkg is a simple, concise standard format for the packaging of files of various core
+        EXPath-pkg is a simple, concise format for the packaging of files of various core
         XML technologies, including XML Schema, Relax NG, Schematron, NVDL, XSLT, XQuery, and 
         XProc (<xref linkend='T'/>).
         It also provides a flexible extension mechanism which is exploited by JATSPack to define
-        additional file types, and other requirements specific to this standard. </para>
+        additional file types, and other requirements specific to its needs. </para>
       <para> As defined by EXPath-pkg, a package is a set of files that fulfull a common purpose.
         Each package has a globally unique name (which is a URI) and an abbreviated name (hereafter
         referred to as <emphasis role='bital'>abbrev</emphasis>), an NCName. 
@@ -323,10 +324,12 @@
         types. </para>
       <para> A package includes a package descriptor (similar to a JAR manifest file) which lists
         the package contents and top-level metadata about the package. This metadata includes the
-        URI name, <emphasis role='bital'>abbrev</emphasis>, version number, and a list of dependencies. Finally, all the files of a
-        package are arranged in a standard directory structure, and used to create a zip file, which
-        by convention has a name that has a standard format based on the <emphasis role='bital'>abbrev</emphasis>, the version number,
+        URI name, <emphasis role='bital'>abbrev</emphasis>, version number, and a list of dependencies. 
+        Finally, all the files of a
+        package are arranged in a specified directory structure, and used to create a zip file, which
+        by convention is given a name based on the <emphasis role='bital'>abbrev</emphasis>, the version number,
         and a ".xar" extension. </para>
+
       <para> EXPath-pkg is an emerging standard which is already supported by several tools,
         including the eXist and Qizx XML databases, the Saxon XSLT and XQuery processor and the
         Calabash XProc processor. (Support in Saxon and Calabash is via third-party plugins.) It is
@@ -402,7 +405,7 @@
         of EXPath-pkg, and some are JATSPack-specific.</para></footnote></title>
       <para> As already mentioned, every JATSPack must have an 
         <emphasis role='bital'>abbrev</emphasis> and a version number. The
-        name of the package file is standardized to 
+        name of the package file is specified to be
         <emphasis role="bital">abbrev</emphasis>-<emphasis role='bital'>ver</emphasis>.xar. 
         The actual low-level 
         format of the file is that of a
@@ -770,7 +773,7 @@
       <para>
         <orderedlist>
           <listitem>
-            <para> Created the standard directory structure:
+            <para> Created the specified directory structure:
               <programlisting>taxpub/
     dtd/
     doc/
@@ -1017,7 +1020,7 @@
         Yet, an inherent problem is that
         they can be difficult to manage and control. 
         The JATSPAN infrastructure is designed to adapt to
-        this decentralization, while at the same time providing standardization and imposing
+        this decentralization, while at the same time providing specifications and imposing
         requirements, such that the proliferation of new schema doesn't become a problem.
         It does this by requiring that the FPIs and URIs used to identify resources are 
         well defined and unique, and also by virtue of it's fixed directory structure, ensuring
