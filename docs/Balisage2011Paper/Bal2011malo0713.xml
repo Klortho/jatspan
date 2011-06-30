@@ -136,8 +136,8 @@
       concept to the very successful <link xlink:href='http://www.cpan.org/'>CPAN</link> 
       (Comprehensive Perl Archive
       Network). Its main purpose is to allow users to share and collaborate on JATSPacks. 
-      Any author can upload
-      his or her customization or library, and can search for and download JATSPacks produced by
+      Authors can upload their customizations or libraries, and can search for and 
+      download JATSPacks produced by
       others.  Every JATSPack can be downloaded in one of two formats.  The contents are actually
       exactly the same, but the download files differ in their filename extension:  a .xar file, 
       which is the extension used by the EXPath Packaging System, or as a .zip file, so that the
@@ -148,13 +148,13 @@
       packs that might be relevant to one's needs, as well as making it easier to install and manage
       them on the local system. </para>
     <para> Associated with JATSPAN is a command-line client, <code>jatspan</code> (lowercase),
-      which runs on the user's machine and
+      which runs on a user's machine and
       maintains a local on-disk repository. <code>jatspan</code> has a
       simple interface, and lets users look up and install packages from JATSPAN. One benefit
       to this architecture is that dependencies between packs can be resolved automatically. For
-      example, if a user wants to install a pack that depends on two others, he or she doesn't have to
+      example, if users wants to install packs that depend on others, they don't have to
       figure out where to go to get these others, and then perhaps be frustrated by different
-      directory structures and installation requirements. Instead, the two dependency packs are
+      directory structures and installation requirements. Instead, the dependency packs are
       found, downloaded, and installed automatically. </para>
     <para> The software and the baseline set of data files for these is being developed in an <link
         xlink:href="https://sourceforge.net/projects/jatspan/">open source project on
@@ -217,9 +217,9 @@
         a portable, system-independent way. 
         The JATSPack format is specified; and JATSPAN provides many examples, which reduces the
         burden of making decisions about how exactly to package the bundle.
-        JATSPAN provides a publically-accessible place to upload the package, so the developer
-        doesn't have to find a place on his or her own website for it.
-        If the library were created as a JATSPack, and were put
+        JATSPAN provides a publically-accessible place to upload packages, so developers
+        don't have to find places on their own websites for them.
+        If a library were created as a JATSPack, and were put
         on JATSPAN, it would be easier for potential users to discover and install. 
         If this
         library had dependencies on others, then those others would not have to be bundled with
@@ -262,7 +262,8 @@
         use-case that the NLM site is designed to serve.  
         They provide stand-alone bundles specifically so that a user who
         is interested in only, for example, Publishing 2.3, can download that version
-        and not be confused by all of the others (<xref linkend='AC'/>).
+        and not be confused by all of the others [Jeff Beck, personal communication,
+        3/22/2011].
       </para>
       <para>
         But if someone is interested in configuring a system that can
@@ -945,8 +946,8 @@
       effect, this is a forwards-compatibility extension substitution rule. It allows future
       designers to customize the HTML schema, adding elements and attributes, while being able to
       predict how document instances in the new schema will be processed by old systems. The "must
-      ignore" rule is one substitution rule, but it is very limited. If a designer could include a
-      set of transformations with the new schema, then that designer could define his or her own
+      ignore" rule is one substitution rule, but it is very limited. If designers could include a
+      set of transformations with the new schema, then those designers could define their own
       substitution rules. </para>
 
     <section xml:id='taxpub-rocks'>
@@ -1368,8 +1369,8 @@
         functions as the <code>jatspan</code> client, to perform many of the same sorts of tasks. 
         For example,
         when a user uploads a JATSPack to the server, the server "installs" this JATSPack in its
-        repository, in a manner quite complementary to the operation performed when a user downloads
-        the JATSPack to his or her client machine.  
+        repository, in a manner quite complementary to the operation performed when users download
+        JATSPacks to their client machine.  
       </para>
     </section>
 
@@ -1485,52 +1486,93 @@
 
   <bibliography>
     <title>Bibliography</title>
-    <bibliomixed xml:id='T' xreflabel='Georges 2010'>Packaging System, EXPath 
-      Candidate Module 11 November 2010; Florent Georges
-      http://expath.org/spec/pkg/20101111</bibliomixed>
-    <bibliomixed xml:id="C" xreflabel="Rosenblum 2010">Rosenblum, Bruce D. 2010. 
-      NLM Journal Publishing DTD Flexibility: How and Why Applications of the NLM DTD Vary
-      Based on Publisher-Specific Requirements
-      http://www.ncbi.nlm.nih.gov/books/NBK47101/</bibliomixed>
-    <bibliomixed xml:id='AC' xreflabel='Beck 2011'>Private email from Jeff Beck, 
-    3/22/2011</bibliomixed>
-    <bibliomixed xml:id='I' xreflabel='Lou Burnard et al 2005'>"One Document Does It All" - 
-      presentation slides, Lou Burnard and Sebastian Rahtz,
-      2005 - http://www.tei-c.org/Talks/2005/Sofia/odds.pdf
-    </bibliomixed>
-    <bibliomixed xml:id='P' xreflabel="Piez 2010">Piez, Wendell, Fitting the Journal Publishing 3.0 Preview Stylesheets to 
-      Your Needs: Capabilities and Customizations, 2011
-      http://www.ncbi.nlm.nih.gov/books/NBK47104/
-    </bibliomixed>
-    <bibliomixed xml:id='AD' xreflabel='Kelly 2010'>JATS to EPUB: Unraveling the Mystery, 
-      Kelly, Laura, 2010,
-      http://www.ncbi.nlm.nih.gov/books/NBK47314/</bibliomixed>
-    <bibliomixed xml:id='D' xreflabel='Catapano 2010'>Catapano, Terry, TaxPub: An Extension of the 
-      NLM/NCBI Journal Publishing DTD for Taxonomic Descriptions, 2010
-      http://www.ncbi.nlm.nih.gov/books/NBK47081/</bibliomixed>
-    <bibliomixed xml:id='G' xreflabel='Owens 2010'>
-      The Evolving Information Ecostructure of Publishing, Evan Owens
-      Video:  http://videocast.nih.gov/summary.asp?Live=9729&amp;start=18474
-      Slides:  http://jats.nlm.nih.gov/jats-con/program/2010/presentations/owens.pptx
-    </bibliomixed>
-    <bibliomixed xml:id='M' xreflabel='Orchard 2004'>
-      Extensibility, XML Vocabularies, and XML Schema, by David Orchard,
-      October 27, 2004; http://www.xml.com/pub/a/2004/10/27/extend.html
-    </bibliomixed>
+    <!-- 
+      In alphabetical order by author's last name.
+    -->
+
     <bibliomixed xml:id='A' xreflabel='Beck 2010'>
-      Beck, Jeff, Are We There Yet? An introduction to the first Journal Article Tag Suite Conference,
-      2010.  Presentation slides.
-      http://jats.nlm.nih.gov/jats-con/program/2010/presentations/beck.pptx      
+      Beck, Jeff. (2010). 
+      <emphasis role='ital'>Are We There Yet? An introduction to the first Journal Article Tag Suite Conference</emphasis>
+      [Presentation slides].
+      <link>http://jats.nlm.nih.gov/jats-con/program/2010/presentations/beck.pptx</link> 
     </bibliomixed>
-    <bibliomixed xml:id='AB' xreflabel="Walsh 2004">
-      "On the Web, My Name is 266 North Pleasant Street" - blog post, Norman Walsh,
-      3/3/2004, http://norman.walsh.name/2004/03/03/266NorthPleasant      
+
+    <bibliomixed xml:id='I' xreflabel='Lou Burnard et al 2005'>
+      Burnard, Lou, &amp; Rahtz, Sebastian. (2005).
+      <emphasis role='ital'>One Document Does It All</emphasis>
+      [Presentation slides].
+      <link>http://www.tei-c.org/Talks/2005/Sofia/odds.pdf</link>
     </bibliomixed>
+
+    <bibliomixed xml:id='D' xreflabel='Catapano 2010'>
+      Catapano, Terry. (2010).
+      TaxPub: An Extension of the 
+      NLM/NCBI Journal Publishing DTD for Taxonomic Descriptions.
+      <emphasis role='ital'>Proceedings of the Journal Article Tag Suite Conference.</emphasis>
+      <link>http://www.ncbi.nlm.nih.gov/books/NBK47081/</link>
+    </bibliomixed>
+
+    <bibliomixed xml:id='T' xreflabel='Georges 2010'>
+      Georges, Florent. (2010).
+      <emphasis role='ital'>Packaging System, EXPath 
+      Candidate Module 11 November 2010</emphasis>
+      [Specification].
+      <link>http://expath.org/spec/pkg/20101111</link>
+    </bibliomixed>
+
     <bibliomixed xml:id='S' xreflabel='Georges 2011'>
-      CXAN: a case-study for Servlex, an XML web framework; Florent Georges,
-      H2O Consulting, 2011 - At XML Prague 2011.
-      http://www.xmlprague.cz/2011/files/xmlprague-2011-proceedings.pdf
+      Georges, Florent. (2011).
+      CXAN: a case-study for Servlex, an XML web framework.
+      <emphasis role='ital'>XML Prague 2011 Conference Proceedings.</emphasis>
+      <link>http://www.xmlprague.cz/2011/files/xmlprague-2011-proceedings.pdf</link>
     </bibliomixed>
+
+    <bibliomixed xml:id='AD' xreflabel='Kelly 2010'>
+      Kelly, Laura. (2010).
+      JATS to EPUB: Unraveling the Mystery.
+      <emphasis role='ital'>Proceedings of the Journal Article Tag Suite Conference.</emphasis>
+      <link>http://www.ncbi.nlm.nih.gov/books/NBK47314/</link>
+    </bibliomixed>
+
+    <bibliomixed xml:id='M' xreflabel='Orchard 2004'>
+      Orchard, David. (2004, October).
+      Extensibility, XML Vocabularies, and XML Schema.
+      <emphasis role='ital'>XML.com</emphasis>.
+      <link>http://www.xml.com/pub/a/2004/10/27/extend.html</link>
+    </bibliomixed>
+
+    <bibliomixed xml:id='G' xreflabel='Owens 2010'>
+      Owens, Evan. (2010).
+      The Evolving Information Ecostructure of Publishing.
+      <emphasis role='ital'>Journal Article Tag Suite Conference.</emphasis>
+      [Presentation].
+      <link>http://videocast.nih.gov/summary.asp?Live=9729&amp;start=18474</link> (video);
+      <link>http://jats.nlm.nih.gov/jats-con/program/2010/presentations/owens.pptx</link> (slides).
+    </bibliomixed>
+
+    <bibliomixed xml:id='P' xreflabel="Piez 2010">
+      Piez, Wendell. (2010).
+      Fitting the Journal Publishing 3.0 Preview Stylesheets to 
+      Your Needs: Capabilities and Customizations.
+      <emphasis role='ital'>Proceedings of the Journal Article Tag Suite Conference.</emphasis>
+      <link>http://www.ncbi.nlm.nih.gov/books/NBK47104/</link>
+    </bibliomixed>
+
+    <bibliomixed xml:id="C" xreflabel="Rosenblum 2010">
+      Rosenblum, Bruce. (2010). 
+      NLM Journal Publishing DTD Flexibility: How and Why Applications of the NLM DTD Vary
+      Based on Publisher-Specific Requirements.
+      <emphasis role='ital'>Proceedings of the Journal Article Tag Suite Conference.</emphasis>
+      <link>http://www.ncbi.nlm.nih.gov/books/NBK47101/</link>
+    </bibliomixed>
+
+    <bibliomixed xml:id='AB' xreflabel="Walsh 2004">
+      Walsh, Norman. (2004, March).
+      <emphasis role='ital'>On the Web, My Name is 266 North Pleasant Street</emphasis>
+      [Blog post].
+      <link>http://norman.walsh.name/2004/03/03/266NorthPleasant</link>      
+    </bibliomixed>
+
   </bibliography>
 
 </article>
