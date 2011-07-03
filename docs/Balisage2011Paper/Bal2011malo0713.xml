@@ -47,17 +47,17 @@
         Archiving and Interchange Tag Suite</link>, which is a set of XML schemas used in the
       publishing of scientific literature. These schemas originated initially to meet the needs of
         <link xlink:href="http://www.ncbi.nlm.nih.gov/pmc/">PubMed Central</link>, for archiving and
-      presenting journals and articles, and has grown to become a widely used and important set of
-      schemas used throughout the scientific publishing industry. </para>
+      presenting journals and articles, and have grown to become widely used 
+      throughout the scientific publishing industry. </para>
     <para> JATS was recently released as a <link
         xlink:href="http://www.niso.org/apps/group_public/download.php/6135/z39-96-dsftu-final.pdf"
         >NISO standard for trial use</link>. The JATS schemas are downloadable from the NLM site,
-      and come in several 
-      flavors<footnote xml:id='foot-flavors'>
+      and come in several flavors<footnote xml:id='foot-flavors'>
         <para>
         "Flavor" is my term, which I haven't heard used anywhere else.  I will use it throughout
-        this paper to describe on of the main categories of JATS.   In a detailed accounting,
-        there are currently actually seven different flavors:
+        this paper to describe one of the main categories of JATS.   One "flavor" roughly corresponds
+        to one top-level DTD file, which might itself have several versions.  In a detailed accounting,
+        there are currently seven flavors:
         <variablelist>
           <varlistentry>
             <term>archiving</term>
@@ -103,17 +103,22 @@
           </varlistentry>
         </variablelist>
         </para>
-      </footnote> downloadable from the NLM site, which have slightly different 
-      semantics and use cases. These
+        <para>
+          This is somewhat complicated by the fact that the NISO standard versions of JATS
+          use a different version numbering scheme, and so should also be considered
+          separate flavors, even though they are really just newer versions of the existing
+          NLM DTDs.
+        </para>
+      </footnote>, which have different semantics and use cases. These
       include the Archiving and Interchange (green), Journal Publishing (blue), and Article
-      Authoring (pumpkin). The also come in three different formats: DTD, W3C Schema, and Relax NG.
+      Authoring (pumpkin). They also come in three different formats: DTD, W3C Schema, and Relax NG.
       Most publishers who use the JATS choose to use the DTD format (<xref linkend="C"/>). 
       Although they are still
       often refered to as the "NLM DTDs", this paper will use the terms "JATS" and "JATS schemas", to
-      be clear that: A, the standard is now NISO, and is no longer specifically issued by
-      the NLM; and B, it is not just DTDs, but also other schema formats. </para>
+      be clear that: A) the standard is now NISO, and is no longer specifically issued by
+      the NLM; and B) it is not just DTDs, but also other schema formats. </para>
 
-    <para> This paper describes JATSPack, which is based on the new <link
+    <para> This paper describes JATSPack, which is a packaging format based on the new <link
         xlink:href="http://www.expath.org/modules/pkg/">EXPath Packaging System specification</link>,
       and provides a well-defined way of packaging customizations and libraries associated with
       any of the JATS schema. JATSPacks are bundled packages of catalog files, schema,
@@ -150,10 +155,10 @@
     <para> Associated with JATSPAN is a command-line client, <code>jatspan</code> (lowercase),
       which runs on a user's machine and
       maintains a local on-disk repository. <code>jatspan</code> has a
-      simple interface, and lets users look up and install packages from JATSPAN. One benefit
+      simple interface and lets users look up and install packages from JATSPAN. One benefit
       to this architecture is that dependencies between packs can be resolved automatically. For
       example, if users wants to install packs that depend on others, they don't have to
-      figure out where to go to get these others, and then perhaps be frustrated by different
+      figure out where to go to get these, and then, perhaps, be frustrated by different
       directory structures and installation requirements. Instead, the dependency packs are
       found, downloaded, and installed automatically. </para>
     <para> The software and the baseline set of data files for these is being developed in an <link
@@ -171,18 +176,18 @@
       <title>A publisher installs support for a third-party JATS customization</title>
       <para> Suppose a publisher wants to integrate support for document instances that conform to
         some customization of JATS that was not developed in-house. Very often, document instances,
-        if they even have a document type declaration (doctype decl) at all, these doctype decl's
+        if they even have a document type declaration (doctype decl) at all, 
         do not include an absolute
         system identifier (a URI) to reference the DTD.  
         So, at a minimum, either an OASIS catalog entry must be
-        added to a local catalog file, to cross reference the formal public identifier 
-        (FPI) to the DTD served somewhere on the Internet, or else the DTD
+        added to a local catalog file to cross reference the formal public identifier 
+        (FPI) to the DTD served somewhere on the Internet, or the DTD
         must be downloaded and installed on the local filesystem, and the XML processors be made
         aware of it. This is not especially difficult, but does require a certain level of expertise
         and coordination of system resources. </para>
       <para> If the customization were packaged in the JATSPack format, then the
         necessary setup would be more automated. It would be as easy as identifying the desired
-        pack, and using the <code>jatspan</code> utility to install it in the local repository. 
+        pack and using the <code>jatspan</code> utility to install it in the local repository. 
         The <code>jatspan</code>
         utility automatically updates the local OASIS catalog file with a <code>&lt;nextCatalog&gt;</code>
         entry to
@@ -197,9 +202,9 @@
     <section xml:id='why-2'>
       <title>A developer writes a new translator, and shares it with others</title>
       <para> In this use-case, suppose that a developer that has written a
-        transformation from JATS into a new file format. It could be someone who did it for fun, or
-        perhaps a company has a vested interest in promoting the file format.
-        For whatever reason, let's say that they want to share it with others, and try to
+        transformation from JATS into a new file format. It could be someone who did it for fun or,
+        perhaps, a company has a vested interest in promoting the file format.
+        For whatever reason, let's say that they want to share it with others and try to
         get others to adopt it and integrate it into their systems.
       </para>
       <para> 
@@ -215,7 +220,7 @@
         All this is ripe for standardization.  The transformation languages in which these
         are usually written, XSLT, XQuery, and XProc, are mature enough that they can be written in
         a portable, system-independent way. 
-        The JATSPack format is specified; and JATSPAN provides many examples, which reduces the
+        The JATSPack format is specified and JATSPAN provides many examples, which reduces the
         burden of making decisions about how exactly to package the bundle.
         JATSPAN provides a publically-accessible place to upload packages, so developers
         don't have to find places on their own websites for them.
@@ -232,11 +237,11 @@
     <section xml:id='why-3'>
       <title>A publisher evaluates JATS for the first time</title>
       <para>
-        To a publisher or a developer who is introduced to the JATS for the first time,
-        they can be a bit overwhelming.  To be sure, they are extremely well documented,
+        A publisher or a developer who is introduced to the JATS for the first time
+        can be a bit overwhelmed.  To be sure, JATS is extremely well documented,
         as one can readily see by browsing the 
         <link xlink:href='http://dtd.nlm.nih.gov/'>NLM web site</link>.
-        Yet the fact that they have been in use for a long time, and that there are
+        Yet the fact that JATS have been in use for a long time, and that there are
         now many different branches (flavors) and versions, can make them seem,
         to someone who is not familiar with them, complicated.
       </para>
@@ -550,9 +555,9 @@
       </para>
       <para> 
         As described in <link linkend="why-3">A publisher evaluates JATS for the first time</link>
-        above, on the NLM FTP site, each DTD version is downloadable as a single Zip file which 
+        above, each DTD version on the NLM FTP site is downloadable as a single Zip file which 
         includes all of the
-        files required for that version, including all the core files that this version
+        files required for that version, including all the core files that the version
         depends on.  As mentioned, this is very suitable for the primary
         use-case of concern, that of a publisher or author who is interested in 
         configuring a system
