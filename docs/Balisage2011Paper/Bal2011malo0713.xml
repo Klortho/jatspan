@@ -35,13 +35,27 @@
           projects.</para>
       </personblurb>
       <affiliation>
-        <orgname>NCBI (Contractor)</orgname>
+        <orgname>NCBI / NLM / NIH (Contractor)</orgname>
       </affiliation>
     </author>
+    
+    <legalnotice>
+      <para>
+        The Author's contribution to this Work was done as part of his official duties as 
+        an NIH employee and is a Work of the United States Government. Therefore, copyright 
+        may not be established in the United States. 17 U.S.C. § 105. 
+        If Publisher intends to disseminate the Work outside the U.S., Publisher may secure 
+        copyright to the extent authorized under the domestic laws of the relevant country, 
+        subject to a paid-up, nonexclusive, irrevocable worldwide license to the United 
+        States in such copyrighted work to reproduce, prepare derivative works, distribute 
+        copies to the public and perform publicly and display publicly the work, and to 
+        permit others to do so.
+      </para>      
+    </legalnotice>
   </info>
 
-  <section xml:id='yo'>
-    <title>Introduction</title>
+  <section xml:id='background'>
+    <title>Background</title>
     <para> "JATS", the <link xlink:href="http://jats.nlm.nih.gov/">Journal Article Tag Suite</link>,
       is a relatively new name given to the <link xlink:href="http://dtd.nlm.nih.gov/">NLM Journal
         Archiving and Interchange Tag Suite</link>, which is a set of XML schemas used in the
@@ -110,32 +124,41 @@
           NLM DTDs.
         </para>
       </footnote>, which have different semantics and use cases. These
-      include the Archiving and Interchange (green), Journal Publishing (blue), and Article
+      include Archiving and Interchange (green), Journal Publishing (blue), and Article
       Authoring (pumpkin). They also come in three different formats: DTD, W3C Schema, and Relax NG.
       Most publishers who use the JATS choose to use the DTD format (<xref linkend="C"/>). 
       Although they are still
       often refered to as the "NLM DTDs", this paper will use the terms "JATS" and "JATS schemas", to
       be clear that: A) the standard is now NISO, and is no longer specifically issued by
-      the NLM; and B) it is not just DTDs, but also other schema formats. </para>
+      the NLM; and B) it is not just DTDs, but also other schema formats.  One unfortunate aspect of
+      the JATS acronym is that the tag suite is not limited to Journal Articles, but can be used for
+      other types of documents (books, for example).
+    </para>
+  </section>
 
+  <section xml:id='intro'>
+    <title>Introduction</title>
     <para> This paper describes JATSPack, which is a packaging format based on the new <link
-        xlink:href="http://www.expath.org/modules/pkg/">EXPath Packaging System specification</link>,
-      and provides a well-defined way of packaging customizations and libraries associated with
+        xlink:href="http://www.expath.org/modules/pkg/">EXPath Packaging System specification</link>.
+      JATSPack provides a well-defined way of packaging customizations and libraries associated with
       any of the JATS schema. JATSPacks are bundled packages of catalog files, schema,
       documentation, code, and sample files, all with a coherent purpose. The JATSPack format was
       primarily designed to facilitate the exchange and reuse of JATS customizations, but it could
       also be used to package and transfer code libraries -- for example, XSLT transformations to
-      translate JATS to/from some other format. JATSPack is basically a plugin file format, and each
-      plugin provides a bundle of new functionality which can be easily installed into an XML 
+      translate JATS to/from some other format. JATSPack can be thought of as a format for 
+      plugin modules, with each
+      plugin providing a bundle of new functionality which can be easily installed into an XML 
       toolset. </para>
     <para> JATSPack specifies a directory structure and a package descriptor file format.
       The package descriptor file, similar to a manifest file in other packaging formats,
-      describes the contents, the mapping of URIs to resources, and the dependencies of the pack. </para>
+      describes the contents, metadata about the included resources, and the dependencies of the 
+      pack. </para>
     <para> Establishing this format will facilitate the automatic installation and
       maintenance of libraries and of schema extensions, which should allow easier reuse and
-      interchange of the schema themselves, and then, in turn, easier interchange of JATS document
-      instances. </para>
-    
+      interchange of the schema themselves.  This, in turn, should allow for easier interchange 
+      of JATS document instances. </para>
+
+
     <para> <link xlink:href="http://jatspan.org/">JATSPAN</link>, the JATSPack Archive Network, 
       is a website similar in
       concept to the very successful <link xlink:href='http://www.cpan.org/'>CPAN</link> 
@@ -143,7 +166,7 @@
       Network). Its main purpose is to allow users to share and collaborate on JATSPacks. 
       Authors can upload their customizations or libraries, and can search for and 
       download JATSPacks produced by
-      others.  Every JATSPack can be downloaded in one of two formats.  The contents are actually
+      others.  Every JATSPack can be downloaded in one of two formats.  The contents are 
       exactly the same, but the download files differ in their filename extension:  a .xar file, 
       which is the extension used by the EXPath Packaging System, or as a .zip file, so that the
       package can be used stand-alone, without any special infrastructure.
@@ -157,20 +180,20 @@
       maintains a local on-disk repository. <code>jatspan</code> has a
       simple interface and lets users look up and install packages from JATSPAN. One benefit
       to this architecture is that dependencies between packs can be resolved automatically. For
-      example, if users wants to install packs that depend on others, they don't have to
+      example, if users want to install packs that depend on others, they don't have to
       figure out where to go to get these, and then, perhaps, be frustrated by different
       directory structures and installation requirements. Instead, the dependency packs are
       found, downloaded, and installed automatically. </para>
-    <para> The software and the baseline set of data files for these is being developed in an <link
-        xlink:href="https://sourceforge.net/projects/jatspan/">open source project on
+    <para> The software and the baseline set of data files for these is being developed in the 
+      <link xlink:href="https://sourceforge.net/projects/jatspan/">"jatspan" open source project on
         SourceForge</link>. </para>
   </section>
-  
+
+
   <section xml:id='why'>
     <title>Use Cases</title>
     <para> The following are a few examples of use cases that these specifications are designed to
       address. </para>
-
 
     <section xml:id='why-1'>
       <title>A publisher installs support for a third-party JATS customization</title>
@@ -191,13 +214,20 @@
         The <code>jatspan</code>
         utility automatically updates the local OASIS catalog file with a <code>&lt;nextCatalog&gt;</code>
         entry to
-        point to the new JATSPack. So any tool that is able to use OASIS catalogs to resolve
+        point to the new JATSPack. So <emphasis role='ital'>any tool</emphasis> that is able to use 
+        OASIS catalogs to resolve
         identifiers, would automatically get access to the new schema files, without any additional
-        work. This is tested and works right now for both Oxygen and the libxml2 library. 
+        work.</para>
+      <para>
+        The important point here is that, because of the way the JATSPack format incorporates 
+        OASIS calalog files, this system can be used with any XML processing tool, not just ones
+        that are JATSPack-aware.  This is tested and works right now for both 
+        <link xlink:href='http://www.oxygenxml.com/'>the oXygen XML editor</link> and the 
+        <link xlink:href='http://xmlsoft.org/'>libxml2 library</link>.</para>
+      <para>
         This use case is described in more detail in the <link linkend='taxpub'>TaxPub 
-          example</link>, below. </para>
+        example</link>, below. </para>
     </section>
-
 
     <section xml:id='why-2'>
       <title>A developer writes a new translator, and shares it with others</title>
@@ -217,7 +247,9 @@
         present a barrier to this kind of sharing of code libraries.
       </para>
       <para> 
-        All this is ripe for standardization.  The transformation languages in which these
+        All this is ripe for standardization.  Indeed, this is the main <emphasis role='ital'>raison d'etre</emphasis>
+        for the EXPath Packaging specification.        
+        The transformation languages in which these
         are usually written, XSLT, XQuery, and XProc, are mature enough that they can be written in
         a portable, system-independent way. 
         The JATSPack format is specified and JATSPAN provides many examples, which reduces the
@@ -252,7 +284,9 @@
         document conforms to.  This is difficult to do, because each flavor and each
         version of the JATS is distributed as a separate, flattened Zip file which 
         includes the bundled version of all of the files needed for that particular
-        set.  For example, the books 2.3 DTD zip file includes all of the
+        set.  For example, the <link 
+          xlink:href='ftp://ftp.ncbi.nih.gov/pub/archive_dtd/books/2.3/book-dtd-2.3.zip'>books 
+          2.3 DTD Zip file</link> includes all of the
         books-specific modules, as well as all of the shared modules, and even
         the xhtml and mathml2 library modules.
       </para>
@@ -273,7 +307,7 @@
       <para>
         But if someone is interested in configuring a system that can
         understand and process any JATS instance document; either for the purposes
-        of evaluating JATS or so that they can exchange documents with other
+        of evaluating JATS, or so that they can exchange documents with other
         organizations, it would be quite difficult.
       </para>
       <para>
@@ -293,7 +327,7 @@
       <title>A publisher develops a new JATS customization</title>
       <para> Let's say that a publisher has a need to customize the JATS, in order to include
         domain-specific data within the source documents in their database. This is actually the
-        primary use-case that JATSPack was designed to address, and this is the converse of
+        primary use-case that JATSPack was designed to address, and this is the complement of
         <link linkend='why-1'>the first use case</link> described above.  That use case 
         described customizations from the user's perspective, and this use case describes them
         from the author's perspective.
@@ -303,7 +337,7 @@
         tend to make people reluctant to define customizations.  Among the most prominent of these
         is that a customization to the JATS might make their
         documents less portable.  This use case is discussed in detail in the
-        <link linkend='rockit'>Customizations and Compatibility</link> section, below.
+        <link linkend='custcomp'>Customizations and Compatibility</link> section, below.
       </para>
     </section>
   </section>
@@ -312,7 +346,7 @@
     <title>JATSPack</title>
 
     <section xml:id='whence'>
-      <title>Basis for the JATSPack format</title>
+      <title>EXPath Packaging - the basis for the JATSPack format</title>
 
       <para> JATSPack is an extension of the 
         <link xlink:href="http://www.expath.org/modules/pkg/">EXPath 
@@ -332,7 +366,7 @@
         the package contents and top-level metadata about the package. This metadata includes the
         URI name, <emphasis role='bital'>abbrev</emphasis>, version number, and a list of dependencies. 
         Finally, all the files of a
-        package are arranged in a specified directory structure, and used to create a zip file, which
+        package are arranged in a specified directory structure, and used to create a Zip file, which
         by convention is given a name based on the <emphasis role='bital'>abbrev</emphasis>, the version number,
         and a ".xar" extension. </para>
 
@@ -354,7 +388,8 @@
           <listitem>
             <para>
               JATSPack-specific extensions to the package
-              descriptor. This will include the ability to record the author, release date, and other
+              descriptor file. This will include the ability to record the author, 
+              release date, and other
               metadata.  See <link linkend='jatspack-rack'>Overall structure of 
                 JATSPacks</link>, below, for more information about this.
             </para>
@@ -509,8 +544,6 @@
         accompanies this package. Finally, the <code>&lt;xslt&gt;</code> element 
         specifies the location of an
         XSLT module, and the URI which is used to import it from other modules. </para>
-      <para> The following subsections provide a bit more detail on specific aspects of the JATSPack
-        format. </para>
     </section>
 
     <section xml:id='jatspack-cat'>
@@ -519,7 +552,8 @@
         DTD files of this <emphasis role='bital'>filesystem</emphasis>
         customization.  That's because these DTD modules are specified in the OASIS catalog 
         file, and,
-        following the principle of DRY (Don't Repeat Yourself), are not duplicated in the 
+        following the principle of <link xlink:href="http://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</link>,
+        are not duplicated in the 
         descriptor. Resolution of public identifiers (FPIs) and system identifiers (URIs) to 
         DTD modules within 
         this package is delegated to the catalog file mechanism. </para>
@@ -547,25 +581,25 @@
         <link xlink:href="ftp://ftp.ncbi.nih.gov/pub/archive_dtd/">archive_dtd</link> and 
         <link xlink:href='ftp://ftp.ncbi.nih.gov/pub/jats/'>jats</link> FTP sites, has been 
         repackaged as JATSPacks.  In addition, the latest NISO trial versions of the 
-        Relax NG schema have also been repackaged as JATSPacks.  These can all be downloaded
-        from JATSPAN as a bundle. 
+        Relax NG schemas have been included in those JATSPacks.  (The older NLM JATS versions
+        of the JATSPacks only include the DTDs.)  These can all be downloaded
+        from JATSPAN as a single bundle. 
         The DTDs include all seven flavors, and
         up to seven versions of each, going all the way back to version 1.0, and all the
         way up to the recently released NISO trial versions. 
       </para>
       <para> 
-        As described in <link linkend="why-3">A publisher evaluates JATS for the first time</link>
+        As described in the use case "<link linkend="why-3">A publisher evaluates JATS for the first time</link>"
         above, each DTD version on the NLM FTP site is downloadable as a single Zip file which 
         includes all of the
         files required for that version, including all the core files that the version
-        depends on.  As mentioned, this is very suitable for the primary
-        use-case of concern, that of a publisher or author who is interested in 
-        configuring a system
+        depends on.  As mentioned, this is very suitable for, for example,
+        a publisher or author who is interested in configuring a system
         capable of dealing with a specific flavor and version (for example, Article
         Authoring 3.0) of JATS.
         Unfortunately, however, this method of distribution makes it difficult to implement a 
         single system that's capable of processing instance documents that conform to
-        any of the many different versions of JATS. </para>
+        <emphasis role='ital'>any</emphasis> of the many different versions of JATS. </para>
       <para> 
         Because each Zip file on the FTP site is a complete set of all of the files needed by
         an instance of the DTD, among the complete set of all flavors and versions, there is a lot
@@ -585,17 +619,17 @@
         catalog file is provided that uses the <code>&lt;nextCatalog&gt;</code> 
         element to include all of the others. </para>
       <para> These JATSPack versions of the schema are 100% compatible with those on the NLM site, and
-        because of this, the JATSPack versions of the NISO DTDs are are compliant implementations of
+        because of this, the JATSPack versions of the NISO DTDs are are fully compliant implementations of
         the NISO standard<footnote>
           <para> When doing this work, I faced a question, and reached a conclusion, which
-            might prove to be controversial. 
+          might be controversial.
             Because I moved files into a different directory structure,
-            but I wanted them to still be usable by systems without OASIS catalog files, 
+            but I wanted them to remain usable by systems without OASIS catalog files, 
             using the relative system identifiers, I had to change these identifiers in the 
             modules that reference the moved files. I also made other minor edits to reconcile 
             cases where, for example, two different instances of a document were refered to by 
-            the same public identifier (FPI). I made these changes, without changing the FPIs,
-            for those files that 
+            the same public identifier (FPI). I made these changes, 
+            without changing the FPIs, for those files that 
             were changed. I think this is the right decision, for the following reason. The 
             significance of an FPI is that any tool that resolves it correctly will get 
             identical results. The FPI specifies a <emphasis>logical resource</emphasis> –- a
@@ -607,12 +641,15 @@
       </para>
       <para>
         The Relax NG Zip files downloadable from the NLM site do not include OASIS catalog files,
-        and so to repackage them as JATSPacks, it was necessary to create them.  
-        This is discussed in more 
+        and so to include these files in the JATSPacks, it was necessary to create entries
+        for them.  This is discussed in more 
         detail in <link linkend="namespaces-rock">Namespaces and Relax NG</link>, below.
       </para>
     </section>
 
+
+    <!-- done to here -->
+    
     <section xml:id='preview-stylesheets'>
       <title>Journal Publishing 3.0 Preview Stylesheets as a JATSPack</title>
       <para> These are a set of preview stylesheets for
@@ -895,12 +932,11 @@
     </section>
   </section>
 
-  <section xml:id='rockit'>
+  <section xml:id='custcomp'>
     <title>Customizations and Compatibility</title>
     <para> The original motivation for JATSPack was to devise a means to package schema
       customizations together with software libraries that allow users to transform documents to and
-      from the new schema. This is still, perhaps, the primary use-case. This would facilitate
-      making forwards-compatible schema customizations. </para>
+      from the new schema. This is still, perhaps, the primary use-case. </para>
     <para> There is an ongoing sea change in the way that scientific research is published and
       presented. The lines between traditional definitions of media types, such as journal articles,
       books, wikis, blog posts, presentations, etc., are continually getting blurred 
@@ -1170,7 +1206,7 @@
         Relax NG in this particular domain.
       </para>
       <para>
-        The oXygen XML editor defines a processing instruction that can be used
+        The oXygen XML editor defines a processing instruction (PI) that can be used
         within an instance document.  For example, given the URI described above,
         an instance documents could now use this PI to identify itself as a document
         conforming to this Relax NG schema:
