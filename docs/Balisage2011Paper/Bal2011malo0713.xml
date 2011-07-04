@@ -390,7 +390,7 @@
               JATSPack-specific extensions to the package
               descriptor file. This will include the ability to record the author, 
               release date, and other
-              metadata.  See <link linkend='jatspack-rack'>Overall structure of 
+              metadata.  See <link linkend='jatspack-structure'>Overall structure of 
                 JATSPacks</link>, below, for more information about this.
             </para>
           </listitem>
@@ -440,7 +440,7 @@
         definition of "document" to include "Zip file" (which is quite reasonable). </para>
     </section>
 
-    <section xml:id='jatspack-rack'>
+    <section xml:id='jatspack-structure'>
       <title>Overall structure of JATSPacks<footnote><para>As described above, some of the 
         requirements for the JATSPack format derive from the fact that it is an extension 
         of EXPath-pkg, and some are JATSPack-specific.</para></footnote></title>
@@ -643,13 +643,10 @@
         The Relax NG Zip files downloadable from the NLM site do not include OASIS catalog files,
         and so to include these files in the JATSPacks, it was necessary to create entries
         for them.  This is discussed in more 
-        detail in <link linkend="namespaces-rock">Namespaces and Relax NG</link>, below.
+        detail in <link linkend="namespaces-relaxng">Namespaces and Relax NG</link>, below.
       </para>
     </section>
 
-
-    <!-- done to here -->
-    
     <section xml:id='preview-stylesheets'>
       <title>Journal Publishing 3.0 Preview Stylesheets as a JATSPack</title>
       <para> These are a set of preview stylesheets for
@@ -781,14 +778,15 @@
         </para>
       <para> In addition to the XSLT, Martin also wrote a JavaScript module for testing. The
         JavaScript reacts to mouseover events, and causes the current cell and its associated 
-        header cells to be highlighted with a different background color, just as shown in 
+        header cells to be highlighted with a different background color, as shown in 
         <xref linkend="atable"/>.
       </para>
       <para> This stylesheet provides a very specific bit of functionality,
-        and is something that other users could benefit from, and so it is suitable for
+        and is something that other users could benefit from, so it is suitable for
         packaging and putting on a public repository.
         However, since it operates on XHTML tables, and is not JATS specific, it is more
-        appropriate to package it as an EXPath-pkg and to put it on CXAN, 
+        appropriate to package it as an EXPath-pkg and to put it on <link xlink:href="http://cxan.org/">CXAN</link> 
+        (the Comprehensive XML Archive Network), 
         so that is what we did. </para>
       <para> The reason this is included as an example in this paper is to illustrate the 
         important fact that JATSPack systems are backwards-compatible with EXPath-pkg. 
@@ -844,7 +842,8 @@
           </listitem>
           <listitem>
             <para> Fixed the DOCTYPE declarations of the sample files. As downloaded, the included
-              sample files' DOCTYPE declarations did not use public identifiers (FPIs), and used only relative system
+              sample files' DOCTYPE declarations did not use formal public identifiers (FPIs), 
+              and used only relative system
               identifiers. For example:
               <programlisting>&lt;!DOCTYPE article SYSTEM "../tax-treatment-NS0.dtd"&gt;</programlisting>
               These were changed to use FPIs, and the relative system identifier was changed to
@@ -925,16 +924,17 @@
         I need to enter one command:
         <programlisting>jatspan install taxpub</programlisting>
       </para>
-      <para> That is it -- everything else is done automatically. When the TaxPub JATSPack is
+      <para> That is it — everything else is done automatically. When the TaxPub JATSPack is
         downloaded, a <code>&lt;nextCatalog&gt;</code> entry is added to the JATSPAN repository master catalog
         file, so oXygen instantly resolves any public identifiers defined by TaxPub. After entering the above
-        command, I can instantly validate and process TaxPub documents in oXygen. </para>
+        command, I can validate and process TaxPub documents in oXygen. </para>
     </section>
   </section>
 
   <section xml:id='custcomp'>
     <title>Customizations and Compatibility</title>
-    <para> The original motivation for JATSPack was to devise a means to package schema
+    <para> The original motivation for developing 
+      the JATSPack specification was to devise a means to package schema
       customizations together with software libraries that allow users to transform documents to and
       from the new schema. This is still, perhaps, the primary use-case. </para>
     <para> There is an ongoing sea change in the way that scientific research is published and
@@ -1043,10 +1043,8 @@
         of identifiers, it can help to safeguard against incompatibilities that can result 
         from ad-hoc sharing of these sorts of libraries. </para>
     </section>
-
     
-    
-    <section xml:id='namespaces-rock'>
+    <section xml:id='namespaces-relaxng'>
       <title>Namespaces and Relax NG</title>
       <para> JATSPack can also ease the migration away from DTDs and 
         towards Relax NG for JATS schema. There are several reasons why this 
@@ -1067,12 +1065,12 @@
         The JATSPAN infrastructure is designed to adapt to
         this decentralization, while at the same time providing specifications and imposing
         requirements, such that the proliferation of new schema doesn't become a problem.
-        It does this by requiring that the public identifiers (FPIs) and URIs used to identify resources are 
+        It does this by requiring that the formal public identifiers (FPIs) and URIs used to identify resources are 
         well defined and unique, and also by virtue of it's fixed directory structure, ensuring
         that separate individual JATSPacks fit together on the same system without clashing.
       </para>
 
-      <para> Invoking the TaxPub customization as an example yet again, in the paper given at JATS-Con
+      <para> Invoking the TaxPub customization as an example again, in the paper given at JATS-Con
         last year, the author describes some of the inherent difficulty of working with DTDs:
       </para>
       <blockquote>
@@ -1106,7 +1104,7 @@
         is 266 North Pleasant Street" (<xref linkend="AB"/>).  The current 
         <link xlink:href="http://www.w3.org/2001/tag/2003/webarch-20031128/">recommendations
         of the W3C</link> lead inexorably to the choice that new resources, such
-        as Relax NG files, should be identified by an absolute, canonical, persistent,
+        as Relax NG files, should be identified by absolute, canonical, persistent,
         and stable HTTP URIs.
       </para>
       <para>
@@ -1187,7 +1185,7 @@
             rewritePrefix="/"/&gt;</programlisting>
       </para>
       <para>
-        In effect, this assigns the canonical URI name to the master Relax NG schema
+        In effect, this assigns a URI name to the master Relax NG schema
         file of this package, and that name is
         "http://jatspan.org/jatspacks/niso-authoring/0.4/rng/JATS-articleauthoring0.rng".
         Please feel free to use this name in any context, to refer to this resource.
@@ -1232,8 +1230,6 @@
     </section>
   </section>
 
-
-
   <section xml:id='more'>
     <title>More JATSPack features and recommendations</title>
 
@@ -1262,7 +1258,7 @@
         programming paradyme of creating a derived class from a parent class, and overriding or
         extending certain methods. </para>
       <para> As described above under "Customizations and Compatibility", in order to facilitate
-        interchange of document instances, authors of JATSPacks that customize the schema are be
+        interchange of document instances, authors of JATSPacks that customize the schema are 
         encouraged to provide a stylesheet for conversion to and from the "standard JATS". </para>
       <para> Also, for these customization JATSPacks, authors are encouraged to supply XSLT
         stylesheets that import and extend the Journal Publishing Preview Stylesheets. In this way,
@@ -1299,7 +1295,6 @@
 
   <section xml:id='jatspan'>
     <title>JATSPAN</title>
-
 
     <para> As mentioned in the introduction, JATSPAN is a website at 
       <link xlink:href="http://jatspan.org/">jatspan.org</link>, and is based on the 
@@ -1415,7 +1410,7 @@
       </para>
     </section>
 
-    <section xml:id='futures-so-brite'>
+    <section xml:id='future-possibilities'>
       <title>Future possibilities</title>
 
       <para> The next-phase implementation of JATSPAN will copy the Servlex/eXist architecture of
@@ -1500,7 +1495,7 @@
 
   </section>
 
-  <section xml:id='rap-it'>
+  <section xml:id='conclusions'>
     <title>Conclusions</title>
     <para> [I apologize that I have yet to write this section. I intend to recap all of the main
       points made above, to urge people to embrace this infrastructure, and to invite collaboration
@@ -1511,7 +1506,8 @@
     <title>Acknowlegements</title>
     <para>
       I would like to thank Kim Tryka and Florent George for valuable feedback on the
-      first draft of this paper. 
+      first draft of this paper.  Also, thanks to the anonymous reviewers who provided
+      several very useful suggestions.
     </para>
     <para>
       This research was supported in part by the Intramural Research Program of the NIH, 
