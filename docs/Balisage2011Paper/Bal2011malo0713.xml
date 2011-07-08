@@ -145,7 +145,7 @@
       any of the JATS schema. JATSPacks are bundled packages of catalog files, schema,
       documentation, code, and sample files, all with a coherent purpose. The JATSPack format was
       primarily designed to facilitate the exchange and reuse of JATS customizations, but it could
-      also be used to package and transfer code libraries -- for example, XSLT transformations to
+      also be used to package and transfer code libraries — for example, XSLT transformations to
       translate JATS to/from some other format. JATSPack can be thought of as a format for 
       plugin modules, with each
       plugin providing a bundle of new functionality which can be easily installed into an XML 
@@ -154,11 +154,12 @@
       The package descriptor file, similar to a manifest file in other packaging formats,
       describes the contents, metadata about the included resources, and the dependencies of the 
       pack. </para>
+
     <para> Establishing this format will facilitate the automatic installation and
       maintenance of libraries and of schema extensions, which should allow easier reuse and
       interchange of the schema themselves.  This, in turn, should allow for easier interchange 
-      of JATS document instances. </para>
-
+      of JATS document instances.  
+    </para>
 
     <para> <link xlink:href="http://jatspan.org/">JATSPAN</link>, the JATSPack Archive Network, 
       is a website similar in
@@ -302,8 +303,8 @@
         use-case that the NLM site is designed to serve.  
         They provide stand-alone bundles specifically so that a user who
         is interested in only, for example, Publishing 2.3, can download that version
-        and not be confused by all of the others [Jeff Beck, personal communication,
-        3/22/2011].
+        and not be confused by all of the others (Jeff Beck, personal communication,
+        3/22/2011).
       </para>
       <para>
         But if someone is interested in configuring a system that can
@@ -357,12 +358,14 @@
         XProc (<xref linkend='T'/>).
         It also provides a flexible extension mechanism which is exploited by JATSPack to define
         additional file types, and other requirements specific to its needs. </para>
+      
       <para> As defined by EXPath-pkg, a package is a set of files that fulfull a common purpose.
         Each package has a globally unique name (which is a URI) and an abbreviated name (hereafter
         referred to as <emphasis role='bital'>abbrev</emphasis>), an NCName. 
         <emphasis role='bital'>Abbrev</emphasis> values are case-insensitive, and, by convention,
         all lowercase. A component is one file within a package, and can be one of several different
         types. </para>
+      
       <para> A package includes a package descriptor (similar to a JAR manifest file) which lists
         the package contents and top-level metadata about the package. This metadata includes the
         URI name, <emphasis role='bital'>abbrev</emphasis>, version number, and a list of dependencies. 
@@ -377,7 +380,13 @@
         also implemented as an open-source Java library, hosted as the
         <link xlink:href="http://code.google.com/p/expath-pkg/">expath-pkg</link> project
         on Google Code. </para>
-      <para> JATSPack is a forward-compatible extension of EXPath-pkg, meaning that any system that
+      
+      <para> The goal of JATSPack is to be a forward-compatible extension of EXPath-pkg<footnote>
+        <para> At the time of this writing, there are a few areas of incompatibility between
+        the JATSPack format and EXPath-pkg.  Effort is underway to reconcile these.
+        The specific incompatibilities are called out in footnotes which follow.</para>
+      </footnote>, 
+        meaning that any system that
         is capable of deploying EXPath packages will be able to deploy JATSPacks (although 
         not all of the features of JATSPacks would be fully exploited). Note that, in fact, both
         EXPath packages and JATSPacks are forward-compatible extensions of 
@@ -424,6 +433,16 @@
               package directory. JATSPack specifies this structure more explicitly. 
             </para>
           </listitem>
+          <listitem>
+            <para>
+              Requirement for two-part <emphasis role='bital'>abbrev</emphasis>s<footnote>
+                <para>JATSPack two-part abbreviations are incompatible with the existing
+                EXPath-pkg format.</para>
+              </footnote>.   Currently, EXPath-pkg <emphasis role='bital'>abbrev</emphasis>s
+              are simple NCNames.  In JATSPack, they are two NCNames separated by a slash.  
+              For example, "nlmjats/archiving".              
+            </para>
+          </listitem>
         </orderedlist>
       </para>
       <para>
@@ -441,58 +460,78 @@
         definition of "document" to include "Zip file" (which is quite reasonable). </para>
     </section>
 
+
     <section xml:id='jatspack-structure'>
       <title>Overall structure of JATSPacks<footnote><para>As described above, some of the 
         requirements for the JATSPack format derive from the fact that it is an extension 
         of EXPath-pkg, and some are JATSPack-specific.</para></footnote></title>
       <para> As already mentioned, every JATSPack must have an 
-        <emphasis role='bital'>abbrev</emphasis> and a version number. The
-        name of the package file is specified to be
+        <emphasis role='bital'>abbrev</emphasis> and a version number.  In JATSPack, in order
+        to help ensure that the abbreviated names will be unique, they are composed of
+        two parts, each of which is an NCName (by convention, all lowercase, and the underscore 
+        character should not be used in either part).  
+        These are separated by a forward slash in the package descriptor file, for example,
+        "nlmjats/archiving". </para>
+      <para>
+        The name of the package file is specified to be
         <emphasis role="bital">abbrev</emphasis>-<emphasis role='bital'>ver</emphasis>.xar. 
-        The actual low-level 
-        format of the file is that of a
-        Zip file, and the directory structure within that archive is as shown here. </para>
+        When the two part <emphasis role="bital">abbrev</emphasis> is used in the package
+        filename, the forward slash is translated into an underscore.  For example,
+        "nlmjats_archiving-1.0.xar".
+        The actual low-level format of the file is that of a
+        Zip file, and the directory structure within that archive is as shown here<footnote>
+          <para>The internal directory structure of JATSPack differs from that specified
+          for EXPath-pkg, and is another area of incompatibility.  The main difference is the
+          location of the package descriptor file, which is in the root directory for
+          EXPath-pkg packages.  In JATSPack, it was moved to the package's content directory.
+          This way, it is possible to unzip the packages directly onto the filesystem, without requiring any
+          shuffling of the file locations.</para>
+        </footnote>. </para>
       <programlisting>[root]
-    expath-pkg.xml
-    README.txt (optional)
-    <emphasis role="bital">abbrev</emphasis>/
-        catalog.xml
-        dtd/
-        rng/
-        rnc/
-        xsd/
-        xslt/
-        xquery/
-        xproc/
-        doc/
-        samples/
-        resources/
-        test/</programlisting>
-      <para> At the root of the package are the EXPath-pkg descriptor file expath-pkg.xml, 
-        and optionally a README.txt file. Then there is one
-        main subdirectory, which must have the same name as the <emphasis role='bital'>abbrev</emphasis> of the package. In the
-          <emphasis role="bital">abbrev</emphasis> directory is an OASIS catalog file, and then one
+    <emphasis role="bital">abbrev-1</emphasis>/
+        <emphasis role="bital">abbrev-2</emphasis>/
+            README.txt (optional)
+            expath-pkg.xml
+            catalog.xml
+            dtd/
+            rng/
+            rnc/
+            xsd/
+            xslt/
+            xquery/
+            xproc/
+            doc/
+            samples/
+            resources/
+            test/</programlisting>
+      <para> At the top two levels are directories corresponding to the two parts of the
+        <emphasis role="bital">abbrev</emphasis>.
+        Within the package contents directory are the EXPath-pkg descriptor file expath-pkg.xml, 
+        and optionally a README.txt file.  Also in this
+        directory is an OASIS catalog file, and then one
         subdirectory for each of the main file types of the package. </para>
       <para> The expath-pkg.xml file format is described in <xref linkend="T"/>. Extensions to the file format, as
         allowed by the extension mechanism, allow us to include metadata specific to JATSPacks.
-        The
-        'jp' namespace prefix is used for this. 
+        The 'jp' namespace prefix is used for this. 
       </para>
       <para>The following is an example of what the package descriptor file would look like
-        for a hypothetical customization named "filesystem", which is a customization of
-        the base Archiving and Interchange Tag Set, version 3.0. </para>
+        for a hypothetical customization of
+        the base Archiving and Interchange Tag Set, version 3.0, designed to add elements
+        and attributes to describe filesystems<footnote>
+          <para>Note that the conventions for the abbreviated names have yet to be worked out.</para>
+        </footnote>.  </para>
       <programlisting>&lt;package xmlns=&quot;http://expath.org/ns/pkg&quot;
          xmlns:jp=&apos;http://jatspack.org/ns/jatspacks&apos;
          xmlns:dc=&quot;http://purl.org/dc/elements/1.1/&quot;
          xmlns:rdf=&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;
-         abbrev=&apos;filesystem&apos;
-         name=&apos;http://jatspan.org/jatspacks/filesystem&apos;
+         abbrev=&apos;sys/archiving-3.0-filesystem&apos;
+         name=&apos;http://jatspan.org/jatspacks/sys/archiving-3.0-filesystem&apos;
          version=&apos;0.1&apos;
          spec=&apos;1.0&apos;
          jp:spec=&apos;0.1&apos;&gt;
             
   &lt;title&gt;Filesystem customization of JATS Archiving 3.0&lt;/title&gt;
-  &lt;dependency package=&apos;http://jatspan.org/jatspacks/archiving&apos;
+  &lt;dependency package=&apos;http://jatspan.org/jatspacks/nlmjats/archiving&apos;
               semver=&apos;3.0&apos;/&gt;
             
   &lt;rdf:Description&gt;
@@ -518,7 +557,7 @@
 &lt;/package&gt;</programlisting>
 
       <para> The top-level <code>&lt;package&gt;</code> element includes 
-        attributes that give the <emphasis role='bital'>abbrev</emphasis> (an NCName),
+        attributes that give the <emphasis role='bital'>abbrev</emphasis>,
         the package name (a URI), and the version of this package. 
         The <code>@spec</code> attribute indicates the version of EXPath-pkg
         that this package descriptor conforms to. The <code>&lt;title&gt;</code> element 
@@ -634,7 +673,7 @@
             were changed. I think this is the right decision, for the following reason. The 
             significance of an FPI is that any tool that resolves it correctly will get 
             identical results. The FPI specifies a <emphasis>logical resource</emphasis> –- a
-            DTD or an external parsed entity -- not a <emphasis>specific byte 
+            DTD or an external parsed entity — not a <emphasis>specific byte 
             sequence</emphasis>. With this change, the resolution of any given FPI will still 
             result in the exact same entity replacement text,
             when all of the sub-entities are correctly resolved.  </para>
@@ -663,14 +702,13 @@
         <listitem>
           <para>
             Assigning an <emphasis role='bital'>abbrev</emphasis>: 
-            "preview-stylesheets"; a name, which is a URI:
-            "http://jatspan.org/jatspacks/preview-stylesheets", and a version: "1.0".
+            "html/publishing-3.0-preview"; a name, which is a URI:
+            "http://jatspan.org/jatspacks/html/publishing-3.0-preview", and a version: "1.0".
           </para>
         </listitem>        
         <listitem>
           <para>
-            Creating the
-            requisite directory structure. 
+            Creating the requisite directory structure. 
           </para>
         </listitem>        
         <listitem>
@@ -698,7 +736,7 @@
         </listitem>        
         <listitem>
           <para>
-            Zipping it into the file preview-stylesheets-1.0.xar, and uploading it to JATSPAN. 
+            Zipping it into the file html_publishing-3.0-preview-1.0.xar, and uploading it to JATSPAN. 
           </para>
         </listitem>
       </orderedlist>
@@ -710,7 +748,7 @@
         for and discovered on JATSPAN. The documentation can be browsed by anyone from the JATSPAN
         site, without downloading and extracting the package. Anyone using the <code>jatspan</code> client
         utility could install it automatically with the following simple command. 
-        <programlisting>jatspan install preview-stylesheets</programlisting>
+        <programlisting>jatspan install html_publishing-3.0-preview</programlisting>
         Anyone with an EXPath-pkg enabled system would have instant
         programmatic access to the XProc stylesheets and XSLT modules, through their import URIs.
         Normally this would require some integration effort, but with JATSPack, it is automatic. 
@@ -727,14 +765,15 @@
 
     <section xml:id='epub-transformation'>
       <title>EPub Transformation</title>
-      <para> At the JATSCon last year, Laura Kelly gave 
+      <para> At the JATS-Con last year, Laura Kelly gave 
         an excellent presentation
         on the EPUB format and a set of
         transformations for converting JATS documents into EPUB (<xref linkend="AD"/>).
       </para>
       <para> She wrote the transformations in standards-conforming, system independent, XSLT 2.0 and
         XProc. The effort to repackage this as a JATSPack was quite minimal, and involved basically
-        the same steps as above. The <emphasis role='bital'>abbrev</emphasis> assigned to this JATSPack is "epub". </para>
+        the same steps as above. The <emphasis role='bital'>abbrev</emphasis> assigned to this JATSPack is 
+        "epub/jats-to-epub". </para>
       <para> This set of transformations uses the preview stylesheets described above. The original
         Zip file distribution of this library includes a copy of the XSLT files from the preview
         stylesheets that are used. 
@@ -818,11 +857,19 @@
       <para>
         <orderedlist>
           <listitem>
+            <para>
+              Assigned a unique <emphasis role='bital'>abbrev</emphasis>: "taxpub/schema",
+              and version:  "0.1".
+            </para>
+          </listitem>
+          <listitem>
             <para> Created the specified directory structure:
               <programlisting>taxpub/
-    dtd/
-    doc/
-    samples/</programlisting>
+    schema/
+        0.1/
+            dtd/
+            doc/
+            samples/</programlisting>
             </para>
           </listitem>
           <listitem>
@@ -879,7 +926,7 @@
           </listitem>
           <listitem>
             <para> Zipped the result, gave it the name 
-              <emphasis role="bold">taxpub-0.1.xar</emphasis>, and then uploaded it to the
+              <emphasis role="bold">taxpub_schema-0.1.xar</emphasis>, and then uploaded it to the
               JATSPAN website. </para>
           </listitem>
         </orderedlist>
@@ -959,7 +1006,7 @@
       customizations need not be high. This can lead to easier reuse of existing XML 
       vocabularies. The XML
       landscape is vast, and vocabularies have been defined for wide array of specialized 
-      topic domains -- biological taxonomy is just one example. 
+      topic domains — biological taxonomy is just one example. 
       As mentioned previously, and as TaxPub illustrates, often it is very
       appropriate and beneficial to mix markup from other vocabularies directly into 
       the instance documents. If the customization is deployed as a JATSPack, then one 
@@ -1266,7 +1313,7 @@
         a complete preview stylesheet for the new JATS customization would be available for use,
         instantly upon installation of the new JATSPack. If the stylesheet which converts to
         "standard JATS" is provided, then the implementation of this preview stylesheet is trivial
-        -- it is just the baseline preview stylesheet applied to the output of the "standard JATS"
+        — it is just the baseline preview stylesheet applied to the output of the "standard JATS"
         stylesheet. </para>
     </section>
 
@@ -1497,10 +1544,28 @@
   </section>
 
   <section xml:id='conclusions'>
-    <title>Conclusions</title>
-    <para> [I apologize that I have yet to write this section. I intend to recap all of the main
-      points made above, to urge people to embrace this infrastructure, and to invite collaboration
-      on the SourceForge development site.] </para>
+    <title>Conclusions and Further Work</title>
+    <para> Throughout this paper, I have touted the potential benefits of this format.
+      A great deal more work would be required to realize all of these benefits, but I
+      believe that establishing a packaging format specification is a good step in the
+      right direction.
+    </para>
+    <para>
+      For example, regarding document interchange, there are a number of barriers that still
+      conspire to make this difficult.  A
+    </para>
+    <para>
+      
+    </para>
+    <para>
+      
+    </para>
+    <para>
+      
+    </para>
+    <para>
+      
+    </para>
   </section>
 
   <section xml:id='shouts'>
