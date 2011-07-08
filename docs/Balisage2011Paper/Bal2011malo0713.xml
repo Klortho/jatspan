@@ -6,6 +6,7 @@
 
 <!-- $Id$ -->
 
+
 <article version="5.0-subset Balisage-1.2" xmlns="http://docbook.org/ns/docbook"
   xmlns:xlink="http://www.w3.org/1999/xlink">
   <title>JATSPack and JATSPAN, a packaging format and infrastructure for the NLM/NISO
