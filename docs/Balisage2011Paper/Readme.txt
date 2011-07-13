@@ -6,3 +6,6 @@ in a browser (Works for Firefox, but not IE).
 
 To generate HTML, on a Windows machine with libxml2 installed, run
 make-html.bat.
+
+This article is in an XML format defined by the hosts of the Balisage conference,
+as described here:  http://www.balisage.net/tagset.html.
