@@ -55,7 +55,8 @@
   <section xml:id='version'>
     <title>Version</title>
     <para>
-      This is the latest working version of this paper, version $Ver$.
+      This is the latest working version of this paper, version $Rev$.
+      I will try to keep this version up to date, with the latest implementation details.
       For the original published version, see one of these sources:
       Balisage 2011 proceedings: <link xlink:href='http://www.balisage.net/Proceedings/vol7/print/Maloney01/BalisageVol7-Maloney01.html'>print</link>,
       <link xlink:href='http://www.balisage.net/Proceedings/vol7/html/Maloney01/BalisageVol7-Maloney01.html'>screen</link>;
