@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <!-- ============================================================= -->
 <!-- MODULE:    Balisage Conference Paper XSLT                     -->
 <!-- VERSION:   1.2                                                -->
@@ -26,25 +26,25 @@
 <!-- ============================================================= -->
 <!--                    DESIGN CONSIDERATIONS                      -->
 <!-- ============================================================= -->
-<!-- 
+<!--
   This stylesheet is designed to handle the subset of Docbook V5
   defined by the Balisage-1-2.dtd. It is implemented in XSLT 1.0
   without extensions, and should work in any XSLT 1.0 processor.
-  
+
   This stylesheet depends on balisage-html.xsl (in the same
-  subdirectory) to provide for basic display logic; use that 
-  stylesheet alone for a simple "preview" rendition of a Balisage 
-  paper. Use this stylesheet if you want to see a paper as it 
+  subdirectory) to provide for basic display logic; use that
+  stylesheet alone for a simple "preview" rendition of a Balisage
+  paper. Use this stylesheet if you want to see a paper as it
   would appear in the published Conference Proceedings
   (at http://balisage.net/Proceedings/index.html).                 -->
 
 <!-- ============================================================= -->
 <!--                    OWNERSHIP AND LICENSES                     -->
 <!-- ============================================================= -->
-<!-- 
-  
-  This stylesheet was developed by, and is copyright 2010 
-  Mulberry Technologies, Inc. It is released for use by authors in 
+<!--
+
+  This stylesheet was developed by, and is copyright 2010
+  Mulberry Technologies, Inc. It is released for use by authors in
   production of papers submitted to Balisage: The Markup Conference
   (http://www.balisage.net)                                        -->
 <!-- ============================================================= -->
@@ -63,19 +63,19 @@
 
   <xsl:param name="balisage-logo"
     select="'http://balisage.net/Logo/BalisageSeries-logo.png'"/>
-  
-  <xsl:variable name="stylesheet-version">1.2</xsl:variable>
-  
-  <xsl:variable name="open-icon" select="'minus.png'"/>
-  
-  <xsl:variable name="closed-icon" select="'plus.png'"/>
 
-  <xsl:variable name="ex-icon" select="'eks.png'"/>
-  
+  <xsl:variable name="stylesheet-version">1.2</xsl:variable>
+
+  <xsl:variable name="open-icon" select="'style/minus.png'"/>
+
+  <xsl:variable name="closed-icon" select="'style/plus.png'"/>
+
+  <xsl:variable name="ex-icon" select="'style/eks.png'"/>
+
   <xsl:variable name="control" select="/control"/>
   <!-- $control contains a 'control' document element if the source
        document is a control file -->
-  
+
   <xsl:template match="d:article">
     <html lang="en">
       <head>
@@ -100,15 +100,15 @@
       </body>
     </html>
   </xsl:template>
-  
+
   <!-- only used in the production stylesheet: -->
   <xsl:template name="proceedings-meta"/>
-  
+
   <xsl:template name="inline-citations">
     <!-- generates inline popup boxes for citation references -->
     <xsl:apply-templates select="//d:bibliomixed" mode="inline-citation"/>
   </xsl:template>
-  
+
   <xsl:template name="page-apparatus">
     <div id="mast">
       <xsl:call-template name="mast-contents"/>
@@ -118,7 +118,7 @@
     </div>
     <xsl:call-template name="page-header"/>
   </xsl:template>
-  
+
   <xsl:template name="mast-contents">
     <div class="content">
       <xsl:apply-templates mode="titlepage" select="d:title | d:subtitle"/>
@@ -129,7 +129,7 @@
       <xsl:apply-templates select="/d:article/d:info/d:author" mode="mast"/>
     </div>
   </xsl:template>
-  
+
   <xsl:template name="page-header">
     <div id="balisage-header" style="background-color: #6699CC">
       <a class="quiet" href="http://www.balisage.net">
@@ -140,13 +140,13 @@
       <h1 class="page-header">Proceedings preview</h1>
     </div>
   </xsl:template>
-  
+
   <xsl:template name="article-contents">
     <xsl:apply-templates select="d:title | d:subtitle" mode="titlepage"/>
     <xsl:apply-templates/>
     <xsl:call-template name="footnotes"/>
   </xsl:template>
-  
+
   <xsl:template name="page-footer">
     <xsl:call-template name="author-keywords"/>
     <div id="balisage-footer">
@@ -155,7 +155,7 @@
       </h3>
     </div>
   </xsl:template>
-  
+
   <xsl:template name="author-keywords">
     <xsl:for-each
       select="/d:article/d:info/d:keywordset[@role='author'][d:keyword[normalize-space(.)]]">
@@ -171,8 +171,8 @@
         </h5>
       </div>
     </xsl:for-each>
-  </xsl:template>  
-  
+  </xsl:template>
+
   <xsl:template match="d:author" mode="mast">
     <xsl:if test="normalize-space(d:personblurb)">
     <div class="mast-box">
@@ -194,13 +194,13 @@
     </div>
     </xsl:if>
   </xsl:template>
-  
+
   <xsl:template match="d:legalnotice" mode="mast">
     <div class="legalnotice-block">
       <xsl:apply-templates/>
     </div>
   </xsl:template>
-  
+
   <xsl:template match="d:abstract" mode="mast">
     <div class="mast-box">
       <p class="title">
@@ -217,11 +217,11 @@
     </div>
   </xsl:template>
 
-  
-  
+
+
   <!-- overrides templates in balisage-html.xsl to make popups for
        links to bibliographic references -->
-  
+
 
   <xsl:template match="d:bibliomixed" mode="xref">
     <xsl:param name="xref-id" select="'xxx'"/>
@@ -234,7 +234,7 @@
       <xsl:apply-templates select="." mode="label-text"/>
     </a>
   </xsl:template>
-  
+
   <xsl:template match="d:bibliomixed" mode="inline-citation">
     <xsl:variable name="cite-id">
       <xsl:text>cite-</xsl:text>
@@ -249,7 +249,7 @@
       </p>
     </div>
   </xsl:template>
-  
+
   <!--
   <xsl:template match="d:bibliography" mode="popup">
     <xsl:apply-templates select="d:bibliomixed" mode="popup"/>
@@ -258,11 +258,11 @@
     <xsl:variable name="id">
       <xsl:text>cite-</xsl:text>
       <xsl:apply-templates select="." mode="id"/>
-    </xsl:variable>   
-  </xsl:template>  
+    </xsl:variable>
+  </xsl:template>
   -->
 
-  
+
   <xsl:template name="script">
     <script type="text/javascript">
       <xsl:text>
@@ -294,18 +294,18 @@
      cite.style.display = "none";
      return;
    }
-   
+
    function showcite(citeID,anchorID) {
      cite = document.getElementById(citeID);
 
      citeLeft = cite.style.left;
      citeTop = cite.style.top;
-     
+
      if (citeLeft != (getLeft(anchorID)+"px") ||
          citeTop != (getTop(anchorID)+"px")) {
        cite.style.display = "none";
      }
-     
+
      if (cite.style.display != "table-cell") {
         movebox(citeID, anchorID);
         cite.style.display = "table-cell";
@@ -319,9 +319,9 @@
    function movebox(citeID, anchorID) {
 
      cite = document.getElementById(citeID);
-     
+
      // alert(cite.offsetWidth + " by " + cite.offsetHeight)
-     
+
      horizontalOffset = getLeft(anchorID);
      // horizontalOffset = (inMain(anchorID)) ?
      // (horizontalOffset - 260) : (horizontalOffset + 20)
@@ -342,23 +342,23 @@
        verticalOffset = verticalOffset - 300;
      }
      */
-     
+
      cite.style.left = horizontalOffset + "px";
      cite.style.top = verticalOffset + "px";
    }
-   
+
    function getLeft(objectID) {
      var left = getAbsoluteLeft(objectID) - getScrollLeft(objectID);
-     left = (inMain(objectID)) ? (left - 260) : (left + 20)    
+     left = (inMain(objectID)) ? (left - 260) : (left + 20)
      return left;
    }
-   
+
    function getTop(objectID) {
      var top = getAbsoluteTop(objectID) - getScrollTop(objectID);
      top = (inMain(objectID)) ? (top - 50) : (top + 20)
-     return top;     
+     return top;
    }
-   
+
    function getAbsoluteLeft(objectId) {
    // Get an object left position from the upper left viewport corner
      o = document.getElementById(objectId)
@@ -435,5 +435,5 @@
       </xsl:text>
     </script>
   </xsl:template>
-  
+
 </xsl:stylesheet>
