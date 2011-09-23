@@ -53,9 +53,9 @@
   </info>
 
   <section xml:id='version'>
-    <title>Version</title>
+    <title>Version <svn-keyword>$Rev$</svn-keyword></title>
     <para>
-      This is the latest working version of this paper, version $Rev$.
+      This is the latest working version of this paper.
       I will try to keep this version up to date, with the latest implementation details.
       For the earlier versions, see one of these sources:
       Balisage 2011 proceedings: <link xlink:href='http://www.balisage.net/Proceedings/vol7/print/Maloney01/BalisageVol7-Maloney01.html'>print</link>,

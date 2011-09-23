@@ -54,6 +54,10 @@
   exclude-result-prefixes="d">
 
   <xsl:import href="balisage-html.xsl"/>
+  <!--
+    Some extensions - from Chris Maloney.
+  -->
+  <xsl:import href='maloney-extensions.xsl'/>
 
   <xsl:output method="html" encoding="UTF-8"
     doctype-public="-//W3C//DTD HTML 4.01 Transitional//EN"
