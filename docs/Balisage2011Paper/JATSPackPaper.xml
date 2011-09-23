@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE article SYSTEM "style/balisage-1-2.dtd">
 
-<!-- $Id$ -->
+<!-- $Id: JATSPackPaper.xml 284 2011-09-23 12:58:44Z chrismaloney $ -->
 
 
 <article version="5.0-subset Balisage-1.2" xmlns="http://docbook.org/ns/docbook"
@@ -57,10 +57,10 @@
     <para>
       This is the latest working version of this paper, version $Rev$.
       I will try to keep this version up to date, with the latest implementation details.
-      For the original published version, see one of these sources:
+      For the earlier versions, see one of these sources:
       Balisage 2011 proceedings: <link xlink:href='http://www.balisage.net/Proceedings/vol7/print/Maloney01/BalisageVol7-Maloney01.html'>print</link>,
       <link xlink:href='http://www.balisage.net/Proceedings/vol7/html/Maloney01/BalisageVol7-Maloney01.html'>screen</link>;
-      or PMC: <link xlink:href='http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3159421/'>manuscript</link>.
+      or PMC: <link xlink:href='http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3159421/'>author manuscript</link>.
     </para>
   </section>
 
