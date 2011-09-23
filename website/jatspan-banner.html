@@ -1,0 +1,157 @@
+<html>
+  <head>
+    <!-- $Id$ -->
+    <!--  &#8209;
+      This was just a fun exercise to use jQuery to create a banner
+      similar to the image here:  http://jats.nlm.nih.gov/
+    -->
+    <style type='text/css'>
+      body {
+        padding: 0;
+        font-family: "Courier New", times;
+        font-weight: bold;
+      }
+      div {
+        white-space: nowrap;
+      }
+    </style>
+    <script type='text/javascript'
+            src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js'></script>
+    <script>
+      // These are all the tags from the Archiving 3.0 tag library.
+      var tags = [
+        'abbrev', 'abbrev-journal-title', 'abstract', 'access-date', 'ack',
+        'address', 'addr-line', 'aff', 'alternatives', 'alt-text', 'alt-title',
+        'annotation', 'anonymous', 'app', 'app-group', 'array', 'article',
+        'article-categories', 'article-id', 'article-meta', 'article-title',
+        'attrib', 'author-comment', 'author-notes', 'award-group', 'award-id',
+        'back', 'bio', 'body', 'bold', 'boxed-text', 'break', 'caption',
+        'chapter-title', 'chem-struct', 'chem-struct-wrap', 'col', 'colgroup',
+        'collab', 'comment', 'compound-kwd', 'compound-kwd-part',
+        'conf-acronym', 'conf-date', 'conference', 'conf-loc', 'conf-name',
+        'conf-num', 'conf-sponsor', 'conf-theme', 'contrib', 'contrib-group',
+        'copyright-holder', 'copyright-statement', 'copyright-year', 'corresp',
+        'country', 'counts', 'custom-meta', 'custom-meta-group', 'date',
+        'date-in-citation', 'day', 'def', 'def-head', 'def-item', 'def-list',
+        'degrees', 'disp-formula', 'disp-formula-group', 'disp-quote',
+        'edition', 'element-citation', 'elocation-id', 'email',
+        'equation-count', 'etal', 'ext-link', 'fax', 'fig', 'fig-count',
+        'fig-group', 'floats-group', 'fn', 'fn-group', 'fpage', 'front',
+        'front-stub', 'funding-group', 'funding-source', 'funding-statement',
+        'given-names', 'glossary', 'glyph-data', 'glyph-ref', 'gov', 'graphic',
+        'history', 'hr', 'inline-formula', 'inline-graphic',
+        'inline-supplementary-material', 'institution', 'isbn', 'issn',
+        'issue', 'issue-id', 'issue-part', 'issue-sponsor', 'issue-title',
+        'italic', 'journal-id', 'journal-meta', 'journal-subtitle',
+        'journal-title', 'journal-title-group', 'kwd', 'kwd-group', 'label',
+        'license', 'license-p', 'list', 'list-item', 'long-desc', 'lpage',
+        'media', 'meta-name', 'meta-value', 'milestone-end', 'milestone-start',
+        'mixed-citation', 'mml:math', 'monospace', 'month', 'name',
+        'named-content', 'nlm-citation', 'note', 'notes', 'object-id',
+        'on-behalf-of', 'open-access', 'overline', 'overline-end',
+        'overline-start', 'p', 'page-count', 'page-range', 'part-title',
+        'patent', 'permissions', 'person-group', 'phone', 'prefix',
+        'preformat', 'price', 'principal-award-recipient',
+        'principal-investigator', 'private-char', 'product', 'pub-date',
+        'pub-id', 'publisher', 'publisher-loc', 'publisher-name', 'ref',
+        'ref-count', 'ref-list', 'related-article', 'related-object',
+        'response', 'role', 'roman', 'sans-serif', 'sc', 'season', 'sec',
+        'sec-meta', 'self-uri', 'series', 'series-text', 'series-title', 'sig',
+        'sig-block', 'size', 'source', 'speaker', 'speech', 'statement', 'std',
+        'strike', 'string-conf', 'string-date', 'string-name',
+        'styled-content', 'sub', 'sub-article', 'subject', 'subj-group',
+        'subtitle', 'suffix', 'sup', 'supplement', 'supplementary-material',
+        'surname', 'table', 'table-count', 'table-wrap', 'table-wrap-foot',
+        'table-wrap-group', 'target', 'tbody', 'td', 'term', 'term-head',
+        'tex-math', 'textual-form', 'tfoot', 'th', 'thead', 'time-stamp',
+        'title', 'title-group', 'tr', 'trans-abstract', 'trans-source',
+        'trans-subtitle', 'trans-title', 'trans-title-group', 'underline',
+        'underline-end', 'underline-start', 'unstructured-kwd-group', 'uri',
+        'verse-group', 'verse-line', 'volume', 'volume-id', 'volume-series',
+        'word-count', 'x', 'xref', 'year'
+      ];
+
+      // Return a random integer between 0 and n - 1
+      function randomInt(n) {
+        return Math.floor(Math.random() * (n - 0.01));
+      }
+
+      function MakeTagSoup() {
+        var totalTags = tags.length;
+        var numDispTags = 30;  // number of tags to display
+        var fontSizeMin = 10;
+        var fontSizeMax = 50;
+        var xMax = 1000;
+        var yMax = 109;
+
+        var fontSizeRange = fontSizeMax - fontSizeMin;
+
+        $('div.content').css({
+            padding: 0,
+            margin: 0,
+            "border": "1px dotted #F00",
+            width: xMax + "px",
+            height: yMax + "px"
+        })
+
+        for (i = 0; i < numDispTags; ++i) {
+            var tagNum = randomInt(totalTags);
+            var fontSize = randomInt(fontSizeRange) + fontSizeMin;
+
+            // The shadow
+            var ts = $("<span>&lt;" + tags[tagNum] + "&gt;</span>")
+                .css({
+                    "font-size": fontSize + "px",
+                    position: "absolute",
+                    top: 35,
+                    left: 65,
+                    color: '#555',
+                    display: "none"
+                });
+            // The foreground
+            var tf = ts.clone()
+                .css({
+                    'top': 34,
+                    'left': 64,
+                    color: '#CCC',
+                    display: 'none'
+                });
+
+            // Add them to the document
+            $('div.content').append(ts).append(tf);
+
+            // Now figure out the position
+            var tWidth = ts.innerWidth();
+            var tHeight = ts.innerHeight();
+            var xRange = xMax + tWidth;
+            var yRange = yMax + tHeight;
+            var tLeft = randomInt(xRange) - tWidth + 1;
+            var tTop = randomInt(yRange) - tHeight + 1;
+
+            // Now position them and make them visible
+            ts.css({
+                left: tLeft,
+                top: tTop,
+                display: "inline"
+            });
+            tf.css({
+                left: tLeft - 1,
+                top: tTop - 1,
+                display: "inline"
+            });
+
+            /*alert("totalTags is " + totalTags +
+                  "\ntagNum = " + tagNum +
+                  "\nfontSize = " + fontSize +
+                  "\ntWidth = " + tWidth +
+                  "\ntHeight = " + tHeight);*/
+        }
+      }
+
+      $(document).ready(MakeTagSoup);
+    </script>
+  </head>
+  <body>
+    <div class='content'/>
+  </body>
+</html>
