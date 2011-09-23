@@ -1,0 +1,86 @@
+﻿/* $Id: article.css 119 2011-03-20 02:51:32Z chrismaloney $ */
+/*
+  Many styles shamelessly stolen from Florent George's EXPath.org site.
+*/
+
+body
+{
+  background-color: #eee;
+  padding: 35px 0px 35px 0px;
+}
+body,input
+{
+  font-size: 10pt;
+  font-family: "georgia", "times new roman", serif;
+  color: #333333;
+}
+
+
+h1, h2, h3, h4 {
+  font-family: times;
+}
+h2, h3 {
+    margin-left: -15px;
+}
+h1 {
+  color: #000080;
+}
+h2 {
+  color: #000080;
+}
+h3 {
+  color: #703020;
+  font-family: helvetica;
+  font-style: italic;
+}
+
+div.sec {
+  padding-left: 15px;
+}
+
+pre {
+  background-color: #E8E8E8;
+  margin-left: 1em;
+  padding: 3px;
+  overflow: auto;
+}
+
+blockquote {
+  border: 1px solid gray;
+  padding: 3px;
+}
+
+blockquote p:first-child {
+  margin-top: 0;
+}
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 3px;
+}
+
+#footer
+{
+  position: relative;
+  height: 3.0em;
+  clear: both;
+  padding-top: 5.0em;
+  background: #fff url('border2.gif') repeat-x 0em 2.5em;
+  font-size: 0.9em;
+}
+
+#footer .left
+{
+  position: absolute;
+  left: 2.0em;
+  bottom: 1.0em;
+}
+
+#footer .right
+{
+  position: absolute;
+  right: 2.0em;
+  bottom: 0.5em;
+}
