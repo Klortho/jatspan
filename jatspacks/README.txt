@@ -1,6 +1,10 @@
-NLM-JATS
+JATSPAN
 
-This set of files is a somewhat refactored version of the NLM Journal Archiving
+This set of files comprises the core JATSPack packages, which include the
+DTDs for every version of the NLM JATS and for version 0.4 of the new NISO
+draft standard.
+
+These are a somewhat refactored version of the NLM Journal Archiving
 and Interchange Tag Suite (http://dtd.nlm.nih.gov/).  The set of files has been
 reorganized into a clean heirarchical directory structure, eliminating
 redundancy.  Also, a heirarchical set of OASIS catalog files are provided which

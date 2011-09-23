@@ -19,6 +19,14 @@ code {
   margin: 0em;
 }
 
+ul.long {
+  padding-left: 40px;
+}
+ul.long > li {
+  margin-bottom: 10px;
+}
+
+
 body
 {
   background-color: #eee;

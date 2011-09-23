@@ -52,17 +52,40 @@
           <h3><strong>Welcome to the JATSPack Archive Network!</strong></h3>
           <div class="contentarea">
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              This site is a place where you can search for, upload, share,
+              and collaborate on JATSPacks.  A JATSPack is a package, in a
+              specified format, which provides some functionality related
+              to the Journal Article Tag Suite (JATS).
             </p>
+            <p>
+              This site is in a very rudimentary stage at present.  The concepts
+              of JATSPacks and of this JATSPAN website, and the
+              rationale and the goals behind them, are described in
+              <a href='docs/Balisage2011Paper/Bal2011malo0713.html'>this paper</a>
+              which was presented at <a href='http://www.balisage.net/'>Balisage
+              2011</a>.
+              That paper is rather long, though, so you might prefer to start
+              with the <a href='#quick'>quick introduction</a>, below.
+            </p>
+            <p>
+              The eventual goal is that this JATSPAN infrastructure will provide:
+            </p>
+            <ul class='long'>
+              <li>
+                A repository of JATSPacks, and a website allowing you to
+                search for and download the ones appropriate for your needs, as
+                well as the ability to upload and share ones that you have
+                created.
+              </li>
+              <li>
+                A client application <em>jatspan</em>, which will enable you
+                to maintain a local installation of JATSPacks.
+              </li>
+              <li>
+                A set of RESTful web services for validating instance documents
+                against uploaded JATSPacks, running automated tests, etc.
+              </li>
+            </ul>
           </div>
         </div>
         <div class="divider1">
@@ -70,26 +93,42 @@
         <div id="primarycontainer">
           <div id="primarycontent">
             <div class="post">
-              <h4>Use Cases</h4>
+              <h4 id='quick' name='quick'>Quick Introduction</h4>
               <div class="contentarea">
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy text
-                  ever since the 1500s, when an unknown printer took a galley of
-                  type and scrambled it to make a type specimen book. It has
-                  survived not only five centuries, but also the leap into
-                  electronic typesetting, remaining essentially unchanged. It was
-                  popularised in the 1960s with the release of Letraset sheets
-                  containing Lorem Ipsum passages, and more recently with desktop
-                  publishing software like Aldus PageMaker including versions of
-                  Lorem Ipsum.
+                  JATS is a set of XML schemas used in publishing scientific
+                  literature.  The originated at the <a href='http://nlm.nih.gov/'>National
+                  Library of Medicine</a>, in association with the
+                  <a href='http://www.ncbi.nlm.nih.gov/pmc/'>PubMed Central archive</a>,
+                  but have recently been adopted by NISO as an
+                  <a href='http://www.niso.org/apps/group_public/download.php/6135/z39-96-dsftu-final.pdf'>official
+                  standard for trial use</a>.
+                </p>
+                <p>
+                  JATSPack is a packaging format based on the
+                  <a href='http://www.expath.org/modules/pkg/'>EXPath Packaging
+                  System specification</a>. JATSPack provides a well-defined way
+                  of packaging customizations and libraries associated with any
+                  of the JATS schema.  JATSPacks are similar to plug-ins,
+                  which can be easily integrated into XML processing systems to
+                  provide customizations and enhancements.
+                </p>
+                <p>
+                  JATSPacks can include schema customizations and/or code
+                  libraries.  They are designed to make it easier to extend
+                  or customize the JATS schemas, while at the same time not
+                  sacrificing the ability to exchange document instances.
+                </p>
+                <p>
+                  This JATSPAN website provides a venue to allow for users to
+                  openly collaborate on and share JATSPacks.
                 </p>
                 <div style="clear: both;"></div>
               </div>
             </div>
             <div class="divider2"></div>
             <div class="post">
-              <h4>Other little-known facts</h4>
+              <h4>Status of this site - what is here now.</h4>
               <div class="contentarea">
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -146,9 +185,10 @@
         <div class="left">
           <a href="http://validator.w3.org/check?uri=referer"><img
           src="style/valid-xhtml11.gif" alt="Valid XHTML 1.1"
-          style="border: 0;" /></a><a
-          href="http://jigsaw.w3.org/css-validator/check/referer"><img src="style/valid-css.gif" alt="Valid CSS!"
-          style="border: 0;" /></a>
+          style="border: 0;" width='60'/></a><a
+          href="http://jigsaw.w3.org/css-validator/check/referer"><img
+          src="style/valid-css.gif" alt="Valid CSS!"
+          style="border: 0;" width='60'/></a>
         </div>
         <div class="right">
           <a href="credits.html">Credits</a>
