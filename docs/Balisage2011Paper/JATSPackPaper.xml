@@ -52,6 +52,17 @@
     </legalnotice>
   </info>
 
+  <section xml:id='version'>
+    <title>Version</title>
+    <para>
+      This is the latest working version of this paper, version $Ver$.
+      For the original published version, see one of these sources:
+      Balisage 2011 proceedings: <link xlink:href='http://www.balisage.net/Proceedings/vol7/print/Maloney01/BalisageVol7-Maloney01.html'>print</link>,
+      <link xlink:href='http://www.balisage.net/Proceedings/vol7/html/Maloney01/BalisageVol7-Maloney01.html'>screen</link>;
+      or PMC: <link xlink:href='http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3159421/'>manuscript</link>.
+    </para>
+  </section>
+
   <section xml:id='background'>
     <title>Background</title>
     <para> "JATS", the <link xlink:href="http://jats.nlm.nih.gov/">Journal Article Tag Suite</link>,
@@ -809,7 +820,7 @@
         <title>Accessible Table Illustration</title>
         <mediaobject>
           <imageobject>
-            <imagedata format="png" fileref="Bal2011malo071301.png"/>
+            <imagedata format="png" fileref="Figure1.png"/>
           </imageobject>
         </mediaobject>
         <caption>
@@ -1483,7 +1494,7 @@
         <title>Relationships among software and systems</title>
         <mediaobject>
           <imageobject>
-            <imagedata format="png" fileref="Bal2011malo071302.png" />
+            <imagedata format="png" fileref="Figure2.png" />
           </imageobject>
         </mediaobject>
         <caption>
