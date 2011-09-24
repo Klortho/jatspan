@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<!DOCTYPE catalog 
+﻿<?xml version="1.0"?>
+<!DOCTYPE catalog
   PUBLIC "-//OASIS//DTD Entity Resolution XML Catalog V3.0//EN"
   "http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd">
 
@@ -22,8 +22,6 @@
                uri="dtd/JATS-journalpubcustom-mixes0.ent"/>
   <public publicId="-//NLM//DTD JATS (Z39.96) Journal Publishing DTD Customize Content and Attributes Module v0.4 20110131//EN"
                uri="dtd/JATS-journalpubcustom-models0.ent"/>
-  <public publicId="-//NLM//DTD JATS (Z39.96) NLM Citation v0.4 20110131//EN"
-               uri="dtd/JATS-nlmcitation0.ent"/>
 
 <!-- ============================================================== -->
 <!--                    JOURNAL ARTICLE PUBLISHING OASIS DTD        -->
