@@ -1,84 +1,56 @@
-JATSPAN
+$Id$
 
+JATSPAN Core JATSPack Bundle
+
+Summary
+-------
 This set of files comprises the core JATSPack packages, which include the
 DTDs for every version of the NLM JATS and for version 0.4 of the new NISO
 draft standard.
 
 These are a somewhat refactored version of the NLM Journal Archiving
-and Interchange Tag Suite (http://dtd.nlm.nih.gov/).  The set of files has been
-reorganized into a clean heirarchical directory structure, eliminating
-redundancy.  Also, a heirarchical set of OASIS catalog files are provided which
-should be easier to use than the ones provided from the NLM site.
+and Interchange Tag Suite (http://dtd.nlm.nih.gov/).  These bundles
+comprise DTDs which are 100% compatible with the DTDs distributed on the
+NLM site.
 
-Here are some details, in no particular order.
+The "refactoring" has involved reorganizing the files into a clean heirarchical
+directory structure and eliminating redundancy.  Also, a heirarchical set of
+OASIS catalog files has been created and provided, which should be easier to
+use than the catalog files provided on the NLM site.
 
-- Only the DTDs, OASIS catalog files, and some samples are present in this
-  archive.  Not included are the documentation files, Relax NG schema, W3C
-  schema, tools, or other miscellaneous files.
+Only the DTDs, OASIS catalog files, and some samples are present in this
+bundle.  Not included are the documentation files, Relax NG schema, W3C
+schema, tools, or other miscellaneous files.
 
-- A test utility is included, as a Perl script and a list of sample files, in
-  the test directory.  Enter the command
+Testing
+-------
+A test utility is included, as a Perl script and a list of sample files, in
+the 'test' directory.  Enter the command
     TestValidation.pl --help
-  To see usage information.  This utility depends on xmllint being in your PATH.
+To see usage information.  This utility depends on xmllint being in your PATH.
 
-- The OASIS catalog files here do not use the xml:base attribute, so this
-  archive should be completely relocateable.  The top-level catalog file is in
-  the nlm-jats root directory, and is named catalog.xml.
+Using These Bundles
+-------------------
+The OASIS catalog files here do not use the xml:base attribute, so this
+archive should be completely relocateable.  Just unzip it to any directory
+on your file system where you want it to reside.
 
-- To set up oXygen to use this catalog file with this set of DTDs, select
-  "Options" -> "Preferences".  Then, in the tree on the left, "XML" -> "XML
-  Catalog", and then add the main catalog.xml file from the nlm-jats directory
+The top-level catalog file is in the top jatspacks directory, and is named
+catalog.xml.
 
-- The directory structure is consistent and clean.  Library files are those
-  from XHTML and MathML, have been factored out into the "lib" directory.
-  Common JATS files have been factored out into the "core" directory.
+To set up oXygen to use this catalog file, so that you can validate instance
+documents agains this set of DTDs, select "Options" -> "Preferences".  Then,
+in the tree on the left, "XML" -> "XML Catalog".  Then add the main catalog.xml
+file from the jatspacks directory where you unzipped the bundle.
 
-    nlm-jats/
-        catalog.xml
-        README.txt
-        lib/ - third party "libraries"
-            mathml2/
-                2.0/
-                    dtd/ - contents from the MathML distribution, see below
-            xhtml/
-                1.0/
-        core/ - all NLM JATS shared modules
-            1.0/
-                catalog.xml
-                dtd/
-                rng/
-                xsd/
-                docs/
-                samples/
-                tools/
-            2.0/
-                catalog.xml
-                ...
-            ...
-        archiving/ - green
-            1.0/
-            ...
-            2.3/
-            3.0/
-        publishing/ - blue
-            ...
-        authoring/ - pumpkin
-            ...
-        books/ - purple
-            ...
-        archive-oasis/
-        publishing-oasis/
-        historical/
-
-- The DTD and .ent files here are not byte-for-byte exactly the same as those
-  on the NLM site.  A number of discrepancies have been cleaned up, and system
-  identifiers were adjusted to compensate for moving entity definition files
-  around.  But, these files should work to define the exact same logical DTD in
-  each and every case -- but it cannot be guaranteed.  That is, assuming that
-  the XML parser correctly resolves all .dtd and .ent files, the resultant
-  document type definition should be identical to that provided by the original
-  NLM files.  I'd be very interested to hear of any substantive differences, if
-  any are found.  Please email them to me at voldrani@gmail.com.
+Setting up to use other tools should
 
 
-$Id$
+
+
+
+JATSPacks and JATSPAN
+---------------------
+This is a very preliminary version of this distribution.  For more information
+about this project, visit the http://jatspan.org/ site, or the project page
+on Sourceforge:  http://sourceforge.net/projects/jatspan/.
