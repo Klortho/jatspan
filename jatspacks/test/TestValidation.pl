@@ -87,6 +87,9 @@ else {
 #------------------------------------------------
 # Get miscellaneous other stuff ready.
 
+# Keep track of whether or not there were warnings.
+my $warnings = 0;
+
 # Get $jatsHome, either from the environment, or the parent of the
 # current directory.
 my $jatsHome = $ENV{JATS_HOME} || canonpath(catdir($CWD, '..'));
@@ -115,7 +118,21 @@ foreach my $sf (@sampleFiles) {
 }
 
 if ($verbose) {
-    print $status ? "Some tests failed.\n" : "All tests passed.\n";
+    if ($status) {
+        print "Some tests failed";
+        print $warnings ? ", and there were warnings as well.\n"
+                        : ".\n";
+    }
+    else {
+        print "All tests passed";
+        print $warnings ? ", but there were warnings.\n"
+                        : ".\n";
+    }
+}
+else {
+    if ($warnings) {
+        print "There were warnings.  Rerun with --verbose to see them.\n";
+    }
 }
 exit $status;
 
@@ -190,12 +207,16 @@ sub ExecXmllint
         if ($vError) {
             print "    Error message from xmllint:\n$errorout\n\n";
         }
+        elsif ($errorout =~ /warning/) {
+            print "    Warning message from xmllint:\n$errorout\n\n";
+        }
     }
     else {
         if ($vError) {
             print "Failed validation:  $sampleFullname\n";
         }
     }
+    if ($errorout =~ /warning/) { $warnings = 1; }
 
     if ($vError && !$nohalt) { 
         print "Halting.\n" if $verbose;
@@ -281,7 +302,8 @@ not given, then a list of files is read from TestSampleList.txt.
 
 =item B<--method> I<num>
 
-Test just using the method indicated.  Default is to test both methods.
+Test just using the method indicated.  I<num> should be either "1" or "2"
+(see above).  Default is to test both methods.
 
 =back
 
