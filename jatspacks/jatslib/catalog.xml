@@ -4,6 +4,10 @@
 
 <!-- $Id$ -->
 
+<!--
+  This will be merged into the root JATSPAN core bundle catalog, and
+  then deleted.  
+-->
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"
          prefer='public'>
 
