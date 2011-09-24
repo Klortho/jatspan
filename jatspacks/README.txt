@@ -43,10 +43,10 @@ documents agains this set of DTDs, select "Options" -> "Preferences".  Then,
 in the tree on the left, "XML" -> "XML Catalog".  Then add the main catalog.xml
 file from the jatspacks directory where you unzipped the bundle.
 
-Setting up to use other tools should
-
-
-
+Setting up to use other tools should by similar - just point the tool to the
+master OASIS catalog file.  For example, to configure your system to allow
+libxml2 to use these DTDs, just set the environment variable XML_CATALOG_FILES
+to point to the top-level master catalog file included with this bundle.
 
 
 JATSPacks and JATSPAN
