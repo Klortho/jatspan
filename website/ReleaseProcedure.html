@@ -49,6 +49,15 @@ perl TestValidation.pl</pre>
           Increment the candidate number if this isn't the first attempt at a
           release for this version number.
         </li>
+
+        <li>
+          If this is not the first release candidate, then you'll need to delete
+          the old Subversion tag for the previous attempt:
+          <pre>svn del \
+  https://jatspan.svn.sourceforge.net/svnroot/jatspan/releases/<em>v.vv</em> \
+  -m "Deleting old tag of release <em>v.vv</em>."</pre>
+        </li>
+
         <li>
           Create a tag in Subversion for this release, with a command similar to the
           following.
@@ -61,7 +70,7 @@ perl TestValidation.pl</pre>
           the repository</a>.
           (See <a href='http://svnbook.red-bean.com/en/1.1/ch04s06.html'>this page</a>
           in the Subversion documentation for a discussion of using
-          tags for releases.)
+          tags for releases.)  Make a note of the revision number.
         </li>
         <li>
           Create the download file.  From the trunk directory, enter a command
@@ -111,6 +120,12 @@ perl TestValidation.pl</pre>
           Upload the Zip file to the site.  Also, if there were any changes
           to the README.txt file, upload it too, so that they are reflected on
           the Files page.
+        </li>
+        <li>
+          From the file manager section on SF, click the "detailed info" button
+          next to the newly uploaded package, and:  select it as the default
+          download for all platforms, and change the button label to something
+          descriptive.
         </li>
         <li>
           Add a news item announcement, from

@@ -25,6 +25,17 @@ ul.long {
 ul.long > li {
   margin-bottom: 10px;
 }
+ul.short {
+  padding-left: 40px;
+  margin: 0;
+}
+ul.short > li {
+  margin-bottom: 0px;
+}
+li p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
 
 
 body
