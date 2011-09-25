@@ -4,8 +4,16 @@ Release Notes for JATSPAN at Sourceforge.
 These notes are in reverse chronological order (newest releases at the top).
 
 =======================================================================
-jatspan-0.7
+jats-core-bundle-0.7
 9/25/2011
+
+Note:
+I am going to have to distinguish between various different releases from this
+project.  This release comprises just the core JATSPacks, which are the
+repackaged versions of the JATS DTDs that you get from the NLM site.  So the
+name of this release Zip file reflects that:  "jats-core-bundle".  But there
+may be a time where I'll want to create a release of more of whats in the
+jatspan project repository, at which point the name might change to "jatspan".
 
 Changes:
 - Changed the name from "nlm-jats" to "jatspan".
