@@ -2,16 +2,16 @@
 <!-- $Id$ -->
 
 <package xmlns="http://expath.org/ns/pkg"
-         xmlns:jp='http://jatspack.org/ns/jatspacks'
+         xmlns:jp='http://jatspan.org/ns/jatspacks'
          xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         abbrev='nlmjats/historical'
-         name='http://jatspan.org/jatspacks/nlmjats/historical/2.2'
+         abbrev='nlmjats-historical'
+         name='http://jatspan.org/jatspacks/nlmjats-historical'
          version='2.2.0'
          spec='1.0'
-         jp:spec='0.1'>
+         jp:spec='0.2'>
   
-  <title>Historical Book v2.2</title>
+  <title>NLM JATS Historical Book v2.2</title>
   
   <rdf:Description>
     <dc:creator>National Center for Biotechnology Information. National Library of Medicine</dc:creator>

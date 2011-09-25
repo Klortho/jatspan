@@ -2,14 +2,14 @@
 <!-- $Id$ -->
 
 <package xmlns="http://expath.org/ns/pkg"
-         xmlns:jp='http://jatspack.org/ns/jatspacks'
+         xmlns:jp='http://jatspan.org/ns/jatspacks'
          xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         abbrev='nisojats/articleauthoring'
-         name='http://jatspan.org/jatspacks/nisojats/articleauthoring/0.4'
+         abbrev='nisojats-articleauthoring'
+         name='http://jatspan.org/jatspacks/nisojats-articleauthoring'
          version='0.4.0'
          spec='1.0'
-         jp:spec='0.1'>
+         jp:spec='0.2'>
   
   <title>NISO JATS (Z39.96) Article Authoring Suite v0.4</title>
   
