@@ -8,10 +8,10 @@
          prefer='public'>
 
    <public publicId="-//NLM//DTD Journal Publishing with OASIS Tables Customize Classes Module v3.0 20080202//EN" 
-           uri="dtd/journalpub-oasis-custom-classes3.ent"/>
+           uri="content/dtd/journalpub-oasis-custom-classes3.ent"/>
    <public publicId="-//NLM//DTD Journal Publishing with OASIS Tables-Specific Modules v3.0 20080202//EN" 
-           uri="dtd/journalpub-oasis-custom-modules3.ent"/>
+           uri="content/dtd/journalpub-oasis-custom-modules3.ent"/>
    <public publicId="-//NLM//DTD Journal Publishing with OASIS Tables v3.0 20080202//EN" 
-           uri="dtd/journalpub-oasis3.dtd"/>
+           uri="content/dtd/journalpub-oasis3.dtd"/>
 
 </catalog>

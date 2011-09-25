@@ -8,14 +8,14 @@
          prefer='public'>
 
    <public publicId="-//NLM//DTD Article Authoring DTD Over-ride Classes Module v2.3 20070202//EN" 
-           uri="dtd/articleauthcustom-classes.ent"/>
+           uri="content/dtd/articleauthcustom-classes.ent"/>
    <public publicId="-//NLM//DTD Article Authoring DTD Over-ride Mixes Module v2.3 20070202//EN" 
-           uri="dtd/articleauthcustom-mixes.ent"/>
+           uri="content/dtd/articleauthcustom-mixes.ent"/>
    <public publicId="-//NLM//DTD Article Authoring DTD Over-ride Content and Attribute Module v2.3 20070202//EN" 
-           uri="dtd/articleauthcustom-models.ent"/>
+           uri="content/dtd/articleauthcustom-models.ent"/>
    <public publicId="-//NLM//DTD Article Authoring DTD-Specific Modules v2.3 20070202//EN" 
-           uri="dtd/articleauthcustom-modules.ent"/>
+           uri="content/dtd/articleauthcustom-modules.ent"/>
    <public publicId="-//NLM//DTD Article Authoring DTD v2.3 20070202//EN" 
-           uri="dtd/articleauthoring.dtd"/>
+           uri="content/dtd/articleauthoring.dtd"/>
 
 </catalog>

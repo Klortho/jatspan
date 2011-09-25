@@ -8,32 +8,32 @@
          prefer='public'>
 
    <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Journal Article Metadata Elements v1.1 20031101//EN" 
-           uri="dtd/articlemeta.ent"/>
+           uri="content/dtd/articlemeta.ent"/>
    <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Custom Special Characters Module v1.1 20031101//EN" 
-           uri="dtd/chars.ent"/>
+           uri="content/dtd/chars.ent"/>
    <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Common (Shared) Elements Module v1.1 20031101//EN" 
-           uri="dtd/common.ent"/>
+           uri="content/dtd/common.ent"/>
    <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v1.1 20031101//EN" 
-           uri="dtd/display.ent"/>
+           uri="content/dtd/display.ent"/>
    <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Journal Metadata Elements v1.1 20031101//EN" 
-           uri="dtd/journalmeta.ent"/>
+           uri="content/dtd/journalmeta.ent"/>
    <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Link Class Elements v1.1 20031101//EN" 
-           uri="dtd/link.ent"/>
+           uri="content/dtd/link.ent"/>
    <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite List Class Elements v1.1 20031101//EN" 
-           uri="dtd/list.ent"/>
+           uri="content/dtd/list.ent"/>
    <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Math Class Elements v1.1 20031101//EN" 
-           uri="dtd/math.ent"/>
+           uri="content/dtd/math.ent"/>
    <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite MathML Setup Module v1.1 20031101//EN" 
-           uri="dtd/mathmlsetup.ent"/>
+           uri="content/dtd/mathmlsetup.ent"/>
    <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v1.1 20031101//EN" 
-           uri="dtd/modules.ent"/>
+           uri="content/dtd/modules.ent"/>
    <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite OASIS XML Table Setup Module v1.1 20031101//EN" 
-           uri="dtd/oasis-tablesetup.ent"/>
+           uri="content/dtd/oasis-tablesetup.ent"/>
    <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Paragraph-Like Elements v1.1 20031101//EN" 
-           uri="dtd/para.ent"/>
+           uri="content/dtd/para.ent"/>
    <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Subject Phrase Class Elements v1.1 20031101//EN" 
-           uri="dtd/phrase.ent"/>
+           uri="content/dtd/phrase.ent"/>
    <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite XHTML Table Setup Module v1.1 20031101//EN" 
-           uri="dtd/XHTMLtablesetup.ent"/>
+           uri="content/dtd/XHTMLtablesetup.ent"/>
 
 </catalog>

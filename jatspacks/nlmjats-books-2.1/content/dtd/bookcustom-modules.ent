@@ -88,7 +88,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % bookcustom-mixes.ent 
                         PUBLIC  
 "-//NLM//DTD NCBI Book DTD Over-ride Mixes Module v2.0 20041031//EN"
-"../../2.0/dtd/bookcustom-mixes.ent"                                               >
+"../../../nlmjats-books-2.0/content/dtd/bookcustom-mixes.ent"                                               >
 
 
 <!--                    DTD-SPECIFIC MODELS/ATTRIBUTES CUSTOMIZATIONS 
@@ -115,7 +115,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % bookimagemap.ent 
                         PUBLIC  
 "-//NLM//DTD NCBI Book Image Map Elements v2.0 20041031//EN" 
-"../../2.0/dtd/bookimagemap.ent"                                                   >
+"../../../nlmjats-books-2.0/content/dtd/bookimagemap.ent"                                                   >
 
 
 <!--                    BOOK METADATA ELEMENTS                     -->

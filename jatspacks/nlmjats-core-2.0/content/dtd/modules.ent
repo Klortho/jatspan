@@ -72,7 +72,7 @@
 <!--                following statement as a comment in all your   -->
 <!--                DTD modules:                                   -->
 <!--                   "Based in part on, but not fully compatible -->
-<!--                    with, the Archiving and Interchange DTD    --> 
+<!--                    with, the Archiving and Interchange DTD    -->
 <!--                    Suite."                                    -->
 <!--                                                               -->
 <!--             Suggestions for refinements and enhancements to   -->
@@ -87,12 +87,12 @@
 <!--             Bruce Rosenblum (Inera Inc.)                      -->
 <!--                                                               -->
 <!--             NLM thanks the Harvard University Libraries, both -->
-<!--             for proposing that a draft archiving NLM DTD for  --> 
+<!--             for proposing that a draft archiving NLM DTD for  -->
 <!--             life sciences journals be extended to accommodate -->
 <!--             journals in all disciplines and for sponsoring    -->
 <!--             Bruce Rosenblum's collaboration with other DTD    -->
-<!--             authors in completing Version 1.0. The Andrew W.  --> 
-<!--             Mellon Foundation provided support for these      --> 
+<!--             authors in completing Version 1.0. The Andrew W.  -->
+<!--             Mellon Foundation provided support for these      -->
 <!--             important contributions.                          -->
 <!--                                                               -->
 <!-- ============================================================= -->
@@ -108,16 +108,16 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 
 =============================================================
      Version 2.0                       (DAL/BTU) v2.0 (2004-08-30)
-     
+
      Major requirement changes led to the new release, producing
      DTD version "2.0":
-       a) The splitting of the Archival and Interchange Tag Set 
+       a) The splitting of the Archival and Interchange Tag Set
           DTDs into three DTDs from two: an authoring DTD, an
           archive regularization and interchange DTD (the
-          current Blue Publishing DTD), and a preservationist 
-          archive DTD (the current Green Archiving and Interchange 
+          current Blue Publishing DTD), and a preservationist
+          archive DTD (the current Green Archiving and Interchange
           DTD).
-       b) AIT Working Group suggestions from the June 04 meeting 
+       b) AIT Working Group suggestions from the June 04 meeting
           and June/July 2004 followup discussions
        c) Suite remodularization to meet new (and newly articulated)
           modularization requirements
@@ -146,13 +146,13 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
           - default-mixes.ent   (to be over-ride en by DTD-specific
                                  mix definitions)
 
-  2. Updated public identifier to "v2.0 20040830"         
+  2. Updated public identifier to "v2.0 20040830"
 
      =============================================================
      Version 1.1                          (TRG) v1.1 (2003-11-01)
 
-  1. Updated public identifier for this modules and several modules 
-     to reflect modules' modification. 
+  1. Updated public identifier for this modules and several modules
+     to reflect modules' modification.
      Rationale: To call updated modules.                           -->
 
 
@@ -164,10 +164,10 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!--                    DEFAULT ELEMENT CLASSES MODULE             -->
 <!--                    Set up the Parameter Entities and element
                         class definitions that will be used to
-                        establish the content models for the 
+                        establish the content models for the
                         Archiving and Interchange DTD.             -->
 <!ENTITY % default-classes.ent
-                        PUBLIC  
+                        PUBLIC
 "-//NLM//DTD Default Element Classes Module v2.0 20040830//EN"
 "default-classes.ent"                                         >
 
@@ -175,13 +175,13 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!--                    DEFAULT ELEMENT MIXES MODULE               -->
 <!--                    Set up the Parameter Entities and element
                         mix definitions that will be used in
-                        content models for the Archiving and 
+                        content models for the Archiving and
                         Interchange DTD.                           -->
 <!ENTITY % default-mixes.ent
-                        PUBLIC  
+                        PUBLIC
 "-//NLM//DTD Default Element Mixes Module v2.0 20040830//EN"
 "default-mixes.ent"                                                  >
-                                                                    
+
 
 <!-- ============================================================= -->
 <!--                    COMMON ELEMENTS SHARED BY MANY MODULES     -->
@@ -209,7 +209,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 
 <!--                    BACK MATTER ELEMENTS                       -->
 <!ENTITY % backmatter.ent
-                        PUBLIC  
+                        PUBLIC
 "-//NLM//DTD Archiving and Interchange DTD Suite Back Matter Elements v2.0 20040830//EN"
 "backmatter.ent"                                                     >
 
@@ -269,15 +269,15 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 
 
 <!--                    BIBLIOGRAPHY REFERENCES (CITATION) ELEMENTS-->
-<!ENTITY % references.ent     
+<!ENTITY % references.ent
                         PUBLIC
 "-//NLM//DTD Archiving and Interchange DTD Suite Bibliographic Reference (Citation) Class Elements v2.0 20040830//EN"
 "references.ent"                                                     >
 
 
 <!--                    SECTION ELEMENTS                           -->
-<!ENTITY % section.ent     
-                        PUBLIC  
+<!ENTITY % section.ent
+                        PUBLIC
 "-//NLM//DTD Archiving and Interchange DTD Suite Section Class Elements v2.0 20040830//EN"
 "section.ent"                                                        >
 
@@ -290,10 +290,10 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!--                    XHTML TABLE SETUP MODULE                   -->
 <!--                    Set all Parameter Entities needed by the
                         HTML 4.0 (XHTML) table model, and then
-                        call the module containing that model.                           
+                        call the module containing that model.
                         Authoring Note: If wanted, this module
                         will be invoked in the DTD module          -->
-<!ENTITY % XHTMLtablesetup.ent 
+<!ENTITY % XHTMLtablesetup.ent
                         PUBLIC
 "-//NLM//DTD Archiving and Interchange DTD Suite XHTML Table Setup Module v2.0 20040830//EN"
 "XHTMLtablesetup.ent"                                                >
@@ -303,10 +303,10 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!--                    The public XML version of the HTML 4.0
                         (XHTML) table model. This module is invoked
                         in %XHTMLtablesetup.ent;                   -->
-<!ENTITY % htmltable.dtd 
+<!ENTITY % htmltable.dtd
                         PUBLIC
-"-//W3C//ELEMENTS XHTML Tables 1.0//EN" 
-"../../../../jatslib/xhtml/1.0/xhtml-table-1.mod"                           >
+"-//W3C//ELEMENTS XHTML Tables 1.0//EN"
+"../../../jatslib-xhtml-1.0/content/xhtml-table-1.mod"               >
 
 
 <!-- ============================================================= -->
@@ -316,11 +316,11 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 
 <!--                    OASIS XML TABLE SETUP MODULE               -->
 <!--                    Set all Parameter Entities needed by the
-                        OASIS (CALS) Table Exchange table model, and 
-                        then call the module containing that model.                           
+                        OASIS (CALS) Table Exchange table model, and
+                        then call the module containing that model.
                         Authoring Note: If wanted, this module
                         will be invoked in the DTD module          -->
-<!ENTITY % oasis-tablesetup.ent 
+<!ENTITY % oasis-tablesetup.ent
                         PUBLIC
 "-//NLM//DTD Archiving and Interchange DTD Suite OASIS XML Table Setup Module v1.2 20040830//EN"
 "oasis-tablesetup.ent"                                               >
@@ -328,12 +328,12 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 
 <!--                    OASIS XML TABLE MODEL                      -->
 <!--                    The OASIS (CALS) Table Exchange table model
-                        This module is invoked in 
+                        This module is invoked in
                         %OASIStablesetup.ent;                      -->
-<!ENTITY % oasis-exchange.ent 
+<!ENTITY % oasis-exchange.ent
                         PUBLIC
-"-//NLM//DTD Archiving and Interchange DTD Suite OASIS XML Table Model v1.0 20100821//EN" 
-"../../1.0/dtd/oasis-exchange.ent"                                   >
+"-//NLM//DTD Archiving and Interchange DTD Suite OASIS XML Table Model v1.0 20100821//EN"
+"../../../nlmjats-core-1.0/content/dtd/oasis-exchange.ent"                                   >
 
 
 <!-- ============================================================= -->
@@ -344,37 +344,37 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!--                    MATHML SETUP MODULE                        -->
 <!--                    Called from the DTD to include the MathML
                         elements in the tag set.                   -->
-<!ENTITY % mathmlsetup.ent 
+<!ENTITY % mathmlsetup.ent
                         PUBLIC
 "-//NLM//DTD Archiving and Interchange DTD Suite MathML Setup Module v2.0 20040830//EN"
 "mathmlsetup.ent"                                                    >
 
 
 <!--                    MATHML 2.0 QUALIFIED NAMES                 -->
-<!ENTITY % mathml-qname.mod 
+<!ENTITY % mathml-qname.mod
                         PUBLIC
-"-//W3C//ENTITIES MathML 2.0 Qualified Names 1.0//EN" 
-"../../../../jatslib/mathml2/2.0/dtd/mathml2-qname-1.mod"                   >
+"-//W3C//ENTITIES MathML 2.0 Qualified Names 1.0//EN"
+"../../../jatslib-mathml2-2.0/content/dtd/mathml2-qname-1.mod"                   >
 
 
 <!--                    MATHML 2.0 DTD                             -->
 <!ENTITY % mathml.dtd   PUBLIC
 "-//W3C//DTD MathML 2.0//EN"
-"../../../../jatslib/mathml2/2.0/dtd/mathml2.dtd"                           >
+"../../../jatslib-mathml2-2.0/content/dtd/mathml2.dtd"                           >
 
 
 <!--                    MATHML 2.0 EXTRA ENTITIES                  -->
-<!ENTITY % ent-mmlextra 
+<!ENTITY % ent-mmlextra
                         PUBLIC
-"-//W3C//ENTITIES Extra for MathML 2.0//EN" 
-"../../../../jatslib/mathml2/2.0/dtd/mathml/mmlextra.ent"                   >
+"-//W3C//ENTITIES Extra for MathML 2.0//EN"
+"../../../jatslib-mathml2-2.0/content/dtd/mathml/mmlextra.ent"                   >
 
 
 <!--                    MATHML 2.0 ALIASES                         -->
-<!ENTITY % ent-mmlalias 
+<!ENTITY % ent-mmlalias
                         PUBLIC
-"-//W3C//ENTITIES Aliases for MathML 2.0//EN" 
-"../../../../jatslib/mathml2/2.0/dtd/mathml/mmlalias.ent"                   >
+"-//W3C//ENTITIES Aliases for MathML 2.0//EN"
+"../../../jatslib-mathml2-2.0/content/dtd/mathml/mmlalias.ent"                   >
 
 
 <!-- ============================================================= -->
@@ -383,20 +383,20 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 
 
 <!--                    SPECIAL CHARACTERS DECLARATIONS            -->
-<!--                    Declares any standard XML special character 
+<!--                    Declares any standard XML special character
                         entities used in this DTD                  -->
-<!ENTITY % xmlspecchars.ent   
+<!ENTITY % xmlspecchars.ent
                         PUBLIC
 "-//NLM//DTD Archiving and Interchange DTD Suite XML Special Characters Module v2.0 20040830//EN"
 "xmlspecchars.ent"                                                   >
 
 
 <!--                    CUSTOM SPECIAL CHARACTERS DECLARATIONS     -->
-<!--                    Declares any custom special character 
+<!--                    Declares any custom special character
                         entities created for this Suite            -->
  <!ENTITY % chars.ent PUBLIC
 "-//NLM//DTD Archiving and Interchange DTD Suite Custom Special Characters Module v2.0 20040830//EN"
-"chars.ent"                                                          > 
+"chars.ent"                                                          >
 
 
 <!-- ============================================================= -->
@@ -409,7 +409,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         to be used with this DTD suite.  Placed in
                         their own module for easy expansion or
                         replacement.                               -->
-<!ENTITY % notat.ent PUBLIC 
+<!ENTITY % notat.ent PUBLIC
 "-//NLM//DTD Archiving and Interchange DTD Suite Notation Declarations v2.0 20040830//EN"
 "notat.ent"                                                          >
 

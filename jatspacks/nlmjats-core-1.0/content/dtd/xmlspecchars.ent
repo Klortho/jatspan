@@ -104,138 +104,138 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!--                    ISO STANDARD ADDED LATIN 1                 -->
 <!ENTITY % ISOlat1 PUBLIC
 "-//W3C//ENTITIES Added Latin 1 for MathML 2.0//EN" 
-"../../../../jatslib/mathml2/2.0/dtd/iso8879/isolat1.ent"                                               >
+"../../../jatslib-mathml2-2.0/content/dtd/iso8879/isolat1.ent"                                               >
 
 
 <!--                    ISO STANDARD ADDED LATIN 2                 -->
 <!ENTITY % ISOlat2 PUBLIC
 "-//W3C//ENTITIES Added Latin 2 for MathML 2.0//EN" 
-"../../../../jatslib/mathml2/2.0/dtd/iso8879/isolat2.ent"                                               >
+"../../../jatslib-mathml2-2.0/content/dtd/iso8879/isolat2.ent"                                               >
 
 
 <!--                    ISO BOX AND LINE DRAWING                   -->
 <!ENTITY % ISObox       PUBLIC 
 "-//W3C//ENTITIES Box and Line Drawing for MathML 2.0//EN"
-"../../../../jatslib/mathml2/2.0/dtd/iso8879/isobox.ent"                                               >
+"../../../jatslib-mathml2-2.0/content/dtd/iso8879/isobox.ent"                                               >
 
 
 <!--                    ISO STANDARD DIACRITICAL MARKS             -->
 <!ENTITY % ISOdia PUBLIC
 "-//W3C//ENTITIES Diacritical Marks for MathML 2.0//EN" 
-"../../../../jatslib/mathml2/2.0/dtd/iso8879/isodia.ent"                                                >
+"../../../jatslib-mathml2-2.0/content/dtd/iso8879/isodia.ent"                                                >
 
 
 <!--                    ISO STANDARD NUMERIC AND SPECIAL GRAPHIC   -->
 <!ENTITY % ISOnum PUBLIC
 "-//W3C//ENTITIES Numeric and Special Graphic for MathML 2.0//EN" 
-"../../../../jatslib/mathml2/2.0/dtd/iso8879/isonum.ent"                                                >
+"../../../jatslib-mathml2-2.0/content/dtd/iso8879/isonum.ent"                                                >
 
 
 <!--                    ISO STANDARD PUBLISHING                    -->
 <!ENTITY % ISOpub PUBLIC
 "-//W3C//ENTITIES Publishing for MathML 2.0//EN" 
-"../../../../jatslib/mathml2/2.0/dtd/iso8879/isopub.ent"                                                >
+"../../../jatslib-mathml2-2.0/content/dtd/iso8879/isopub.ent"                                                >
 
 
 <!--                    ISO STANDARD GENERAL TECHNICAL             -->
 <!ENTITY % ISOtech PUBLIC
 "-//W3C//ENTITIES General Technical for MathML 2.0//EN" 
-"../../../../jatslib/mathml2/2.0/dtd/iso8879/isotech.ent"                                               >
+"../../../jatslib-mathml2-2.0/content/dtd/iso8879/isotech.ent"                                               >
 
 
 <!--                    ISO STANDARD GREEK LETTERS                 -->
 <!ENTITY % ISOgrk1 PUBLIC
 "-//W3C//ENTITIES Greek Letters//EN"
-"../../../../jatslib/mathml2/2.0/dtd/iso8879/isogrk1.ent"                                               >
+"../../../jatslib-mathml2-2.0/content/dtd/iso8879/isogrk1.ent"                                               >
 
 
 <!--                    ISO STANDARD MONOTONIKO GREEK              -->
 <!ENTITY % ISOgrk2 PUBLIC
 "-//W3C//ENTITIES Monotoniko Greek//EN"
-"../../../../jatslib/mathml2/2.0/dtd/iso8879/isogrk2.ent"                                               >
+"../../../jatslib-mathml2-2.0/content/dtd/iso8879/isogrk2.ent"                                               >
 
 
 <!--                    ISO STANDARD GREEK SYMBOLS                 -->
 <!ENTITY % ISOgrk3 PUBLIC
 "-//W3C//ENTITIES Greek Symbols for MathML 2.0//EN"
-"../../../../jatslib/mathml2/2.0/dtd/iso8879/isogrk3.ent"                                               >
+"../../../jatslib-mathml2-2.0/content/dtd/iso8879/isogrk3.ent"                                               >
 
 
 <!--                    ISO STANDARD ALTERNATIVE GREEK SYMBOLS     -->
 <!ENTITY % ISOgrk4 PUBLIC
 "-//W3C//ENTITIES Alternative Greek Symbols//EN"
-"../../../../jatslib/mathml2/2.0/dtd/iso8879/isogrk4.ent"                                               >
+"../../../jatslib-mathml2-2.0/content/dtd/iso8879/isogrk4.ent"                                               >
 
 
 <!--                    ISO STANDARD RUSSIAN CYRILLIC              -->
 <!ENTITY % ISOcyr1 PUBLIC 
 "-//W3C//ENTITIES Russian Cyrillic for MathML 2.0//EN" 
-"../../../../jatslib/mathml2/2.0/dtd/iso8879/isocyr1.ent"                                               >
+"../../../jatslib-mathml2-2.0/content/dtd/iso8879/isocyr1.ent"                                               >
 
 
 <!--                    ISO STANDARD NON-RUSSIAN CYRILLIC          -->
 <!ENTITY % ISOcyr2 PUBLIC
 "-//W3C//ENTITIES Non-Russian Cyrillic for MathML 2.0//EN" 
-"../../../../jatslib/mathml2/2.0/dtd/iso8879/isocyr2.ent"                                               >
+"../../../jatslib-mathml2-2.0/content/dtd/iso8879/isocyr2.ent"                                               >
 
 
 <!--                    ISO STANDARD MATH ALPHABETS (SCRIPT)       -->
 <!ENTITY % ISOmscr PUBLIC
 "-//W3C//ENTITIES Math Alphabets: Script for MathML 2.0//EN" 
-"../../../../jatslib/mathml2/2.0/dtd/iso9573-13/isomscr.ent"                                               >
+"../../../jatslib-mathml2-2.0/content/dtd/iso9573-13/isomscr.ent"                                               >
 
 
 <!--                    ISO STANDARD ADDED MATH SYMBOLS 
                            (ARROW RELATIONS)                       -->
 <!ENTITY % ISOamsa PUBLIC
 "-//W3C//ENTITIES Added Math Symbols: Arrow Relations for MathML 2.0//EN" 
-"../../../../jatslib/mathml2/2.0/dtd/iso9573-13/isoamsa.ent"                                               >
+"../../../jatslib-mathml2-2.0/content/dtd/iso9573-13/isoamsa.ent"                                               >
 
 
 <!--                    ISO STANDARD ADDED MATH SYMBOLS 
                            (BINARY OPERATORS)                      -->
 <!ENTITY % ISOamsb PUBLIC 
 "-//W3C//ENTITIES Added Math Symbols: Binary Operators for MathML 2.0//EN" 
-"../../../../jatslib/mathml2/2.0/dtd/iso9573-13/isoamsb.ent"                                               >
+"../../../jatslib-mathml2-2.0/content/dtd/iso9573-13/isoamsb.ent"                                               >
 
 
 <!--                    ISO STANDARD ADDED MATH SYMBOLS 
                            (DELIMITERS)                            -->
 <!ENTITY % ISOamsc PUBLIC 
 "-//W3C//ENTITIES Added Math Symbols: Delimiters for MathML 2.0//EN" 
-"../../../../jatslib/mathml2/2.0/dtd/iso9573-13/isoamsc.ent"                                               >
+"../../../jatslib-mathml2-2.0/content/dtd/iso9573-13/isoamsc.ent"                                               >
 
 
 <!--                    ISO STANDARD ADDED MATH SYMBOLS 
                            (NEGATED RELATIONS)                     -->
 <!ENTITY % ISOamsn PUBLIC 
 "-//W3C//ENTITIES Added Math Symbols: Negated Relations for MathML 2.0//EN"
-"../../../../jatslib/mathml2/2.0/dtd/iso9573-13/isoamsn.ent"                                               >
+"../../../jatslib-mathml2-2.0/content/dtd/iso9573-13/isoamsn.ent"                                               >
 
 
 <!--                    ISO STANDARD ADDED MATH SYMBOLS (ORDINARY) -->
 <!ENTITY % ISOamso PUBLIC 
 "-//W3C//ENTITIES Added Math Symbols: Ordinary for MathML 2.0//EN" 
-"../../../../jatslib/mathml2/2.0/dtd/iso9573-13/isoamso.ent"                                               >
+"../../../jatslib-mathml2-2.0/content/dtd/iso9573-13/isoamso.ent"                                               >
 
 
 <!--                    ISO STANDARD ADDED MATH SYMBOLS 
                            (RELATIONS)                             -->
 <!ENTITY % ISOamsr PUBLIC 
 "-//W3C//ENTITIES Added Math Symbols: Relations for MathML 2.0//EN" 
-"../../../../jatslib/mathml2/2.0/dtd/iso9573-13/isoamsr.ent"                                               >
+"../../../jatslib-mathml2-2.0/content/dtd/iso9573-13/isoamsr.ent"                                               >
 
 
 <!--                    ISO STANDARD MATH ALPHABETS (FRAKTUR)      -->
 <!ENTITY % ISOmfrk PUBLIC
 "-//W3C//ENTITIES Math Alphabets: Fraktur for MathML 2.0//EN" 
-"../../../../jatslib/mathml2/2.0/dtd/iso9573-13/isomfrk.ent"                                               >
+"../../../jatslib-mathml2-2.0/content/dtd/iso9573-13/isomfrk.ent"                                               >
 
 
 <!--                    ISO STANDARD MATH ALPHABETS (OPEN FACE)    -->
 <!ENTITY % ISOmopf PUBLIC
 "-//W3C//ENTITIES Math Alphabets: Open Face for MathML 2.0//EN" 
-"../../../../jatslib/mathml2/2.0/dtd/iso9573-13/isomopf.ent"                                               >
+"../../../jatslib-mathml2-2.0/content/dtd/iso9573-13/isomopf.ent"                                               >
 
 
 <!-- ============================================================= -->

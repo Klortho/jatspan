@@ -106,21 +106,21 @@
 <!--
 
 Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
-   
+
      =============================================================
      Version 0.4                       (DAL/BTU) v0.4 (2011-01-31)
-   
+
      This Tag Set is in the process of becoming a NISO standard.
      The version numbers are starting over from 0.4", as a Trial
-     Use Draft, to be made into "Version 1.0" when the Tag Suite 
-     becomes a NISO standard. Thus, NLM "Version 3.1 Draft" has 
+     Use Draft, to be made into "Version 1.0" when the Tag Suite
+     becomes a NISO standard. Thus, NLM "Version 3.1 Draft" has
      been changed to NISO "Version 0.4". No model, attribute, or
      parameter entity changes were made as part of this renaming.
-   
+
      Details on NISO Tial Use Draft Version 0.4 are available at
            http://jats.nlm.nih.gov/JATS-0.4.
-   
-  3. Updated the public identifier to "v0.4 20110131//EN", 
+
+  3. Updated the public identifier to "v0.4 20110131//EN",
      modified the formal public identifier to include "JATS (Z39.96)",
      and the filename as delivered to include "JATS" and the
      new version number "0".
@@ -321,7 +321,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % xhtml-table-1.mod
                         PUBLIC
 "-//W3C//ELEMENTS XHTML Tables 1.0//EN"
-"../../../../jatslib/xhtml/1.0/xhtml-table-1.mod"                        >
+"../../../jatslib-xhtml-1.0/content/xhtml-table-1.mod"               >
 
 
 <!--                    XHTML TABLE INLINE STYLE MODULE            -->
@@ -332,7 +332,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % xhtml-inlstyle-1.mod
                         PUBLIC
 "-//W3C//ENTITIES XHTML Inline Style 1.0//EN"
-"../../../../jatslib/xhtml/1.0/xhtml-inlstyle-1.mod"                     >
+"../../../jatslib-xhtml-1.0/content/xhtml-inlstyle-1.mod"            >
 
 
 <!-- ============================================================= -->
@@ -359,7 +359,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % oasis-exchange.ent
                         PUBLIC
 "-//OASIS//DTD MD copy XML Exchange Table Model 19990315//EN"
-"../../../../jatslib/jatsoasis/1.0/oasis-exchange.ent"                                                 >
+"../../../jatslib-jatsoasis-1.0/content/oasis-exchange.ent"          >
 
 
 <!-- ============================================================= -->
@@ -402,27 +402,27 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % mathml-qname.mod
                         PUBLIC
 "-//W3C//ENTITIES MathML 2.0 Qualified Names 1.0//EN"
-"../../../../jatslib/mathml2/2.0/dtd/mathml2-qname-1.mod"                >
+"../../../jatslib-mathml2-2.0/content/dtd/mathml2-qname-1.mod"                >
 
 
 <!--                    MATHML 2.0 DTD                             -->
 <!ENTITY % mathml.dtd   PUBLIC
 "-//W3C//DTD MathML 2.0//EN"
-"../../../../jatslib/mathml2/2.0/dtd/mathml2.dtd"                        >
+"../../../jatslib-mathml2-2.0/content/dtd/mathml2.dtd"                        >
 
 
 <!--                    MATHML 2.0 EXTRA ENTITIES                  -->
 <!ENTITY % ent-mmlextra
                         PUBLIC
 "-//W3C//ENTITIES Extra for MathML 2.0//EN"
-"../../../../jatslib/mathml2/2.0/dtd/mathml/mmlextra.ent"                >
+"../../../jatslib-mathml2-2.0/content/dtd/mathml/mmlextra.ent"                >
 
 
 <!--                    MATHML 2.0 ALIASES                         -->
 <!ENTITY % ent-mmlalias
                         PUBLIC
 "-//W3C//ENTITIES Aliases for MathML 2.0//EN"
-"../../../../jatslib/mathml2/2.0/dtd/mathml/mmlalias.ent"                >
+"../../../jatslib-mathml2-2.0/content/dtd/mathml/mmlalias.ent"                >
 
 
 <!-- ============================================================= -->

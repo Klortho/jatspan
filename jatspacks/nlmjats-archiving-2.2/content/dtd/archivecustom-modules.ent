@@ -94,7 +94,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % archivecustom-classes.ent 
                         PUBLIC  
 "-//NLM//DTD Journal Archiving DTD Customize Classes Module v2.1 20050630//EN"
-"../../2.1/dtd/archivecustom-classes.ent"                                          >
+"../../../nlmjats-archiving-2.1/content/dtd/archivecustom-classes.ent"                                          >
 
 
 <!--                    DTD-SPECIFIC MIX CUSTOMIZATIONS MODULE     -->
@@ -105,7 +105,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % archivecustom-mixes.ent 
                         PUBLIC  
 "-//NLM//DTD Journal Archiving DTD Customize Mixes Module v2.1 20050630//EN"
-"../../2.1/dtd/archivecustom-mixes.ent"                                            >
+"../../../nlmjats-archiving-2.1/content/dtd/archivecustom-mixes.ent"                                            >
 
 
 <!--                    DTD-SPECIFIC MODELS/ATTRIBUTES CUSTOMIZATIONS 

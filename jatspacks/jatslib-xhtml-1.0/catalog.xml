@@ -1,13 +1,13 @@
-<?xml version="1.0"?>
-<!DOCTYPE catalog PUBLIC "-//OASIS//DTD Entity Resolution XML Catalog V1.0//EN" 
+﻿<?xml version="1.0"?>
+<!DOCTYPE catalog PUBLIC "-//OASIS//DTD Entity Resolution XML Catalog V1.0//EN"
   "http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd">
 
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"
          prefer='public'>
 
-  <public publicId="-//W3C//ELEMENTS XHTML Tables 1.0//EN" 
-          uri="xhtml-table-1.mod"/>
-  <public publicId="-//W3C//ENTITIES XHTML Inline Style 1.0//EN" 
-          uri="xhtml-inlstyle-1.mod"/>
+  <public publicId="-//W3C//ELEMENTS XHTML Tables 1.0//EN"
+          uri="content/xhtml-table-1.mod"/>
+  <public publicId="-//W3C//ENTITIES XHTML Inline Style 1.0//EN"
+          uri="content/xhtml-inlstyle-1.mod"/>
 
 </catalog>

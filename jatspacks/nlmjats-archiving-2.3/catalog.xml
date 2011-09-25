@@ -8,15 +8,15 @@
          prefer='public'>
 
    <public publicId="-//NLM//DTD Journal Archiving and Interchange DTD v2.3 20070202//EN" 
-           uri="dtd/archivearticle.dtd"/>
+           uri="content/dtd/archivearticle.dtd"/>
    <public publicId="-//NLM//DTD Journal Archiving DTD Customize Classes Module v2.3 20070202//EN" 
-           uri="dtd/archivecustom-classes.ent"/>
+           uri="content/dtd/archivecustom-classes.ent"/>
    <public publicId="-//NLM//DTD Journal Archiving DTD Customize Mixes Module v2.3 20070202//EN" 
-           uri="dtd/archivecustom-mixes.ent"/>
+           uri="content/dtd/archivecustom-mixes.ent"/>
    <public publicId="-//NLM//DTD Journal Archiving DTD Customize Content and Attributes Module v2.3 20070202//EN" 
-           uri="dtd/archivecustom-models.ent"/>
+           uri="content/dtd/archivecustom-models.ent"/>
    <public publicId="-//NLM//DTD Journal Archiving DTD-Specific Modules v2.3 20070202//EN" 
-           uri="dtd/archivecustom-modules.ent"/>
+           uri="content/dtd/archivecustom-modules.ent"/>
 
   
 </catalog>

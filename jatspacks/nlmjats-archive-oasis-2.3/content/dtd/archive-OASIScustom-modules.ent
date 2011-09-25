@@ -29,7 +29,7 @@ Delivered as file "archive-OASIScustom-modules.ent"                      -->
 <!ENTITY % archivecustom-mixes.ent 
                         PUBLIC  
 "-//NLM//DTD Journal Archiving DTD Customize Mixes Module v2.3 20070202//EN"
-"../../../archiving/2.3/dtd/archivecustom-mixes.ent"                                            >
+"../../../nlmjats-archiving-2.3/content/dtd/archivecustom-mixes.ent"                                            >
 
 
 <!--                    DTD-SPECIFIC MODELS/ATTRIBUTES CUSTOMIZATIONS 
@@ -43,7 +43,7 @@ Delivered as file "archive-OASIScustom-modules.ent"                      -->
 <!ENTITY % archivecustom-models.ent 
                         PUBLIC  
 "-//NLM//DTD Journal Archiving DTD Customize Content and Attributes Module v2.3 20070202//EN"
-"../../../archiving/2.3/dtd/archivecustom-models.ent"                                           >
+"../../../nlmjats-archiving-2.3/content/dtd/archivecustom-models.ent"                                           >
 
 
 <!--                    NLM CITATION MODULE                        -->
@@ -56,7 +56,7 @@ Delivered as file "archive-OASIScustom-modules.ent"                      -->
 <!ENTITY % nlmcitation.ent 
                         PUBLIC  
 "-//NLM//DTD NLM Citation v2.3 20070202//EN"
-"../../../core/2.3/dtd/nlmcitation.ent"                                                    >
+"../../../nlmjats-core-2.3/content/dtd/nlmcitation.ent"                                                    >
 
 
 <!-- =================== End Archive DTD Module of Modules ======= -->

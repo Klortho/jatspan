@@ -110,7 +110,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % archivecustom-models.ent 
                         PUBLIC  
 "-//NLM//DTD Journal Archiving DTD Customize Content and Attributes Module v3.0 20080202//EN"
-"../../../archiving/3.0/dtd/archivecustom-models3.ent"                                          >
+"../../../nlmjats-archiving-3.0/content/dtd/archivecustom-models3.ent"                                          >
 
 
 <!--                    NLM CITATION MODULE                        -->
@@ -123,7 +123,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % nlmcitation.ent 
                         PUBLIC  
 "-//NLM//DTD NLM Citation v3.0 20080202//EN"
-"../../../core/3.0/dtd/nlmcitation3.ent"                                                   >
+"../../../nlmjats-core-3.0/content/dtd/nlmcitation3.ent"                                                   >
 
 
 <!-- =================== End Archive DTD Module of Modules ======= -->

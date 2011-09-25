@@ -256,7 +256,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         entity.                                    -->
 <!ENTITY % modules.ent PUBLIC
 "-//NLM//DTD JATS (Z39.96) Archiving and Interchange DTD Suite Module of Modules v0.4 20110131//EN"
-"../../../core/0.4/dtd/JATS-modules0.ent"                            >
+"../../../nisojats-core-0.4/content/dtd/JATS-modules0.ent"                            >
 %modules.ent;
 
 

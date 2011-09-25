@@ -155,7 +155,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!--                    Names all DTD-specific external modules    -->
 <!ENTITY % bookcustom-modules.ent PUBLIC  
 "-//NLM//DTD Book DTD Module of Modules v2.3 20070202//EN"
-"../../../books/2.3/dtd/bookcustom-modules.ent"                                             >
+"../../../nlmjats-books-2.3/content/dtd/bookcustom-modules.ent"                                             >
 %bookcustom-modules.ent;
 
 
@@ -165,7 +165,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         Interchange DTD Suite library.             -->
 <!ENTITY % modules.ent PUBLIC  
 "-//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v2.3 20070202//EN" 
-"../../../core/2.3/dtd/modules.ent"                                                        >
+"../../../nlmjats-core-2.3/content/dtd/modules.ent"                                                        >
 %modules.ent;
 
 

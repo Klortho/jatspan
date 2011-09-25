@@ -8,10 +8,10 @@
          prefer='public'>
 
    <public publicId="-//NLM//DTD Journal Publishing DTD Customize Content and Attributes Module v2.2 20060430//EN" 
-           uri="dtd/journalpubcustom-models.ent"/>
+           uri="content/dtd/journalpubcustom-models.ent"/>
    <public publicId="-//NLM//DTD Journal Publishing DTD-Specific Modules v2.2 20060430//EN" 
-           uri="dtd/journalpubcustom-modules.ent"/>
+           uri="content/dtd/journalpubcustom-modules.ent"/>
    <public publicId="-//NLM//DTD Journal Publishing DTD v2.2 20060430//EN" 
-           uri="dtd/journalpublishing.dtd"/>
+           uri="content/dtd/journalpublishing.dtd"/>
 
 </catalog>

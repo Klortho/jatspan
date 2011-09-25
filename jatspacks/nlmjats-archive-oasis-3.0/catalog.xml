@@ -8,13 +8,13 @@
          prefer='public'>
 
    <public publicId="-//NLM//DTD Journal Archiving with OASIS Tables v3.0 20080202//EN" 
-           uri="dtd/archive-oasis-article3.dtd"/>
+           uri="content/dtd/archive-oasis-article3.dtd"/>
    <public publicId="-//NLM//DTD Journal Archiving with OASIS Tables Customize Classes Module v3.0 20080202//EN" 
-           uri="dtd/archive-oasis-custom-classes3.ent"/>
+           uri="content/dtd/archive-oasis-custom-classes3.ent"/>
    <public publicId="-//NLM//DTD Journal Archiving with OASIS Tables Customize Mixes Module v3.0 20080202//EN" 
-           uri="dtd/archive-oasis-custom-mixes3.ent"/>
+           uri="content/dtd/archive-oasis-custom-mixes3.ent"/>
    <public publicId="-//NLM//DTD Journal Archiving with OASIS Tables-Specific Modules v3.0 20080202//EN" 
-           uri="dtd/archive-oasis-custom-modules3.ent"/>
+           uri="content/dtd/archive-oasis-custom-modules3.ent"/>
 
   
 </catalog>
