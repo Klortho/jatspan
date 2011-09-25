@@ -4,7 +4,7 @@ Release Notes for JATSPAN at Sourceforge.
 These notes are in reverse chronological order (newest releases at the top).
 
 =======================================================================
-jats-core-bundle-0.7
+jats-core-bundle-0.7-r342
 9/25/2011
 
 Note:
