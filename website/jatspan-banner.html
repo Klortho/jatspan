@@ -1,4 +1,4 @@
-<html>
+﻿<html>
   <head>
     <!-- $Id$ -->
     <!--  &#8209;
@@ -73,79 +73,122 @@
 
       // Return a random integer between 0 and n - 1
       function randomInt(n) {
-        return Math.floor(Math.random() * (n - 0.01));
+          return Math.floor(Math.random() * (n - 0.01));
       }
 
+      var totalTags = tags.length;
+      var numDispTags = 20;  // number of tags to display
+      var fontSizeMin = 10;
+      var fontSizeMax = 50;
+      var xMax = 1000;
+      var yMax = 109;
+
       function MakeTagSoup() {
-        var totalTags = tags.length;
-        var numDispTags = 30;  // number of tags to display
-        var fontSizeMin = 10;
-        var fontSizeMax = 50;
-        var xMax = 1000;
-        var yMax = 109;
 
-        var fontSizeRange = fontSizeMax - fontSizeMin;
+          var fontSizeRange = fontSizeMax - fontSizeMin;
 
-        $('div.content').css({
-            padding: 0,
-            margin: 0,
-            "border": "1px dotted #F00",
-            width: xMax + "px",
-            height: yMax + "px"
-        })
+          $('div.content').css({
+              padding: 0,
+              margin: 0,
+              "border": "1px dotted #F00",
+              width: xMax + "px",
+              height: yMax + "px"
+          })
 
-        for (i = 0; i < numDispTags; ++i) {
-            var tagNum = randomInt(totalTags);
-            var fontSize = randomInt(fontSizeRange) + fontSizeMin;
+          for (i = 0; i < numDispTags; ++i) {
+              var tagNum = randomInt(totalTags);
+              var fontSize = randomInt(fontSizeRange) + fontSizeMin;
 
-            // The shadow
-            var ts = $("<span>&lt;" + tags[tagNum] + "&gt;</span>")
-                .css({
-                    "font-size": fontSize + "px",
-                    position: "absolute",
-                    top: 35,
-                    left: 65,
-                    color: '#555',
-                    display: "none"
-                });
-            // The foreground
-            var tf = ts.clone()
-                .css({
-                    'top': 34,
-                    'left': 64,
-                    color: '#CCC',
-                    display: 'none'
-                });
+              // The shadow
+              var ts = $("<span>&lt;" + tags[tagNum] + "&gt;</span>")
+                  .css({
+                      "font-size": fontSize + "px",
+                      position: "absolute",
+                      top: 35,
+                      left: 65,
+                      color: '#777',
+                      display: "none"
+                  });
+              // The foreground
+              var tf = ts.clone()
+                  .css({
+                      'top': 34,
+                      'left': 64,
+                      color: '#EEE',
+                      display: 'none'
+                  });
 
-            // Add them to the document
-            $('div.content').append(ts).append(tf);
+              // Add them to the document
+              $('div.content').append(ts).append(tf);
 
-            // Now figure out the position
-            var tWidth = ts.innerWidth();
-            var tHeight = ts.innerHeight();
-            var xRange = xMax + tWidth;
-            var yRange = yMax + tHeight;
-            var tLeft = randomInt(xRange) - tWidth + 1;
-            var tTop = randomInt(yRange) - tHeight + 1;
+              // Now figure out the position
+              var tWidth = ts.innerWidth();
+              var tHeight = ts.innerHeight();
 
-            // Now position them and make them visible
-            ts.css({
-                left: tLeft,
-                top: tTop,
-                display: "inline"
-            });
-            tf.css({
-                left: tLeft - 1,
-                top: tTop - 1,
-                display: "inline"
-            });
+              var pos = placeTag(tWidth, tHeight);
+              var tLeft = pos.left;
+              var tTop = pos.top;
 
-            /*alert("totalTags is " + totalTags +
-                  "\ntagNum = " + tagNum +
-                  "\nfontSize = " + fontSize +
-                  "\ntWidth = " + tWidth +
-                  "\ntHeight = " + tHeight);*/
-        }
+              // Now position them and make them visible
+              ts.css({
+                  left: tLeft,
+                  top: tTop,
+                  display: "inline"
+              });
+              tf.css({
+                  left: tLeft - 1,
+                  top: tTop - 1,
+                  display: "inline"
+              });
+
+              // Record this tag
+              recordTag({
+                  width: tWidth,
+                  height: tHeight,
+                  left: tLeft,
+                  top: tTop,
+              });
+
+              /*alert("totalTags is " + totalTags +
+                    "\ntagNum = " + tagNum +
+                    "\nfontSize = " + fontSize +
+                    "\ntWidth = " + tWidth +
+                    "\ntHeight = " + tHeight);*/
+          }
+      }
+
+      var tagsList = [];
+      function recordTag(tag) {
+          tagsList.push(tag);
+      }
+      // This function takes the width and height of the tag, and finds a place for
+      // it such that it doesn't overlap any of the others.
+      // No overlaps at all either results in a pretty sparse population, or becomes
+      // impossible if the # of tags is too large (loop hangs).  What we really needed
+      // is a way to nudge others out of the way.  What I have now is that it tries
+      // ten times to find a place that doesn't overlap.  If it can't it gives up.
+      function placeTag(w, h) {
+          //console.info("-----------------------------");
+          var xRange = xMax + w;
+          var yRange = yMax + h;
+          // Try ten times, if fails, let overlap
+          for (var j = 0; j < 10; ++j) {
+              var tLeft = randomInt(xRange) - w + 1;
+              var tTop = randomInt(yRange) - h + 1;
+              var overlaps = false;
+              for (var i = 0; i < tagsList.length; ++i) {
+                  var tag = tagsList[i];
+                  //console.info("left: " + tag.left + ", top: " + tag.top);
+                  // If it overlaps horizontally and vertically, then it overlaps
+                  if ( tag.left < tLeft + w && tag.left + tag.width > tLeft &&
+                       tag.top < tTop + h && tag.top + tag.height > tTop ) {
+                      overlaps = true;
+                      break;
+                  }
+              }
+              if (!overlaps) return { left: tLeft, top: tTop };
+          }
+          return { left: tLeft, top: tTop };
       }
 
       $(document).ready(MakeTagSoup);
