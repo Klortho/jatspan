@@ -8,6 +8,8 @@ jatspan-0.7
 
 Changes:
 - Changed the name from "nlm-jats" to "jatspan".
+- Changed the directory structure again.  This was required to get JATSPacks compatible with EXPath-packaging.  It is a requirement that the directory structure in Subversion and in the released Zip file to be the same as the final on-disk repository layout.  Each JATSPack package, according to this spec, must also have a "content" directory.
+- Moved expath-pkg.xml package descriptor files into the root directories.
 
 =======================================================================
 nlm-jats-0.6-r123
