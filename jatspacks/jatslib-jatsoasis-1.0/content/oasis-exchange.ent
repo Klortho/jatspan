@@ -9,8 +9,8 @@
 <!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
 <!--                        TYPICAL INVOCATION                     -->
 <!--
-"-//OASIS//DTD XML Exchange Table Model 19990315//EN"
-     Delivered as file "JATS-oasis-exchange.ent"                        -->
+"-//OASIS//DTD MD copy XML Exchange Table Model 19990315//EN"
+     Delivered as file "oasis-exchange.ent"                        -->
 <!-- ============================================================= -->
 
 <!-- ============================================================= -->

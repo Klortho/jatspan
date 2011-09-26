@@ -329,8 +329,8 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         %OASIStablesetup3.ent;                     -->
 <!ENTITY % oasis-exchange.ent
                         PUBLIC
-"-//NLM//DTD Archiving and Interchange DTD Suite OASIS XML Table Model v1.0 20100821//EN"
-"../../../nlmjats-core-1.0/content/dtd/oasis-exchange.ent"                                   >
+"-//OASIS//DTD MD copy XML Exchange Table Model 19990315//EN"
+"../../../jatslib-jatsoasis-1.0/content/oasis-exchange.ent"          >
 
 
 <!-- ============================================================= -->
