@@ -443,3 +443,14 @@ label.inputLabel
   right: 2.0em;
   bottom: 0.5em;
 }
+
+.whats-new-header {
+  color: #A70000;
+  font-weight: bold;
+  font-family:
+    "liberation sans","Myriad ","Bitstream Vera Sans","Lucida Grande","Luxi Sans","Trebuchet MS",helvetica,verdana,arial,sans-serif;
+  margin-bottom: 5px;
+}
+.whats-new {
+  padding-top: 1.3em;
+}
