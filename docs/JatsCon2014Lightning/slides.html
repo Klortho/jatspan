@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" 
+               "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:owl="http://www.w3.org/2002/07/owl#" 
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:cc="http://creativecommons.org/ns#"
+      typeof="cc:Work"
+      xml:lang="en" 
+      lang="en-US">
+  <head>
+    <title>Balisage 2011 - Highlights</title>
+
+    <meta name="DC.language" scheme="ISO 639-2/T" content="eng" />
+    <meta name="DC.publisher" content="Chris Maloney" />
+    <meta name="DC.creator" content="Chris Maloney" />
+    <meta name="Author" content="Chris Maloney" />
+    <meta name="DC.title"
+          content="Balisage 2011 - Highlights" />
+    <meta name="keywords"
+          content="JATS, JATSDoc, documentation" />
+    <link href="http://creativecommons.org/publicdomain/zero/1.0/" 
+          rel="license"/>
+    
+    <meta name="duration" content="45" />
+    <link rel="stylesheet" href="http://www.ncbi.nlm.nih.gov/staff/maloneyc/lib/Slidy2/styles/slidy.css" type="text/css" />
+    <link rel="stylesheet" href="http://www.ncbi.nlm.nih.gov/staff/maloneyc/lib/Slidy2/styles/w3c-blue.css" type="text/css" />
+    <link rel='stylesheet' href='Styles.css' type='text/css'/>
+    <script src="http://www.ncbi.nlm.nih.gov/staff/maloneyc/lib/Slidy2/scripts/slidy.js"
+            type="text/javascript">
+    </script>
+  </head>
+
+  <body>
+    <!-- Background -->
+    <div class="background">
+      <img alt="" id="head-icon" src="http://www.ncbi.nlm.nih.gov/staff/maloneyc/lib/Slidy2/graphics/icon-blue.png" />
+    </div>
+
+    <div class="slide cover title">
+      <h1>JATS Tag Library alternative viewer</h1>
+      
+      <p>Chris Maloney, NCBI/NLM/NIH, Contractor<br/>
+        &lt;<a href="mailto:maloneyc@ncbi.nlm.nih.gov">maloneyc@ncbi.nlm.nih.gov</a></p>
+
+      <p>&#160;</p>
+      <p>&#160;</p>
+      <p>&#160;</p>
+      <div class='license'>
+        <p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
+          <a rel="license"
+            href="http://creativecommons.org/publicdomain/zero/1.0/">
+            <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png"
+              style="border-style: none;" alt="CC0" width='65px'/>
+          </a>
+          <br />
+          To the extent possible under law,
+          <a rel="dct:publisher"
+            href="http://chrismaloney.org">
+            <span property="dct:title">Chris Maloney</span></a>
+          has waived all copyright and related or neighboring rights to
+          <span property="dct:title">JATS Tag Library alternative viewer</span>.
+          This work is published from:
+          <span property="vcard:Country" datatype="dct:ISO3166"
+            content="US" about="http://www.ncbi.nlm.nih.gov/staff/maloneyc/Presentations/XQueryInPortal/Slides.html">
+            United States</span>.
+        </p>
+      </div>
+    </div>  
+    
+    <div class="slide">
+      <h1>DtdAnalyzer update</h1>
+      <ul>
+        <li>
+          See:
+          <ul>
+            <li><a href='http://www.ncbi.nlm.nih.gov/books/NBK100354/'>JATSCon paper from last year</a></li>
+            <li><a href='https://github.com/ncbi/DtdAnalyzer/wiki'>Documentation on the tool</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href='https://github.com/ncbi/DtdAnalyzer/wiki/Generating-documentation'>dtddocumentor</a>
+          generates (new and improved) documentation from DTDs.  
+          <a href='http://chrismaloney.org/DtdAnalyzer/test/split-example/doc/'>Sample</a>
+        </li>
+        <li>
+          Uses <a href='https://github.com/ncbi/DtdAnalyzer/wiki/Overview-of-DTD-annotations'>annotations
+          in the DTD</a>.  So, tag definitions and their documentation are kept in one place.
+        </li>
+      </ul>
+    </div>
+
+    <div class="slide">
+      <h1>JATSDoc</h1>
+      <ul>
+        <li>
+          A documentation framework:  mostly JavaScript and CSS.
+        </li>
+        <li>  Could be used to host any kind of documentation</li>
+        <li>
+          On <a href='https://github.com/Klortho/jatsdoc'>GitHub</a>.
+        </li>
+        <li>Forked from <a href='http://jqapi.com/'>jqapi</a></li>
+      </ul>
+    </div>
+
+
+    <div class="slide">
+      <h1>Alternative JATS Tag Library documentation</h1>
+      <ul>
+        <li>For example,
+          <a href='http://jatspan.org/niso/publishing-1.1d1/'>Journal Publishing Tag Library
+            NISO JATS Draft Version 1.1d1</a>
+        </li>
+        <li>
+          Other sets available:
+          <ul>
+            <li>through <a href='http://jatspan.org/'>jatspan.org</a> →
+          <a href='http://jatspan.org/jatsdoc-tag-sets.html'>JATSDoc Tag Sets</a>.
+            </li>
+            <li>
+              Or, through <a href='http://jats.nlm.nih.gov/'>http://jats.nlm.nih.gov/</a>  →
+              <a href='http://webservices.itcs.umich.edu/mediawiki/jats/index.php/Main_Page'>JATS Wiki</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="slide">
+      <h1>Porting Tag Library documentation sets</h1>
+      <ul>
+        <li>
+          Main JATS tag sets, was done <a href='https://github.com/Klortho/JatsTagLibrary'>on GitHub</a>.
+          (Instructions are there).
+        </li>
+        <li>Easy, but not fully automatic</li>
+        <li><a href='http://jatspan.org/samhsa/jatsdoc/'>SAMHSA Document Tag Suite</a> (Substance Abuse and
+          Mental Health Services Administration) took about ten
+          minutes.
+        </li>
+        <li><a href='http://tools.store.samhsa.gov/dtd-docs'>Original (older version)</a></li>
+        <li>
+          License?
+        </li>
+        <li>
+          It would be nice if Mulberry would make their tools open source, and provide access to original
+          sources for their extensions.
+        </li>
+      </ul>
+    </div>
+
+
+  <!--
+    <div class="slide">
+      <h1>title</h1>
+      <ul>
+        <li>
+        </li>
+      </ul>
+    </div>
+  -->
+
+
+
+
+
+  </body>
+</html>
