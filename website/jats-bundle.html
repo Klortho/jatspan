@@ -56,8 +56,7 @@
           <div class="contentarea">
             <p>
               Download the core JATS bundle from the
-              <a href='https://sourceforge.net/projects/jatspan/'>Sourceforge
-              project page</a>.  Just click the big green "Download" button.
+              <a href='downloads/'>downloads</a> directory here. 
             </p>
             <p>
               To use it, unzip it to any directory on your filesystem, and point
@@ -230,56 +229,8 @@
         <div class="post">
           <h4 id='quick' name='quick'>Are these the same as the NLM
           distributions?</h4>
+          <p>Yes!</p>
           <div class="contentarea">
-            <p>
-              If the question is, "Are the data models described by these DTDs
-              exactly the same as those from the NLM?", then the answer is "Yes!".
-              Unless I have inadvertently overlooked something, or introduced a bug,
-              then any document that validates to an
-              NLM distribution of the DTD will
-              validate to the JATSPAN distribution of the same version, and any
-              document that is invalid according to NLM will be invalid according to
-              JATSPAN.
-            </p>
-            <p>
-              They are also identical in most other respects.  The implementation was
-              not changed in terms of which module files (.dtd and .ent) make up
-              any given DTD.  All the existing modularity, and layering of parameter
-              entity definitions, is completely preserved.
-            </p>
-            <p>
-              The actual physical differences in the files were kept to a minimum,
-              and are related to
-              getting all the different versions and
-              flavors of the DTDs to coexist together unambiguously on one system.
-              These include eliminating redundant copies of files, moving shared files
-              into different directories, and fixing the relative system-id links
-              between files that refer to each other, so that these references don't
-              break.  There was also work done to clean up
-              discrepencies among the versions, and
-              fixing a few problems.
-            </p>
-            <p>
-              <em>Note that I am in the process
-              of making a detailed list of all of the
-              specific changes that were made, and I will put it here as soon
-              as it is finished.</em>  I would hope that before anyone suggests
-              that this packaged distribution should not be used, because it is
-              different, that they would first look over the differences, and
-              let me know if they think there would have been a better way to
-              accomplish the goal of having all these DTDs cohabitate nicely
-              together in a robust and predictable way.
-            </p>
-            <p>
-              I am committed to making sure that this bundle does provide
-              a completely faithful package of the JATS DTDs.
-              I have done extensive testing to ensure that this is the case.
-              If by some small chance some incompatibility has snuck in, please
-              tell me about it, and I will correct it immediately!
-            </p>
-            <p>
-
-            </p>
             <div style="clear: both;"></div>
           </div>
         </div>
