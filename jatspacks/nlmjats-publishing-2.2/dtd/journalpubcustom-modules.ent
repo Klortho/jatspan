@@ -89,7 +89,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % journalpubcustom-classes.ent 
                         PUBLIC  
 "-//NLM//DTD Journal Publishing DTD Customize Classes Module v2.0 20040830//EN"
-"../../../nlmjats-publishing-2.0/content/dtd/journalpubcustom-classes.ent"                                       >
+"../../nlmjats-publishing-2.0/dtd/journalpubcustom-classes.ent"                                       >
 
 
 <!--                    DTD-SPECIFIC MIX CUSTOMIZATIONS MODULE     -->
@@ -100,7 +100,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % journalpubcustom-mixes.ent 
                         PUBLIC  
 "-//NLM//DTD Journal Publishing DTD Customize Mixes Module v2.0 20040830//EN"
-"../../../nlmjats-publishing-2.0/content/dtd/journalpubcustom-mixes.ent"                                         >
+"../../nlmjats-publishing-2.0/dtd/journalpubcustom-mixes.ent"                                         >
 
 
 <!--                    DTD-SPECIFIC MODELS/ATTRIBUTES CUSTOMIZATIONS 
@@ -127,7 +127,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % nlmcitation.ent 
                         PUBLIC  
 "-//NLM//DTD NLM Citation v2.0 20040830//EN"
-"../../../nlmjats-core-2.0/content/dtd/nlmcitation.ent"                                                    >
+"../../nlmjats-core-2.0/dtd/nlmcitation.ent"                                                    >
 
 
 <!-- =================== End Publishing DTD Module of Modules ==== -->

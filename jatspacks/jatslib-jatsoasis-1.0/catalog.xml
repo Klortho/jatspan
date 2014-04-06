@@ -6,6 +6,6 @@
          prefer='public'>
 
   <public publicId="-//OASIS//DTD MD copy XML Exchange Table Model 19990315//EN"
-          uri="content/oasis-exchange.ent"/>
+          uri="oasis-exchange.ent"/>
 
 </catalog>

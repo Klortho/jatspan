@@ -8,24 +8,24 @@
          prefer='public'>
 
    <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Journal Article Metadata Elements v2.2 20060430//EN" 
-           uri="content/dtd/articlemeta.ent"/>
+           uri="dtd/articlemeta.ent"/>
    <public publicId="-//NLM//DTD Journal Archiving and Interchange DTD to Test the Base Suite v2.2 20100718//EN" 
-           uri="content/dtd/base-test.dtd"/>
+           uri="dtd/base-test.dtd"/>
    <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Common (Shared) Elements Module v2.2 20060430//EN" 
-           uri="content/dtd/common.ent"/>
+           uri="dtd/common.ent"/>
    <public publicId="-//NLM//DTD Default Element Classes Module v2.2 20060430//EN" 
-           uri="content/dtd/default-classes.ent"/>
+           uri="dtd/default-classes.ent"/>
    <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v2.2 20060430//EN" 
-           uri="content/dtd/display.ent"/>
+           uri="dtd/display.ent"/>
    <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Math Class Elements v2.2 20100718//EN" 
-           uri="content/dtd/math.ent"/>
+           uri="dtd/math.ent"/>
    <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v2.2 20060430//EN" 
-           uri="content/dtd/modules.ent"/>
+           uri="dtd/modules.ent"/>
    <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Paragraph-Like Elements v2.2 20060430//EN" 
-           uri="content/dtd/para.ent"/>
+           uri="dtd/para.ent"/>
    <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Bibliographic Reference (Citation) Class Elements v2.2 20060430//EN" 
-           uri="content/dtd/references.ent"/>
+           uri="dtd/references.ent"/>
    <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Section Class Elements v2.2 20060430//EN" 
-           uri="content/dtd/section.ent"/>
+           uri="dtd/section.ent"/>
 
 </catalog>

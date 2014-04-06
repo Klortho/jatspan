@@ -75,7 +75,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % articleauthcustom-classes.ent 
                         PUBLIC  
 "-//NLM//DTD Article Authoring DTD Over-ride Classes Module v2.1 20050630//EN"
-"../../../nlmjats-authoring-2.1/content/dtd/articleauthcustom-classes.ent"                                       >
+"../../nlmjats-authoring-2.1/dtd/articleauthcustom-classes.ent"                                       >
 
 
 <!--                    DTD-SPECIFIC MIX CUSTOMIZATIONS MODULE     -->
@@ -86,7 +86,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % articleauthcustom-mixes.ent 
                         PUBLIC  
 "-//NLM//DTD Article Authoring DTD Over-ride Mixes Module v2.1 20050630//EN"
-"../../../nlmjats-authoring-2.1/content/dtd/articleauthcustom-mixes.ent"                                         >
+"../../nlmjats-authoring-2.1/dtd/articleauthcustom-mixes.ent"                                         >
 
 
 <!--                    DTD-SPECIFIC MODELS/ATTRIBUTES CUSTOMIZATIONS 
@@ -113,7 +113,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % nlmcitation.ent 
                         PUBLIC  
 "-//NLM//DTD NLM Citation v2.0 20040830//EN"
-"../../../nlmjats-core-2.0/content/dtd/nlmcitation.ent"                                                    >
+"../../nlmjats-core-2.0/dtd/nlmcitation.ent"                                                    >
 
 
 <!-- =================== End Authoring DTD Module of Modules ===== -->

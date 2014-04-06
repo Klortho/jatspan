@@ -6,8 +6,8 @@
          prefer='public'>
 
   <public publicId="-//W3C//ELEMENTS XHTML Tables 1.0//EN"
-          uri="content/xhtml-table-1.mod"/>
+          uri="xhtml-table-1.mod"/>
   <public publicId="-//W3C//ENTITIES XHTML Inline Style 1.0//EN"
-          uri="content/xhtml-inlstyle-1.mod"/>
+          uri="xhtml-inlstyle-1.mod"/>
 
 </catalog>

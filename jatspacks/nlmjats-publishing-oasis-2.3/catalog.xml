@@ -8,10 +8,10 @@
          prefer='public'>
 
    <public publicId="-//NLM//DTD Journal Publishing with OASIS Tables DTD v2.3 20070813//EN" 
-           uri="content/dtd/publishing-OASIS.dtd"/>
+           uri="dtd/publishing-OASIS.dtd"/>
    <public publicId="-//NLM//DTD Journal Publishing DTD-OASIS Customize Mixes Module v2.3 20070813//EN" 
-           uri="content/dtd/publishing-OASIScustom-classes.ent"/>
+           uri="dtd/publishing-OASIScustom-classes.ent"/>
    <public publicId="-//NLM//DTD Journal Publishing DTD-OASIS Specific Modules v2.3 20070813//EN" 
-           uri="content/dtd/publishing-OASIScustom-modules.ent"/>
+           uri="dtd/publishing-OASIScustom-modules.ent"/>
 
 </catalog>

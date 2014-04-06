@@ -8,14 +8,14 @@
          prefer='public'>
 
    <public publicId="-//NLM//DTD NCBI Historical Book DTD Over-ride Classes Module v2.1 20050630//EN" 
-           uri="content/dtd/historical-classes.ent"/>
+           uri="dtd/historical-classes.ent"/>
    <public publicId="-//NLM//DTD NCBI Historical Book DTD Content and Attribute Over-ride Module v2.1 20050630//EN" 
-           uri="content/dtd/historical-models.ent"/>
+           uri="dtd/historical-models.ent"/>
    <public publicId="-//NLM//DTD NCBI Historical Book DTD Module of Modules v2.1 20050630//EN" 
-           uri="content/dtd/historical-modules.ent"/>
+           uri="dtd/historical-modules.ent"/>
    <public publicId="-//NLM//DTD NCBI Historical Book DTD v2.1 20050630//EN" 
-           uri="content/dtd/historical.dtd"/>
+           uri="dtd/historical.dtd"/>
    <public publicId="-//NLM//DTD NCBI Historical Book DTD Metadata Elements v2.1 20050630//EN" 
-           uri="content/dtd/historicalmeta.ent"/>
+           uri="dtd/historicalmeta.ent"/>
 
 </catalog>

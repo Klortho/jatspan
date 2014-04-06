@@ -8,14 +8,14 @@
          prefer='public'>
 
    <public publicId="-//NLM//DTD Journal Publishing DTD Customize Classes Module v2.3 20070202//EN" 
-           uri="content/dtd/journalpubcustom-classes.ent"/>
+           uri="dtd/journalpubcustom-classes.ent"/>
    <public publicId="-//NLM//DTD Journal Publishing DTD Customize Mixes Module v2.3 20070202//EN" 
-           uri="content/dtd/journalpubcustom-mixes.ent"/>
+           uri="dtd/journalpubcustom-mixes.ent"/>
    <public publicId="-//NLM//DTD Journal Publishing DTD Customize Content and Attributes Module v2.3 20070202//EN" 
-           uri="content/dtd/journalpubcustom-models.ent"/>
+           uri="dtd/journalpubcustom-models.ent"/>
    <public publicId="-//NLM//DTD Journal Publishing DTD-Specific Modules v2.3 20070202//EN" 
-           uri="content/dtd/journalpubcustom-modules.ent"/>
+           uri="dtd/journalpubcustom-modules.ent"/>
    <public publicId="-//NLM//DTD Journal Publishing DTD v2.3 20070202//EN" 
-           uri="content/dtd/journalpublishing.dtd"/>
+           uri="dtd/journalpublishing.dtd"/>
 
 </catalog>

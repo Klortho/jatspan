@@ -8,11 +8,11 @@
          prefer='public'>
 
    <public publicId="-//NLM//DTD Journal Archiving and Interchange DTD v2.2 20060430//EN" 
-           uri="content/dtd/archivearticle.dtd"/>
+           uri="dtd/archivearticle.dtd"/>
    <public publicId="-//NLM//DTD Journal Archiving DTD Customize Content and Attributes Module v2.2 20060430//EN" 
-           uri="content/dtd/archivecustom-models.ent"/>
+           uri="dtd/archivecustom-models.ent"/>
    <public publicId="-//NLM//DTD Journal Archiving DTD-Specific Modules v2.2 20060430//EN" 
-           uri="content/dtd/archivecustom-modules.ent"/>
+           uri="dtd/archivecustom-modules.ent"/>
 
   
 </catalog>

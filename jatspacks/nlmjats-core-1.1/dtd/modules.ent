@@ -143,7 +143,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % backmatter.ent
                         PUBLIC
 "-//NLM//DTD Archiving and Interchange DTD Suite Back Matter Elements v1.0 20021201//EN"
-"../../../nlmjats-core-1.0/content/dtd/backmatter.ent"                                                     >
+"../../nlmjats-core-1.0/dtd/backmatter.ent"                                                     >
 
 
 <!--                    DISPLAY (GRAPHICAL) ELEMENTS INVOCATION    -->
@@ -160,7 +160,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % format.ent
                         PUBLIC
  "-//NLM//DTD Archiving and Interchange DTD Suite Formatting Element Classes v1.0 20021201//EN"
-"../../../nlmjats-core-1.0/content/dtd/format.ent"                                                         >
+"../../nlmjats-core-1.0/dtd/format.ent"                                                         >
 
 
 <!--                    JOURNAL METADATA ELEMENTS                  -->
@@ -204,14 +204,14 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % references.ent
                         PUBLIC
 "-//NLM//DTD Archiving and Interchange DTD Suite Bibliographic Reference (Citation) Class Elements v1.0 20021201//EN"
-"../../../nlmjats-core-1.0/content/dtd/references.ent"                                                     >
+"../../nlmjats-core-1.0/dtd/references.ent"                                                     >
 
 
 <!--                    SECTION ELEMENTS                           -->
 <!ENTITY % section.ent
                         PUBLIC
 "-//NLM//DTD Archiving and Interchange DTD Suite Section Class Elements v1.0 20021201//EN"
-"../../../nlmjats-core-1.0/content/dtd/section.ent"                                                        >
+"../../nlmjats-core-1.0/dtd/section.ent"                                                        >
 
 
 <!-- ============================================================= -->
@@ -238,7 +238,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % htmltable.dtd
                         PUBLIC
 "-//W3C//ELEMENTS XHTML Tables 1.0//EN"
-"../../../jatslib-xhtml-1.0/content/xhtml-table-1.mod"               >
+"../../jatslib-xhtml-1.0/xhtml-table-1.mod"               >
 
 
 <!-- ============================================================= -->
@@ -265,7 +265,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % oasis-exchange.ent
                         PUBLIC
 "-//OASIS//DTD MD copy XML Exchange Table Model 19990315//EN"
-"../../../jatslib-jatsoasis-1.0/content/oasis-exchange.ent"          >
+"../../jatslib-jatsoasis-1.0/oasis-exchange.ent"          >
 
 
 <!-- ============================================================= -->
@@ -286,27 +286,27 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % mathml-qname.mod
                         PUBLIC
 "-//W3C//ENTITIES MathML 2.0 Qualified Names 1.0//EN"
-"../../../jatslib-mathml2-2.0/content/dtd/mathml2-qname-1.mod"                    >
+"../../jatslib-mathml2-2.0/dtd/mathml2-qname-1.mod"                    >
 
 
 <!--                    MATHML 2.0 DTD                             -->
 <!ENTITY % mathml.dtd   PUBLIC
 "-//W3C//DTD MathML 2.0//EN"
-"../../../jatslib-mathml2-2.0/content/dtd/mathml2.dtd"                           >
+"../../jatslib-mathml2-2.0/dtd/mathml2.dtd"                           >
 
 
 <!--                    MATHML 2.0 EXTRA ENTITIES                  -->
 <!ENTITY % ent-mmlextra
                         PUBLIC
 "-//W3C//ENTITIES Extra for MathML 2.0//EN"
-"../../../jatslib-mathml2-2.0/content/dtd/mathml/mmlextra.ent"                   >
+"../../jatslib-mathml2-2.0/dtd/mathml/mmlextra.ent"                   >
 
 
 <!--                    MATHML 2.0 ALIASES                         -->
 <!ENTITY % ent-mmlalias
                         PUBLIC
 "-//W3C//ENTITIES Aliases for MathML 2.0//EN"
-"../../../jatslib-mathml2-2.0/content/dtd/mathml/mmlalias.ent"                   >
+"../../jatslib-mathml2-2.0/dtd/mathml/mmlalias.ent"                   >
 
 
 <!-- ============================================================= -->
@@ -320,7 +320,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % xmlspecchars.ent
                         PUBLIC
 "-//NLM//DTD Archiving and Interchange DTD Suite XML Special Characters Module v1.0 20021201//EN"
-"../../../nlmjats-core-1.0/content/dtd/xmlspecchars.ent"                                                   >
+"../../nlmjats-core-1.0/dtd/xmlspecchars.ent"                                                   >
 
 
 <!--                    CUSTOM SPECIAL CHARACTERS DECLARATIONS     -->
@@ -343,7 +343,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         replacement.                               -->
 <!ENTITY % notat.ent PUBLIC
 "-//NLM//DTD Archiving and Interchange DTD Suite Notation Declarations v1.0 20021201//EN"
-"../../../nlmjats-core-1.0/content/dtd/notat.ent"                                                          >
+"../../nlmjats-core-1.0/dtd/notat.ent"                                                          >
 
 
 <!-- =================== End Journal Article Module of Modules === -->

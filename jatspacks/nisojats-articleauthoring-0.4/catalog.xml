@@ -9,14 +9,14 @@
          prefer="public">
 
   <public publicId="-//NLM//DTD JATS (Z39.96) Article Authoring DTD v0.4 20110131//EN"
-               uri="content/dtd/JATS-articleauthoring0.dtd"/>
+               uri="dtd/JATS-articleauthoring0.dtd"/>
   <public publicId= "-//NLM//DTD JATS (Z39.96) Article Authoring DTD-Specific Modules v0.4 20110131//EN"
-               uri="content/dtd/JATS-articleauthcustom-modules0.ent"/>
+               uri="dtd/JATS-articleauthcustom-modules0.ent"/>
   <public publicId= "-//NLM//DTD JATS (Z39.96) Article Authoring DTD Over-ride Classes Module v0.4 20110131//EN"
-               uri="content/dtd/JATS-articleauthcustom-classes0.ent"/>
+               uri="dtd/JATS-articleauthcustom-classes0.ent"/>
   <public publicId= "-//NLM//DTD JATS (Z39.96) Article Authoring DTD Over-ride Mixes Module v0.4 20110131//EN"
-               uri="content/dtd/JATS-articleauthcustom-mixes0.ent"/>
+               uri="dtd/JATS-articleauthcustom-mixes0.ent"/>
   <public publicId= "-//NLM//DTD JATS (Z39.96) Article Authoring DTD Over-ride Content and Attribute Module v0.4 20110131//EN"
-               uri="content/dtd/JATS-articleauthcustom-models0.ent"/>
+               uri="dtd/JATS-articleauthcustom-models0.ent"/>
 
 </catalog>

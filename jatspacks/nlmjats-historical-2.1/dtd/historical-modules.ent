@@ -90,7 +90,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % historical-mixes.ent 
                         PUBLIC  
 "-//NLM//DTD NCBI Historical Book DTD Over-ride Mixes Module v2.0 20041225//EN"
-"../../../nlmjats-historical-2.0/content/dtd/historical-mixes.ent"                                               >
+"../../nlmjats-historical-2.0/dtd/historical-mixes.ent"                                               >
 
 
 <!--                    DTD-SPECIFIC MODELS/ATTRIBUTES CUSTOMIZATIONS 
@@ -116,7 +116,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         emendments and additions to a work         -->
 <!ENTITY % annotation.ent PUBLIC  
 "-//NLM//DTD NCBI Historical Book DTD Annotation Elements v2.0 20041225//EN" 
-"../../../nlmjats-historical-2.0/content/dtd/annotation.ent"                                                     >
+"../../nlmjats-historical-2.0/dtd/annotation.ent"                                                     >
 
 
 <!--                    HISTORICAL INSTANCE METADATA               -->

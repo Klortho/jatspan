@@ -8,6 +8,6 @@
          prefer='public'>
 
    <public publicId="-//NLM//DTD NCBI Historical Book DTD v2.2 20061013//EN" 
-           uri="content/dtd/historical.dtd"/>
+           uri="dtd/historical.dtd"/>
 
 </catalog>

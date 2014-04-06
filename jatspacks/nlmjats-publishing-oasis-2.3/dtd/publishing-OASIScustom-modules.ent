@@ -31,7 +31,7 @@
 <!ENTITY % journalpubcustom-mixes.ent 
                         PUBLIC  
 "-//NLM//DTD Journal Publishing DTD Customize Mixes Module v2.3 20070202//EN"
-"../../../nlmjats-publishing-2.3/content/dtd/journalpubcustom-mixes.ent"                                         >
+"../../nlmjats-publishing-2.3/dtd/journalpubcustom-mixes.ent"                                         >
 
 
 <!--                    DTD-SPECIFIC MODELS/ATTRIBUTES CUSTOMIZATIONS 
@@ -45,7 +45,7 @@
 <!ENTITY % journalpubcustom-models.ent 
                         PUBLIC  
 "-//NLM//DTD Journal Publishing DTD Customize Content and Attributes Module v2.3 20070202//EN"
-"../../../nlmjats-publishing-2.3/content/dtd/journalpubcustom-models.ent"                                        >
+"../../nlmjats-publishing-2.3/dtd/journalpubcustom-models.ent"                                        >
 
 
 <!--                    NLM CITATION MODULE                        -->
@@ -58,7 +58,7 @@
 <!ENTITY % nlmcitation.ent 
                         PUBLIC  
 "-//NLM//DTD NLM Citation v2.3 20070202//EN"
-"../../../nlmjats-core-2.3/content/dtd/nlmcitation.ent"                                                    >
+"../../nlmjats-core-2.3/dtd/nlmcitation.ent"                                                    >
 
 
 <!-- =================== End Publishing DTD Module of Modules ==== -->

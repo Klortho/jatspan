@@ -13,25 +13,25 @@
 <!-- ============================================================== -->
 
   <public publicId="-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v0.4 20110131//EN"
-               uri="content/dtd/JATS-journalpublishing0.dtd"/>
+               uri="dtd/JATS-journalpublishing0.dtd"/>
   <public publicId="-//NLM//DTD JATS (Z39.96) Journal Publishing DTD-Specific Modules v0.4 20110131//EN"
-               uri="content/dtd/JATS-journalpubcustom-modules0.ent"/>
+               uri="dtd/JATS-journalpubcustom-modules0.ent"/>
   <public publicId="-//NLM//DTD JATS (Z39.96) Journal Publishing DTD Customize Classes Module v0.4 20110131//EN"
-               uri="content/dtd/JATS-journalpubcustom-classes0.ent"/>
+               uri="dtd/JATS-journalpubcustom-classes0.ent"/>
   <public publicId="-//NLM//DTD JATS (Z39.96) Journal Publishing DTD Customize Mixes Module v0.4 20110131//EN"
-               uri="content/dtd/JATS-journalpubcustom-mixes0.ent"/>
+               uri="dtd/JATS-journalpubcustom-mixes0.ent"/>
   <public publicId="-//NLM//DTD JATS (Z39.96) Journal Publishing DTD Customize Content and Attributes Module v0.4 20110131//EN"
-               uri="content/dtd/JATS-journalpubcustom-models0.ent"/>
+               uri="dtd/JATS-journalpubcustom-models0.ent"/>
 
 <!-- ============================================================== -->
 <!--                    JOURNAL ARTICLE PUBLISHING OASIS DTD        -->
 <!-- ============================================================== -->
 
   <public publicId="-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD (OASIS Tables) v0.4 20110131//EN"
-               uri="content/dtd/JATS-journalpublishing-oasis0.dtd"/>
+               uri="dtd/JATS-journalpublishing-oasis0.dtd"/>
   <public publicId="-//NLM//DTD JATS (Z39.96) Journal Archiving DTD-Specific Modules (OASIS Tables) v0.4 20110131//EN"
-               uri="content/dtd/JATS-journalpub-oasis-custom-modules0.ent"/>
+               uri="dtd/JATS-journalpub-oasis-custom-modules0.ent"/>
   <public publicId="-//NLM//DTD JATS (Z39.96) Journal Archiving DTD Customize Classes Module (OASIS Tables) v0.4 20110131//EN"
-               uri="content/dtd/JATS-journalpub-oasis-custom-classes0.ent"/>
+               uri="dtd/JATS-journalpub-oasis-custom-classes0.ent"/>
 
 </catalog>

@@ -233,7 +233,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % htmltable.dtd
                         PUBLIC
 "-//W3C//ELEMENTS XHTML Tables 1.0//EN"
-"../../../jatslib-xhtml-1.0/content/xhtml-table-1.mod"               >
+"../../jatslib-xhtml-1.0/xhtml-table-1.mod"               >
 
 
 <!-- ============================================================= -->
@@ -260,7 +260,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % oasis-exchange.ent
                         PUBLIC
 "-//OASIS//DTD MD copy XML Exchange Table Model 19990315//EN"
-"../../../jatslib-jatsoasis-1.0/content/oasis-exchange.ent"          >
+"../../jatslib-jatsoasis-1.0/oasis-exchange.ent"          >
 
 
 <!-- ============================================================= -->
@@ -281,27 +281,27 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % mathml-qname.mod
                         PUBLIC
 "-//W3C//ENTITIES MathML 2.0 Qualified Names 1.0//EN"
-"../../../jatslib-mathml2-2.0/content/dtd/mathml2-qname-1.mod"                   >
+"../../jatslib-mathml2-2.0/dtd/mathml2-qname-1.mod"                   >
 
 
 <!--                    MATHML 2.0 DTD                             -->
 <!ENTITY % mathml.dtd   PUBLIC
 "-//W3C//DTD MathML 2.0//EN"
-"../../../jatslib-mathml2-2.0/content/dtd/mathml2.dtd"                           >
+"../../jatslib-mathml2-2.0/dtd/mathml2.dtd"                           >
 
 
 <!--                    MATHML 2.0 EXTRA ENTITIES                  -->
 <!ENTITY % ent-mmlextra
                         PUBLIC
 "-//W3C//ENTITIES Extra for MathML 2.0//EN"
-"../../../jatslib-mathml2-2.0/content/dtd/mathml/mmlextra.ent"                   >
+"../../jatslib-mathml2-2.0/dtd/mathml/mmlextra.ent"                   >
 
 
 <!--                    MATHML 2.0 ALIASES                         -->
 <!ENTITY % ent-mmlalias
                         PUBLIC
 "-//W3C//ENTITIES Aliases for MathML 2.0//EN"
-"../../../jatslib-mathml2-2.0/content/dtd/mathml/mmlalias.ent"                   >
+"../../jatslib-mathml2-2.0/dtd/mathml/mmlalias.ent"                   >
 
 
 <!-- ============================================================= -->

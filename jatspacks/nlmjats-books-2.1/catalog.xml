@@ -8,20 +8,20 @@
          prefer='public'>
 
    <public publicId="-//NLM//DTD Book DTD v2.1 20050630//EN" 
-           uri="content/dtd/book.dtd"/>
+           uri="dtd/book.dtd"/>
    <public publicId="-//NLM//DTD NCBI Book Collection DTD v2.1 20050630//EN" 
-           uri="content/dtd/bookcollection.dtd"/>
+           uri="dtd/bookcollection.dtd"/>
    <public publicId="-//NLM//DTD NCBI Book DTD Over-ride Classes Module v2.1 20050630//EN" 
-           uri="content/dtd/bookcustom-classes.ent"/>
+           uri="dtd/bookcustom-classes.ent"/>
    <public publicId="-//NLM//DTD NCBI Book DTD Content and Attribute Over-ride Module v2.1 20050630//EN" 
-           uri="content/dtd/bookcustom-models.ent"/>
+           uri="dtd/bookcustom-models.ent"/>
    <public publicId="-//NLM//DTD Book DTD Module of Modules v2.1 20050630//EN" 
-           uri="content/dtd/bookcustom-modules.ent"/>
+           uri="dtd/bookcustom-modules.ent"/>
    <public publicId="-//NLM//DTD NCBI Book DTD Book Metadata Elements v2.1 20050630//EN" 
-           uri="content/dtd/bookmeta.ent"/>
+           uri="dtd/bookmeta.ent"/>
    <public publicId="-//NLM//DTD NCBI Book Multi-link Elements v2.0 20041031//EN" 
-           uri="content/dtd/bookmultilink.ent"/>
+           uri="dtd/bookmultilink.ent"/>
    <public publicId="-//NLM//DTD NCBI Book DTD Book Component Metadata Elements v2.1 20050630//EN" 
-           uri="content/dtd/bookpart.ent"/>
+           uri="dtd/bookpart.ent"/>
 
 </catalog>

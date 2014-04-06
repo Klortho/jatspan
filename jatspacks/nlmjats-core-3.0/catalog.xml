@@ -12,7 +12,7 @@
     +=================================================+-->
 
   <public publicId="-//NLM//DTD Journal Archiving DTD to Test the Base Suite v3.0 20080202//EN" 
-          uri="content/dtd/base-test3.dtd"/>
+          uri="dtd/base-test3.dtd"/>
         
 <!--+=================================================+
     | Core modules and entities, 3.0                  |
@@ -20,71 +20,71 @@
   
   <!-- NLM Citation (fixes typo) -->
   <public publicId="-//NLM//DTD NLM Citation v3.0 20080202//EN" 
-          uri="content/dtd/nlmcitation3.ent"/>
+          uri="dtd/nlmcitation3.ent"/>
   
   <!-- MODULE OF MODULES -->
   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Module of Modules v3.0 20080202//EN" 
-          uri="content/dtd/modules3.ent"/>
+          uri="dtd/modules3.ent"/>
   
   <!-- CLASSES AND MIXES  -->
 
   <public publicId="-//NLM//DTD Default Element Classes Module v3.0 20080202//EN"
-          uri="content/dtd/default-classes3.ent"/>
+          uri="dtd/default-classes3.ent"/>
   <public publicId="-//NLM//DTD Default Element Mixes Module v3.0 20080202//EN"
-          uri="content/dtd/default-mixes3.ent"/>
+          uri="dtd/default-mixes3.ent"/>
 
   <!-- ELEMENT COMMON (SHARED) ELEMENTS/CHARACTERS -->
 
   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Common (Shared) Elements Module v3.0 20080202//EN"
-          uri="content/dtd/common3.ent"/>
+          uri="dtd/common3.ent"/>
   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Funding Elements v3.0 20080202//EN"
-          uri="content/dtd/funding3.ent"/>
+          uri="dtd/funding3.ent"/>
   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Notation Declarations v3.0 20080202//EN"
-          uri="content/dtd/notat3.ent"/>
+          uri="dtd/notat3.ent"/>
   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite XML Special Characters Module v3.0 20080202//EN"
-          uri="content/dtd/xmlspecchars3.ent"/>
+          uri="dtd/xmlspecchars3.ent"/>
   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Custom Special Characters Module v3.0 20080202//EN"
-          uri="content/dtd/chars3.ent"/>
+          uri="dtd/chars3.ent"/>
 
   <!-- CLASS MODULES -->
 
   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Journal Article Metadata Elements v3.0 20080202//EN"
-          uri="content/dtd/articlemeta3.ent"/>
+          uri="dtd/articlemeta3.ent"/>
   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Back Matter Elements v3.0 20080202//EN"
-          uri="content/dtd/backmatter3.ent"/>
+          uri="dtd/backmatter3.ent"/>
   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Display Class Elements v3.0 20080202//EN"
-          uri="content/dtd/display3.ent"/>
+          uri="dtd/display3.ent"/>
   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Formatting Element Classes v3.0 20080202//EN"
-          uri="content/dtd/format3.ent"/>
+          uri="dtd/format3.ent"/>
   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Journal Metadata Elements v3.0 20080202//EN"
-          uri="content/dtd/journalmeta3.ent"/>
+          uri="dtd/journalmeta3.ent"/>
   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Link Class Elements v3.0 20080202//EN"
-          uri="content/dtd/link3.ent"/>
+          uri="dtd/link3.ent"/>
   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite List Class Elements v3.0 20080202//EN"
-          uri="content/dtd/list3.ent"/>
+          uri="dtd/list3.ent"/>
   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Math Class Elements v3.0 20080202//EN"
-          uri="content/dtd/math3.ent"/>
+          uri="dtd/math3.ent"/>
   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Paragraph-Like Elements v3.0 20080202//EN"
-          uri="content/dtd/para3.ent"/>
+          uri="dtd/para3.ent"/>
   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Subject Phrase Class Elements v3.0 20080202//EN"
-          uri="content/dtd/phrase3.ent"/>
+          uri="dtd/phrase3.ent"/>
   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Bibliographic Reference (Citation) Class Elements v3.0 20080202//EN"
-          uri="content/dtd/references3.ent"/>
+          uri="dtd/references3.ent"/>
   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Related Object Element v3.0 20080202//EN"
-          uri="content/dtd/related-object3.ent"/>
+          uri="dtd/related-object3.ent"/>
   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite Section Class Elements v3.0 20080202//EN"
-          uri="content/dtd/section3.ent"/>
+          uri="dtd/section3.ent"/>
 
   <!-- SET UP TABLES  -->
 
   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite XHTML Table Setup Module v3.0 20080202//EN"
-          uri="content/dtd/XHTMLtablesetup3.ent"/>
+          uri="dtd/XHTMLtablesetup3.ent"/>
   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite OASIS XML Table Setup Module v3.0 20100717//EN"
-          uri="content/dtd/oasis-tablesetup3.ent"/>
+          uri="dtd/oasis-tablesetup3.ent"/>
 
   <!-- SET UP MATHML   -->
 
   <public publicId="-//NLM//DTD Archiving and Interchange DTD Suite MathML Setup Module v3.0 20080202//EN"
-          uri="content/dtd/mathmlsetup3.ent"/>
+          uri="dtd/mathmlsetup3.ent"/>
 
 </catalog>
