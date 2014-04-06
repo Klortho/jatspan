@@ -1,9 +1,5 @@
-$Id$
+# The JATS Bundle
 
-JATSPAN Core JATS Bundle
-
-Summary
--------
 This set of files comprises the core JATSPack packages, which include the DTDs
 for every released version of the NLM JATS and for version 0.4 of the new NISO
 draft standard.
@@ -20,15 +16,21 @@ Only the DTDs, OASIS catalog files, and some samples are present in this
 bundle.  Not included are the documentation files, Relax NG schema, W3C schema,
 tools, or other miscellaneous files.
 
+
 Testing
 -------
+
 A test utility is included, as a Perl script and a list of sample files, in the
 'test' directory.  To see usage information, enter the command
+
     TestValidation.pl --help
+
 This utility depends on xmllint being in your PATH.
 
-Using These Bundles
--------------------
+
+Using this bundle
+-----------------
+
 The OASIS catalog files here do not use the xml:base attribute, so this archive
 should be completely relocateable.  Just unzip it to any directory on your file
 system where you want it to reside, and then point your XML tools to the
@@ -47,12 +49,12 @@ file included with this bundle.
 Setting up other tools should be similar - just point the tool to the master
 OASIS catalog file.
 
+
 JATSPacks and JATSPAN
 ---------------------
 This is a very preliminary version of this distribution.  For more information
 about this project, visit the http://jatspan.org/ site, or the project page on
-Sourceforge:  http://sourceforge.net/projects/jatspan/.
-
+GitHub [Klortho/jatspan](http://github.com/Klortho/jatspan).
 
 
 CC0 - Public Domain

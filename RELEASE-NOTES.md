@@ -2,6 +2,18 @@ Release Notes for JATSPAN software and data files.
 
 These notes are in reverse chronological order (newest releases at the top).
 
+# jats-core-bundle-0.8
+
+4/6/2014. [GitHub tag v0.8](https://github.com/Klortho/jatspan/releases/tag/v0.8)
+
+**Changes**
+
+- Got rid of the *content* subdirectory in each of the jatspacks.  This makes the relative
+  system paths cleaner.  This directory serves no purpose other than to try to maintain
+  compatibility with EXPath packaging, but that has not worked out.
+- Updates to documentation to reflect the fact that everything is now on GitHub.
+
+
 # jats-core-bundle-0.7
 
 9/25/2011.  [GitHub tag v0.7](https://github.com/Klortho/jatspan/releases/tag/v0.7)
